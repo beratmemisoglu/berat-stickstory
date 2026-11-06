@@ -1,6 +1,6 @@
-﻿# Toon Studio: Stick Stories pipeline (penceresiz)
+﻿# berat studio: Stick Stories pipeline (penceresiz)
 
-Bu klasör Toon Studio'nun kendi main-process kodunu (`appcore/main/index.js`) kütüphane olarak çalıştırır:
+Bu klasör berat studio'nun kendi main-process kodunu (`appcore/main/index.js`) kütüphane olarak çalıştırır:
 proje kurulumu, voiceover, ses tasarımı, mix, export, Claude araçları — hepsi. Sadece uygulama penceresi
 yok: headless Chrome render alıyor (`appcore/load.cjs`). Stil: **stickstory** (siyah siluet çöp adam,
 flat-vector setler, 2.5D cut-out tiyatro).
@@ -34,7 +34,7 @@ Tüm komutlar: `python studio.py ...` (bu klasörden). Uzun olanları (run, expo
 - `templates/support/` — destek KB
 - `studio.py` — CLI giriş noktası
 
-Workspace (projeler, suite.db, library): `C:\Users\berat\ToonStudio-Projects`
+Workspace (projeler, suite.db, library): `C:\Users\berat\berat studio-Projects`
 
 API anahtarları ortam değişkenlerinden: `ELEVENLABS_API_KEY`, `HIGGSFIELD_API_KEY`, `FAL_KEY`, `FISH_AUDIO_API_KEY`
 

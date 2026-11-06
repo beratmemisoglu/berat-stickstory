@@ -1,4 +1,4 @@
-﻿// Toon Studio preview/render host. Served at /p/<projectId>/__suite/host.html by the app's local server;
+﻿// berat studio preview/render host. Served at /p/<projectId>/__suite/host.html by the app's local server;
 // loads the project's own engine.js, scenes and assets (all relative to ../), then talks to the app:
 //   preview mode (iframe in the editor): postMessage API  - seek, pick, frame, info
 //   render mode  (hidden worker window): window.suite API - stills, exportVideo, events

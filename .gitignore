@@ -9,11 +9,13 @@ appdata/flow-chrome/
 appdata/flow-chrome-state.json
 appdata/launch-status.json
 
-# npm packages
+# npm packages (install with: cd appcore && npm install)
 appcore/node_modules/
 
-# Personal config (voice IDs, personal settings)
+# Personal config (voice IDs, personal settings, local paths)
 appdata/config.json
+studio.json
+.mcp.json
 
 # Large AI model files and Python venvs (download separately)
 appdata/speech/

@@ -1,4 +1,4 @@
-﻿// Toon Studio's command line over Toon Studio's own code (appcore/load.cjs): every command calls the app's function
+﻿// berat studio's command line over berat studio's own code (appcore/load.cjs): every command calls the app's function
 // for it, so a project is set up, voiced, timed, built by Claude, mixed and exported exactly as the app does it.
 //   node cli.cjs styles | looks <style>
 //   node cli.cjs new <name> --style <id> [--length 60] [--format vertical|landscape] [--lang en] [--look <preset>] [--topic "..."] [--brief "..."]

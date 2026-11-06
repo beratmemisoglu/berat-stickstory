@@ -28,7 +28,7 @@ light when the playhead rests. Click a machine or object to select it for Claude
 
 ## Installing Blender
 
-Toon Studio installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
+berat studio installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
 once): **Install Blender** in New project, or by itself when you create the project. **Mac**: Blender 5.2 needs a Mac
 with Apple silicon (M1 or newer).
 

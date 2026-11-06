@@ -14,7 +14,7 @@ Two cards on the **YouTube** page, under the chart: **What's working** and **Rec
 ## What's working
 Claude reads the views, how long people watch and the comments, then suggests lessons.
 
-1. The YouTube channel must be linked to one of your Toon Studio channels. If it isn't, the card asks you to pick one (or **Make a channel from "…"**).
+1. The YouTube channel must be linked to one of your berat studio channels. If it isn't, the card asks you to pick one (or **Make a channel from "…"**).
 2. Click **Ask Claude**. **Stop** ends it without adding anything.
 3. Suggestions appear under **Suggested · keep the ones that ring true**. Each one has **Keep**, **Edit** and **Dismiss**.
 4. Kept lessons have **Edit** and **Remove** (with **Undo**). **Add your own lesson** adds yours.
@@ -25,4 +25,4 @@ Where kept lessons are used:
 
 A channel you only follow to learn from needs no link: its videos and comments are there to read.
 
-If you link the YouTube channel to another Toon Studio channel, the lessons kept for the old one stay with it but stop guiding its scripts until it is linked again.
+If you link the YouTube channel to another berat studio channel, the lessons kept for the old one stay with it but stop guiding its scripts until it is linked again.

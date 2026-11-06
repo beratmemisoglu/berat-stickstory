@@ -21,5 +21,5 @@ License 1.1, each with its OFL.txt), in the pieces Google Fonts splits them into
 Chinese, Thai and Devanagari letters by scripts/script-fonts.py from their Fontsource packages (@fontsource-variable).
 
 orbitron-700-punct.woff2 is a Modified Version of Orbitron (SIL Open Font License 1.1, Reserved Font Name "Orbitron"),
-named "Toon Studio Marks": the quote marks « » ‹ › „ ‚, the middle dot · and the ordinals º ª drawn from Orbitron's own shapes by
+named "berat studio Marks": the quote marks « » ‹ › „ ‚, the middle dot · and the ordinals º ª drawn from Orbitron's own shapes by
 scripts/orbitron-punct.py. It is licensed under the SIL Open Font License 1.1 too.

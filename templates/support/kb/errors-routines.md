@@ -43,7 +43,7 @@ Fix: retry this video.
 Fix: select the node, pick the channel and press **Allow uploads**.
 
 ## Import
-> That file is not a routine exported from Toon Studio.
+> That file is not a routine exported from berat studio.
 
 Fix: import a routine file that was exported from the app.
 

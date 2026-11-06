@@ -1,7 +1,7 @@
 ﻿// module.any.metric-box v1 - box geometry whose UVs are in METRES on every face, and one-mesh merging of parts.
 // Why: BoxGeometry maps 0..1 onto every face, so one texture tile stretches over a 16 m slab and reads as planks or
 // streaks (prison-tunnel pass 6). With metric UVs a material's repeat means "tiles per metre" on every face at once.
-// Contract: imports only THREE from the project's engine.js (every Toon Studio engine exports it).
+// Contract: imports only THREE from the project's engine.js (every berat studio engine exports it).
 import { THREE } from '../../engine.js';
 
 // metricBox(w, h, d, unit = 1): a BoxGeometry with UVs = metres / unit on each face (unit 2 = one UV per 2 m).

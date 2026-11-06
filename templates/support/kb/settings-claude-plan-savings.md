@@ -21,4 +21,4 @@ In **Settings > AI engines > Your Claude plan** (or the plan pill on Home's savi
 - **Plan pays for itself at** shows instead while you have used less than your plan costs.
 - "Pick your plan to see it": choose your plan as above.
 
-This is your Claude plan, not your Toon Studio plan (Standard or Premium).
+This is your Claude plan, not your berat studio plan (Standard or Premium).

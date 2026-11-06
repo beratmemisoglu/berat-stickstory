@@ -6,7 +6,7 @@ platforms: both
 > Your Claude usage limit is reached. It resets at ...
 > Your Claude usage limit is reached for now. Try again later, or pick a lighter model in Settings.
 
-What it means: your own Claude plan's limit is used up for now. It is your Claude account's limit, not a Toon Studio one.
+What it means: your own Claude plan's limit is used up for now. It is your Claude account's limit, not a berat studio one.
 
 Fix:
 1. Wait until the time shown, then try again. Edits made before the limit stay listed and can be reverted.

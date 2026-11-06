@@ -9,7 +9,7 @@ platforms: both
 - **It can get your Google account blocked.** Google has blocked paid accounts for this before, without refunds.
 - Use a **separate Google account**, not the one with your YouTube channel or Gmail.
 - **One Google account only.** Never sign in several to stretch the quota.
-- It can stop working any day. Toon Studio does not support it and can't help if Google blocks you.
+- It can stop working any day. berat studio does not support it and can't help if Google blocks you.
 - Offered on Windows (64-bit) and macOS only.
 
 ## Models and limits

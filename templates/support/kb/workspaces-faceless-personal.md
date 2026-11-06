@@ -2,12 +2,12 @@
 keywords: faceless brand, personal brand, switch, brand switch, workspace, switch workspace, change workspace, brand type, toggle, my projects disappeared, projects gone after switch, videos missing, wrong sidebar, different pages, where did my pages go, talking head, explainer, faceless, personal, switch back, menu changed, sidebar changed
 platforms: both
 
-Toon Studio has two workspaces, each with its own pages and its own list of videos:
+berat studio has two workspaces, each with its own pages and its own list of videos:
 
 - **Faceless Brand**: animated explainer videos that Claude builds in a style (pixel art, Vox, 3D and more).
 - **Personal Brand**: editing your own footage (talking head, screen recording) with Claude.
 
-The name under the Toon Studio logo shows which one you are in.
+The name under the berat studio logo shows which one you are in.
 
 ## Switch
 

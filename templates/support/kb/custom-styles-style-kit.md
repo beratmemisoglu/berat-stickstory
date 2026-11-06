@@ -3,7 +3,7 @@ keywords: style kit, get the style kit, custom style, custom styles, own style, 
 platforms: both
 
 Your own styles (new elements, sets, characters) are built in Claude Code with the **Style Kit**, then imported into
-Toon Studio. The app itself makes looks only (see "Style Studio"). Premium.
+berat studio. The app itself makes looks only (see "Style Studio"). Premium.
 
 ## Get the kit and build a style
 

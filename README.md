@@ -1,14 +1,13 @@
 ﻿# berat Stick Stories
 
-Toon Studio 0.20.0'ın **Stick Stories** stili için penceresiz pipeline. Uygulamanın kendi kodu çalışıyor,
-sadece pencere yerine headless Chrome kullanılıyor. Video kalitesi uygulamadaki ile birebir aynı.
+**Stick Stories** stili için penceresiz video üretim pipeline'ı. Motor headless Chrome üzerinde çalışır;
+video kalitesi uygulamadaki ile birebir aynıdır.
 
-Kişisel kullanım içindir. Paylaşma ya da dağıtma.
+[MIT Lisansı](LICENSE) — ticari kullanım ve dağıtım dahil her türlü kullanıma açıktır.
 
 ## Video yapmak
 
 ```bash
-cd C:\Users\berat\toon-studio
 python studio.py new filmim --style stickstory --length 120 --lang tr
 python studio.py run filmim script --notes "konu ve açı"
 python studio.py voice filmim
@@ -22,7 +21,7 @@ python studio.py export filmim
 - Değişiklik: `python studio.py run filmim edit --notes "1:20'deki sahnede ..."`
 - Video: projenin `out/` klasöründe.
 
-Projeler `C:\Users\berat\ToonStudio-Projects\projects` içinde.
+Projeler varsayılan olarak `~/berat-studio-projects` içinde tutulur (studio.json'da değiştirilebilir).
 
 ## Claude ile çalışmak
 

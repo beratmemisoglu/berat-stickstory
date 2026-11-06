@@ -12,7 +12,7 @@ Shortcuts anywhere in the app: Ctrl/⌘ + to make it bigger, Ctrl/⌘ - to make 
 
 ## Workspace
 
-The folder where every project folder and the app's own files live. By default it is the **Toon Studio** folder in your Documents.
+The folder where every project folder and the app's own files live. By default it is the **berat studio** folder in your Documents.
 
 - **Open** shows it (On Windows: in File Explorer / On Mac: in Finder).
 - The box under it shows what is inside.

@@ -23,7 +23,7 @@ If the guide says the app has a Google sign-in built in, skip steps 4 and 5.
 Your browser opens Google's sign-in (**Waiting for Google…**; **Open the page again** reopens it). Pick the account that owns the channel and allow both permissions. "Google hasn't verified this app": it is your own app, click **Advanced**, then **Go to** your app.
 - One channel per sign-in: sign in once for each channel.
 - A channel you only manage through YouTube Studio permissions can't be read: use the account that owns it.
-- Then pick which of your Toon Studio channels it is (see "Channels: make, edit and link a channel").
+- Then pick which of your berat studio channels it is (see "Channels: make, edit and link a channel").
 
 Keys and sign-ins are stored encrypted on this computer.
 

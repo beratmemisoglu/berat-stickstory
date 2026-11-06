@@ -2,7 +2,7 @@
 keywords: update, updates, new version, upgrade app, check now, check for updates, restart now, restart to install, update ready, update available, download update, beta, get beta versions, version, which version, what version, changelog, what's new, update not showing, update stuck, old version, automatic updates are off, applications folder, update engine
 platforms: both
 
-Toon Studio checks for new versions by itself, shortly after it starts and every few hours. Your projects and settings are kept.
+berat studio checks for new versions by itself, shortly after it starts and every few hours. Your projects and settings are kept.
 
 ## On Windows
 
@@ -14,12 +14,12 @@ Toon Studio checks for new versions by itself, shortly after it starts and every
 
 1. When a new version is out, the sidebar shows **Update … available** ("Download, then drag it into Applications").
 2. Click it (or **Download** in Settings). The download opens in your browser.
-3. Open it and drag Toon Studio into Applications, replacing the old one.
-4. If macOS says Toon Studio can't be opened or "was blocked": click **Done** (not Move to Trash), open **System Settings > Privacy & Security**, scroll down to Security, click **Open Anyway** next to "Toon Studio was blocked", enter your Mac password and click **Open Anyway** again. On macOS 12 or older it's **System Preferences > Security & Privacy > General**. You only do this once per update; projects and settings are kept. With the Toon Studio Launcher installed, updates install without this step.
+3. Open it and drag berat studio into Applications, replacing the old one.
+4. If macOS says berat studio can't be opened or "was blocked": click **Done** (not Move to Trash), open **System Settings > Privacy & Security**, scroll down to Security, click **Open Anyway** next to "berat studio was blocked", enter your Mac password and click **Open Anyway** again. On macOS 12 or older it's **System Preferences > Security & Privacy > General**. You only do this once per update; projects and settings are kept. With the berat studio Launcher installed, updates install without this step.
 
 ## Check by hand
 
-**Settings > General > Updates > Check now**. It answers "You're up to date (…)" or says what it found. Your version is shown below: "You have Toon Studio …". The same version is in **Settings > General > Workspace**.
+**Settings > General > Updates > Check now**. It answers "You're up to date (…)" or says what it found. Your version is shown below: "You have berat studio …". The same version is in **Settings > General > Workspace**.
 
 ## Problems
 

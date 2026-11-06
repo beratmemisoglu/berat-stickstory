@@ -1,5 +1,5 @@
 ﻿# Import and share projects (.zip and folders)
-keywords: import, import project, import folder, import zip, share, share project, share as zip, send project, zip, .zip, export project, backup, back up, move project, move to new computer, other computer, transfer project, open someone's project, shared project, drag and drop, not a Toon Studio project, not a suite project, project.json, restore backup, copy to laptop
+keywords: import, import project, import folder, import zip, share, share project, share as zip, send project, zip, .zip, export project, backup, back up, move project, move to new computer, other computer, transfer project, open someone's project, shared project, drag and drop, not a berat studio project, not a suite project, project.json, restore backup, copy to laptop
 platforms: both
 
 You can pack a project into one .zip to send or back up, and bring in a .zip or a project folder. This is on the **Projects** page (Faceless Brand).
@@ -34,7 +34,7 @@ A project made in one of your own styles carries that style, so whoever imports 
 
 ## Error messages
 
-- "That folder has no project.json, so it is not a Toon Studio project.": you picked the wrong folder. Pick the folder that holds the project's files.
+- "That folder has no project.json, so it is not a berat studio project.": you picked the wrong folder. Pick the folder that holds the project's files.
 - "That zip has no project.json at its top level, so it is not a Suite project.": the project's files are buried too deep in the .zip. Unzip it and use **Import folder** on the folder that holds the project's files.
 
 Still stuck? Click **Help > Report a problem**.

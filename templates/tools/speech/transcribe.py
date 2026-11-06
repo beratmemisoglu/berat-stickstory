@@ -1,5 +1,5 @@
-"""Creatorize speech-to-text: NVIDIA Parakeet TDT 0.6B through ONNX Runtime, on the CPU. No PyTorch, no GPU needed,
-works the same on Windows and macOS (Apple Silicon and Intel). Installed by the Creatorize installer (or the app) into
+﻿"""berat speech-to-text: NVIDIA Parakeet TDT 0.6B through ONNX Runtime, on the CPU. No PyTorch, no GPU needed,
+works the same on Windows and macOS (Apple Silicon and Intel). Installed by the berat installer (or the app) into
 its own small Python environment; the model (~0.7 GB, int8) is downloaded once.
 
   python transcribe.py INPUT [INPUT ...] [--out DIR] [--no-align] [--lang eng] [--model v2|v3] [--precision int8|fp32] [--threads N]

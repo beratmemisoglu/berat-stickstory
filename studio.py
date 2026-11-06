@@ -1,5 +1,5 @@
 ﻿#!/usr/bin/env python3
-"""Toon Studio: Toon Studio 0.20.0 without its window. Every command runs the app's own code (appcore/cli.cjs),
+"""berat studio: berat studio 0.20.0 without its window. Every command runs the app's own code (appcore/cli.cjs),
 so projects, voiceovers, Claude builds, sound and exports come out exactly as in the app.
 
   python studio.py styles                         the styles (pixel-art, collage, flat, stickman, recon, lowpoly, toon,

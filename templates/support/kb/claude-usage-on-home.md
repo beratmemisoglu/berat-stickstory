@@ -33,4 +33,4 @@ Your first Claude edit or build shows up here.
 ## Good to know
 
 - To change which model Claude uses and how hard it thinks, see "Model and effort (which Claude, how hard it thinks)".
-- This is your Claude plan's usage, not your Toon Studio plan (Standard or Premium).
+- This is your Claude plan's usage, not your berat studio plan (Standard or Premium).

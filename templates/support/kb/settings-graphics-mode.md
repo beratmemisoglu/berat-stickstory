@@ -22,7 +22,7 @@ After you switch, it says "Restart the app to use …" with **Restart now**. The
 
 If the graphics card can't start the 3D preview, the app switches to software for the next start and says so once ("This computer's graphics can't draw the 3D preview, so the app switched to software graphics…"). Click **Restart now**. Settings then adds: "The app switched to software by itself because the graphics card could not start the 3D preview."
 
-If the window stayed dark, the app (or the Toon Studio Launcher) switches to Safe display on Windows, or to software graphics on a Mac, and Settings says so.
+If the window stayed dark, the app (or the berat studio Launcher) switches to Safe display on Windows, or to software graphics on a Mac, and Settings says so.
 
 ## After an update
 

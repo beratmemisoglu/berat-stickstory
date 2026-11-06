@@ -10,7 +10,7 @@ What it means: the app can't find Claude Code on this computer. It uses your own
 
 Fix:
 1. On Windows, in PowerShell: `irm https://claude.ai/install.ps1 | iex`. On Mac, in Terminal: `curl -fsSL https://claude.ai/install.sh | bash`
-2. Restart Toon Studio.
+2. Restart berat studio.
 3. Already installed? On Windows run `where.exe claude` in PowerShell; on Mac run `which claude` in Terminal. Paste the path it prints into **Settings > System > Tool paths** (the claude field).
 
 ## Claude is not signed in
@@ -35,7 +35,7 @@ Fix:
 ## Could not reach Claude
 > Could not reach Claude. Check your internet connection and try again.
 
-Fix: check the internet connection. A VPN, firewall or antivirus can block it too: allow Toon Studio there.
+Fix: check the internet connection. A VPN, firewall or antivirus can block it too: allow berat studio there.
 
 ## A tool can't be started
 > ... was not found on this computer. Install it, or set its path in Settings > System > Tool paths.

@@ -1,4 +1,4 @@
-﻿// The "suite" MCP server for interactive Claude Code sessions in Toon Studio: every Claude tool of Toon Studio
+﻿// The "suite" MCP server for interactive Claude Code sessions in berat studio: every Claude tool of berat studio
 // (render_frames, check_preview, check_layout, list_shots, narration, make_image, make_sprites, web_image, lowpoly_asset,
 // library_*, enrich_frame, make_target, match_shot, critic_shot, sound_effects, ...), straight from the app's own tool
 // definitions (suiteToolDefs) for the open project, built the way the app's bridge builds them (McpServer + zod).
@@ -27,7 +27,7 @@ function activeProject() {
   await A.startServer();
   const p = activeProject();
   const mcp = new McpServer({ name: 'suite', version: '1.0.0' }, {
-    instructions: p ? `Toon Studio tools for the open project "${p.name}" (${p.style_id}, ${p.path}): they work exactly like inside the app. Read its CLAUDE.md first.`
+    instructions: p ? `berat studio tools for the open project "${p.name}" (${p.style_id}, ${p.path}): they work exactly like inside the app. Read its CLAUDE.md first.`
       : 'No project is open: run `python studio.py use <name>` (or start Claude Code inside a project folder), then reconnect this server (/mcp).'
   });
   if (p) {

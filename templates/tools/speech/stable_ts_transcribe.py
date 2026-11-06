@@ -1,4 +1,4 @@
-"""Creatorize speech-to-text: OpenAI Whisper through stable-ts (stable_whisper), on the CPU. No GPU needed, word timings
+﻿"""berat speech-to-text: OpenAI Whisper through stable-ts (stable_whisper), on the CPU. No GPU needed, word timings
 from Whisper itself (stable-ts steadies them), nothing leaves the computer. Installed by the app (Settings > System check
 > Transcription > Whisper on the CPU) into its own Python environment next to this script; the model is downloaded once
 into ./models. The model and the languages come from stable-ts.json next to this script (written by the app).

@@ -1,4 +1,4 @@
-﻿"""Toon Studio's free local voice: Kokoro 82M through kokoro-onnx (offline, CPU).
+﻿"""berat studio's free local voice: Kokoro 82M through kokoro-onnx (offline, CPU).
 
   python kokoro_tts.py --model kokoro-v1.0.onnx --voices voices-v1.0.bin --job job.json --out source.wav
   python kokoro_tts.py --model ... --voices ... --voice af_heart [--lang en-us] [--speed 1] --say "A line." --out sample.wav

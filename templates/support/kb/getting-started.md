@@ -1,8 +1,8 @@
-﻿# Getting started with Toon Studio
+﻿# Getting started with berat studio
 keywords: start, first video, beginner, how to use, new, new member, tutorial, where do i begin, where to start, overview, getting started, first time, first run, just installed, setup, set up, onboarding, what now, what do i do, log in with skool, skool login, welcome, checklist, how does it work, step by step, first project
 platforms: both
 
-Toon Studio makes videos with your own Claude Code. You watch the video live, click what you want changed, say it in words, and Claude edits it. Every edit can be undone.
+berat studio makes videos with your own Claude Code. You watch the video live, click what you want changed, say it in words, and Claude edits it. Every edit can be undone.
 
 ## When the app opens
 

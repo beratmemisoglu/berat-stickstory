@@ -1,4 +1,4 @@
-﻿// Toon Studio's preview / render host for the BLENDER engine (3D cartoon shorts, docs/BLENDER_ENGINE_PLAN.md). Served at
+﻿// berat studio's preview / render host for the BLENDER engine (3D cartoon shorts, docs/BLENDER_ENGINE_PLAN.md). Served at
 // /p/<projectId>/__suite/blender.html. It speaks the same messages as host.js, so the editor (Preview.tsx: seek,
 // playing, pick, frame, info, ping, graphics) and the render workers (window.suite: info, stills, events, layout,
 // sweep, errors) work unchanged; the frames come from the app's hidden Blender through the local server:

@@ -24,7 +24,7 @@ image, sprite, font, sound, anim, check). Folder name = the full id.
 
 `<kind>.<base>.<slug>` matching
 `^(model|module|material|texture|image|sprite|font|sound|anim|pose|recipe|look|solution|pitfall|check)\.(any|recon|lowpoly|flat|collage|stickman|pixel-art|starter|custom-[a-z0-9-]{1,40})\.[a-z0-9-]{1,48}$`.
-`any` = engine-independent (imports only `THREE` from `engine.js`, which every Toon Studio engine exports); a base name =
+`any` = engine-independent (imports only `THREE` from `engine.js`, which every berat studio engine exports); a base name =
 needs that engine's own `lib/` (e.g. `recon` modules use `lib/crime.js`, `lib/figures.js`, `lib/crimeover.js`).
 Know-how scope letters map the same way: G -> `any` (scope global), R -> the base (scope `base:<base>`), I never harvested.
 

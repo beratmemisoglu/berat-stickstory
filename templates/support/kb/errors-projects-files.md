@@ -1,5 +1,5 @@
 ﻿# Project and file errors
-keywords: project folder is missing, folder missing, moved, deleted, external drive, not a Toon Studio project, zip, import, share, delete project, can't delete, custom style not installed, reference missing, relink, file not found, not there any more
+keywords: project folder is missing, folder missing, moved, deleted, external drive, not a berat studio project, zip, import, share, delete project, can't delete, custom style not installed, reference missing, relink, file not found, not there any more
 platforms: both
 
 ## The project folder is missing
@@ -15,10 +15,10 @@ Fix:
 
 ## Projects in OneDrive, or files removed by an antivirus
 
-Projects inside OneDrive (or a folder an antivirus is scanning) open normally: if the app can't refresh a project's files right away, it keeps the old ones and tries again next time. If your antivirus removes some of the app's files, **New project** uses the copy Toon Studio keeps after your first video in a style; otherwise it tells you how to restore them from quarantine and add the Toon Studio folder as an exclusion (Windows Security on Windows).
+Projects inside OneDrive (or a folder an antivirus is scanning) open normally: if the app can't refresh a project's files right away, it keeps the old ones and tries again next time. If your antivirus removes some of the app's files, **New project** uses the copy berat studio keeps after your first video in a style; otherwise it tells you how to restore them from quarantine and add the berat studio folder as an exclusion (Windows Security on Windows).
 
-## Not a Toon Studio project
-> That folder has no project.json, so it is not a Toon Studio project.
+## Not a berat studio project
+> That folder has no project.json, so it is not a berat studio project.
 > That zip has no project.json at its top level, so it is not a Suite project.
 
 Fix: pick the project's own folder (the one with project.json inside), or a .zip made with Share project as .zip.

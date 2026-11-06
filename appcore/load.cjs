@@ -1,7 +1,7 @@
-﻿// Load Toon Studio 0.20.0's own main-process code (appcore/main/index.js, copied from its app.asar) as a library,
+﻿// Load berat studio 0.20.0's own main-process code (appcore/main/index.js, copied from its app.asar) as a library,
 // without Electron and without starting the app: `electron` is a stand-in whose app never becomes ready (so no window, no
-// server, no updater starts), pointed at Toon Studio's own folders. The app's functions are then called directly - its
-// project setup, CLAUDE.md writer, build instructions, crew agents and Claude tools - so Toon Studio says and does exactly
+// server, no updater starts), pointed at berat studio's own folders. The app's functions are then called directly - its
+// project setup, CLAUDE.md writer, build instructions, crew agents and Claude tools - so berat studio says and does exactly
 // what the app does. Anything that needs a real Electron window (render pages) is done by pipeline/suite.mjs instead.
 'use strict';
 const fs = require('node:fs');
@@ -157,7 +157,7 @@ const noop = () => {};
 const deep = (name) => new Proxy(function () {}, {
   get: (_, k) => k === 'then' ? undefined : k === Symbol.toPrimitive ? () => `[stub ${name}]` : deep(`${name}.${String(k)}`),
   apply: () => undefined,
-  construct: () => { throw new Error(`Toon Studio has no Electron: ${name} needs the app (a window or a web view).`); }
+  construct: () => { throw new Error(`berat studio has no Electron: ${name} needs the app (a window or a web view).`); }
 });
 const app = {
   isPackaged: true,
@@ -165,7 +165,7 @@ const app = {
     : n === 'documents' ? path.join(require('node:os').homedir(), 'Documents') : n === 'logs' ? path.join(USERDATA, 'logs') : n === 'exe' ? process.execPath : USERDATA,
   getAppPath: () => path.join(ROOT, 'appcore'),
   getVersion: () => '0.20.0',
-  getName: () => 'Toon Studio',
+  getName: () => 'berat studio',
   whenReady: () => new Promise(noop),                         // never ready: the app's startup never runs
   isReady: () => false,
   on: noop, once: noop, off: noop, removeListener: noop, quit: noop, exit: noop, relaunch: noop, focus: noop,
@@ -206,7 +206,7 @@ const INIT = ['ensureWorkspace', 'openDb', 'ws', 'seedPresets', 'writeStyleFiles
 function load(names) {
   const file = path.join(__dirname, 'main', 'index.js');
   const all = [...new Set([...INIT, ...names])];
-  // the app's keys live encrypted in its own secrets file; Toon Studio reads them from environment variables instead
+  // the app's keys live encrypted in its own secrets file; berat studio reads them from environment variables instead
   // (never written to a file): ELEVENLABS_API_KEY, HIGGSFIELD_API_KEY, FAL_KEY, FISH_AUDIO_API_KEY
   const envKeys = `{ elevenlabs: 'ELEVENLABS_API_KEY', higgsfield: 'HIGGSFIELD_API_KEY', fal: 'FAL_KEY', fishaudio: 'FISH_AUDIO_API_KEY' }`;
   const patch = `\n{ const __gs = getSecret, __env = ${envKeys};

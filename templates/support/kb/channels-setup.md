@@ -27,7 +27,7 @@ Right-click a channel in the left list, or click its **…** button:
 ## Link it to its YouTube channel
 The YouTube handle field does not link anything. Linking happens on the **YouTube** page (Premium):
 1. Follow the YouTube channel or sign in with Google for it (see "YouTube page: connect your channels").
-2. At **Add it to which of your Toon Studio channels?** pick your channel, or **Make a channel from "…"** (uses its name, handle and picture).
+2. At **Add it to which of your berat studio channels?** pick your channel, or **Make a channel from "…"** (uses its name, handle and picture).
 3. Later you can change it in the **What's working** card on the YouTube page, or in **Settings > YouTube**.
 
 Once linked, its projects show their views on the Channels board, and lessons from its numbers can guide the scripts of its Faceless videos. A channel already linked to another YouTube channel shows **Linked** and cannot be picked.

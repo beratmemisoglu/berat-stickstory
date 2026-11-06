@@ -2,7 +2,7 @@
 keywords: claude not installed, claude code is not installed, install claude, sign in, sign in with claude, login, log in, can't log in, not signed in, claude not signed in, claude not found, claude missing, binary not found, connect claude, authorize, sign in again, logged out, sign out, api key, billed as api credit, send code, sign-in code, claude connected, connection, claude subscription
 platforms: both
 
-Toon Studio uses **your own Claude Code** with your own Claude plan, so it has to be installed on this computer and signed in.
+berat studio uses **your own Claude Code** with your own Claude plan, so it has to be installed on this computer and signed in.
 
 ## Install Claude Code
 
@@ -10,7 +10,7 @@ Toon Studio uses **your own Claude Code** with your own Claude plan, so it has t
 2. Run it:
    - On Windows, in PowerShell: `irm https://claude.ai/install.ps1 | iex`
    - On Mac, in Terminal: `curl -fsSL https://claude.ai/install.sh | bash`
-3. Restart Toon Studio.
+3. Restart berat studio.
 
 Already installed but the app can't find it? Find its path (On Windows, in PowerShell: `where.exe claude` / On Mac, in Terminal: `which claude`) and paste it into **Settings > System > Tool paths**, in the **claude** field.
 

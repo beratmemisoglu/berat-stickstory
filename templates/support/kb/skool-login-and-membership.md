@@ -2,7 +2,7 @@
 keywords: skool, log in, login, log in with skool, sign in, signin, can't log in, cant login, won't open, app won't start, locked, not a member, membership, member, join, rejoin, another account, switch account, wrong account, checking your skool membership, stuck checking, no internet, can't reach skool, antivirus, firewall, vpn, plan, standard, premium, upgrade
 platforms: both
 
-Toon Studio opens only for members of the **Toon Studio: AI Video Mastery** community on Skool. When the app starts, a small window checks your Skool membership first.
+berat studio opens only for members of the **berat studio: AI Video Mastery** community on Skool. When the app starts, a small window checks your Skool membership first.
 
 ## First start
 
@@ -23,8 +23,8 @@ The Skool account you logged in with is not in the community, so the app stays l
 ## "No internet connection" or "Can't reach Skool"
 
 - **No internet connection**: connect to the internet, then click **Try again**. The app also needs the internet for Claude to make videos.
-- **Can't reach Skool**: you are online, but something blocks skool.com, usually an antivirus (like Bitdefender, Norton or Avast), a firewall or a VPN. Allow Toon Studio there, turn the VPN off, then click **Try again**.
-- Still stuck? Click **Copy details for support** at the bottom of the window and paste it into a post in the Toon Studio community on Skool.
+- **Can't reach Skool**: you are online, but something blocks skool.com, usually an antivirus (like Bitdefender, Norton or Avast), a firewall or a VPN. Allow berat studio there, turn the VPN off, then click **Try again**.
+- Still stuck? Click **Copy details for support** at the bottom of the window and paste it into a post in the berat studio community on Skool.
 
 ## Your plan
 

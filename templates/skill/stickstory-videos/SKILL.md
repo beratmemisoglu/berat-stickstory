@@ -1,6 +1,6 @@
 ﻿---
 name: stickstory-videos
-description: Build Stick stories videos in Toon Studio with the stickstory engine - 16:9 "What if you..." story videos (8-12 minutes typical, also shorter; 9:16 too) told to "you", acted by black-silhouette stick people (round black heads, cream eye and mouth shapes, coloured clothes, coloured rim light) in flat-vector illustrated sets layered at real depths, letterboxed 2.0:1, with hand close-ups, HUD graphics, maps and diagrams, one picture per clause and hard cuts. Use for every build, edit and Ultraedit of a "Stick stories" project (style id stickstory).
+description: Build Stick stories videos in berat studio with the stickstory engine - 16:9 "What if you..." story videos (8-12 minutes typical, also shorter; 9:16 too) told to "you", acted by black-silhouette stick people (round black heads, cream eye and mouth shapes, coloured clothes, coloured rim light) in flat-vector illustrated sets layered at real depths, letterboxed 2.0:1, with hand close-ups, HUD graphics, maps and diagrams, one picture per clause and hard cuts. Use for every build, edit and Ultraedit of a "Stick stories" project (style id stickstory).
 ---
 
 # Stick stories (stickstory-videos)

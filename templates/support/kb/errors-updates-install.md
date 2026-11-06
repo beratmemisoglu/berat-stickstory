@@ -12,13 +12,13 @@ Fix: check the internet connection (and that a VPN, firewall or antivirus isn't 
 
 What it means: this copy was started from a folder or download, not from the installed app, so it can't update itself.
 
-Fix: On Windows: run the Toon Studio installer and open the app from the Start menu. On Mac: drag Toon Studio into Applications and open it from there.
+Fix: On Windows: run the berat studio installer and open the app from the Start menu. On Mac: drag berat studio into Applications and open it from there.
 
 ## macOS says the app can't be opened or was blocked
-> Toon Studio can't be opened ...
-> "Toon Studio" was blocked ...
+> berat studio can't be opened ...
+> "berat studio" was blocked ...
 
-Fix: click **Done** (not Move to Trash), open **System Settings > Privacy & Security**, scroll down to Security, click **Open Anyway** next to "Toon Studio was blocked", enter your Mac password and click **Open Anyway** again. On macOS 12 or older it's **System Preferences > Security & Privacy > General**. You only do this once per update; projects and settings are kept. With the Toon Studio Launcher installed, updates install without this step.
+Fix: click **Done** (not Move to Trash), open **System Settings > Privacy & Security**, scroll down to Security, click **Open Anyway** next to "berat studio was blocked", enter your Mac password and click **Open Anyway** again. On macOS 12 or older it's **System Preferences > Security & Privacy > General**. You only do this once per update; projects and settings are kept. With the berat studio Launcher installed, updates install without this step.
 
 ## Something is still running
 > Claude is still working. The update installs when you close the app, or restart once it is done.
@@ -28,21 +28,21 @@ Fix: click **Done** (not Move to Trash), open **System Settings > Privacy & Secu
 Fix: let it finish, then click **Restart now** in **Settings > General > Updates** (or just close the app: the update installs then). On Mac, click **Download**, open the file and drag the app into Applications (replace the old one).
 
 ## The app is missing its own file
-> ... Toon Studio is missing its own file ...
+> ... berat studio is missing its own file ...
 
-Fix: On Windows: run the installer again (projects and settings are kept); if it happens again, allow the Toon Studio folder in your antivirus. On Mac: download Toon Studio again and drag it into Applications.
+Fix: On Windows: run the installer again (projects and settings are kept); if it happens again, allow the berat studio folder in your antivirus. On Mac: download berat studio again and drag it into Applications.
 
-## Antivirus calls Toon Studio a virus or ransomware
+## Antivirus calls berat studio a virus or ransomware
 > Ransomware / Threat detected / app closes while it is working / engine files are missing
 
-Toon Studio writes many files into your Documents folder while it builds and exports a video, and it isn't signed by a big publisher, so some antivirus programs mistake it for ransomware and stop it. It doesn't collect or send your files.
+berat studio writes many files into your Documents folder while it builds and exports a video, and it isn't signed by a big publisher, so some antivirus programs mistake it for ransomware and stop it. It doesn't collect or send your files.
 
 Fix on Windows (Windows Security; other antivirus programs have the same two settings under similar names):
-1. **Virus & threat protection > Manage settings > Exclusions > Add or remove exclusions > Add an exclusion > Folder**: add `%LOCALAPPDATA%\Programs\toon-studio` (the app) and `Documents\Toon Studio` (your projects).
-2. **Virus & threat protection > Ransomware protection > Allow an app through Controlled folder access > Add an allowed app**: pick `Toon Studio.exe` from `%LOCALAPPDATA%\Programs\toon-studio`.
+1. **Virus & threat protection > Manage settings > Exclusions > Add or remove exclusions > Add an exclusion > Folder**: add `%LOCALAPPDATA%\Programs\toon-studio` (the app) and `Documents\berat studio` (your projects).
+2. **Virus & threat protection > Ransomware protection > Allow an app through Controlled folder access > Add an allowed app**: pick `berat studio.exe` from `%LOCALAPPDATA%\Programs\toon-studio`.
 3. If files were already quarantined (for example "engine files are missing"), run the installer again: projects and settings are kept.
 
-Fix on Mac: if a security app (not macOS itself) blocks it, add Toon Studio in Applications and the `Documents/Toon Studio` folder to that app's allowed list. The macOS "cannot be opened" message the first time is different: **System Settings > Privacy & Security > Open Anyway** (see Updates and versions, On Mac).
+Fix on Mac: if a security app (not macOS itself) blocks it, add berat studio in Applications and the `Documents/berat studio` folder to that app's allowed list. The macOS "cannot be opened" message the first time is different: **System Settings > Privacy & Security > Open Anyway** (see Updates and versions, On Mac).
 
 ## A tool is missing in System check
 > Not found: edits cannot be reverted

@@ -25,5 +25,5 @@ Google Flow makes your pictures with your own Flow credits (Nano Banana 2.1), in
 - "The Flow Chrome window was closed": click **Open Flow to sign in** again and keep the window open.
 - "Chrome started but did not answer": close any Flow Chrome window that is already open and try again.
 - "Flow did not show its prompt box": in the Flow window, make sure you are signed in and a project is open, then try again.
-- "The aspect ratio can't be set" during setup: Toon Studio switches Flow's Agent mode off by itself (it hides the aspect-ratio setting). If setup still says the aspect ratio can't be set, look at the bar under the prompt in the Flow window: if it only shows Agent, click Agent so it's grey, then **Test** again.
+- "The aspect ratio can't be set" during setup: berat studio switches Flow's Agent mode off by itself (it hides the aspect-ratio setting). If setup still says the aspect ratio can't be set, look at the bar under the prompt in the Flow window: if it only shows Agent, click Agent so it's grey, then **Test** again.
 - "Flow may have changed its page": Flow changed; pick Higgsfield or Fal.ai until it works again.

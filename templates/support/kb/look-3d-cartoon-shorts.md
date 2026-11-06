@@ -28,7 +28,7 @@ rests. Play runs from frames made in the background. Click a character or prop t
 
 ## Blender: installing it
 
-Toon Studio installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
+berat studio installs Blender itself the first time you need it (the official build from blender.org, about 400 MB,
 once): **Install Blender** in New project, or by itself when you create the project or open its preview.
 The preview starts when it's done.
 

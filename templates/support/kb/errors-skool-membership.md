@@ -3,27 +3,27 @@ keywords: skool, can't log in, cant log in, login, log in with skool, not a memb
 platforms: both
 
 ## Can't reach Skool
-> You're online, but Toon Studio can't reach skool.com.
+> You're online, but berat studio can't reach skool.com.
 
 What it means: something on this computer blocks the app from reaching Skool. Usually an antivirus (Bitdefender, Norton, Avast), a firewall or a VPN.
 
 Fix:
-1. Allow Toon Studio in your antivirus or firewall, or turn the VPN off.
+1. Allow berat studio in your antivirus or firewall, or turn the VPN off.
 2. Click **Try again**.
 3. Still stuck? Click **Copy details for support** and post it in the Skool community.
 
 ## No internet connection
-> Toon Studio checks your Skool membership when it starts, and Claude needs the internet to make videos.
+> berat studio checks your Skool membership when it starts, and Claude needs the internet to make videos.
 
 Fix: connect to the internet, then click **Try again**.
 
 ## Log in with Skool
-> Toon Studio comes with the Toon Studio: AI Video Mastery community. Log in with your Skool account to start.
+> berat studio comes with the berat studio: AI Video Mastery community. Log in with your Skool account to start.
 
 Fix: click **Log in with Skool** and sign in with the account you use in the community.
 
 ## Not a member
-> This Skool account isn't in Toon Studio: AI Video Mastery, so Toon Studio stays locked.
+> This Skool account isn't in berat studio: AI Video Mastery, so berat studio stays locked.
 
 What it means: your membership could not be confirmed for this Skool account.
 
