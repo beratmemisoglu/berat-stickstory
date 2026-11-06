@@ -1,0 +1,126 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.ground-cover",
+  "uid": "3fdfd327-5d7e-52dd-a2d2-e7a11f2535c6",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Ground cover: grass tufts, stones, face gravel, roots",
+  "summary": "Instanced detail that makes procedural ground read as real: curved grass-blade tufts, scattered stones, gravel pressed into a cut face, half-buried stones and branching roots seated on a relief.",
+  "tags": [
+    "grass",
+    "tufts",
+    "vegetation",
+    "stones",
+    "rocks",
+    "pebbles",
+    "gravel",
+    "roots",
+    "rubble",
+    "ground",
+    "cut face",
+    "instanced",
+    "scatter"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "194924079bdde089d21881463ef7ba694a273fe9",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 6290,
+      "sha1": "24042563c1e5b0174ee336478497d0d802d09adb"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 2119,
+      "sha1": "7b4320c50941bc276cb179258517f3d626a808d4"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "proofRequires": [
+    "module.any.relief",
+    "module.recon.canvas-materials"
+  ],
+  "exports": [
+    "grassTufts",
+    "stones",
+    "faceGravel",
+    "faceStones",
+    "roots"
+  ],
+  "usage": {
+    "import": "import { grassTufts, stones, faceGravel, roots } from '../library/module.recon.ground-cover/index.js';",
+    "example": "grassTufts(G, [[1.1, -1, .35, 3, .42], [2.4, -31, 2, 4, 1.9]]);   // [cx, cz, radius, clumps, height]\nconst R = reliefFaces(G); /* faces */ faceGravel(G, R.surf, { n: 450, x0: -10.5, x1: 11.5, y0: -5, y1: -.7, skip: (x, y) => x > -.6 && x < 1.2 });"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any exposed ground or cut earth; a face without gravel reads as stucco, a top without tufts as a slab.",
+    "avoid": "Placing far tufts at their 'physical' size on a steep AI-image top: the image scales props up with distance (~2x at 25 m).",
+    "gotchas": [
+      "Everything here is noContact (decoration).",
+      "faceGravel/faceStones/roots need surf(x, y) -> z of the face (module.any.relief reliefFaces().surf)."
+    ],
+    "params": {
+      "grassTufts spots": "[cx, cz, r, clumps, h]",
+      "stones o": "seed y color size",
+      "faceGravel o": "n x0 x1 y0 y1 skip color seed",
+      "roots starts": "[x, y, angle, length]"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "275-294",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "249-267",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.any.relief",
+    "solution.any.back-project-hidden-depth-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

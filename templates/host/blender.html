@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- The Blender engine's preview / render host (bhost.js): the project's frames come from the app's hidden Blender
+     (blender/frameserver.ts) through the local server. No request to another address, no frames, no forms, no plugins. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; object-src 'none'; frame-src 'none'; manifest-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<title>Toon Studio Blender preview</title><link rel="icon" href="data:,">
+<style>
+  html,body{margin:0;height:100%;background:#111;overflow:hidden;font:500 15px Inter,Arial,sans-serif}
+  #view{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+  #note{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#8b958f;text-align:center;max-width:80%;line-height:1.5;
+    pointer-events:none;text-shadow:0 1px 2px #000}
+  #note small{display:block;color:#6b7470;font-size:12px;margin-top:4px}
+  #badge{position:absolute;left:10px;top:10px;color:#cfd6d2;background:#0009;border-radius:6px;padding:3px 8px;font-size:12px;pointer-events:none;display:none}
+</style>
+</head>
+<body>
+<img id="view" alt="">
+<div id="note"></div>
+<div id="badge"></div>
+<script type="module" src="./bhost.js"></script>
+</body></html>

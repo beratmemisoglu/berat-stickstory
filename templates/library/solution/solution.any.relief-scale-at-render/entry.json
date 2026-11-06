@@ -1,0 +1,95 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.relief-scale-at-render",
+  "uid": "2ee2c106-8203-50ac-afa9-6d269034cbaf",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Judge relief at final render scale: too little is texture, too much is foam",
+  "summary": "±.2 m relief didn't read; stronger read as sponge. Final: noise at 2.4/6/14 per m, pits clamped, amp .5, small bumpScale, a raking key, less ambient. Judge at render scale.",
+  "tags": [
+    "relief",
+    "displacement",
+    "earth",
+    "rock",
+    "lighting",
+    "raking light",
+    "bump",
+    "noise scale",
+    "sponge",
+    "foam"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { relief } from '../library/module.any.relief/index.js';",
+    "example": "relief(w, h, .5, seed, soil)   // + a raking DirectionalLight nearly along the face"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any displaced surface meant to read as rough earth/rock.",
+    "avoid": "Big bumpScale on top of geometric relief (washes out the geometric normals).",
+    "gotchas": [
+      "Clamp pits: soil settles, it has no holes."
+    ],
+    "params": {
+      "noise": "2.4 / 6 / 14 per m",
+      "amp": ".5 front, .25 back",
+      "bumpScale": ".6"
+    }
+  },
+  "problem": {
+    "symptom": "Earth reads flat, or as a sponge with black voids.",
+    "cause": "Wrong relief amplitude/frequency for the render scale; bump noise overriding geometry; frontal light.",
+    "fix": "The tuned noise scales + clamp + small bump + raking key.",
+    "detect": "Critic words: 'flat', 'sponge', 'foam'; crops at final resolution.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#20",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "passesToTune": 5
+  },
+  "related": [
+    "module.any.relief"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

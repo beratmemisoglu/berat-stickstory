@@ -1,0 +1,118 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.procedural-material-ceiling",
+  "uid": "21998ba7-7774-5a44-ae15-3282f5e5e5d4",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Budget honestly: procedural materials plateau at 5-7/10 on photoreal AI references",
+  "summary": "Three matches stopped at the budget: 7, 7, 5/10 with 0 issues. Procedural canvas materials plateau at 5-7 on photoreal AI references; 8+ needs PBR/scanned textures and some GI.",
+  "tags": [
+    "process",
+    "budget",
+    "stop rule",
+    "materials",
+    "pbr",
+    "cc0",
+    "photoreal",
+    "critic score",
+    "plateau"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "stop rule: critic >= 8 with ISSUES 0, or the pass budget (~15-20 at 40-60 s), or a plateau (two critics within ±.5)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Planning or stopping a match loop; promising quality to a user.",
+    "avoid": "Spending passes 15-30 on procedural textures expecting 8/10.",
+    "gotchas": [
+      "Fetch CC0 PBR textures when the target is photoreal."
+    ],
+    "params": {
+      "passes": "~19 per shot",
+      "critics": "every ~3 passes"
+    }
+  },
+  "problem": {
+    "symptom": "Scores stall at 5-7 while passes keep going.",
+    "cause": "Canvas textures + direct lights can't reach photoreal soil, cloth, rust and GI bounce.",
+    "fix": "Stop at the budget or plateau; switch to scanned/PBR textures or accept the ceiling.",
+    "detect": "Two critics within ±.5.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "conclusion; loop 8",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "rec 8",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "rec 11",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "scores": {
+      "cafe": 7,
+      "dig": 7,
+      "tunnel": 5
+    }
+  },
+  "related": [
+    "solution.any.order-of-work",
+    "module.recon.canvas-materials"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,7 @@
+{
+  "clip": "Idle_Loop", "t": 0, "scale": 1.07,
+  "feet": { "L": { "target": [-4.32, 0.09, -0.97], "pole": [-4.9, 0.6, -1.0] }, "R": { "target": [-4.02, 0.09, -1.08], "pole": [-4.4, 0.6, -1.3] } },
+  "hands": { "R": { "target": [-4.0, 0.86, -1.25], "curl": 0.5 }, "L": { "target": "the bars, [-4.96, 1.32, -1.5]", "curl": 0.7, "palmNormal": [-1, 0, 0] } },
+  "placement": "figure at (-4.15, 0, -1.0), ry -1.85: .5 m deeper than the reference suggests and 1.07x so both his size and his reach to the bars land",
+  "code": "S.tick(() => { f.play('Idle_Loop', 0).apply(); footTo(f, 'L', V(-4.32, .09, -.97), V(-4.9, .6, -1)); footTo(f, 'R', V(-4.02, .09, -1.08), V(-4.4, .6, -1.3)); f.handTo('R', V(-4, .86, -1.25), { weight: 1, curl: .5 }); f.handTo('L', barPoint, { weight: 1, curl: .7, palmNormal: [-1, 0, 0] }); });"
+}

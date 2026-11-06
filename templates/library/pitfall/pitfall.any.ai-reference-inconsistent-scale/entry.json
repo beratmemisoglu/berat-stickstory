@@ -1,0 +1,102 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.ai-reference-inconsistent-scale",
+  "uid": "882428c4-a572-5ac7-aa7f-ba32f123e194",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "AI references are not one perspective: people drawn 1.2-1.9x, tops too steep",
+  "summary": "AI images draw people 1.2-1.9x the structure, tops too steep, furniture that can't fit. Weight the subject 2x, priors elsewhere, then fit each object's scale/position to its own pixels.",
+  "tags": [
+    "ai reference",
+    "perspective",
+    "scale",
+    "people",
+    "figures",
+    "solve",
+    "weighting",
+    "priors",
+    "shot match",
+    "inconsistent"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "dig: figures scaled 1.45-1.5 to their measured pixel heights; tunnel: standing man .5 m deeper and 1.07x so size AND reach land"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every AI-generated reference.",
+    "avoid": "One global scale for people and architecture; free per-figure head positions as landmarks (a lean absorbs any height).",
+    "gotchas": [
+      "Pin figure landmarks to one 3D point, or fit figure scale after the structure.",
+      "Record per-object corrections as data in the scene (POSE.*.s, notes)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "The solve wants absurd sizes (a 58-68 m deep top, a 2.4 m wall over a 3 m tunnel, a 9.7 m cell for a 1.8 m man); figures read 20-45% too small.",
+    "cause": "The image is not one perspective; people and the subject are drawn bigger than the structure.",
+    "fix": "Weight the subject region 2x, low weight + soft priors elsewhere; fit per-figure scale to its pixel height and position to its reach.",
+    "detect": "Residuals concentrate on people/tops; figure heights don't match.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#3, #4, #14",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#3",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.per-object-corrections",
+    "solution.any.back-project-hidden-depth-props",
+    "pitfall.any.furniture-fit-check"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

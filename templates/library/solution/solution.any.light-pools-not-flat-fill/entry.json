@@ -1,0 +1,91 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.light-pools-not-flat-fill",
+  "uid": "52e10b73-98d2-53e4-a514-f77bf3acfdc7",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Practical lamps should make pools, not a flat warm wash",
+  "summary": "Fill lights + warm lining + warm lamps made the tunnel flat orange. Weak fill, desaturated surfaces, lamps with decay 2 and ~3.5 m range, whiter bulbs: pools of light.",
+  "tags": [
+    "lighting",
+    "practicals",
+    "lamps",
+    "pools of light",
+    "decay",
+    "range",
+    "warm",
+    "tunnel",
+    "interior",
+    "contrast"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "new THREE.PointLight(0xffe2c0, 7, 3.5, 2)   // cageLamp() in module.recon.mine-props"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Interiors lit by bulbs, lanterns, pendants.",
+    "avoid": "Warm everything: warm surfaces x warm lights x warm fill = mono-orange.",
+    "gotchas": [],
+    "params": {
+      "decay": 2,
+      "range": "3-3.5 m"
+    }
+  },
+  "problem": {
+    "symptom": "A gallery/room is evenly orange, with no light pools or falloff.",
+    "cause": "Strong fills and warm-on-warm colours; long-range lights with low decay.",
+    "fix": "Weak fill, desaturated albedo, decay 2, short range, whiter bulb colour.",
+    "detect": "Region means nearly equal across lit and unlit regions.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#21",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.mine-props",
+    "solution.any.fill-and-bounce-for-dark-faces"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,182 @@
+﻿{
+  "schema": 1,
+  "id": "recipe.recon.cell-shaft-tunnel-section",
+  "uid": "b2b018d5-1939-58e7-a19d-143f2657de43",
+  "origin": "seed",
+  "kind": "recipe",
+  "title": "Sunlit prison cell, dug shaft and tunnel cross-section (4 glowing men)",
+  "summary": "Sunlit prison cell cut-away: bars, bunk, steel toilet; a shaft dug through the slab with a rope over the broken lip; a timbered tunnel with a bulb; 4 glowing men. Lens-shifted camera.",
+  "tags": [
+    "prison",
+    "cell",
+    "escape",
+    "shaft",
+    "tunnel",
+    "dig",
+    "cross section",
+    "cutaway",
+    "cut-away",
+    "side view",
+    "underground",
+    "earth",
+    "roots",
+    "rope",
+    "climbing",
+    "crawling",
+    "sunlit",
+    "glowing",
+    "true crime",
+    "shot match",
+    "lens shift"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "bc087fe8cfa65a640cb41807fc0b7d397f270320",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 414,
+      "sha1": "720374390cac739049716176abb47e771aecf75f"
+    },
+    {
+      "path": "scene.js",
+      "role": "entry",
+      "bytes": 20434,
+      "sha1": "3ba38f4f18f637379e3aa14e107924afc1573ed7"
+    },
+    {
+      "path": "settings.json",
+      "role": "data",
+      "bytes": 389,
+      "sha1": "ad2d9ec30cfeeb90ae727b9f61e5b6deb1ca58e5"
+    }
+  ],
+  "entry": "scene.js",
+  "proof": "proof.js",
+  "settings": "settings.json",
+  "compare": "compare.jpg",
+  "exports": [],
+  "usage": {
+    "import": "library_use({ id: 'recipe.recon.cell-shaft-tunnel-section', as: 'tunnel' })   // -> scenes/tunnel.js + the modules it requires",
+    "example": "Merge settings.json theme + post (cap .97, ca 0, contrast 1.25) into project.json settings. The lens shift is S.cam.setViewOffset(1920, 1080, 0, 206, 1920, 1080) after S.camera() (?offy= overrides)."
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.any.metric-box",
+    "module.any.relief",
+    "module.recon.glow-person",
+    "module.recon.rig-pose",
+    "module.recon.prison-props",
+    "module.any.cloth-drape",
+    "module.recon.ground-cover"
+  ],
+  "doc": {
+    "when": "Prison breaks, burglary tunnels, any 'how they dug out' explainer shown as a straight side section.",
+    "avoid": "Expecting photoreal earth: procedural canvas textures plateaued at 5/10 here (crumbly soil, cloth, rusty steel and GI are the gap).",
+    "gotchas": [
+      "The reference uses a shifted lens (verticals parallel, horizon high): look straight ahead and setViewOffset; a pitched camera leans the verticals ~70 px.",
+      "The lens was a dolly-zoom family until one real depth was assumed (cell depth 2.7 m).",
+      "The standing man is .5 m deeper and 1.07x so both his size and his reach to the bars land (AI scale is inconsistent).",
+      "Earth faces are reliefs backed by closed masses .3 m behind (clamped plateaus z-fight with backing at their depth).",
+      "Ceiling emissive + an upward floor spot fake the GI bounce; without them the ceiling underside is black."
+    ],
+    "params": {
+      "camera": {
+        "p": [
+          -0.05,
+          0.87,
+          10.07
+        ],
+        "l": [
+          -0.05,
+          0.87,
+          0
+        ],
+        "fov": 38.74,
+        "roll": 0,
+        "shift": [
+          0,
+          206
+        ]
+      },
+      "world": "cut plane z 0; cell x -4.86..4.88, ceiling 2.85, back wall z -2.68; slab 0..-.58; shaft x -.58..1.16; tunnel y -3.47..-2.02"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "1-375",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "project.json",
+      "lines": "settings",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "critic": 5,
+    "criticScores": [
+      4,
+      4,
+      5
+    ],
+    "renders": 19,
+    "passes": 19,
+    "critics": 3,
+    "layoutIssues": 0,
+    "solveRmsPx": 19,
+    "ceiling": "material (procedural textures)",
+    "verify": {
+      "issues": 0,
+      "psnrVsSource": 51.6
+    }
+  },
+  "related": [
+    "module.any.relief",
+    "module.recon.prison-props",
+    "pose.recon.rope-climber",
+    "pose.recon.prone-crawler",
+    "pose.recon.hole-kneeler",
+    "pose.recon.bars-reacher",
+    "solution.recon.lens-shift-view-offset",
+    "solution.any.procedural-material-ceiling"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

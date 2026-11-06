@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.roll-sign",
+  "uid": "1348062c-1e37-5cd4-abed-fc8b09bb26f6",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Engine roll has the opposite sign of a solver's image roll",
+  "summary": "S.camera roll is applied as cam.rotateZ(roll) after lookAt; a solver's roll rotates image coordinates. Engine roll = -(solver roll). Rendering +0.114 tilted the image 13 deg the wrong way.",
+  "tags": [
+    "camera",
+    "roll",
+    "sign",
+    "rotateZ",
+    "solver",
+    "tilt",
+    "shot match",
+    "S.camera"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "S.camera([{ t: 0, p, l, fov, roll: -solverRoll }])   // dig: solver .114 -> roll -.114"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any solved or measured camera with roll.",
+    "avoid": "Copying the solver's roll straight into S.camera.",
+    "gotchas": [
+      "Verify with a marker proof right after the solve."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "The render is tilted the wrong way (about twice the roll) against the reference.",
+    "cause": "The engine rotates the camera after lookAt; the solver rotates image coordinates: opposite signs.",
+    "fix": "Use roll = -(solver roll).",
+    "detect": "Marker proof: glowing spheres at 5 landmarks land off their predicted pixels in a rotating pattern.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#5",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.marker-proof",
+    "solution.any.solve-camera-trust-the-solve"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

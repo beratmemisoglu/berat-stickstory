@@ -1,0 +1,90 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.far-decal-zfight",
+  "uid": "9168ba8d-51a8-5303-a57a-56e65a8befe5",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "A low decal on a far surface z-fights (FLICKER 180 px)",
+  "summary": "A road decal 2 cm above ground 30 m from the camera, made transparent with feathered edges, z-fought (FLICKER). Lift far decals 4.5-8 cm and keep a polygonOffset; depth precision falls with distance.",
+  "tags": [
+    "decal",
+    "z-fight",
+    "flicker",
+    "polygonOffset",
+    "transparent",
+    "road",
+    "ground",
+    "depth precision",
+    "checker"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "road at y .045, polygonOffset: true, polygonOffsetFactor: -2; dirt patch at y .08, factor -3"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Decals (roads, patches, stains) on surfaces far from the camera.",
+    "avoid": "Millimetre lifts at distance; transparency without offset.",
+    "gotchas": [
+      "Transparent decals also sort: keep them few."
+    ],
+    "params": {
+      "lift": "4.5-8 cm at ~30 m"
+    }
+  },
+  "problem": {
+    "symptom": "FLICKER on a decal region; shimmer in motion.",
+    "cause": "Too little separation for the depth buffer's precision at that distance, plus transparency sorting.",
+    "fix": "Lift 4.5-8 cm, polygonOffset, mark noContact.",
+    "detect": "The flicker check (re-render with the near plane changed).",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#27",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.prison-wall-dig-diorama"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

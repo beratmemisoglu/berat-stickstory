@@ -1,0 +1,100 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.fill-and-bounce-for-dark-faces",
+  "uid": "1cbc0336-3637-5334-a5fa-e0ad9503127b",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Faces the key misses go black: add a camera-side fill and a fake bounce",
+  "summary": "Faces a grazing key misses and ceilings with no GI render black where references are mid-grey. Add a soft fill from the camera side and a cheap bounce (floor spot up, small emissive).",
+  "tags": [
+    "lighting",
+    "fill light",
+    "bounce",
+    "gi",
+    "global illumination",
+    "dark",
+    "black",
+    "ceiling",
+    "cut face",
+    "ambient"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "dig: DirectionalLight(0x8a90a0, .55) from (-2, 4, 20); tunnel: SpotLight(0xd8ccbc, 4) from the sunlit floor up to the ceiling + concCeil emissive 0x2a2724"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any face the reference shows textured but your key leaves dark; any interior lit by a strong sun patch.",
+    "avoid": "Brightening the grade (lifts everything) or raising the hemisphere (flattens).",
+    "gotchas": [
+      "Document emissive cheats in the code: they read as GI only at low values."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Black cut faces, ceiling undersides, shadowed walls where the reference is mid-grey.",
+    "cause": "Direct lights only (no GI); the key barely reaches faces at grazing angles; dark albedo.",
+    "fix": "A soft fill from the camera side, a bounce light from the lit floor, a slightly brighter albedo, a small documented emissive.",
+    "detect": "Region means: the face's mean far below the reference's.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#20",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#22",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.light-pools-not-flat-fill",
+    "solution.any.overlay-pack-per-pass"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

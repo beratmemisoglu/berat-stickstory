@@ -1,0 +1,84 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.foreshortened-bend",
+  "uid": "63cd81f9-778d-5580-a035-f57aea19ce4b",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "A bend away from the camera barely shows",
+  "summary": "A figure bending toward or away from the camera is foreshortened: the hinge reads as nothing. Turn the figure partly side-on (digger: ry 2.1 -> 1.85) so the bend is seen in profile.",
+  "tags": [
+    "pose",
+    "foreshortening",
+    "camera",
+    "bend",
+    "profile",
+    "readability",
+    "staging"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "digger ry 2.1 -> 1.85"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any action whose silhouette matters (bending, pointing, reaching).",
+    "avoid": "Staging the main action along the view axis.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A strongly bent figure still reads upright on screen.",
+    "cause": "The bend is along the camera's view direction (foreshortened).",
+    "fix": "Rotate the figure toward profile (15-30 deg) until the bend reads.",
+    "detect": "Compare silhouettes, not 3D values.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#15",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.hip-hinge-not-lean"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

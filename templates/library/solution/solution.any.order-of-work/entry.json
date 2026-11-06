@@ -1,0 +1,98 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.order-of-work",
+  "uid": "4193a207-3e52-50e1-ae59-26471e021432",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Order of work: camera, geometry, poses, checker-clean, materials, light and grade",
+  "summary": "Layout converges in 1-2 measured passes, poses ~5, light and grade ~10; scores sit at ~6 until poses are right. Order: camera, geometry, poses, checker-clean, materials, light, grade.",
+  "tags": [
+    "process",
+    "order",
+    "shot match",
+    "loop",
+    "passes",
+    "poses",
+    "materials",
+    "lighting",
+    "grade",
+    "budget"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "dig: passes 1-8 geometry + poses (critic 6), 9-19 materials and light (critic 7)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Planning any multi-pass scene build against a reference.",
+    "avoid": "Polishing materials while poses or geometry are off.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Critic scores stall at ~6 despite material work.",
+    "cause": "Poses/geometry errors dominate the read; materials can't lift it.",
+    "fix": "Camera -> geometry (markers) -> poses (probe) -> checker clean -> materials -> lighting and grade.",
+    "detect": "Two critics in a row flag poses.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#34, rec 8",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "loop 7",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.critic-protocol",
+    "solution.any.procedural-material-ceiling"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

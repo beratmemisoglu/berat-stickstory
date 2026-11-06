@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.furniture-fit-check",
+  "uid": "ba789807-1515-578e-a42d-ad0e5aba3817",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Reference furniture may not physically fit: check corners geometrically",
+  "summary": "The café reference's booth can't physically fit between table and parapet; the checker doesn't test furniture against walls. A corner-in-volume check caught it; the room was widened .4 m.",
+  "tags": [
+    "furniture",
+    "fit",
+    "walls",
+    "intersection",
+    "geometry check",
+    "ai reference",
+    "booth",
+    "room"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "for each furniture box corner: assert it lies inside the room's interior bounds (and outside other solids)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Tight interiors matched to an AI reference.",
+    "avoid": "Shrinking people to fit; matching the impossible layout.",
+    "gotchas": [
+      "Prefer widening the room slightly over intersecting geometry."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Furniture pokes through walls or parapets while the checker is clean.",
+    "cause": "The reference layout is physically impossible; the checker tests bodies and floating props, not furniture-vs-wall.",
+    "fix": "Explicit corner checks; adjust the room (+.4 m) so nothing intersects.",
+    "detect": "A geometric corner/volume check per furniture group.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "café-specific findings; loop 4",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.ai-reference-inconsistent-scale",
+    "recipe.recon.night-cafe-cutaway"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

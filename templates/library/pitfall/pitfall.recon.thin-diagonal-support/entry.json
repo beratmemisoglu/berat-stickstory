@@ -1,0 +1,99 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.thin-diagonal-support",
+  "uid": "1288523b-0c67-5248-a2a7-1806c58ebe68",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Thin diagonal supports don't count: a cart on rails reads as floating",
+  "summary": "A cart on rails 'floated 13 cm': flatThin() treats a diagonal rail's low AABB as a decal and the 8%-inset feet rays miss 5 cm rails. Rails 10 cm tall, 12 cm wide, 5 cm wheels.",
+  "tags": [
+    "checker",
+    "floating",
+    "contact",
+    "rails",
+    "cart",
+    "support",
+    "flatThin",
+    "decal",
+    "feet rays"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "railTrack() in module.recon.mine-props is sized for this (10 x 12 cm rails); debug with ?cdebug=name (__CONTACT_DEBUG shows the gaps per foot)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Anything resting on narrow or diagonal supports (rails, beams, pipes).",
+    "avoid": "Flat thin supports under wheels/feet.",
+    "gotchas": [
+      "Engine fix wanted: oriented boxes, rays from the true contact points."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "FLOATING ~13 cm for an object that visibly rests on rails/beams.",
+    "cause": "(a) flatThin() uses the AABB, so a diagonal rail is treated as a decal and ignored as support; (b) the feet rays are inset 8% toward the centre and miss narrow supports.",
+    "fix": "Make supports taller than 'flat' (10 cm) and wider (12 cm); narrow the wheels.",
+    "detect": "CDEBUG on the object: per-foot ray gaps.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#18",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "checker blind spots",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.mine-props",
+    "pitfall.recon.coplanar-aabb-rotated"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

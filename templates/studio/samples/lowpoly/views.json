@@ -1,0 +1,11 @@
+{
+ "narration": { "timeline": "timeline.json", "script": "script.txt" },
+ "views": {
+  "sample": { "scenes": ["sample"], "end": 20 },
+  "hero": { "scenes": ["hero"], "end": 6 },
+  "kit": { "scenes": ["kit"], "end": 20 },
+  "mustfail_floating": { "scenes": ["mustfail_floating"], "end": 3, "expect": "floating" },
+  "mustfail_offframe": { "scenes": ["mustfail_offframe"], "end": 3, "expect": "offframe" },
+  "mustfail_covered": { "scenes": ["mustfail_covered"], "end": 3, "expect": "covered" }
+ }
+}

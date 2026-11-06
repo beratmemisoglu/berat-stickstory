@@ -1,0 +1,7 @@
+{
+  "clip": "Fixing_Kneeling", "t": 1, "groupY": 0.02,
+  "turns": [["spine_01", [0, 0, 1], 0.2], ["spine_02", [0, 0, 1], 0.2], ["neck_01", [0, 0, 1], -0.15]],
+  "hands": { "L": { "target": "floor, .55 m ahead-left", "curl": 0.2, "palmNormal": [0, -1, 0] }, "R": { "target": "floor, .45 m ahead-right", "curl": 0.2, "palmNormal": [0, -1, 0] } },
+  "placement": "figure at (2.05, .02, -1.2), ry -PI/2, hands at (1.5, .01, -.95) and (1.62, .01, -1.4): leaning over a hole in the floor",
+  "code": "S.tick(() => { f.group.position.y = .02; f.play('Fixing_Kneeling', 1).apply(); turn(f, 'spine_01', Z, .2); turn(f, 'spine_02', Z, .2); turn(f, 'neck_01', Z, -.15); f.handTo('L', V(1.5, .01, -.95), { weight: 1, curl: .2, palmNormal: [0, -1, 0] }); f.handTo('R', V(1.62, .01, -1.4), { weight: 1, curl: .2, palmNormal: [0, -1, 0] }); });"
+}

@@ -1,0 +1,8 @@
+{
+  "clip": "Walk_Loop", "t": 0,
+  "build": { "tilt": 0.45, "tiltBack": 0.25, "scale": 1.5 },
+  "tick": { "hinge": 0.22, "lean": 0.12, "head": -0.2 },
+  "hands": { "R": { "target": "cart rear rim, +0.3 m across", "curl": 0.7, "weight": 1 }, "L": { "target": "cart rear rim, -0.3 m across", "curl": 0.7, "weight": 1 } },
+  "facing": "along the track (ry = PI/2 - atan(track slope))",
+  "code": "tilt(f, .45);  /* tick: */ f.act('Walk_Loop', { t: 0 }); hinge(f, .22); lean(f, .12, -.2); f.handTo('R', rimR, { weight: 1, curl: .7 }); f.handTo('L', rimL, { weight: 1, curl: .7 });"
+}

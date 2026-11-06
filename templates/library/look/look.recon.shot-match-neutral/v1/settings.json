@@ -1,0 +1,6 @@
+{
+  "theme": "investigation",
+  "post": { "grain": 0.03, "vignette": 0.38, "ao": true, "contrast": 1.12, "desat": 0.08, "cap": 0.97, "ca": 0 },
+  "graphicsSuggested": { "warmth": 0.05, "saturation": 0.95, "tint": 0 },
+  "scene": { "S.recon": false, "S.post.dof": null, "S.visibility": "false for a deliberate low-key still, else the gate's defaults" }
+}

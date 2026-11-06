@@ -1,0 +1,154 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.rig-pose",
+  "uid": "994f90a3-0673-5a0f-aebf-ddaadeaf750c",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Rig pose helpers (lean, hip hinge, whole-body tilt, foot IK, bone turns)",
+  "summary": "Post-clip pose tools for recon figures: lean (spine), hinge (bend at the hips), tilt (whole-body diagonal), footTo (2-bone leg IK, returns the miss), turn/aim, bodyOf, a once-only bone log.",
+  "tags": [
+    "pose",
+    "rig",
+    "ik",
+    "foot ik",
+    "leg ik",
+    "hinge",
+    "lean",
+    "tilt",
+    "bend",
+    "spine",
+    "bones",
+    "skeleton",
+    "digging",
+    "pushing",
+    "kneeling",
+    "crawling",
+    "climbing",
+    "pose probe",
+    "contact sheet"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "05c46150dcc40f5c5c104a2fdc60caee70295cb1",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 6238,
+      "sha1": "4f71d2f99a4f225ee5522c40c4da68931d323a29"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 2534,
+      "sha1": "bb574319c8813b052f4e96c1cb06007d1816634f"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "boneOf",
+    "bodyOf",
+    "rotW",
+    "aim",
+    "turn",
+    "lean",
+    "hinge",
+    "tilt",
+    "footTo",
+    "boneLog",
+    "lowestPoint"
+  ],
+  "usage": {
+    "import": "import { hinge, lean, tilt, footTo, turn, bodyOf } from '../library/module.recon.rig-pose/index.js';",
+    "example": "tilt(pusher, .45);   // once, after placing\nS.tick(() => { dig.act('Walk_Loop', { t: .75 }); hinge(dig, .85); lean(dig, .3, 0);   // clip first, then the helpers, then hands\n  const miss = footTo(climber, 'R', V(.56, -2.16, -.42), V(.6, -1.2, -.3)); dig.handTo('R', grip, { weight: 1 }); });\nS.collide = { bodies: () => [bodyOf(dig)], solids };"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any reference pose no clip matches: a bend at the hips (hinge, not lean), a straight heel-to-head push (tilt), a foot on a rope/rung/step (footTo), twists of a prone or kneeling body (turn).",
+    "avoid": "Calling them before the clip in a tick (the clip overwrites them). Using lean() alone for a bow: it hunches.",
+    "gotchas": [
+      "Order per tick: f.act/play(...).apply() -> hinge/lean/turn/footTo -> f.handTo().",
+      "footTo straightens the leg silently when the target is out of reach: check its return value (miss > .03 m = move the target or the body).",
+      "tilt() changes the group transform: call it once in build, not per tick.",
+      "A bend away from the camera barely shows (foreshortening): turn the figure partly side-on.",
+      "Probe first: the proof scene with ?probe=ClipA,ClipB&pry=1.57&pstep=.3 renders each clip at 6 times from the shot's side in one render.",
+      "boneLog only prints with ?bones=1 and only once (tick loggers flood CHECK runs)."
+    ],
+    "params": {
+      "lean(f, a, head)": "radians split over spine_01..03 + neck",
+      "hinge(f, a)": "pelvis forward a, thighs back a",
+      "tilt(f, a, back=.25)": "whole body, pivot back*a behind the origin",
+      "footTo(f, side, target, pole)": "returns miss metres"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "104-117, 296-305, 335-337",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "127-142, 366",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "165-171",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "passesToPoses": "about 5 per shot"
+  },
+  "related": [
+    "solution.any.hip-hinge-not-lean",
+    "solution.any.whole-body-tilt",
+    "solution.any.foot-ik-for-static-poses",
+    "pitfall.any.ik-silent-full-reach",
+    "solution.any.pose-probe-contact-sheet",
+    "pitfall.any.clip-root-offsets"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

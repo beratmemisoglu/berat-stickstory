@@ -1,0 +1,98 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.floor-map-reader",
+  "uid": "2ad31257-bfac-594d-aad7-f43980f54a9b",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Sitting on the floor reading a map (legs out, head down)",
+  "summary": "KK_Sit_Floor_Idle_Loop t .3 + hinge .15 + lean .25 + head .45, a map plane held open over the lap by both hands (IK), angled between the camera and up so it reads.",
+  "tags": [
+    "pose",
+    "sitting",
+    "floor",
+    "reading",
+    "map",
+    "plan",
+    "document",
+    "paper",
+    "legs out",
+    "looking down"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "0797885611b959445fe68449da467dc5ec9eef2d",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 860,
+      "sha1": "a0ed208f209dfd9c712f7e11538b3a6931e6d175"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { hinge, lean } from '../library/module.recon.rig-pose/index.js';",
+    "example": "see v1/pose.json code"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "Someone sitting on the ground studying a map, a plan, a letter, a phone.",
+    "avoid": "Turning the paper fully to the camera (reads as a card glued in the air).",
+    "gotchas": [
+      "Move the prop FIRST in the tick, then handTo."
+    ],
+    "params": {
+      "clip": "KK_Sit_Floor_Idle_Loop",
+      "t": 0.3,
+      "hinge": 0.15,
+      "lean": 0.25,
+      "head": 0.45
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "29, 348, 355-359",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose",
+    "recipe.recon.prison-wall-dig-diorama"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

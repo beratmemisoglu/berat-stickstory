@@ -1,0 +1,184 @@
+﻿{
+  "schema": 1,
+  "id": "recipe.recon.prison-wall-dig-diorama",
+  "uid": "a642f458-62bc-56a0-ab23-2f17dfdf263c",
+  "origin": "seed",
+  "kind": "recipe",
+  "title": "Prison-wall escape tunnel diorama at night (4 glowing diggers)",
+  "summary": "Night cut-away of earth under a prison wall: timbered gallery, rails, mine cart, cage lamps, 4 glowing men (pusher, map reader, 2 diggers), razor-wire wall, guard tower. Rolled solved camera.",
+  "tags": [
+    "prison",
+    "escape",
+    "tunnel",
+    "dig",
+    "digging",
+    "cutaway",
+    "cut-away",
+    "diorama",
+    "cross section",
+    "underground",
+    "mine cart",
+    "rails",
+    "guard tower",
+    "razor wire",
+    "night",
+    "moon",
+    "glowing",
+    "true crime",
+    "shot match"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 15,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "d54c5de6fd6d80d7ff38edad3efed4eaf2819458",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 406,
+      "sha1": "d9062bcf66d9166bd2c560d3c6f2595b90ab1cdd"
+    },
+    {
+      "path": "scene.js",
+      "role": "entry",
+      "bytes": 19395,
+      "sha1": "abf611d4fd7eb78af06e7bc09236ac8a53fc9550"
+    },
+    {
+      "path": "settings.json",
+      "role": "data",
+      "bytes": 393,
+      "sha1": "94ac25f22a5d3c62079cab2f69ee3285adc4cc80"
+    }
+  ],
+  "entry": "scene.js",
+  "proof": "proof.js",
+  "settings": "settings.json",
+  "compare": "compare.jpg",
+  "exports": [],
+  "usage": {
+    "import": "library_use({ id: 'recipe.recon.prison-wall-dig-diorama', as: 'dig' })   // -> scenes/dig.js + the modules it requires",
+    "example": "Merge settings.json theme + post (cap .95, ca 0) into project.json settings. Edit CONFIG (CAM, block/gallery dimensions, POSE per figure). ?marks=1 draws landmark spheres to prove the camera."
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.recon.glow-person",
+    "module.recon.rig-pose",
+    "module.recon.mine-props",
+    "module.recon.prison-props",
+    "module.recon.ground-cover",
+    "module.any.frustum",
+    "module.any.metric-box",
+    "module.any.cloth-drape",
+    "module.any.relief"
+  ],
+  "doc": {
+    "when": "Escape tunnels, smuggling tunnels, mines and excavations under a wall/border/building shown as a diorama block.",
+    "avoid": "Daylight without relighting (moon + front fill + warm practicals).",
+    "gotchas": [
+      "ENGINE roll is -.114 = -(solver roll): the engine rotates after lookAt, the solver rotates image coordinates.",
+      "Figures are scaled 1.45-1.5: the AI reference draws people ~1.5x the structure. Scale per figure to its measured pixel height.",
+      "The track drifts toward the cut (railZ) as in the reference; rails are one mesh 10 cm tall so the cart counts as supported.",
+      "The tower leans -.09 about its ground edge to look plumb on screen under the rolled camera.",
+      "Hose, lamps and cables were back-projected onto the back plane (their 'physical' heights hid them behind the deck)."
+    ],
+    "params": {
+      "camera": {
+        "p": [
+          -3.293,
+          3.008,
+          14.167
+        ],
+        "l": [
+          6.759,
+          -2.386,
+          -2.454
+        ],
+        "fov": 36.86,
+        "roll": -0.114,
+        "shift": [
+          0,
+          0
+        ]
+      },
+      "world": "cut face z 0, ground top y 0, block x 0..22.3, gallery floor -4.34, deck underside -1.38"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "1-370",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "project.json",
+      "lines": "settings",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "critic": 7,
+    "criticScores": [
+      6,
+      6,
+      7,
+      7
+    ],
+    "renders": 25,
+    "passes": 19,
+    "probeSheets": 4,
+    "markerRenders": 2,
+    "critics": 4,
+    "layoutIssues": 0,
+    "solveRmsPx": 16,
+    "verify": {
+      "issues": 0,
+      "psnrVsSource": 36.6,
+      "changedPx": "0.5% (bare body instead of the user's mannequin, cart tub now textured)"
+    }
+  },
+  "related": [
+    "module.recon.mine-props",
+    "module.recon.prison-props",
+    "pose.recon.cart-pusher",
+    "pose.recon.shovel-digger",
+    "pose.recon.floor-map-reader",
+    "pitfall.recon.roll-sign",
+    "look.recon.shot-match-neutral"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

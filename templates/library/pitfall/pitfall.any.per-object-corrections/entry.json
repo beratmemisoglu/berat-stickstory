@@ -1,0 +1,87 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.per-object-corrections",
+  "uid": "518d3b4b-2001-5d86-a830-d533a191af36",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Inconsistent references need per-object corrections (the plumb tower)",
+  "summary": "The reference drew the guard tower plumb on screen though the camera needs roll. Tip that one object (~5 deg) to match the picture, pivoting on the edge that stays on the ground.",
+  "tags": [
+    "ai reference",
+    "roll",
+    "tower",
+    "plumb",
+    "correction",
+    "tilt",
+    "shot match"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "guardTower(S, G, { pos, ry: .25, scale: .9, lean: -.09 })   // module.recon.prison-props"
+  },
+  "requires": [],
+  "doc": {
+    "when": "One object disagrees with the global camera that fits everything else.",
+    "avoid": "Re-solving the camera for one object.",
+    "gotchas": [
+      "Pivot the tilt on the base edge that stays on the surface (an embedded base reads as floating)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A tall object leans more in the render than in the reference.",
+    "cause": "The image is drawn with that object plumb on screen, ignoring the roll its camera needs elsewhere.",
+    "fix": "Tip the object to match the picture; record it as a per-object correction.",
+    "detect": "Edge overlay: the object's verticals cross the reference's at an angle while the rest aligns.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#28",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.sunk-prop-reads-floating",
+    "module.recon.prison-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

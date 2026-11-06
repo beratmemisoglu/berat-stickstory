@@ -1,0 +1,85 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.lens-needs-known-depth",
+  "uid": "d7a2d0de-ac4a-5042-a1e4-69cb119464c4",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "A near-frontal solve can't fix the lens without one known depth",
+  "summary": "With a near-frontal box and a human scale, fov and camera distance trade off (dolly-zoom family) and the solve drifts. Add one real depth prior: room depth, bed or car length.",
+  "tags": [
+    "camera",
+    "solve",
+    "fov",
+    "focal length",
+    "dolly zoom",
+    "depth",
+    "prior",
+    "shot match"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "tunnel: prior cell depth 2.7 m (weight 400) -> fov 38.7, camera z 10.07"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Frontal or nearly frontal references (cut-aways, side sections).",
+    "avoid": "Letting fov float freely.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "The solved fov and camera distance wander between runs while the residual stays the same.",
+    "cause": "Perspective only fixes depth/distance as a ratio when the landmarks are nearly coplanar.",
+    "fix": "Add a prior on one real depth (weight it strongly).",
+    "detect": "Solver f and distance move together with no change in rms.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#2",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.solve-camera-trust-the-solve"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

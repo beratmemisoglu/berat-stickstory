@@ -1,0 +1,93 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.hip-hinge-not-lean",
+  "uid": "8536bfff-e139-5888-a0a9-c3a5512a7382",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Bend at the hips with a hinge, not a spine lean",
+  "summary": "lean() rotates only the spine bones: a hunched curve. hinge(f, a) tips the pelvis forward by a and turns both thighs back by a (the legs stay put), then a little lean on top: a real bow at the hips.",
+  "tags": [
+    "pose",
+    "hinge",
+    "hip",
+    "bend",
+    "bow",
+    "lean",
+    "spine",
+    "digging",
+    "pushing",
+    "skeleton"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { hinge, lean } from '../library/module.recon.rig-pose/index.js';",
+    "example": "f.act('Walk_Loop', { t: .75 }); hinge(f, .85); lean(f, .3, 0);"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Diggers, pushers, people picking something up or looking into a hole.",
+    "avoid": "lean() alone for anything past ~.3 rad.",
+    "gotchas": [
+      "Works on any skeleton with a pelvis and thigh bones."
+    ],
+    "params": {
+      "hinge": ".15-1.0 rad",
+      "lean on top": ".1-.35"
+    }
+  },
+  "problem": {
+    "symptom": "A 'bent over' figure looks hunched, with the hips upright.",
+    "cause": "Spine-only rotation curves the back; the reference bends at the hip joint.",
+    "fix": "hinge(f, a) first (pelvis forward, thighs back), then a small lean.",
+    "detect": "Side view: the pelvis stays vertical while the back curves.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#12",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose",
+    "pose.recon.shovel-digger"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

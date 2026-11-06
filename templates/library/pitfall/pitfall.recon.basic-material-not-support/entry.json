@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.basic-material-not-support",
+  "uid": "0a6f8933-9c4c-5d05-ae69-9555856331f7",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Glow parts with MeshBasicMaterial don't count as support (lamp tops 'float')",
+  "summary": "The contact check skips all-MeshBasicMaterial meshes (effects), so a lantern top on a basic glow 'floats 16 cm'. Use an emissive MeshStandardMaterial for load-bearing glowing parts.",
+  "tags": [
+    "checker",
+    "floating",
+    "contact",
+    "MeshBasicMaterial",
+    "glow",
+    "emissive",
+    "lantern",
+    "lamp",
+    "bulb"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "new THREE.MeshStandardMaterial({ color: 0x000000, emissive: 0xffd090, emissiveIntensity: 1, toneMapped: false })   // looks like a basic glow, counts as solid"
+  },
+  "requires": [],
+  "doc": {
+    "when": "A glowing part carries something (lantern glass under a cap, a lit panel holding a frame).",
+    "avoid": "MeshBasicMaterial for load-bearing glowing parts.",
+    "gotchas": [
+      "Found while proving module.recon.mine-props (lib/contact.js line 46)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "FLOATING for a lamp/lantern part that sits on a glowing piece.",
+    "cause": "lib/contact.js ignores meshes whose materials are all MeshBasicMaterial.",
+    "fix": "Emissive MeshStandardMaterial (color black, toneMapped false) for the glowing support.",
+    "detect": "The floating part's support is a glow mesh.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "templates/library/module/module.recon.mine-props (proof run)",
+      "lines": "floorLantern",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.mine-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

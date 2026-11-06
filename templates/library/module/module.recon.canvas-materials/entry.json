@@ -1,0 +1,182 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.canvas-materials",
+  "uid": "7669399a-196f-5e05-a546-26c26dca5624",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Canvas materials sized in metres (brick, concrete, wood, leather, soil, rock)",
+  "summary": "Procedural colour+bump canvas textures with a real tile size, tiled()/perMetre() materials and 20 critic-tuned presets: sooty brick, board-formed concrete, planks, leather, soils, rock, steel.",
+  "tags": [
+    "material",
+    "texture",
+    "canvas",
+    "procedural",
+    "bump",
+    "brick",
+    "soot",
+    "concrete",
+    "board-formed",
+    "planks",
+    "wood",
+    "grain",
+    "leather",
+    "tufted",
+    "soil",
+    "earth",
+    "rock",
+    "gravel",
+    "dirt",
+    "road",
+    "rust",
+    "rivets",
+    "chalkboard",
+    "metric uv",
+    "fromRef",
+    "linear colour"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "3da9a0ba6a7f1f86616a6eeb3aac3bd81e7c4c2d",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 33654,
+      "sha1": "e3a0908fbd0a8c52eed4f59bb8ebbe0464570897"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 2237,
+      "sha1": "ed7b965367e4504c364560eb7b240897a7df3466"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "proofRequires": [
+    "module.any.metric-box"
+  ],
+  "exports": [
+    "canvasTex",
+    "texSet",
+    "tiled",
+    "perMetre",
+    "fromRef",
+    "brick",
+    "coping",
+    "castConcrete",
+    "boardConcrete",
+    "panelConcrete",
+    "planks",
+    "furnitureWood",
+    "weatheredWood",
+    "liningBoards",
+    "deckBoards",
+    "leather",
+    "earthClods",
+    "rootSoil",
+    "strataSoil",
+    "looseSoil",
+    "rockFace",
+    "frostTop",
+    "gravelRoad",
+    "dirtFloor",
+    "rivetedSteel",
+    "chalkMenu",
+    "blobDecal",
+    "alphaRamp"
+  ],
+  "usage": {
+    "import": "import { tiled, perMetre, brick, boardConcrete, weatheredWood, fromRef } from '../library/module.recon.canvas-materials/index.js';",
+    "example": "part(box(6, 2.95, .3), tiled(brick({ soot: .5, grime: .55, dark: .78, grey: .38 }), 6, 2.95, { rough: .9 }), at, null, G, 'wall');   // repeat = face m / 2x3 m tile\npart(metricBox(.13, 3, .12), perMetre(weatheredWood(), { color: 0x9a8a7a, rot: Math.PI / 2 }), at, null, G, 'post');   // grain along the post\nconst orange = fromRef('#e65f14');   // sRGB sample -> linear"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any recon surface that should read as a real material at a real scale: walls, slabs, floors, furniture, cut earth. Presets carry their canvas size in metres (set.tile).",
+    "avoid": "One texture tile stretched over a big face (plain BoxGeometry + repeat 1): it reads as planks or streaks. Strong horizontal strata on soil (reads as wood).",
+    "gotchas": [
+      "tiled(set, w, h) is for 0..1 UV faces (repeat = w / tile); perMetre(set) is for metric-UV geometry (module.any.metric-box, module.any.relief).",
+      "Grain runs along u: pass rot: Math.PI / 2 on vertical members.",
+      "Textures are drawn once per parameter set and cached; materials clone them, so create materials after the engine is up (inside build or a lazy getter).",
+      "Colours given to materials are linear; convert reference samples with fromRef().",
+      "Procedural canvas textures plateau at 5-7/10 against photoreal AI references; 8+ needs scanned/PBR textures."
+    ],
+    "params": {
+      "brick": "seed, dark, grey, mortar, soot, grime, blots, streaks (canvas 2 x 3 m)",
+      "castConcrete(base, { drips })": "2 m",
+      "boardConcrete({ base, seams, ties })": "2 m",
+      "leather(channels)": ".6 m, use explicit repeat on cushions",
+      "tiled o": "color rough metal bump unit repeat ox oy rot physical x"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "29-149",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "32-88, 210-213",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "28-78",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "presets": 20,
+    "passesToTuneEach": "3-5"
+  },
+  "related": [
+    "module.any.metric-box",
+    "pitfall.any.box-uv-stretch",
+    "pitfall.any.wood-grain-direction",
+    "pitfall.any.strata-stripes-read-as-planks",
+    "pitfall.any.srgb-vs-linear-colours",
+    "solution.any.procedural-material-ceiling"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

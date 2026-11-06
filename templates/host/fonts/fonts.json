@@ -1,0 +1,630 @@
+[
+ {
+  "family": "Orbitron",
+  "weight": "500 900",
+  "style": "normal",
+  "file": "orbitron-500-normal.woff2",
+  "range": "U+0160-0161, U+0178, U+017D-017E"
+ },
+ {
+  "family": "Orbitron",
+  "weight": "500 900",
+  "style": "normal",
+  "file": "orbitron-700-punct.woff2",
+  "range": "U+00AA, U+00AB, U+00B7, U+00BA, U+00BB, U+201A, U+201E, U+2039, U+203A"
+ },
+ {
+  "family": "Share Tech Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "share-tech-mono-400-normal.woff2",
+  "range": "U+0141-0142, U+0160-0161, U+0178, U+017D-017E, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "normal",
+  "file": "playfair-display-400-normal.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B4, U+00B6-017F, U+0218-021B, U+2013, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "normal",
+  "file": "playfair-display-700-normal.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B4, U+00B6-017F, U+0218-021B, U+2013, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "900",
+  "style": "normal",
+  "file": "playfair-display-900-normal.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B4, U+00B6-017F, U+0218-021B, U+2013, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "italic",
+  "file": "playfair-display-400-italic.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B4, U+00B6-017F, U+0218-021B, U+2013, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "italic",
+  "file": "playfair-display-700-italic.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B4, U+00B6-017F, U+0218-021B, U+2013, U+2018-201A, U+201C-201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "normal",
+  "file": "eb-garamond-400-normal.woff2",
+  "range": "U+00A0-00AC, U+00AE-017F, U+0218-021B, U+2014, U+2018, U+201A, U+201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "italic",
+  "file": "eb-garamond-400-italic.woff2",
+  "range": "U+00A0-00AC, U+00AE-00B1, U+00B4-00B8, U+00BA-017F, U+0218-021B, U+2014, U+2018, U+201A, U+201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "700",
+  "style": "normal",
+  "file": "eb-garamond-700-normal.woff2",
+  "range": "U+00A0-00AC, U+00AE-017F, U+0218-021B, U+2014, U+2018, U+201A, U+201E, U+2020-2022, U+2026, U+2030, U+2039-203A, U+20AC, U+2122"
+ },
+ {
+  "family": "League Gothic",
+  "weight": "400",
+  "style": "normal",
+  "file": "league-gothic-400-normal.woff2",
+  "range": "U+0100-0101, U+0103-0107, U+010A-0113, U+0116-011B, U+011E-0123, U+0126-012B, U+012E-0130, U+0132-0133, U+0136-0137, U+0139-013F, U+0141-0148, U+014A-014D, U+0150-0151, U+0154-015B, U+015E-016B, U+016E-017F, U+0218-021B"
+ },
+ {
+  "family": "Oswald",
+  "weight": "500",
+  "style": "normal",
+  "file": "oswald-500-normal.woff2",
+  "range": "U+0100-0101, U+0103-0130, U+0132-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Oswald",
+  "weight": "700",
+  "style": "normal",
+  "file": "oswald-700-normal.woff2",
+  "range": "U+0100-0101, U+0103-0130, U+0132-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Archivo Black",
+  "weight": "400",
+  "style": "normal",
+  "file": "archivo-black-400-normal.woff2",
+  "range": "U+0100-0130, U+0132-0151, U+0154-017F, U+0218-021B, U+201B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "space-mono-400-normal.woff2",
+  "range": "U+0100-0101, U+0103-0130, U+0132-013E, U+0141-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "700",
+  "style": "normal",
+  "file": "space-mono-700-normal.woff2",
+  "range": "U+0100-0101, U+0103-0130, U+0132-013E, U+0141-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Inter",
+  "weight": "400",
+  "style": "normal",
+  "file": "inter-400-normal.woff2",
+  "range": "U+0100-0130, U+0132-0148, U+014A-0151, U+0154-017F, U+0218-021B, U+201B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Inter",
+  "weight": "600",
+  "style": "normal",
+  "file": "inter-600-normal.woff2",
+  "range": "U+0100-0130, U+0132-0148, U+014A-0151, U+0154-017F, U+0218-021B, U+201B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Inter",
+  "weight": "800",
+  "style": "normal",
+  "file": "inter-800-normal.woff2",
+  "range": "U+0100-0130, U+0132-0148, U+014A-0151, U+0154-017F, U+0218-021B, U+201B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "UnifrakturMaguntia",
+  "weight": "400",
+  "style": "normal",
+  "file": "unifrakturmaguntia-400-normal.woff2",
+  "range": "U+0160-0161, U+0178, U+017D-017F, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Special Elite",
+  "weight": "400",
+  "style": "normal",
+  "file": "special-elite-400-normal.woff2",
+  "range": "U+0100-0130, U+0132-0151, U+0154-017E, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Pinyon Script",
+  "weight": "400",
+  "style": "normal",
+  "file": "pinyon-script-400-normal.woff2",
+  "range": "U+0100-0101, U+0103-0130, U+0132-0148, U+014A-0151, U+0154-017F, U+0218-021B, U+2020-2021"
+ },
+ {
+  "family": "Courier Prime",
+  "weight": "700",
+  "style": "normal",
+  "file": "courier-prime-700-normal.woff2",
+  "range": "U+0100-0130, U+0132-0137, U+0139-0148, U+014A-0151, U+0154-017E, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Anton",
+  "weight": "400",
+  "style": "normal",
+  "file": "anton-400-normal.woff2",
+  "range": "U+0100-0130, U+0132-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Abril Fatface",
+  "weight": "400",
+  "style": "normal",
+  "file": "abril-fatface-400-normal.woff2",
+  "range": "U+0100-0130, U+0132-0151, U+0154-017F, U+0218-021B, U+2020-2021, U+2030"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "normal",
+  "file": "playfair-display-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "normal",
+  "file": "playfair-display-700-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "900",
+  "style": "normal",
+  "file": "playfair-display-900-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "italic",
+  "file": "playfair-display-400-italic-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "italic",
+  "file": "playfair-display-700-italic-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "normal",
+  "file": "eb-garamond-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "italic",
+  "file": "eb-garamond-400-italic-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "700",
+  "style": "normal",
+  "file": "eb-garamond-700-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "League Gothic",
+  "weight": "400",
+  "style": "normal",
+  "file": "league-gothic-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Oswald",
+  "weight": "500",
+  "style": "normal",
+  "file": "oswald-500-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Oswald",
+  "weight": "700",
+  "style": "normal",
+  "file": "oswald-700-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "space-mono-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "700",
+  "style": "normal",
+  "file": "space-mono-700-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Inter",
+  "weight": "400",
+  "style": "normal",
+  "file": "inter-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Inter",
+  "weight": "600",
+  "style": "normal",
+  "file": "inter-600-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Inter",
+  "weight": "800",
+  "style": "normal",
+  "file": "inter-800-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Pinyon Script",
+  "weight": "400",
+  "style": "normal",
+  "file": "pinyon-script-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9",
+  "set": "viet"
+ },
+ {
+  "family": "Anton",
+  "weight": "400",
+  "style": "normal",
+  "file": "anton-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "JBM",
+  "weight": "400",
+  "style": "normal",
+  "file": "jbm-400-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "JBM",
+  "weight": "700",
+  "style": "normal",
+  "file": "jbm-700-normal-viet.woff2",
+  "range": "U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB",
+  "set": "viet"
+ },
+ {
+  "family": "Orbitron",
+  "weight": "500 900",
+  "style": "normal",
+  "file": "orbitron-500-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Tektur 500"
+ },
+ {
+  "family": "Share Tech Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "share-tech-mono-400-normal-cyrl.woff2",
+  "range": "U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+04AE-04AF, U+2116",
+  "set": "cyrl",
+  "from": "JetBrains Mono 400"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "normal",
+  "file": "playfair-display-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "normal",
+  "file": "playfair-display-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "900",
+  "style": "normal",
+  "file": "playfair-display-900-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "400",
+  "style": "italic",
+  "file": "playfair-display-400-italic-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Playfair Display",
+  "weight": "700",
+  "style": "italic",
+  "file": "playfair-display-700-italic-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "normal",
+  "file": "eb-garamond-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "400",
+  "style": "italic",
+  "file": "eb-garamond-400-italic-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "EB Garamond",
+  "weight": "700",
+  "style": "normal",
+  "file": "eb-garamond-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "League Gothic",
+  "weight": "400",
+  "style": "normal",
+  "file": "league-gothic-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+2116",
+  "set": "cyrl",
+  "from": "Alumni Sans 700"
+ },
+ {
+  "family": "Oswald",
+  "weight": "500",
+  "style": "normal",
+  "file": "oswald-500-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Oswald",
+  "weight": "700",
+  "style": "normal",
+  "file": "oswald-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Archivo Black",
+  "weight": "400",
+  "style": "normal",
+  "file": "archivo-black-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Montserrat 900"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "space-mono-400-normal-cyrl.woff2",
+  "range": "U+0401, U+0404, U+0406-0407, U+040E, U+0410-044F, U+0451, U+0454, U+0456-0457, U+045E, U+0490-0491, U+2116",
+  "set": "cyrl",
+  "from": "Martian Mono 300"
+ },
+ {
+  "family": "Space Mono",
+  "weight": "700",
+  "style": "normal",
+  "file": "space-mono-700-normal-cyrl.woff2",
+  "range": "U+0401, U+0404, U+0406-0407, U+040E, U+0410-044F, U+0451, U+0454, U+0456-0457, U+045E, U+0490-0491, U+2116",
+  "set": "cyrl",
+  "from": "Martian Mono 600"
+ },
+ {
+  "family": "Inter",
+  "weight": "400",
+  "style": "normal",
+  "file": "inter-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Inter",
+  "weight": "600",
+  "style": "normal",
+  "file": "inter-600-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Inter",
+  "weight": "800",
+  "style": "normal",
+  "file": "inter-800-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "UnifrakturMaguntia",
+  "weight": "400",
+  "style": "normal",
+  "file": "unifrakturmaguntia-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Old Standard TT 700"
+ },
+ {
+  "family": "Special Elite",
+  "weight": "400",
+  "style": "normal",
+  "file": "special-elite-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Podkova 500"
+ },
+ {
+  "family": "Pinyon Script",
+  "weight": "400",
+  "style": "normal",
+  "file": "pinyon-script-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+2116",
+  "set": "cyrl",
+  "from": "Great Vibes 400"
+ },
+ {
+  "family": "Courier Prime",
+  "weight": "700",
+  "style": "normal",
+  "file": "courier-prime-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "IBM Plex Mono 700"
+ },
+ {
+  "family": "Anton",
+  "weight": "400",
+  "style": "normal",
+  "file": "anton-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Oswald 700"
+ },
+ {
+  "family": "Abril Fatface",
+  "weight": "400",
+  "style": "normal",
+  "file": "abril-fatface-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Yeseva One 400"
+ },
+ {
+  "family": "JBM",
+  "weight": "400",
+  "style": "normal",
+  "file": "jbm-400-normal-cyrl.woff2",
+  "range": "U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+04AE-04AF, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "JBM",
+  "weight": "700",
+  "style": "normal",
+  "file": "jbm-700-normal-cyrl.woff2",
+  "range": "U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+04AE-04AF, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "JetBrains Mono",
+  "weight": "400",
+  "style": "normal",
+  "file": "jetbrains-mono-400-normal-cyrl.woff2",
+  "range": "U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+04AE-04AF, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "JetBrains Mono",
+  "weight": "700",
+  "style": "normal",
+  "file": "jetbrains-mono-700-normal-cyrl.woff2",
+  "range": "U+0401-040C, U+040E-044F, U+0451-045C, U+045E-045F, U+0490-0491, U+04AE-04AF, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Open Sans",
+  "weight": "800",
+  "style": "normal",
+  "file": "open-sans-800-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Open Sans",
+  "weight": "700",
+  "style": "normal",
+  "file": "open-sans-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Open Sans",
+  "weight": "600",
+  "style": "normal",
+  "file": "open-sans-600-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl"
+ },
+ {
+  "family": "Kalam",
+  "weight": "400",
+  "style": "normal",
+  "file": "kalam-400-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Pangolin 400"
+ },
+ {
+  "family": "Kalam",
+  "weight": "700",
+  "style": "normal",
+  "file": "kalam-700-normal-cyrl.woff2",
+  "range": "U+0400-045F, U+0490-0491, U+04AE-04B1, U+2116",
+  "set": "cyrl",
+  "from": "Pangolin 400"
+ }
+]

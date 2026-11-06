@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.painted-window-decals",
+  "uid": "742edc45-6041-5cc8-a884-eb2bf27ed898",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Lit windows: a solid building + painted window decals, not an emissive room box",
+  "summary": "An emissive room box in a tower cab read as a flat orange block. Keep the building solid; add emissive window decals painted with the warm room, frames and a dark occupant.",
+  "tags": [
+    "windows",
+    "lit windows",
+    "night",
+    "building",
+    "tower",
+    "decal",
+    "emissive",
+    "silhouette",
+    "canvas"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "guardTower() in module.recon.prison-props (winTex(guard): gradient + frame + guard shape, emissiveMap at .75)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Night buildings, towers, houses with lit windows seen from outside.",
+    "avoid": "Glowing boxes behind glass.",
+    "gotchas": [
+      "Lift decals off the wall (2 cm) and mark them noContact."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Lit windows read as a flat orange block.",
+    "cause": "One emissive volume fills the whole opening: no depth, frame or occupant.",
+    "fix": "Solid walls + per-face window decals painted with interior light, frames and a silhouette.",
+    "detect": "The window has no internal variation.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#23",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.prison-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

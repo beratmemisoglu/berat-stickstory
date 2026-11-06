@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "suite": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["C:\\Users\\berat\\toon-studio\\appcore\\mcp.cjs"]
+    }
+  }
+}

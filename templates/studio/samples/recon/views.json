@@ -1,0 +1,11 @@
+{
+ "narration": { "timeline": "timeline.json", "script": "script.txt" },
+ "views": {
+  "sample": { "scenes": ["sample"], "end": 20 },
+  "hero": { "scenes": ["hero"], "end": 6 },
+  "kit": { "scenes": ["kit"], "end": 16 },
+  "mustfail_floating": { "scenes": ["mustfail_floating"], "end": 3, "expect": "floating" },
+  "mustfail_through": { "scenes": ["mustfail_through"], "end": 3, "expect": "through" },
+  "mustfail_coplanar": { "scenes": ["mustfail_coplanar"], "end": 3, "expect": "coplanar" }
+ }
+}

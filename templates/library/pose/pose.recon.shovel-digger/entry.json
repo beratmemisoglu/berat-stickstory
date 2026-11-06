@@ -1,0 +1,116 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.shovel-digger",
+  "uid": "035b2ac3-053b-5bc3-ad54-e4283fff9b68",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Digging with a shovel (bent at the hips over a planted blade)",
+  "summary": "Walk_Loop stance (t .75 or .1) + hip hinge .85-1.0 + lean .3, both hands on a shovel planted .8 m ahead with its shaft leaning back. KK_Digging_Loop barely bends: don't trust the clip name.",
+  "tags": [
+    "pose",
+    "digging",
+    "shovel",
+    "spade",
+    "dig",
+    "bend",
+    "hinge",
+    "labour",
+    "work",
+    "excavate",
+    "walk loop"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "15c5e59e6209f217c95d475724dbff6af02c6919",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 714,
+      "sha1": "863d7a5d4716493d6067641b8f59770bbf4b50f1"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { hinge, lean } from '../library/module.recon.rig-pose/index.js'; import { shovel, plantShovel } from '../library/module.recon.mine-props/index.js';",
+    "example": "const sh = shovel(G); S.tick(() => { f.act('Walk_Loop', { t: .75 }); hinge(f, .85); lean(f, .3, 0); const h = plantShovel(sh, { x, z, ry, floorY, reach: .8, back: .6 }); f.handTo('R', h.lo, { weight: 1, curl: .8 }); f.handTo('L', h.hi, { weight: 1, curl: .8 }); });"
+  },
+  "requires": [
+    "module.recon.rig-pose",
+    "module.recon.mine-props"
+  ],
+  "doc": {
+    "when": "Digging, shovelling, raking, sweeping (swap the tool).",
+    "avoid": "KK_Digging_Loop alone (knees bend, the back stays upright); a bend facing away from the camera (foreshortened: turn him side-on).",
+    "gotchas": [
+      "Hinge first, then lean: lean alone hunches.",
+      "plantShovel every tick before handTo."
+    ],
+    "params": {
+      "clip": "Walk_Loop",
+      "t": [
+        0.75,
+        0.1
+      ],
+      "hinge": [
+        0.85,
+        1
+      ],
+      "lean": [
+        0.3,
+        0.35
+      ],
+      "reach": [
+        0.8,
+        0.75
+      ],
+      "back": 0.6
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "30, 342-354",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose",
+    "solution.any.hip-hinge-not-lean",
+    "pitfall.any.foreshortened-bend",
+    "pose.recon.clip-facts"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

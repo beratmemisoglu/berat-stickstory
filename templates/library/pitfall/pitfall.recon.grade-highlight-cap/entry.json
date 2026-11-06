@@ -1,0 +1,104 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.grade-highlight-cap",
+  "uid": "f0b9ecb1-49e1-589a-aa71-52c9a7736001",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Investigation grade caps highlights at .775: saturated glow turns pastel",
+  "summary": "Investigation caps highlights at .775: red clips first, so hot orange goes salmon/peach and whites read milky. Set settings.post.cap .95-.97 in project.json.",
+  "tags": [
+    "grade",
+    "highlight cap",
+    "settings.post",
+    "glow",
+    "emissive",
+    "orange",
+    "pastel",
+    "milky",
+    "investigation",
+    "colour"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "project.json settings.post: { ..., cap: .97, ca: 0 }   // look.recon.shot-match-neutral"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any scene with saturated emissive colours (glowing people, fire, neon) or any shot match.",
+    "avoid": "Raising the emissive to fight the cap (it gets paler, not hotter).",
+    "gotchas": [
+      "The grade is project-wide: a scene cannot override it, so the cap belongs to the shot's recipe.",
+      "Keep the emissive moderate (~.9) and the fresnel low and red-orange."
+    ],
+    "params": {
+      "cap": ".95-.97"
+    }
+  },
+  "problem": {
+    "symptom": "Glowing figures look pastel, salmon or peach instead of saturated orange; whites look milky.",
+    "cause": "THEME.grade.cap .775 in the Investigation look clips the red channel first.",
+    "fix": "settings.post.cap = .95-.97 (project.json), moderate emissive.",
+    "detect": "Region means: the glow's G/R ratio rises toward .7 (reference ~.46).",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#9, #10",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#5",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "look.recon.shot-match-neutral",
+    "module.recon.glow-person",
+    "pitfall.recon.grade-chromatic-aberration"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

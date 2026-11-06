@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape-4k">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=3840, height=2160" />
+    <!-- V3 · built on editing-style.md (reference doctrine). Motion vocabulary: motion/smooth.js -->
+    <style>
+      @font-face { font-family: "Inter"; src: url("fonts/Inter-400-latin.woff2") format("woff2"); font-weight: 400; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("fonts/Inter-Medium.ttf") format("truetype"); font-weight: 500; font-display: block; }
+      @font-face { font-family: "Inter"; src: url("fonts/Inter-700-latin.woff2") format("woff2"); font-weight: 700; font-display: block; }
+
+      :root {
+        --white: #ffffff; --lg: #e5e5ea; --mg: #8e8e93; --dg2: #3a3a3c; --dg: #1c1c1e;
+        --blue: #007aff; --green: #34c759; --orange: #ff9500; --red: #ff3b30;
+        --shadow-text: 0 6px 24px rgba(0, 0, 0, 0.45);
+        --card-bg: rgba(28, 28, 30, 0.78); --card-stroke: rgba(255, 255, 255, 0.18);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 3840px; height: 2160px; overflow: hidden; background: #000; font-family: "Inter", ui-sans-serif, system-ui, sans-serif; color: var(--white); -webkit-font-smoothing: antialiased; }
+      #root { position: relative; width: 3840px; height: 2160px; overflow: hidden; background: #000; }
+
+      /* camera nulls: drift (outer) → snap (inner) → stage */
+      .cam { position: absolute; inset: 0; will-change: transform; }
+      #stage { position: absolute; inset: 0; }
+      #stage video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+      #gfx { position: absolute; inset: 0; will-change: transform; }
+
+      .scene { position: absolute; inset: 0; pointer-events: none; }
+      .n { position: absolute; inset: 0; }          /* a null: full-size wrapper, animate transform only */
+      .col-l { position: absolute; left: 260px; width: 1040px; top: 1040px; transform: translateY(-50%); }
+      .col-r { position: absolute; left: 2560px; width: 1060px; top: 1040px; transform: translateY(-50%); }
+      .mask { overflow: hidden; padding: 6px 400px; margin: 0 -400px; }
+
+      .h1 { font-size: 172px; font-weight: 700; line-height: 1.0; letter-spacing: -0.02em; text-shadow: var(--shadow-text); }
+      .h2 { font-size: 132px; font-weight: 700; line-height: 1.02; letter-spacing: -0.02em; text-shadow: var(--shadow-text); }
+      .sub { font-size: 68px; font-weight: 500; line-height: 1.2; letter-spacing: -0.005em; color: var(--lg); text-shadow: var(--shadow-text); }
+      .label { font-size: 48px; font-weight: 500; color: var(--mg); letter-spacing: 0; }
+      .w { display: inline-block; white-space: pre; will-change: transform, opacity, filter; }
+      .acc-o { color: var(--orange); } .acc-b { color: var(--blue); } .acc-g { color: var(--green); }
+
+      .card { background: var(--card-bg); backdrop-filter: blur(40px); border-radius: 40px; box-shadow: 0 24px 60px rgba(0,0,0,0.35), inset 0 0 0 1.5px var(--card-stroke); padding: 48px 56px; }
+      .pill { display: inline-flex; align-items: center; gap: 28px; background: var(--card-bg); backdrop-filter: blur(40px); border-radius: 999px; box-shadow: 0 16px 40px rgba(0,0,0,0.3), inset 0 0 0 1.5px var(--card-stroke); padding: 30px 56px 30px 44px; font-size: 72px; font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; }
+      .pill i { width: 26px; height: 26px; border-radius: 50%; background: var(--orange); flex: none; }
+      .pill.blue { background: var(--blue); box-shadow: 0 16px 40px rgba(0,122,255,0.35); }
+
+      .row { display: flex; align-items: center; gap: 30px; font-size: 76px; font-weight: 700; letter-spacing: -0.015em; text-shadow: var(--shadow-text); }
+      .row .num { font-size: 44px; font-weight: 500; color: var(--mg); width: 84px; }
+      .row .doc { width: 50px; height: 62px; border: 5px solid var(--green); border-radius: 10px; position: relative; flex: none; }
+      .row .doc::after { content: ""; position: absolute; left: 9px; right: 9px; top: 18px; height: 5px; background: var(--green); box-shadow: 0 14px 0 var(--green); }
+      .row .meta { margin-left: auto; font-size: 40px; font-weight: 500; color: var(--mg); text-shadow: none; }
+
+      .bar-wrap { margin-top: 26px; }
+      .bar-head { display: flex; justify-content: space-between; align-items: baseline; font-size: 60px; font-weight: 700; letter-spacing: -0.01em; text-shadow: var(--shadow-text); }
+      .bar-head span:last-child { font-size: 56px; font-weight: 500; color: var(--lg); font-variant-numeric: tabular-nums; }
+      .track { height: 34px; border-radius: 17px; background: rgba(255,255,255,0.14); margin-top: 20px; overflow: hidden; }
+      .fill { height: 100%; border-radius: 17px; background: var(--orange); transform-origin: left center; }
+      .fill.gray { background: var(--lg); }
+
+      .bubble { display: inline-block; padding: 30px 48px; border-radius: 44px; font-size: 68px; font-weight: 500; letter-spacing: -0.01em; white-space: nowrap; box-shadow: 0 18px 44px rgba(0,0,0,0.35); }
+      .bubble.out { background: var(--blue); color: #fff; border-bottom-right-radius: 12px; }
+      .bubble.in { background: var(--lg); color: var(--dg); border-bottom-left-radius: 12px; }
+      .bigstat { font-size: 300px; font-weight: 700; letter-spacing: -0.04em; line-height: 1; font-variant-numeric: tabular-nums; text-shadow: var(--shadow-text); }
+
+      .check { width: 120px; height: 120px; border-radius: 50%; background: var(--green); position: relative; box-shadow: 0 16px 40px rgba(52,199,89,0.35); }
+      .check::after { content: ""; position: absolute; left: 40px; top: 24px; width: 30px; height: 56px; border-right: 12px solid #fff; border-bottom: 12px solid #fff; transform: rotate(45deg); border-radius: 4px; }
+
+      .strike { position: relative; display: inline-block; font-size: 88px; font-weight: 700; letter-spacing: -0.015em; text-shadow: var(--shadow-text); }
+      .strike .ln { position: absolute; left: -10px; right: -10px; top: 52%; height: 12px; border-radius: 6px; background: var(--red); transform-origin: left center; }
+
+      .frame-outline { position: absolute; inset: 96px; border-radius: 64px; }
+      .frame-outline svg { width: 100%; height: 100%; }
+      .frame-outline path { fill: none; stroke: var(--white); stroke-width: 8; stroke-linecap: round; opacity: 0.9; }
+
+      .plate { position: absolute; left: 260px; top: 1720px; }
+      .plate .rule { width: 260px; height: 10px; border-radius: 5px; background: var(--orange); transform-origin: left center; margin-bottom: 26px; }
+      .plate .name { font-size: 160px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; text-shadow: var(--shadow-text); }
+      .plate .tag { font-size: 56px; font-weight: 500; color: var(--lg); margin-top: 20px; text-shadow: var(--shadow-text); }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="51.85" data-fps="30" data-width="3840" data-height="2160">
+      <div class="cam" id="cam-drift"><div class="cam" id="cam-snap"><div id="stage">
+        <video id="a-roll" class="clip" src="input-video.mp4" muted playsinline data-start="0" data-duration="51.85" data-track-index="0"></video>
+        <div id="gfx">
+
+          <!-- S1 · 0.0–2.9 · "You can use Claude to edit your YouTube intros" -->
+          <div class="scene clip" id="s1" data-start="0" data-duration="2.95" data-track-index="1">
+            <div class="n" id="s1-n2"><div class="n" id="s1-n1">
+              <div class="col-l">
+                <div class="label" id="s1-k">YouTube intro</div>
+                <div class="h1" id="s1-t" style="margin-top: 28px;">edited<br />by <span class="acc-o">Claude</span></div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S2 · 3.0–7.4 · "the text, the animations, and everything you are seeing right now" -->
+          <div class="scene clip" id="s2" data-start="2.95" data-duration="4.5" data-track-index="1">
+            <div class="n" id="s2-n2"><div class="n" id="s2-n1">
+              <div class="col-r" style="display: flex; flex-direction: column; align-items: flex-start; gap: 36px;">
+                <div class="mask"><div class="pill" id="s2-a"><i></i>the text</div></div>
+                <div class="mask"><div class="pill" id="s2-b"><i></i>the animations</div></div>
+                <div class="mask"><div class="pill" id="s2-c"><i></i>everything you see</div></div>
+              </div>
+            </div></div>
+            <div class="frame-outline" id="s2-frame"><svg viewBox="0 0 3648 1968" preserveAspectRatio="none"><path id="s2-path" d="M64 4 H3584 A60 60 0 0 1 3644 64 V1904 A60 60 0 0 1 3584 1964 H64 A60 60 0 0 1 4 1904 V64 A60 60 0 0 1 64 4 Z"/></svg></div>
+          </div>
+
+          <!-- S3 · 7.5–14.3 · "spent more time telling it to fix the edit than editing" -->
+          <div class="scene clip" id="s3" data-start="7.45" data-duration="6.95" data-track-index="1">
+            <div class="n" id="s3-n2"><div class="n" id="s3-n1">
+              <div class="col-l">
+                <div class="label" id="s3-k">if you tried this before</div>
+                <div class="h2" id="s3-t" style="margin-top: 24px;">where the<br />time goes</div>
+                <div class="card" id="s3-card" style="margin-top: 52px;">
+                  <div class="bar-wrap" id="s3-r1" style="margin-top: 0;">
+                    <div class="bar-head"><span>telling it to fix</span><span id="s3-n1v">0%</span></div>
+                    <div class="track"><div class="fill" id="s3-f1"></div></div>
+                  </div>
+                  <div class="bar-wrap" id="s3-r2" style="margin-top: 44px;">
+                    <div class="bar-head"><span>actually editing</span><span id="s3-n2v">0%</span></div>
+                    <div class="track"><div class="fill gray" id="s3-f2"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S4 · 14.6–22.8 · prompts: "move this, change that, why is the text covering my face?" -->
+          <div class="scene clip" id="s4" data-start="14.55" data-duration="8.3" data-track-index="1">
+            <div class="n" id="s4-n2"><div class="n" id="s4-n1">
+              <div class="col-l" id="s4-stack" style="display: flex; flex-direction: column; align-items: flex-end; gap: 30px; top: 960px;">
+                <div class="n" style="position: relative; inset: auto;" id="s4-a"><div class="bubble out">move this</div></div>
+                <div class="n" style="position: relative; inset: auto;" id="s4-b"><div class="bubble out">change that</div></div>
+              </div>
+              <div class="h2" id="s4-c" style="position: absolute; left: 1420px; top: 880px; width: 1500px; font-size: 128px; text-align: left;">why is the text<br />covering my face?</div>
+              <div class="col-r" id="s4-cnt" style="top: 1180px;">
+                <div class="bigstat" id="s4-num">1</div>
+                <div class="sub" id="s4-lbl" style="margin-top: 44px;">prompts later</div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S5 · 23.0–30.0 · editing references -->
+          <div class="scene clip" id="s5" data-start="22.95" data-duration="7.1" data-track-index="1">
+            <div class="n" id="s5-n2"><div class="n" id="s5-n1">
+              <div class="col-r">
+                <div class="label" id="s5-k">the fix</div>
+                <div class="h2" id="s5-t" style="margin-top: 24px;">editing<br />references</div>
+                <div class="card" id="s5-card" style="margin-top: 52px; padding: 24px 56px;">
+                  <div class="mask"><div class="row" id="s5-f1" style="padding: 22px 0;"><span class="doc"></span>typography.md<span class="meta">look</span></div></div>
+                  <div class="mask"><div class="row" id="s5-f2" style="padding: 22px 0;"><span class="doc"></span>motion.md<span class="meta">move</span></div></div>
+                  <div class="mask"><div class="row" id="s5-f3" style="padding: 22px 0;"><span class="doc"></span>leave-it-alone.md<span class="meta">footage</span></div></div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S6 · 30.2–35.2 · saved -->
+          <div class="scene clip" id="s6" data-start="30.15" data-duration="5.15" data-track-index="1">
+            <div class="n" id="s6-n2"><div class="n" id="s6-n1">
+              <div class="col-l">
+                <div style="display: flex; align-items: center; gap: 36px;">
+                  <div class="check" id="s6-chk"></div>
+                  <div class="h2" id="s6-s" style="font-size: 120px;">saved</div>
+                </div>
+                <div class="h2" id="s6-a" style="margin-top: 64px;">explain it once.</div>
+                <div class="h2 acc-g" id="s6-b">never again.</div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S7 · 35.4–37.0 · this intro is the result -->
+          <div class="scene clip" id="s7" data-start="35.35" data-duration="1.8" data-track-index="1">
+            <div class="frame-outline" id="s7-frame"><svg viewBox="0 0 3648 1968" preserveAspectRatio="none"><path id="s7-path" d="M64 4 H3584 A60 60 0 0 1 3644 64 V1904 A60 60 0 0 1 3584 1964 H64 A60 60 0 0 1 4 1904 V64 A60 60 0 0 1 64 4 Z"/></svg></div>
+            <div class="n" id="s7-n1"><div class="h1" id="s7-t" style="position: absolute; left: 0; right: 0; top: 1760px; text-align: center; font-size: 140px;">this intro <span class="acc-o">= the result</span></div></div>
+          </div>
+
+          <!-- S8 · 37.2–42.4 · today: exactly how I made it -->
+          <div class="scene clip" id="s8" data-start="37.15" data-duration="5.35" data-track-index="1">
+            <div class="n" id="s8-n2"><div class="n" id="s8-n1">
+              <div class="col-r">
+                <div class="label" id="s8-k">today</div>
+                <div class="h2" id="s8-t" style="margin-top: 24px;">exactly how<br />I made it</div>
+                <div style="margin-top: 48px; display: flex; flex-direction: column; gap: 22px;">
+                  <div class="mask"><div class="row" id="s8-1"><span class="num">01</span>the references</div></div>
+                  <div class="mask"><div class="row" id="s8-2"><span class="num">02</span>the saved setup</div></div>
+                  <div class="mask"><div class="row" id="s8-3"><span class="num">03</span>the workflow</div></div>
+                </div>
+                <div class="mask" style="margin-top: 44px;"><div class="pill blue" id="s8-tail" style="padding-left: 56px;">→ your own footage</div></div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S9 · 42.6–49.8 · grow your brand / strike -->
+          <div class="scene clip" id="s9" data-start="42.55" data-duration="7.35" data-track-index="1">
+            <div class="n" id="s9-n2"><div class="n" id="s9-n1">
+              <div class="col-l">
+                <div class="label" id="s9-k">your own style</div>
+                <div class="h2" id="s9-t" style="margin-top: 24px;">grow<br />your brand</div>
+                <div style="margin-top: 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 30px;">
+                  <div class="mask"><div class="strike" id="s9-s1">hire editors<span class="ln" id="s9-l1"></span></div></div>
+                  <div class="mask"><div class="strike" id="s9-s2">$100s on AI credits<span class="ln" id="s9-l2"></span></div></div>
+                </div>
+              </div>
+            </div></div>
+          </div>
+
+          <!-- S10 · 50.1–51.85 · name plate -->
+          <div class="scene clip" id="s10" data-start="50.05" data-duration="1.8" data-track-index="1">
+            <div class="n" id="s10-n1">
+              <div class="plate">
+                <div class="rule" id="s10-r"></div>
+                <div class="name" id="s10-n">Christophe</div>
+                <div class="tag" id="s10-t">let's go →</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div></div></div>
+      <audio id="a-roll-audio" src="input-video.mp4" data-start="0" data-duration="51.85" data-track-index="9" data-volume="1"></audio>
+
+      <script src="vendor/gsap.min.js"></script>
+      <script src="motion/smooth.js"></script>
+      <script>
+        (function () {
+          const S = SMOOTH, q = S.q, f = S.f, OP = S.OP;
+          const tl = gsap.timeline({ paused: true });
+          const FACE = "48% 40%";
+
+          // no wiggle. camera moves are deliberate zooms only.
+
+          // ───── S1 0.00–2.95 ─────
+          // opening push: slow drift in from frame 0 so the shot is alive
+          tl.set(["#cam-snap", "#cam-drift"], { transformOrigin: FACE }, 0);
+          tl.fromTo("#cam-drift", { scale: 1.0 }, { scale: 1.03, duration: 2.9, ease: "none" }, 0);
+          S.ramp(tl, "#s1-k", 0.05, { dur: 0.45, stagger: 0.06 });
+          S.ramp(tl, "#s1-t", 0.25, { scaleHit: true });
+          S.drift(tl, "#s1-n2", 0.6, 2.4, { y: -22 });
+          S.rampOut(tl, "#s1-t", 2.52); S.rampOut(tl, "#s1-k", 2.5);
+
+          // ───── S2 2.95–7.45 ─────  words: text 3.2 · animations 3.9 · everything 4.9 · "right now" 6.6
+          S.maskUp(tl, "#s2-a", 3.05, { dur: 0.7 });
+          S.maskUp(tl, "#s2-b", 3.80, { dur: 0.7 });
+          S.maskUp(tl, "#s2-c", 4.78, { dur: 0.7 });
+          // "everything you are seeing" → zoom out slightly, frame outline draws (overlaps pill c)
+          tl.to("#cam-drift", { scale: 1.0, duration: 1.0, ease: "mid" }, q(5.1));
+          (function () { const p = document.querySelector("#s2-path"); const L = p.getTotalLength();
+            tl.set(p, { strokeDasharray: L, strokeDashoffset: L, opacity: 0.9 }, 0);
+            tl.to(p, { strokeDashoffset: 0, duration: 1.1, ease: "snapOut" }, q(5.25)); })();
+          S.drift(tl, "#s2-n2", 3.4, 3.6, { x: -26 });
+          // exit: pills out right (staggered on their own nulls via the shared null + per-pill offsets), outline out
+          tl.to(["#s2-c", "#s2-b", "#s2-a"], { x: 320, duration: 0.42, ease: "exitIn", stagger: 0.04 }, q(6.98));
+          tl.to(["#s2-c", "#s2-b", "#s2-a"], { opacity: 0, duration: OP, ease: "none", stagger: 0.04 }, q(6.98 + 0.42 - OP));
+          tl.to("#s2-path", { strokeDashoffset: -0.0001, opacity: 0, duration: 0.3, ease: "exitIn" }, q(7.05));
+
+          // ───── S3 7.45–14.4 ─────  "fix the edit" ~10.6 · "than you expected" 11.9 · "editing" 13.5
+          S.ramp(tl, "#s3-k", 7.55, { dur: 0.45, stagger: 0.06 });
+          S.ramp(tl, "#s3-t", 7.75, { scaleHit: true });
+          S.cardIn(tl, "#s3-card", 8.7, { dir: "left", dist: 240, dur: 0.85 });
+          S.punchIn(tl, 8.95, { scale: 1.05, dur: 0.5, driftTo: 1.02, driftDur: 4.5, origin: "38% 42%" });
+          S.grow(tl, "#s3-f1", 9.15, 2.4);
+          S.count(tl, "#s3-n1v", 9.15, 0, 84, 2.4, (v) => Math.round(v) + "%");
+          S.grow(tl, "#s3-f2", 12.05, 1.2);
+          S.count(tl, "#s3-n2v", 12.05, 0, 16, 1.2, (v) => Math.round(v) + "%");
+          S.drift(tl, "#s3-n2", 9.1, 5.0, { y: -26 });
+          S.zoomOut(tl, 13.6, { dur: 0.8 });
+          S.rampOut(tl, "#s3-t", 13.95); S.rampOut(tl, "#s3-k", 13.9);
+          S.cardOut(tl, "#s3-card", 13.95, { dir: "left", dist: 300, dur: 0.45 });
+
+          // ───── S4 14.55–22.85 ─────  move 14.7 · change 15.6 · face-line 16.5 · "sitting there" 18.6 · "every little thing" 20.4
+          tl.set("#s4-b", { opacity: 0 }, 0); tl.set("#s4-c", { opacity: 0 }, 0); tl.set("#s4-cnt", { opacity: 0 }, 0);
+          S.react(tl, "#s4-a .bubble", 14.66);
+          tl.fromTo("#s4-a", { y: 40 }, { y: 0, duration: 0.6, ease: "snapOut" }, q(14.66));
+          // stack shift (mid) starts at the midpoint of the previous move; new bubble reacts in
+          tl.set("#s4-b", { opacity: 1 }, q(15.56));
+          S.react(tl, "#s4-b .bubble", 15.56);
+          tl.fromTo("#s4-b", { y: 60 }, { y: 0, duration: 0.6, ease: "snapOut" }, q(15.56));
+          // the joke: headline lands on the face + punch-in on the face
+          tl.set("#s4-c", { opacity: 1 }, q(16.42));
+          S.ramp(tl, "#s4-c", 16.42, { dur: 0.5, stagger: 0.07 });
+          S.punchIn(tl, 16.45, { scale: 1.09, dur: 0.5, driftTo: 1.02, driftDur: 2.2, origin: FACE });
+          // then it whips out of the way (mid) to the right column, and the camera relaxes with it
+          S.move(tl, "#s4-c", 18.28, { x: 1450, y: -260, fontSize: 100 }, 0.7);
+          S.zoomOut(tl, 18.28, { dur: 0.8 });
+          tl.to("#s4-stack", { opacity: 0.4, duration: 0.5, ease: "mid" }, q(18.6));
+          // counter: "sitting there directing every little thing"
+          tl.set("#s4-cnt", { opacity: 1 }, q(18.62));
+          S.cardIn(tl, "#s4-cnt", 18.62, { dir: "right", dist: 200, dur: 0.8 });
+          S.count(tl, "#s4-num", 18.7, 1, 47, 3.7);
+          S.drift(tl, "#s4-n2", 19.0, 3.6, { y: -24 });
+          // exit
+          tl.to(["#s4-a", "#s4-b"], { x: -320, duration: 0.42, ease: "exitIn", stagger: 0.04 }, q(22.4));
+          tl.to(["#s4-a", "#s4-b"], { opacity: 0, duration: OP, ease: "none", stagger: 0.04 }, q(22.4 + 0.42 - OP));
+          S.cardOut(tl, "#s4-c", 22.42, { dir: "right", dist: 320, dur: 0.42 });
+          S.cardOut(tl, "#s4-cnt", 22.45, { dir: "right", dist: 300, dur: 0.42 });
+
+          // ───── S5 22.95–30.05 ─────  "references" 24.6 · look 26.0 · move 27.2 · "alone" 29.5
+          S.ramp(tl, "#s5-k", 23.05, { dur: 0.45, stagger: 0.06 });
+          S.ramp(tl, "#s5-t", 23.3, { scaleHit: true });
+          S.cardIn(tl, "#s5-card", 25.15, { dir: "right", dist: 240, dur: 0.85 });
+          tl.set(["#s5-f1", "#s5-f2", "#s5-f3"], { opacity: 0 }, 0);
+          S.maskUp(tl, "#s5-f1", 25.55, { dur: 0.6 });
+          S.maskUp(tl, "#s5-f2", 26.85, { dur: 0.6 });
+          S.maskUp(tl, "#s5-f3", 28.0, { dur: 0.6 });
+          S.drift(tl, "#s5-n2", 24.7, 5.0, { x: -24 });
+          S.punchIn(tl, 25.5, { scale: 1.05, dur: 0.5, driftTo: 1.02, driftDur: 4, origin: "60% 45%" });
+          S.zoomOut(tl, 29.3, { dur: 0.8 });
+          S.rampOut(tl, "#s5-t", 29.6); S.rampOut(tl, "#s5-k", 29.55);
+          S.cardOut(tl, "#s5-card", 29.6, { dir: "right", dist: 320, dur: 0.45 });
+
+          // ───── S6 30.15–35.3 ─────  "saved" 30.9 · "explain" 33.0 · "every single time" 34.2
+          tl.set(["#s6-a", "#s6-b"], { opacity: 0 }, 0);
+          S.react(tl, "#s6-chk", 30.55);
+          S.ramp(tl, "#s6-s", 30.6, { dur: 0.5, stagger: 0.08, scaleHit: true });
+          tl.set("#s6-a", { opacity: 1 }, q(31.85)); S.ramp(tl, "#s6-a", 31.85);
+          tl.set("#s6-b", { opacity: 1 }, q(33.0));  S.ramp(tl, "#s6-b", 33.0);
+          S.drift(tl, "#s6-n2", 31.0, 4.0, { y: -24 });
+          S.rampOut(tl, "#s6-b", 34.85); S.rampOut(tl, "#s6-a", 34.88);
+          tl.to(["#s6-chk", "#s6-s"], { y: -120, opacity: 0, duration: 0.42, ease: "exitIn" }, q(34.9));
+
+          // ───── S7 35.35–37.15 ─────  "This intro" 35.4 · "result" 36.4
+          S.punchIn(tl, 35.4, { scale: 1.07, dur: 0.5, driftTo: 1.02, driftDur: 1.6, origin: "50% 45%" });
+          (function () { const p = document.querySelector("#s7-path"); const L = p.getTotalLength();
+            tl.set(p, { strokeDasharray: L, strokeDashoffset: L }, 0);
+            tl.to(p, { strokeDashoffset: 0, duration: 0.9, ease: "snapOut" }, q(35.4)); })();
+          S.ramp(tl, "#s7-t", 35.55, { dur: 0.5, stagger: 0.07 });
+          S.zoomOut(tl, 36.75, { dur: 0.6 });
+          S.rampOut(tl, "#s7-t", 36.8);
+          tl.to("#s7-path", { opacity: 0, duration: 0.3, ease: "exitIn" }, q(36.85));
+
+          // ───── S8 37.15–42.5 ─────  "today" 37.3 · "how I made it" 39.0 · "same thing" 40.9 · "own footage" 42.0
+          tl.set(["#s8-1", "#s8-2", "#s8-3", "#s8-tail"], { opacity: 0 }, 0);
+          S.ramp(tl, "#s8-k", 37.25, { dur: 0.45, stagger: 0.06 });
+          S.ramp(tl, "#s8-t", 37.5, { scaleHit: true });
+          S.punchIn(tl, 37.4, { scale: 1.045, dur: 0.5, driftTo: 1.015, driftDur: 3.6, origin: "58% 42%" });
+          S.zoomOut(tl, 41.6, { dur: 0.8 });
+          S.maskUp(tl, "#s8-1", 38.6, { dur: 0.6 });
+          S.maskUp(tl, "#s8-2", 38.95, { dur: 0.6 });
+          S.maskUp(tl, "#s8-3", 39.3, { dur: 0.6 });
+          S.maskUp(tl, "#s8-tail", 40.35, { dur: 0.7 });
+          S.drift(tl, "#s8-n2", 38.0, 4.2, { x: -24 });
+          S.rampOut(tl, "#s8-t", 42.05); S.rampOut(tl, "#s8-k", 42.0);
+          tl.to(["#s8-tail", "#s8-3", "#s8-2", "#s8-1"], { x: 320, duration: 0.42, ease: "exitIn", stagger: 0.03 }, q(42.05));
+          tl.to(["#s8-tail", "#s8-3", "#s8-2", "#s8-1"], { opacity: 0, duration: OP, ease: "none", stagger: 0.03 }, q(42.05 + 0.42 - OP));
+
+          // ───── S9 42.55–49.9 ─────  "your own style" 42.6 · "brand" 45.2 · "editors" 47.3 · "hundreds" 48.5 · "AI credits" 49.4
+          tl.set(["#s9-s1", "#s9-s2"], { opacity: 0 }, 0);
+          S.ramp(tl, "#s9-k", 42.65, { dur: 0.45, stagger: 0.06 });
+          S.ramp(tl, "#s9-t", 43.9, { scaleHit: true });
+          S.maskUp(tl, "#s9-s1", 46.35, { dur: 0.6 });
+          S.grow(tl, "#s9-l1", 47.15, 0.35);
+          S.maskUp(tl, "#s9-s2", 47.95, { dur: 0.6 });
+          S.grow(tl, "#s9-l2", 49.05, 0.4);
+          S.drift(tl, "#s9-n2", 44.2, 5.4, { y: -26 });
+          S.punchIn(tl, 47.1, { scale: 1.05, dur: 0.5, driftTo: 1.02, driftDur: 2.6, origin: "36% 42%" });
+          S.zoomOut(tl, 49.45, { dur: 0.7 });
+          S.rampOut(tl, "#s9-t", 49.5); S.rampOut(tl, "#s9-k", 49.45);
+          tl.to(["#s9-s2", "#s9-s1"], { x: -320, duration: 0.42, ease: "exitIn", stagger: 0.04 }, q(49.5));
+          tl.to(["#s9-s2", "#s9-s1"], { opacity: 0, duration: OP, ease: "none", stagger: 0.04 }, q(49.5 + 0.42 - OP));
+
+          // ───── S10 50.05–51.85 ─────  "Christophe" 50.5 · "Let's go" 51.3
+          tl.set("#s10-t", { opacity: 0 }, 0);
+          S.grow(tl, "#s10-r", 50.1, 0.5);
+          S.ramp(tl, "#s10-n", 50.15, { dur: 0.55, stagger: 0.08, scaleHit: true });
+          tl.set("#s10-t", { opacity: 1 }, q(51.2)); S.ramp(tl, "#s10-t", 51.2, { dur: 0.4, stagger: 0.06 });
+          S.drift(tl, "#s10-n1", 50.5, 1.4, { y: -18 });
+          // final push into the cut: slow first, fast at the end
+          tl.to("#cam-snap", { scale: 1.12, duration: 0.55, ease: "exitIn", transformOrigin: FACE }, q(51.3));
+
+          window.__timelines = window.__timelines || {};
+          window.__timelines["main"] = tl;
+        })();
+      </script>
+    </div>
+  </body>
+</html>

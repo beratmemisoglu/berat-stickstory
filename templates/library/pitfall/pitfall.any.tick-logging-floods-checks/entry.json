@@ -1,0 +1,84 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.tick-logging-floods-checks",
+  "uid": "2c9c9dd6-b423-5717-a4d3-c3f3aee30255",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Logging inside S.tick floods check runs (hundreds of frames)",
+  "summary": "A debug logger in a tick (bone positions) printed 330 lines during one CHECK run: layout checks render hundreds of frames. Log once, behind a URL flag, and never during checks.",
+  "tags": [
+    "debug",
+    "logging",
+    "console",
+    "tick",
+    "check",
+    "layoutIssues",
+    "bones"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "boneLog(S, figs)   // module.recon.rig-pose: ?bones=1 only, prints once"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any debug output from a scene.",
+    "avoid": "console.log in every tick.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A check or render run drowns in hundreds of log lines.",
+    "cause": "S.tick runs for every frame the checker renders.",
+    "fix": "Log once (a done flag) and only with a URL flag.",
+    "detect": "Log volume scales with the check's frame count.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#10",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

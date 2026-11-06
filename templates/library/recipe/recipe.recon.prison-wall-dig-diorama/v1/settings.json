@@ -1,0 +1,6 @@
+{
+  "theme": "investigation",
+  "post": { "grain": 0.03, "vignette": 0.38, "ao": true, "contrast": 1.12, "desat": 0.08, "cap": 0.95, "ca": 0 },
+  "graphicsAtMatch": { "shadowSize": 2048, "aa": "msaa8", "dofStrength": 0, "bloomStrength": 0.5, "grain": 0.018, "vignette": 0.43, "aoStrength": 0.25, "aoRadius": 1.5, "warmth": 0.15, "saturation": 1.05, "gain": 1.04, "tint": -0.05 },
+  "end": 5
+}

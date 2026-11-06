@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.nonuniform-scale-shear",
+  "uid": "bc03887c-d00a-5759-a9f4-fec4d800d02d",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Rotate-then-scale non-uniformly shears a mesh (the diamond cart)",
+  "summary": "A 4-sided CylinderGeometry turned by pi/4 and then scaled non-uniformly comes out as a sheared diamond: an Object3D's matrix applies scale before rotation. Build the shape as its own geometry.",
+  "tags": [
+    "three.js",
+    "scale",
+    "rotation",
+    "shear",
+    "non-uniform scale",
+    "geometry",
+    "cylinder",
+    "box",
+    "matrix"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "new THREE.Mesh(frustum(1.5, .95, 1.15, .65, .6), mat)   // module.any.frustum; or bake: geometry.rotateY(Math.PI / 4) THEN mesh.scale"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any tapered box or rotated primitive that also needs non-uniform scale.",
+    "avoid": "mesh.rotation + mesh.scale with different x/z on a rotated primitive.",
+    "gotchas": [
+      "geometry.rotateY() bakes the rotation into the vertices, so a later mesh.scale is applied in the rotated frame correctly."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A box-like tub renders as a diamond/parallelogram.",
+    "cause": "Mesh matrix = T * R * S: the non-uniform scale acts on the unrotated axes, then the rotation shears the result.",
+    "fix": "Build the geometry directly (frustum) or bake the rotation into the geometry before scaling.",
+    "detect": "Corners not at right angles from above.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#8",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.any.frustum"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

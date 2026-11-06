@@ -1,0 +1,135 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.cafe-props",
+  "uid": "d83f60b6-3788-565c-abc5-0398bdd12dbb",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Café props: bentwood chair, table, pendant, sconce, booth, espresso machine",
+  "summary": "Night-café furniture and practicals at real size: Thonet-style bentwood chair, café table, pendant with haze cone and lights, lantern sconce, cup and saucer, duffel, banquette booth, espresso machine.",
+  "tags": [
+    "cafe",
+    "coffee shop",
+    "restaurant",
+    "bar",
+    "diner",
+    "chair",
+    "bentwood",
+    "thonet",
+    "table",
+    "pendant",
+    "lamp",
+    "sconce",
+    "wall light",
+    "cup",
+    "saucer",
+    "coffee",
+    "duffel",
+    "bag",
+    "booth",
+    "banquette",
+    "espresso machine",
+    "furniture",
+    "interior",
+    "night"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "438e9340e8ab121e1e3a2f7dc45351cda7a0e67c",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 17777,
+      "sha1": "8813d3f8799ceab90edfb44ebc770b869ccb8ed9"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1631,
+      "sha1": "0fd5b3ebe39001cf83ba3d1c1f690998db559469"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "cafeMaterials",
+    "tubeAlong",
+    "bentwoodChair",
+    "cafeTable",
+    "pendant",
+    "sconce",
+    "cupSaucer",
+    "duffel",
+    "booth",
+    "espressoMachine"
+  ],
+  "usage": {
+    "import": "import { bentwoodChair, cafeTable, pendant, sconce, booth, espressoMachine } from '../library/module.recon.cafe-props/index.js';",
+    "example": "const T = cafeTable(G, [2.75, 0, .35]); bentwoodChair(G, [3.25, 0, .1], -Math.PI / 2 - .5);\npendant(S, G, [2.6, 1.9, -2.3], { ceil: 2.95, cone: 10, r: .25 });\nsconce(S, G, [4.75, 1.9, -3.37], -Math.PI / 2);   // wall point, turn local +z into the room\nconst { B, solids } = booth(S, G, { rot: -.815, pos: [-.08, 0, .04], scale: 1.15, seat: .41 });   // seat tops .41 (people inside B, seated with sitOn)"
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.any.haze-beam"
+  ],
+  "doc": {
+    "when": "Cafés, bars, restaurants, diners, waiting rooms at night or in the day (lights are part of pendant/sconce: pass smaller cone/i for daylight).",
+    "avoid": "Using pendant/sconce lights as the only light of a big room: they are practicals; add a key/fill.",
+    "gotchas": [
+      "pendant() needs o.ceil (the ceiling height) to draw its cord; its lights are added to S.scene in world space via the parent's matrix.",
+      "booth(): figures go INSIDE the booth group (parent: B) so they turn and scale with it; seat them with sitOn(S, f, { at: B.localToWorld(V(+-.88, seatY, 0)).toArray(), face: table point }) from lib/props.js (it measures the posed body), then act() WITHOUT seat:. o.seat .41 keeps seated knees under the .775 table top.",
+      "Chairs get a small deterministic yaw jitter from their position (o.jitter false to disable).",
+      "Table tops and booth cushions/backs are returned as solids for S.collide."
+    ],
+    "params": {
+      "pendant o": "ceil r mat rim inner ie color i cone angle beam beamTo beamColor shadow",
+      "sconce o": "i wash up",
+      "booth o": "rot pos scale tableRot props seat (cushion top, default .52)"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "183-263, 334-345, 397-423",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "criticOnScene": 7
+  },
+  "related": [
+    "recipe.recon.night-cafe-cutaway",
+    "module.any.haze-beam",
+    "pitfall.any.furniture-fit-check"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

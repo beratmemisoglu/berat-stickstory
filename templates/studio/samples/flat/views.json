@@ -1,0 +1,11 @@
+{
+ "narration": { "timeline": "timeline.json", "script": "script.txt" },
+ "views": {
+  "sample": { "scenes": ["sample"], "end": 20 },
+  "hero": { "scenes": ["hero"], "end": 6 },
+  "kit": { "scenes": ["kit"], "end": 16 },
+  "mustfail_overlap": { "scenes": ["mustfail_overlap"], "end": 3, "expect": "overlap" },
+  "mustfail_cut": { "scenes": ["mustfail_cut"], "end": 3, "expect": "cut" },
+  "mustfail_caption": { "scenes": ["mustfail_caption"], "end": 3, "expect": "caption" }
+ }
+}

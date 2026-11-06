@@ -1,0 +1,92 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.whole-body-tilt",
+  "uid": "0b1d1d86-2622-5e4d-a972-bd0052c6507c",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "A heel-to-head push diagonal needs a whole-body tilt",
+  "summary": "Hinge + lean still looked upright for a cart pusher: the reference is a straight heel-to-head line. Widest-stride clip + a whole-body tilt about the rear foot, then hand IK.",
+  "tags": [
+    "pose",
+    "tilt",
+    "push",
+    "diagonal",
+    "lean",
+    "whole body",
+    "cart",
+    "shove"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { tilt } from '../library/module.recon.rig-pose/index.js';",
+    "example": "tilt(pusher, .45);   // once in build; tick: Walk_Loop t 0, hinge .22, lean .12, handTo the rim"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Pushing, leaning into wind, bracing against a door.",
+    "avoid": "Trying to get the diagonal from the spine alone.",
+    "gotchas": [
+      "The tilted feet are not checked against the floor: look at them."
+    ],
+    "params": {
+      "tilt": ".45 rad",
+      "pivot": ".25 m per rad behind the origin"
+    }
+  },
+  "problem": {
+    "symptom": "The pusher looks upright even with hinge + lean.",
+    "cause": "The diagonal runs through the legs; spine bones can't make it.",
+    "fix": "Walk_Loop at its widest stride + group.rotateX(tilt) pivoted near the rear foot + hand IK.",
+    "detect": "Side view: the heel-hip-head line is not straight.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#13",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pose.recon.cart-pusher",
+    "module.recon.rig-pose",
+    "pitfall.recon.bodies-not-checked-against-ground"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,128 @@
+﻿{
+  "schema": 1,
+  "id": "module.any.relief",
+  "uid": "81957e14-6d7b-58d7-ade3-09f6ec9e30e0",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Relief faces (rough earth/rock), fbm noise, backing volume",
+  "summary": "Displaced-plane relief faces for cut earth, rock and spoil (critic-tuned noise scales, clamped pits), a face registry to seat props on the surface, a closed backing volume, lumpy boxes and lips.",
+  "tags": [
+    "relief",
+    "displacement",
+    "earth",
+    "soil",
+    "rock",
+    "cut face",
+    "cutaway",
+    "terrain",
+    "noise",
+    "fbm",
+    "value noise",
+    "hash",
+    "backing",
+    "solid",
+    "lumpy",
+    "rubble",
+    "spoil"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "402a7a3dab49aa943829219a9b53df7bd5e3fec9",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 6467,
+      "sha1": "06aebb42118eddf4bc96e4c28202ac8b1d5d7c9e"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1971,
+      "sha1": "f7b3f88fad51a769ced4e635aaa18a1aa32a8b42"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "proofRequires": [
+    "module.recon.canvas-materials"
+  ],
+  "exports": [
+    "hash",
+    "vnoise",
+    "fbm",
+    "reliefHeight",
+    "relief",
+    "reliefFaces",
+    "backing",
+    "lumpyBox",
+    "lumpyLip"
+  ],
+  "usage": {
+    "import": "import { relief, reliefFaces, backing, lumpyLip } from '../library/module.any.relief/index.js';",
+    "example": "const R = reliefFaces(G);\nR.face(-11, -.58, -5.2, -.58, .02, 1, .5, soil, { name: 'earth left' });   // x0 x1 y0 y1 z seed amp mat\nconst zAt = R.surf(-3, -2);   // seat a stone ON the face\nconst b = backing(10.4, 4.6, 4, std(0x1a140f, 1)); b.position.set(-5.8, -2.9, 0); G.add(b); solids.push(b);"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Cut-away earth, rock walls, tunnel ceilings/floors, spoil heaps: anything that must read rough at render scale. Pair every relief that bodies could touch with backing() so S.collide treats the earth as solid.",
+    "avoid": "Amplitude judged in a close-up: too little reads as a texture, too much as foam/sponge. Backing boxes at the clamped-plateau depth (z-fight).",
+    "gotchas": [
+      "UVs are metric (1 UV = 1 m) by default: use materials with repeat = 1 / tile (perMetre).",
+      "Edges are pinned to 0 over 12 cm so faces meet their neighbours; pass pin: false for free edges.",
+      "Deep pits are clamped at -.12 amp: that makes flat plateaus; keep backing volumes >= .3 m behind the face (backing() does).",
+      "A relief is open: never list it as an S.collide solid; list its backing().",
+      "reliefFaces().surf ignores faces marked { back: true }."
+    ],
+    "params": {
+      "relief(w, h, amp, seed, mat, o)": "o.res (28 verts/m), o.tile (1), o.pin, o.bias, o.freq",
+      "tested amps": ".5 front faces, .25 back faces, .06-.12 floors/ceilings"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "80-95, 174-177, 225-248",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "passesToTune": 5
+  },
+  "related": [
+    "pitfall.recon.relief-not-solid",
+    "pitfall.any.clamped-relief-coplanar-backing",
+    "solution.any.relief-scale-at-render",
+    "module.recon.ground-cover"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

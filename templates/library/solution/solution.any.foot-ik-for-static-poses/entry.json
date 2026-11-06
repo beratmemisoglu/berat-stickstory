@@ -1,0 +1,93 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.foot-ik-for-static-poses",
+  "uid": "81d61ae1-5aae-52a0-afc3-db6bb0752395",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Static illustration poses need foot IK, not a perfect clip",
+  "summary": "No clip fits illustration poses (rope climber, prone chest-up, all fours). Nearest clip + handTo + a two-bone footTo + world-axis spine turns worked for every reference pose.",
+  "tags": [
+    "pose",
+    "ik",
+    "foot ik",
+    "leg ik",
+    "footTo",
+    "handTo",
+    "climbing",
+    "prone",
+    "kneeling",
+    "static pose"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { footTo, turn } from '../library/module.recon.rig-pose/index.js';",
+    "example": "C.play('Idle_Loop', 0).apply(); footTo(C, 'R', V(.56, -2.16, -.42), V(.6, -1.2, -.3)); C.handTo('R', ropePoint, { weight: 1, curl: .85 });"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any pose from a still image (climbers, crawlers, kneelers, people standing on steps).",
+    "avoid": "Searching the clip library for an exact match.",
+    "gotchas": [
+      "Order: clip -> footTo/turn -> handTo.",
+      "Check footTo's returned miss."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Hours spent on clips that almost fit; legs in the wrong place.",
+    "cause": "Clip libraries hold motions, not illustration poses; the kit had hand IK only.",
+    "fix": "Nearest clip + footTo + turn + handTo.",
+    "detect": "A pose needs a foot on a specific surface.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#16",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose",
+    "pose.recon.rope-climber",
+    "pose.recon.prone-crawler",
+    "pitfall.any.ik-silent-full-reach"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

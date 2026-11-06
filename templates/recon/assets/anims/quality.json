@@ -1,0 +1,1054 @@
+{
+ "version": 1,
+ "about": "Per-clip QA of the built-in clips on both mannequin bodies (experiments/recon-style/src/stories/animqa: run.mjs all + grade.mjs). quality: verified | ok (minor, see notes) | broken (never offered).",
+ "clips": {
+  "Crouch_Fwd_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "broken"
+   },
+   "notes": "female: BROKEN (not played on this body); male: walk foot slide 4.5 cm; female: walk foot slide 8.5 cm"
+  },
+  "Crouch_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Dance_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Death01": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "collapses and lies flat on its back; a foot whips at the impact (one frame)"
+  },
+  "Driving_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Fixing_Kneeling": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "kneels on one knee and works low; the right upper arm brushes the chest (1 cm) and the left hand settles 13 cm once at 2.1 s"
+  },
+  "Hit_Chest": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Hit_Head": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_Talking_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_Torch_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Interact": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Jog_Fwd_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "fast legs: the stride kicks a little at the loop seam; the flight phase is kept on the floor"
+  },
+  "Jump_Land": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Jump_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Jump_Start": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "PickUp_Table": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Pistol_Aim_Down": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Pistol_Aim_Neutral": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Pistol_Aim_Up": {
+   "quality": "ok",
+   "by": {
+    "male": "verified",
+    "female": "ok"
+   },
+   "notes": "two-hand grip: the support hand sinks into the gun hand (a held gun covers it)"
+  },
+  "Pistol_Idle_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: pop 5.1 cm hand_l"
+  },
+  "Pistol_Reload": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "two-hand grip: the support hand sinks into the gun hand (a held gun covers it)"
+  },
+  "Pistol_Shoot": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: pop 5.8 cm hand_l; female: pop 4.3 cm hand_l"
+  },
+  "Punch_Cross": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Punch_Jab": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "a fast jab: the fist travels 35-38 cm in one 1/30 s frame (that is the punch, not a snap)"
+  },
+  "Push_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "it walks while pushing: move the figure with walkAt / a sequence walk step (clip Push_Loop); played in place the male feet slide"
+  },
+  "Roll": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: clip arm-legs 54.4 mm (uarm_r>thigh_r); male: under floor 23 mm; male: twist calf_r 50.7 deg; male: pop 20.3 cm calf_r"
+  },
+  "Sitting_Enter": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Sitting_Exit": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: twist hand_l 100 deg"
+  },
+  "Sitting_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Sitting_Talking_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Spell_Simple_Enter": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Spell_Simple_Exit": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Spell_Simple_Idle_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: pop 3.6 cm calf_r"
+  },
+  "Spell_Simple_Shoot": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Sprint_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "fast legs: the stride kicks a little at the loop seam; the flight phase is kept on the floor"
+  },
+  "Swim_Fwd_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "water scenes: the lowest point of the body rests on the figure's y: place it under the water line"
+  },
+  "Swim_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Sword_Attack": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: foot slide 45.2 cm; female: foot slide 75.6 cm"
+  },
+  "Sword_Idle": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Walk_Formal_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: walk foot slide 3.6 cm"
+  },
+  "Walk_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: walk foot slide 3.9 cm"
+  },
+  "Chest_Open": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "ClimbUp_1m": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Consume": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Farm_Harvest": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: clip arm-torso 9.2 mm (uarm_r>spine_02); male: twist calf_r 54 deg; female: twist calf_r 56.5 deg"
+  },
+  "Farm_PlantSeed": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: under floor 56.5 mm; female: under floor 23.3 mm"
+  },
+  "Farm_Watering": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: clip arm-torso 12.6 mm (uarm_r>spine_02)"
+  },
+  "Hit_Knockback": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: under floor 28.2 mm; male: twist lowerarm_r 129 deg; male: pop 11.4 cm pelvis; female: under floor 49.8 mm"
+  },
+  "Idle_FoldArms_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "folded arms: the hands tuck under the other arm and against the chest (contact by design, 1-5 cm)"
+  },
+  "Idle_Lantern_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_No_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_Rail_Call": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: clip arm-torso 11.9 mm (uarm_r>spine_02); male: twist lowerarm_r 123.4 deg; male: twist calf_r 53.6 deg; female: twist lowerarm_r 124 deg"
+  },
+  "Idle_Rail_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: twist calf_r 53.6 deg; female: twist calf_r 54 deg"
+  },
+  "Idle_Shield_Break": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_Shield_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Idle_TalkingPhone_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "LayToIdle": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Melee_Hook": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: twist lowerarm_l -147 deg; male: pop 28.1 cm calf_r; female: foot slide 7.7 cm; female: twist lowerarm_l -148.5 deg"
+  },
+  "Melee_Hook_Rec": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: foot slide 58.1 cm; female: foot slide 54.4 cm"
+  },
+  "NinjaJump_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "NinjaJump_Land": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "NinjaJump_Start": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: under floor 6.1 mm; male: pop 39.6 cm Head; female: pop 35.8 cm Head"
+  },
+  "OverhandThrow": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Shield_Dash": {
+   "quality": "ok",
+   "by": {
+    "male": "broken",
+    "female": "ok"
+   },
+   "notes": "male: BROKEN (not played on this body); male: foot slide 59.6 cm; female: foot slide 4.8 cm"
+  },
+  "Shield_OneShot": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Slide_Exit": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: clip arm-legs 22.8 mm (uarm_r>calf_r); male: under floor 21.8 mm; female: under floor 19 mm"
+  },
+  "Slide_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "verified",
+    "female": "ok"
+   },
+   "notes": "female: under floor 8.1 mm"
+  },
+  "Slide_Start": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: under floor 40.8 mm; male: pop 26.5 cm calf_r; female: under floor 43 mm; female: pop 22.6 cm calf_r"
+  },
+  "Sword_Block": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Sword_Dash": {
+   "quality": "ok",
+   "by": {
+    "male": "broken",
+    "female": "ok"
+   },
+   "notes": "male: BROKEN (not played on this body); male: clip arm-arm 37.1 mm (hand_r>upperarm_l); male: floating 27.5 mm; male: foot slide 16.9 cm; male: twist calf_r 51.8 deg"
+  },
+  "Sword_Heavy_Combo": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: floating 52.9 mm; male: foot slide 82.5 cm; male: twist lowerarm_r 122.8 deg; male: twist hand_r 117.1 deg"
+  },
+  "Sword_Regular_A": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: foot slide 41.2 cm; male: twist hand_r 109.7 deg; male: twist calf_r 51.3 deg; male: knee_l bends the wrong way -51.4 deg"
+  },
+  "Sword_Regular_A_Rec": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: foot slide 23 cm; male: twist calf_r 66.4 deg; male: knee_l bends the wrong way -48.9 deg; female: foot slide 12.5 cm"
+  },
+  "Sword_Regular_B": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: clip arm-arm 37.1 mm (hand_r>upperarm_l); male: foot slide 3.2 cm; female: knee_l bends the wrong way -40.3 deg"
+  },
+  "Sword_Regular_B_Rec": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: foot slide 27.1 cm; female: foot slide 20 cm"
+  },
+  "Sword_Regular_C": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: clip arm-legs 36.2 mm (uarm_r>calf_l); male: clip arm-torso 25.3 mm (farm_r>spine_02); male: foot slide 70.2 cm; male: twist lowerarm_r 128.8 deg"
+  },
+  "Sword_Regular_Combo": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: clip arm-legs 51.4 mm (uarm_r>calf_l); male: clip arm-arm 37.1 mm (hand_r>upperarm_l); male: foot slide 48 cm; male: twist hand_r 109.7 deg"
+  },
+  "TreeChopping_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: twist lowerarm_r 129.2 deg; female: twist lowerarm_r 129.9 deg"
+  },
+  "Walk_Carry_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Yes": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Zombie_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "Zombie_Scratch": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: twist calf_r 52.8 deg; female: clip arm-legs 8.7 mm (hand_l>calf_l); female: twist calf_r 54.5 deg"
+  },
+  "Zombie_Walk_Fwd_Loop": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: walk foot slide 72.3 cm; female: walk foot slide 33 cm"
+  },
+  "G_Point_Forward": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: pop 4.8 cm hand_r"
+  },
+  "G_Point_Side": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "G_Shrug": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "G_Facepalm": {
+   "quality": "ok",
+   "by": {
+    "male": "verified",
+    "female": "broken"
+   },
+   "notes": "female: BROKEN (not played on this body); female: clip arm-head 14.7 mm (farm_r>Head); female: pop 10.3 cm hand_r"
+  },
+  "G_Hands_On_Head": {
+   "quality": "ok",
+   "by": {
+    "male": "verified",
+    "female": "ok"
+   },
+   "notes": "female: the hands rest on top of the head with the fingers laced (they overlap by design; one 11 cm hand settle at 1.2 s)"
+  },
+  "G_Hands_On_Head_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "verified",
+    "female": "ok"
+   },
+   "notes": "female: the hands rest on top of the head with the fingers laced (they overlap by design; one 11 cm hand settle at 1.2 s)"
+  },
+  "G_Typing_Standing_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: clip arm-torso 8.9 mm (uarm_r>spine_02); male: pop 3.9 cm hand_r; female: retarget hand_l 14.9 deg"
+  },
+  "G_Typing_Seated_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "G_Hold_Up_Overhead": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "G_Hold_Up_Overhead_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "G_Thrust_Prop_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "verified"
+   },
+   "notes": "male: pop 6.5 cm hand_r"
+  },
+  "G_Clap_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "female: the hands overlap up to 4 cm at the clap"
+  },
+  "KK_Fall_Death_A": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "falls stiffly backwards and ends propped on the elbows; the heels dip 1.4 cm into the floor for one frame early on"
+  },
+  "KK_Fall_Death_B": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Hit_A": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Hit_B": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: pop 5.1 cm lowerarm_r; female: pop 3.9 cm lowerarm_r"
+  },
+  "KK_Interact": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_PickUp": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Throw": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: foot slide 3.8 cm; female: foot slide 3.3 cm"
+  },
+  "KK_Use_Item": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Cheer": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Lie_Down": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "lies down on its side; lying, one foot rests on the other"
+  },
+  "KK_Lie_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Lie_StandUp": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_PushUps_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sit_Chair_Down": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: floating 18.8 mm; female: floating 15 mm; female: foot slide 4.9 cm"
+  },
+  "KK_Sit_Chair_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sit_Chair_StandUp": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sit_Floor_Down": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sit_Floor_Idle_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sit_Floor_StandUp": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_SitUps_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Wave": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Digging_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "in place: the feet shuffle with each shovel swing; female: a hand snaps 15 cm at the loop start"
+  },
+  "KK_Hammering_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Hold_A_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Hold_B_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Hold_C_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Lockpicking_Loop": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sawing_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "male: foot slide 3 cm; female: foot slide 3.1 cm"
+  },
+  "KK_Working_A": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Working_B": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Working_C": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Crawl_Loop": {
+   "quality": "ok",
+   "by": {
+    "male": "ok",
+    "female": "ok"
+   },
+   "notes": "crawls on hands and knees; the knees sink up to 1.6 cm into the floor"
+  },
+  "KK_Dodge_Backward": {
+   "quality": "verified",
+   "by": {
+    "male": "verified",
+    "female": "verified"
+   },
+   "notes": ""
+  },
+  "KK_Sneak_Loop": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: walk foot slide 18.8 cm; female: walk foot slide 15.6 cm"
+  },
+  "KK_Walk_Backwards_Loop": {
+   "quality": "broken",
+   "by": {
+    "male": "broken",
+    "female": "broken"
+   },
+   "notes": "male: walk foot slide 15.4 cm; female: walk foot slide 14.3 cm"
+  }
+ }
+}

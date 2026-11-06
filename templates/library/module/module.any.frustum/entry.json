@@ -1,0 +1,102 @@
+﻿{
+  "schema": 1,
+  "id": "module.any.frustum",
+  "uid": "a9bf8d8e-f2fd-54d7-ac8c-64199b3ff69b",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Frustum tub geometry (open box wider at the top)",
+  "summary": "A tapered open box as its own BufferGeometry with metric UVs: mine-cart tubs, hoppers, bins, planters. Avoids the sheared 'diamond' of a rotated-then-scaled 4-sided cylinder.",
+  "tags": [
+    "frustum",
+    "tub",
+    "cart",
+    "hopper",
+    "bin",
+    "planter",
+    "tapered box",
+    "geometry",
+    "shear",
+    "non-uniform scale"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "e98d8c5f6e3c0f70b633d9f5e92c98d864c51335",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 1965,
+      "sha1": "3943e4f480d446a3b95da2a8640efbac8b034aed"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1254,
+      "sha1": "4e291e9ac9965379bef9c7db6640eb3b3fa05c4d"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "frustum"
+  ],
+  "usage": {
+    "import": "import { frustum } from '../library/module.any.frustum/index.js';",
+    "example": "const tub = new THREE.Mesh(frustum(1.5, .95, 1.15, .65, .6), std(0x8a7a6e, .7, { side: THREE.DoubleSide }));   // top L W, bottom L W, height"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any open container with sloped sides.",
+    "avoid": "CylinderGeometry(r0, r1, h, 4) + rotation pi/4 + non-uniform scale: scale applies before rotation, so it shears.",
+    "gotchas": [
+      "Faces are single-sided: use DoubleSide to see inside.",
+      "o.floor (default true) closes the bottom, o.lid closes the top."
+    ],
+    "params": {
+      "frustum(tl, tw, bl, bw, h, o)": "origin at the bottom centre; o.unit metres per UV"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "205-209",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.nonuniform-scale-shear",
+    "module.recon.mine-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

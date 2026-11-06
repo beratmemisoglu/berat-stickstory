@@ -1,0 +1,186 @@
+﻿{
+  "schema": 1,
+  "id": "recipe.recon.night-cafe-cutaway",
+  "uid": "f7883d51-e34a-5f6d-a19c-645aed5547d4",
+  "origin": "seed",
+  "kind": "recipe",
+  "title": "Night café cut-away with two glowing men in a booth",
+  "summary": "A building corner sliced open at night: brick café with bar, espresso machine, pendants with haze, sconces, bentwood chairs; two glowing men talking in a banquette booth, a barista. Solved camera.",
+  "tags": [
+    "cafe",
+    "coffee shop",
+    "night",
+    "cutaway",
+    "cut-away",
+    "diorama",
+    "isometric",
+    "building corner",
+    "interior",
+    "booth",
+    "meeting",
+    "two men",
+    "glowing",
+    "hitmen",
+    "true crime",
+    "brick",
+    "bar",
+    "barista",
+    "shot match"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 15,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "849f7b94ba4cd6e649ad1eca96937ac08f336063",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 383,
+      "sha1": "727d841c9a8e9a84725bedc1189b9166857a77c0"
+    },
+    {
+      "path": "scene.js",
+      "role": "entry",
+      "bytes": 22195,
+      "sha1": "15800a29a9056e21c8b562e5b3cc2086213d03b7"
+    },
+    {
+      "path": "settings.json",
+      "role": "data",
+      "bytes": 371,
+      "sha1": "bcfb77530d0e48ba7345eda03719936dd6baadfb"
+    }
+  ],
+  "entry": "scene.js",
+  "proof": "proof.js",
+  "settings": "settings.json",
+  "compare": "compare.jpg",
+  "exports": [],
+  "usage": {
+    "import": "library_use({ id: 'recipe.recon.night-cafe-cutaway', as: 'cafe_meeting' })   // -> scenes/cafe_meeting.js + the modules it requires",
+    "example": "Merge settings.json theme + post into project.json settings. Edit the CONFIG block (CAM, room bounds X0..Z1, BOOTH). Set MANNEQUIN to a rigged mannequin glb to swap the bare glowing body. Re-pose the men in the S.tick (pose.recon.booth-sitters)."
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.recon.cafe-props",
+    "module.any.haze-beam",
+    "module.recon.glow-person",
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "A meeting, deal or stake-out in a café/bar seen from outside at night; any 'dollhouse' cut-away of a ground-floor room on a street corner.",
+    "avoid": "Daylight (the lighting is practicals + a cool night fill); close-ups (built for a 31 deg wide shot).",
+    "gotchas": [
+      "Camera is the solved one: p (-7.23, 2.862, 6.156), look (-.343, 1.253, -.255), fov 31.075, no roll, no shift. A hand-tweaked camera drifted ~100 px: re-fit the scene, not the camera.",
+      "The booth was widened .4 m beyond the reference so nothing intersects (the reference's booth can't physically fit).",
+      "The men sit inside the booth group (scaled 1.15) at .9 x 1 x .9 and 17 cm lower; act({ seat: .47 }) re-seats them every tick.",
+      "settings.post has no cap here (the café glow was tuned under the default grade); for a saturated orange glow raise cap to .95-.97 and set ca 0.",
+      "With the user's Mixamo mannequin (MANNEQUIN = 'assets/models/mannequin.glb') the render matches the source pixel for pixel (PSNR 62.8 dB); the default bare human reads slimmer."
+    ],
+    "params": {
+      "camera": {
+        "p": [
+          -7.23,
+          2.862,
+          6.156
+        ],
+        "l": [
+          -0.343,
+          1.253,
+          -0.255
+        ],
+        "fov": 31.075,
+        "roll": 0,
+        "shift": [
+          0,
+          0
+        ]
+      },
+      "room": "x -1.2..4.75, z -5.2..1.05, ceiling 2.95",
+      "booth": {
+        "rot": -0.815,
+        "pos": [
+          -0.08,
+          0,
+          0.04
+        ],
+        "scale": 1.15
+      }
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "1-461",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "project.json",
+      "lines": "settings",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "critic": 7,
+    "criticScores": [
+      5,
+      6,
+      6,
+      6.5,
+      6.5,
+      6,
+      7
+    ],
+    "renders": 44,
+    "critics": 7,
+    "layoutIssues": 0,
+    "solveRmsPx": 27,
+    "verify": {
+      "issues": 0,
+      "psnrVsSourceBareBody": 31.4,
+      "psnrVsSourceMannequin": 62.8
+    }
+  },
+  "related": [
+    "module.recon.cafe-props",
+    "look.recon.shot-match-neutral",
+    "pose.recon.booth-sitters",
+    "solution.any.solve-camera-trust-the-solve",
+    "pitfall.any.furniture-fit-check"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

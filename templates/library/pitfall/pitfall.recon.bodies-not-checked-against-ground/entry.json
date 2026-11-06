@@ -1,0 +1,110 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.bodies-not-checked-against-ground",
+  "uid": "b8a3ee24-9055-56a3-acfb-1a6ae6f22c3d",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "People are never checked for floating or feet through the floor",
+  "summary": "Figures skip the floating check and S.collide only tests bodies in solids: a climber in mid-air, a prone man .45 m up or feet through the floor all pass as 0 issues.",
+  "tags": [
+    "checker",
+    "figures",
+    "floating",
+    "support",
+    "feet",
+    "floor penetration",
+    "S.collide",
+    "people",
+    "blind spot"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { lowestPoint, boneLog } from '../library/module.recon.rig-pose/index.js';",
+    "example": "const lo = lowestPoint(f); if (lo.y - floorY > .03 && !held) warn(f.name + ' floats');   // a manual support check"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every shot with people that aren't simply standing/sitting on the floor.",
+    "avoid": "Trusting ISSUES 0 for poses.",
+    "gotchas": [
+      "Engine fix wanted: a 'support' check (a foot, knee, hand or pelvis within 3 cm of a surface or a declared hold) and floor penetration of feet."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A figure hangs in the air or its feet sink into the floor, yet the checker reports 0 issues.",
+    "cause": "Bodies carry noContact; S.collide tests body-in-solid only.",
+    "fix": "Measure bone heights (?bones=1) and look at crops; add your own support check per figure.",
+    "detect": "lowest bone y vs the surface under it; visual check of tilted feet.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#12",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#19",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "checker blind spots",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.clip-root-offsets",
+    "module.recon.rig-pose",
+    "pitfall.recon.collide-must-be-declared"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

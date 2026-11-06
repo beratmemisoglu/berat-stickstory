@@ -1,0 +1,10 @@
+[
+ {"s":0.3,"e":1.74,"text":"Every style starts somewhere.","words":[{"w":"Every","s":0.3,"e":0.6},{"w":"style","s":0.68,"e":0.98},{"w":"starts","s":1.06,"e":1.36},{"w":"somewhere.","s":1.44,"e":1.74}]},
+ {"s":2.17,"e":3.61,"text":"This one starts plain:","words":[{"w":"This","s":2.17,"e":2.47},{"w":"one","s":2.55,"e":2.85},{"w":"starts","s":2.93,"e":3.23},{"w":"plain:","s":3.31,"e":3.61}]},
+ {"s":3.89,"e":7.23,"text":"a frame, a palette and a few honest shapes.","words":[{"w":"a","s":3.89,"e":4.19},{"w":"frame,","s":4.27,"e":4.57},{"w":"a","s":4.65,"e":4.95},{"w":"palette","s":5.03,"e":5.33},{"w":"and","s":5.41,"e":5.71},{"w":"a","s":5.79,"e":6.09},{"w":"few","s":6.17,"e":6.47},{"w":"honest","s":6.55,"e":6.85},{"w":"shapes.","s":6.93,"e":7.23}]},
+ {"s":7.66,"e":9.48,"text":"Words land on the beat,","words":[{"w":"Words","s":7.66,"e":7.96},{"w":"land","s":8.04,"e":8.34},{"w":"on","s":8.42,"e":8.72},{"w":"the","s":8.8,"e":9.1},{"w":"beat,","s":9.18,"e":9.48}]},
+ {"s":9.71,"e":11.15,"text":"the camera eases in,","words":[{"w":"the","s":9.71,"e":10.01},{"w":"camera","s":10.09,"e":10.39},{"w":"eases","s":10.47,"e":10.77},{"w":"in,","s":10.85,"e":11.15}]},
+ {"s":11.38,"e":13.58,"text":"and nothing hides under the captions.","words":[{"w":"and","s":11.38,"e":11.68},{"w":"nothing","s":11.76,"e":12.06},{"w":"hides","s":12.14,"e":12.44},{"w":"under","s":12.52,"e":12.82},{"w":"the","s":12.9,"e":13.2},{"w":"captions.","s":13.28,"e":13.58}]},
+ {"s":14.01,"e":16.21,"text":"Shapes can count, label and point.","words":[{"w":"Shapes","s":14.01,"e":14.31},{"w":"can","s":14.39,"e":14.69},{"w":"count,","s":14.77,"e":15.07},{"w":"label","s":15.15,"e":15.45},{"w":"and","s":15.53,"e":15.83},{"w":"point.","s":15.91,"e":16.21}]},
+ {"s":16.64,"e":18.84,"text":"Then the Studio makes it yours.","words":[{"w":"Then","s":16.64,"e":16.94},{"w":"the","s":17.02,"e":17.32},{"w":"Studio","s":17.4,"e":17.7},{"w":"makes","s":17.78,"e":18.08},{"w":"it","s":18.16,"e":18.46},{"w":"yours.","s":18.54,"e":18.84}]}
+]

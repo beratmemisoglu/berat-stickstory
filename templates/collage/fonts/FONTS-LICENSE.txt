@@ -1,0 +1,4 @@
+Fonts in this folder are licensed under the SIL Open Font License 1.1 (https://openfontlicense.org), from Google Fonts:
+UnifrakturMaguntia (blackletter-400), Special Elite (typewriter-400), Pinyon Script (script-400), Courier Prime
+(courier-700), Anton (anton-400), Abril Fatface (abril-400), Playfair Display, Oswald, Archivo Black, League Gothic,
+Space Mono, Inter.

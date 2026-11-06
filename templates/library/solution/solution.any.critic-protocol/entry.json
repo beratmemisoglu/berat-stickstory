@@ -1,0 +1,110 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.critic-protocol",
+  "uid": "7944b0a7-fc25-5e56-a756-b4bb0b22cffc",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Critic protocol: a fresh read-only critic every ~3 passes, claims verified on the overlay",
+  "summary": "A fresh read-only critic every ~3 passes gets the sheets + region numbers, returns a score and a top 10 with pixel locations and 3D fixes. Verify claims on the edge overlay; keep a ledger.",
+  "tags": [
+    "critic",
+    "review",
+    "score",
+    "shot match",
+    "loop",
+    "verification",
+    "edge overlay",
+    "ledger",
+    "subagent"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "brief: 'verify placement on the edges overlay before claiming it; give pixel locations and concrete 3D fixes'"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every reference-matching loop.",
+    "avoid": "Acting on unverified critic claims.",
+    "gotchas": [
+      "Critics are reliable on materials, light and poses, unreliable on hidden geometry: 2 of 5 final dig claims were wrong; 'the camera is off' was wrong on the café.",
+      "Rejected examples: 'remove the doubled post' (a back post), 'a cool key from back-right' (the lit end face disproves it), 'the hose is missing' (it was there)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Passes wasted moving things that were already right or adding things that exist.",
+    "cause": "Critics hallucinate geometry and lighting directions from a single image.",
+    "fix": "Give critics the edge overlay + region numbers; require pixel locations; verify before acting; ledger.",
+    "detect": "A claim contradicts the overlay.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#33, rec 7",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#24",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "loop 6",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.overlay-pack-per-pass",
+    "solution.any.order-of-work"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

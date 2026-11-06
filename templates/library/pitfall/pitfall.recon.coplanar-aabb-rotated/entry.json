@@ -1,0 +1,100 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.coplanar-aabb-rotated",
+  "uid": "d0da0fdb-f6d9-5f35-a811-89336794c767",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "COPLANAR flags rotated neighbours (rails, planks) that never touch",
+  "summary": "COPLANAR pairs by world AABB, so diagonal rails or rotated planks at one height are flagged. Merge rails into one mesh, alternate plank heights 1.2 cm; never dodge by changing contacts.",
+  "tags": [
+    "checker",
+    "coplanar",
+    "layoutIssues",
+    "aabb",
+    "rails",
+    "planks",
+    "deck",
+    "z-fight",
+    "merge"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { merged } from '../library/module.any.metric-box/index.js';",
+    "example": "rails = one mesh: merged([-1, 1].map(s => box(len, .1, .12).translate(0, 0, s * gauge / 2))); planks: y + (i % 2) * .012"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Parallel thin rotated parts at the same height.",
+    "avoid": "Raising one rail 1 cm to dodge it: the cart's wheels sank into it and it read as floating.",
+    "gotchas": [
+      "Engine fix wanted: oriented boxes / mesh-local extents for the pairing."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "COPLANAR between the two rails or between neighbouring deck planks.",
+    "cause": "Rotated thin parts at one height overlap in world AABB although they never touch.",
+    "fix": "Merge into one mesh; or alternate heights by ~1.2 cm where nothing rests on them.",
+    "detect": "COPLANAR naming two parallel parts that are visibly apart.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#16, #17",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "checker blind spots",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.any.metric-box",
+    "module.recon.mine-props",
+    "pitfall.recon.thin-diagonal-support"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

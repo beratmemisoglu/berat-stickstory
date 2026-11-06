@@ -1,0 +1,103 @@
+﻿{
+  "schema": 1,
+  "id": "solution.recon.lens-shift-view-offset",
+  "uid": "8c8729bd-3d35-5f15-a3f8-0259f253567b",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Lens shift (verticals stay vertical) with setViewOffset",
+  "summary": "Cut-aways and AI images often use a shifted lens: high horizon, vertical verticals. Look level, then S.cam.setViewOffset(1920, 1080, 0, offY, 1920, 1080) after S.camera().",
+  "tags": [
+    "camera",
+    "lens shift",
+    "tilt-shift",
+    "architectural",
+    "verticals",
+    "horizon",
+    "setViewOffset",
+    "off-axis",
+    "film offset",
+    "cutaway"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "S.camera([{ t: 0, p: [-.05, .87, 10.07], l: [-.05, .87, 0], fov: 38.74 }, ...]); S.cam.setViewOffset(1920, 1080, 0, 206, 1920, 1080);"
+  },
+  "requires": [],
+  "doc": {
+    "when": "The reference's verticals are parallel but its vanishing point is far from the frame centre.",
+    "avoid": "Pitching the camera to move the horizon (verticals lean up to ~70 px at the frame edges).",
+    "gotchas": [
+      "setViewOffset survives the engine's updateProjectionMatrix calls.",
+      "S.camera has no shift parameter yet (engine request: S.camera({ shift })); a solver must either fit shift or keep it at 0."
+    ],
+    "params": {
+      "offY": "pixels at 1080 (206 in the tunnel shot)"
+    }
+  },
+  "problem": {
+    "symptom": "Horizon high (vanishing point at y~315/1080) but every vertical perfectly vertical; a pitched camera leans the verticals.",
+    "cause": "The reference is drawn with a shifted (off-axis) lens; S.camera only has p/l/fov/roll.",
+    "fix": "Look level, then S.cam.setViewOffset with the solved shift.",
+    "detect": "Solver fits markedly better with shift as a free parameter (dig: 29 vs 35 px).",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#1",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#2",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.cell-shaft-tunnel-section",
+    "solution.any.solve-camera-trust-the-solve"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

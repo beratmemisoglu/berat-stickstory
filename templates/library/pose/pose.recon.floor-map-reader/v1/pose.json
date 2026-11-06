@@ -1,0 +1,7 @@
+{
+  "clip": "KK_Sit_Floor_Idle_Loop", "t": 0.3,
+  "tick": { "hinge": 0.15, "lean": 0.25, "head": 0.45 },
+  "prop": { "map": "a .62 x .46 m plane at spine_03 + .38 m forward - .22 m down, facing the camera blended toward up (lerp .35)" },
+  "hands": { "L": "map centre + .26 m sideways", "R": "map centre - .26 m sideways", "curl": 0.4 },
+  "code": "S.tick(() => { f.act('KK_Sit_Floor_Idle_Loop', { t: .3 }); hinge(f, .15); lean(f, .25, .45); const c = f.scenePos('spine_03'), fw = f.fwd(), mp = c.clone().addScaledVector(fw, .38).add(V(0, -.22, 0)); map.position.copy(mp); map.lookAt(S.cam.position.clone().lerp(mp.clone().add(V(0, 3, 0)), .35)); const side = V(0, 1, 0).cross(fw).normalize(); f.handTo('L', mp.clone().addScaledVector(side, .26), { weight: 1, curl: .4 }); f.handTo('R', mp.clone().addScaledVector(side, -.26), { weight: 1, curl: .4 }); });"
+}

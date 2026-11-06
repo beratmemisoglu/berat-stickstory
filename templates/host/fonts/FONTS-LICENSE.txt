@@ -1,0 +1,25 @@
+﻿The fonts in this folder hold only the accented letters and punctuation the styles' own fonts lack (made by
+scripts/ext-fonts.py from Google Fonts). They are licensed under the SIL Open Font License 1.1
+(https://openfontlicense.org), except Special Elite (Apache License 2.0): Playfair Display, EB Garamond, Orbitron,
+Share Tech Mono, League Gothic, Oswald, Archivo Black, Space Mono, Inter, UnifrakturMaguntia, Special Elite,
+Pinyon Script, Courier Prime, Anton, Abril Fatface.
+
+The *-viet.woff2 files hold the Vietnamese letters (ơ, ư and the letters with stacked tone marks) of the same fonts, made by
+scripts/ext-fonts.py --viet from Google Fonts (SIL Open Font License 1.1): Inter, JetBrains Mono, EB Garamond, Oswald,
+Space Mono, Anton, Playfair Display, League Gothic, Pinyon Script.
+
+The *-cyrl.woff2 files hold the Cyrillic letters (Russian and the rest of U+0400-045F, Ґ, Ү, Ұ, №), made by
+scripts/ext-fonts.py --cyrl from Google Fonts, all under the SIL Open Font License 1.1. From the same fonts: Inter,
+JetBrains Mono, Open Sans, Oswald, Playfair Display, EB Garamond. A face whose font has no Cyrillic is given the letters of
+an unmodified look-alike (the file's name is the face's, fonts.json "from" names the font inside): Orbitron - Tektur,
+Share Tech Mono - JetBrains Mono, Space Mono - Martian Mono, League Gothic - Alumni Sans, Anton - Oswald, Abril Fatface -
+Yeseva One, Archivo Black - Montserrat, Courier Prime - IBM Plex Mono, Special Elite - Podkova, Pinyon Script - Great
+Vibes, UnifrakturMaguntia - Old Standard TT, Kalam - Pangolin.
+
+script/ holds Noto Sans JP, Noto Sans KR, Noto Sans SC, Noto Sans Thai and Noto Sans Devanagari (Google, SIL Open Font
+License 1.1, each with its OFL.txt), in the pieces Google Fonts splits them into, cut down to the Japanese, Korean,
+Chinese, Thai and Devanagari letters by scripts/script-fonts.py from their Fontsource packages (@fontsource-variable).
+
+orbitron-700-punct.woff2 is a Modified Version of Orbitron (SIL Open Font License 1.1, Reserved Font Name "Orbitron"),
+named "Toon Studio Marks": the quote marks « » ‹ › „ ‚, the middle dot · and the ordinals º ª drawn from Orbitron's own shapes by
+scripts/orbitron-punct.py. It is licensed under the SIL Open Font License 1.1 too.

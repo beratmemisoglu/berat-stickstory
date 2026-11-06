@@ -1,0 +1,31 @@
+# Blender binary (200+ MB)
+blender/
+
+# Headless Chrome render data
+.render-chrome/
+
+# Chrome flow session
+appdata/flow-chrome/
+appdata/flow-chrome-state.json
+appdata/launch-status.json
+
+# npm packages
+appcore/node_modules/
+
+# Personal config (voice IDs, personal settings)
+appdata/config.json
+
+# Large AI model files and Python venvs (download separately)
+appdata/speech/
+appdata/blender/
+appdata/5.2.3/
+
+# Personal Claude session settings
+.claude/settings.local.json
+
+# Trash
+.trash/
+
+# OS
+Thumbs.db
+.DS_Store

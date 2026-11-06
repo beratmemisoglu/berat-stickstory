@@ -1,0 +1,103 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.solve-camera-trust-the-solve",
+  "uid": "be1780ed-3268-5b75-adf6-455f9adfca59",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Solve the camera from landmarks (with roll), then trust the solve",
+  "summary": "Measure 15-20 landmarks on a 1920x1080 grid, solve position, look, fov, ROLL (and shift) plus free dimensions with soft priors. Never hand-tweak the solved camera: re-fit the scene instead.",
+  "tags": [
+    "camera",
+    "solve",
+    "landmarks",
+    "blueprint",
+    "match a frame",
+    "reference",
+    "roll",
+    "fov",
+    "shot match",
+    "measure"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "Solver residuals: dig 48 m block at 42 px rms without roll -> 16 px with roll; café 27 px rms once interior landmarks were added."
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any 'match this reference frame' shot.",
+    "avoid": "Eyeballing the camera; moving it by hand after the solve.",
+    "gotchas": [
+      "Shell-only landmarks can put interior objects outside the room (the café bar landed 6 m deep): add interior landmarks.",
+      "A hand-tweaked café camera drifted ~100 px and made the room too wide; returning to the solve lined the edges up again."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "The first solve fits badly (42 px rms, a 48 m block) or a tweaked camera drifts ~100 px from the reference edges.",
+    "cause": "No roll in the camera model (the reference's verticals lean both ways), too few interior landmarks, or manual camera edits after the solve.",
+    "fix": "Add roll (and lens shift) as free parameters, landmarks inside the space too, soft priors on depths; keep the solved camera and move/scale objects to fit.",
+    "detect": "Weighted rms > ~25 px; the edge overlay shows systematic drift across the frame.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#1",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "loop 1; café findings",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.roll-sign",
+    "solution.any.marker-proof",
+    "pitfall.any.lens-needs-known-depth",
+    "solution.recon.lens-shift-view-offset"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,97 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.marker-proof",
+  "uid": "1d385fed-549a-5813-ad2e-75491776d40f",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Marker proof: render landmark spheres and compare with predicted pixels",
+  "summary": "Right after solving a camera, render glowing spheres at ~5 landmark points (a ?marks=1 flag) and compare them with the solver's predicted pixels. One render caught the engine's opposite roll sign.",
+  "tags": [
+    "camera",
+    "markers",
+    "landmarks",
+    "verify",
+    "debug",
+    "shot match",
+    "solve",
+    "proof"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "if (new URLSearchParams(location.search).get('marks')) for (const p of LANDMARKS) S.scene.add(sphere(.12, 0x00ff40, p));   // see recipe.recon.prison-wall-dig-diorama"
+  },
+  "requires": [],
+  "doc": {
+    "when": "After every camera solve, before building detail.",
+    "avoid": "Judging the camera by eye on a busy frame.",
+    "gotchas": [
+      "Use unlit (toneMapped false) bright spheres so they read under any grade."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Geometry built on a solved camera never lines up, and it is unclear whether the camera or the scene is wrong.",
+    "cause": "Sign/convention differences between solver and engine (roll, shift) or a wrong landmark.",
+    "fix": "Render markers at landmark points and compare positions to the predicted pixels; fix the convention, not the scene.",
+    "detect": "Markers off by more than ~10 px.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "loop 2",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#5, rec 2",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.roll-sign"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

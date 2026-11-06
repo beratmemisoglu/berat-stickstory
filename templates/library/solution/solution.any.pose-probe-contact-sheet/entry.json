@@ -1,0 +1,90 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.pose-probe-contact-sheet",
+  "uid": "0b2bcaef-a4ed-5524-a29b-28f2d5dff636",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Probe clips on a contact sheet before posing (names don't predict silhouettes)",
+  "summary": "Render every candidate clip at 6 times from the shot's side in ONE render and pick the nearest silhouette; then hinge/lean/IK. Clip names don't predict silhouettes.",
+  "tags": [
+    "pose",
+    "clips",
+    "probe",
+    "contact sheet",
+    "animation",
+    "mocap",
+    "silhouette",
+    "gallery"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "module.recon.rig-pose proof.js ?probe=KK_Digging_Loop,Push_Loop&pry=1.57&pstep=.3"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Before choosing a clip for any reference or story pose.",
+    "avoid": "Choosing by clip name ('Digging' barely bends; 'Push' is crouched with the arms overhead).",
+    "gotchas": [
+      "Probe from the shot's own side (pry): a bend facing away hides."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A pose looks nothing like what the clip name promised; passes are spent swapping clips.",
+    "cause": "Retargeted mocap clips are named by action, not by silhouette.",
+    "fix": "One probe render of all candidates, then choose.",
+    "detect": "More than one pass spent trying clips.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#11, rec 5",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "cost": "1 render"
+  },
+  "related": [
+    "module.recon.rig-pose",
+    "pose.recon.clip-facts"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,17 @@
+{
+  "probedOn": "the kit's human rig (lib/figures.js CLIPS), side view contact sheets (rig-pose proof ?probe=clipA,clipB&pry=1.57&pstep=.3), 2026-10-14",
+  "clips": {
+    "KK_Digging_Loop": "barely bends: knees bend, the back stays upright. For digging use Walk_Loop + hinge .85-1.0 + lean .3 (pose.recon.shovel-digger).",
+    "Push_Loop": "crouched with the arms OVERHEAD, not forward. For pushing use Walk_Loop t 0 + tilt .45 + hinge .22 (pose.recon.cart-pusher).",
+    "Walk_Loop": "t 0 is the widest stride (a good planted stance for push/dig); .1 and .75 are usable dig stances.",
+    "KK_Sit_Floor_Idle_Loop": "legs out in front, hands near the hips; t .3 reads well for reading on the floor.",
+    "KK_Crawl_Loop": "at t 0 the root floats the pelvis .6 m above the floor.",
+    "ClimbUp_1m": "crouches the spine: the climber came out 25% too short. Use Idle_Loop + footTo + handTo (pose.recon.rope-climber).",
+    "Swim_Fwd_Loop": "a flat prone body: lower it to the floor and turn the spine up (pose.recon.prone-crawler).",
+    "Fixing_Kneeling": "a kneel with the hands working low; t 1 + spine turns gives all fours over a hole.",
+    "Idle_Loop": "neutral standing base for foot/hand IK poses.",
+    "Sitting_Talking_Loop / Sitting_Idle_Loop": "seated, need act({ seat }) (the clips sit on a .45 m seat scaled by height / 1.8).",
+    "sit clips at 1.2x scale": "put the hips about .4 m behind the figure origin: adjust seat / placement."
+  },
+  "rules": ["Clip names don't predict silhouettes: probe first (one render).", "Roots carry offsets: check bone heights numerically (?bones=1) before trusting a clip.", "act({ seat }) re-seats every tick: group y offsets are ignored for seated clips."]
+}

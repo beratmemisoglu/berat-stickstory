@@ -1,0 +1,86 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.strata-stripes-read-as-planks",
+  "uid": "a8b6c21b-9e1c-5289-a4ea-7754e7ced078",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Strong strata stripes make soil read as wooden planks",
+  "summary": "Horizontal strata bands at a large scale in a soil texture read as planks. Paint lumpy clods first and only faint strata on top (module.recon.canvas-materials strataSoil does).",
+  "tags": [
+    "soil",
+    "earth",
+    "texture",
+    "strata",
+    "stripes",
+    "planks",
+    "clods",
+    "material",
+    "procedural"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "strataSoil() / looseSoil() in module.recon.canvas-materials"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any earth/soil texture.",
+    "avoid": "Regular horizontal banding.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A critic calls the earth 'wood paneling'.",
+    "cause": "Horizontal stripes at plank scale dominate the soil texture.",
+    "fix": "Clods first, faint wavy strata after, pebbles on top.",
+    "detect": "Squint test: horizontal stripes dominate.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#22",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.canvas-materials"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

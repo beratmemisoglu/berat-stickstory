@@ -1,0 +1,96 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.recon-badge",
+  "uid": "dd5c650b-40b6-572c-a4a3-1afd24bf131b",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "The RECONSTRUCTION corner badge appears in every recon shot",
+  "summary": "The recon theme draws a 'RECONSTRUCTION' tag in the corner of every 3D shot. A still, a shot match or a diagram without it needs S.recon = false in build().",
+  "tags": [
+    "badge",
+    "reconstruction tag",
+    "corner label",
+    "S.recon",
+    "still",
+    "shot match",
+    "overlay"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "shot({ build(S) { S.recon = false; ... } })"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Stills, shot matches, diagrams, any frame that must not carry the tag.",
+    "avoid": "",
+    "gotchas": [
+      "networkGrid() sets it itself."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A 'RECONSTRUCTION' badge in the corner that the reference doesn't have.",
+    "cause": "The recon theme tags every 3D shot by default.",
+    "fix": "S.recon = false in the shot's build().",
+    "detect": "Look at the bottom corner of the frame.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#7",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#4",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "look.recon.shot-match-neutral"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

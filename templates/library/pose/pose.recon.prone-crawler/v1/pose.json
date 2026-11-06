@@ -1,0 +1,8 @@
+{
+  "clip": "Swim_Fwd_Loop", "t": 0.3, "groupY": "floor + .2",
+  "feet": { "L": { "target": "floor + .08, behind", "pole": "above the heel" }, "R": { "target": "floor + .08, behind", "pole": "above the heel" } },
+  "turns": [["spine_01", [0, 0, 1], 0.25], ["spine_02", [0, 0, 1], 0.35], ["spine_03", [0, 0, 1], 0.15], ["neck_01", [0, 0, 1], 0.2]],
+  "hands": { "R": { "target": "tray rim, .21 above the floor", "curl": 0.5 }, "L": { "target": "tray rim, .21 above the floor", "curl": 0.5 } },
+  "placement": "figure at (2.75, floor + .2, -.45), ry PI/2, feet at (1.55 / 1.5, floor + .08), hands at (3.6, floor + .21, -.6 / -.25)",
+  "code": "S.tick(() => { f.group.position.y = floorY + .2; f.play('Swim_Fwd_Loop', .3).apply(); footTo(f, 'L', V(1.55, floorY + .08, -.55), V(1.9, floorY + .5, -.55)); footTo(f, 'R', V(1.5, floorY + .08, -.3), V(1.9, floorY + .5, -.3)); turn(f, 'spine_01', Z, .25); turn(f, 'spine_02', Z, .35); turn(f, 'spine_03', Z, .15); turn(f, 'neck_01', Z, .2); f.handTo('R', rimR, { weight: 1, curl: .5 }); f.handTo('L', rimL, { weight: 1, curl: .5 }); });"
+}

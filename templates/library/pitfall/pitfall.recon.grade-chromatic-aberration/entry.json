@@ -1,0 +1,89 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.grade-chromatic-aberration",
+  "uid": "5ab0f9fb-8144-5b79-a8d2-cc63b607f9b3",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Red/blue fringes on silhouettes come from the grade's chromatic aberration",
+  "summary": "The recon grade's default chromatic aberration (.0035) puts red/blue fringes on bright silhouettes. settings.post.ca = 0 for stills and shot matches.",
+  "tags": [
+    "grade",
+    "chromatic aberration",
+    "ca",
+    "fringes",
+    "settings.post",
+    "silhouette",
+    "edges"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "project.json settings.post.ca = 0"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Stills, shot matches, frames with bright edges.",
+    "avoid": "",
+    "gotchas": [
+      "Project-wide like every settings.post value."
+    ],
+    "params": {
+      "ca": "0 (default .0035)"
+    }
+  },
+  "problem": {
+    "symptom": "Red and blue fringes along figure silhouettes and bright edges.",
+    "cause": "The grade's default chromatic aberration.",
+    "fix": "settings.post.ca = 0.",
+    "detect": "Zoom a crop on a bright silhouette near the frame edge.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#30",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.grade-highlight-cap",
+    "look.recon.shot-match-neutral"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,90 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.back-project-hidden-depth-props",
+  "uid": "ec65b63f-625e-52c4-a149-719e9acbf53e",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Place props whose depth the image fakes by back-projecting their pixel",
+  "summary": "Lamps, hoses, roads and tufts whose 'physical' placement hides them or sizes them wrong: unproject their reference pixel through the solved camera onto the plane they sit on (screen -> plane).",
+  "tags": [
+    "placement",
+    "back-projection",
+    "unproject",
+    "screen to world",
+    "props",
+    "lamps",
+    "hose",
+    "tufts",
+    "road",
+    "shot match"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "q.mjs x,y,axis,value: pixel (x, y) onto the plane axis = value -> world point. The dig hose ended ~1 m lower than designed; far tufts 25 m back needed ~2x size."
+  },
+  "requires": [],
+  "doc": {
+    "when": "After the camera is proven, for every prop the reference draws at a size/height that disagrees with its physics.",
+    "avoid": "Designing those props physically and then nudging by eye.",
+    "gotchas": [
+      "The tool lives in docs/style-studio-critic-loop (unproj2.mjs / q.mjs); the app should offer it (screen -> plane)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Solved props render out of view (lamps and a hose hidden behind a deck) or at the wrong size.",
+    "cause": "The image draws the space under the deck taller, distant props larger: back-projected depth disagrees with the physical design.",
+    "fix": "Back-project each prop's pixel onto its supporting plane and place it there.",
+    "detect": "Props missing or misplaced on the edge overlay.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#6, #31, rec 4",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.ai-reference-inconsistent-scale",
+    "module.recon.ground-cover"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,140 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.prison-props",
+  "uid": "438f394e-11c4-507a-a190-cf1dcf68dc51",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Prison props: guard tower, perimeter wall with razor wire, cell bars, bunk, toilet, sink",
+  "summary": "Prison set pieces: guard tower with lit painted windows, precast wall with razor-wire coil, barred cell door, rusty bunk with draped blankets, steel toilet and sink, bare bulb on a wire, rope.",
+  "tags": [
+    "prison",
+    "jail",
+    "cell",
+    "guard tower",
+    "watchtower",
+    "perimeter wall",
+    "razor wire",
+    "barbed wire",
+    "bars",
+    "cell door",
+    "bunk bed",
+    "blanket",
+    "toilet",
+    "sink",
+    "steel",
+    "bulb",
+    "rope",
+    "escape"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "fb7b1ac7667c1500558d533cc0ff6049292931c3",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 12261,
+      "sha1": "bbea90e33bbea1a6b8729f22b50ad861d66ecfda"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1612,
+      "sha1": "b0e37269bcb1543ddbd76ac0b747dc7c23926803"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "prisonMaterials",
+    "guardTower",
+    "prisonWall",
+    "cellBars",
+    "bunkBed",
+    "steelToilet",
+    "sinkUnit",
+    "hangingBulb",
+    "rope"
+  ],
+  "usage": {
+    "import": "import { guardTower, prisonWall, cellBars, bunkBed, steelToilet, sinkUnit, hangingBulb } from '../library/module.recon.prison-props/index.js';",
+    "example": "prisonWall(S, G, { x0: 2.39, x1: 21.7, z: -.6, h: 2.45 });\nguardTower(S, G, { pos: [5.3, 0, -29.7], ry: .25, scale: .9, lean: -.09 });   // lean pivots on the edge that stays on the ground\nconst bunk = bunkBed(G, { x0: -2.45, x1: .05, z0: -1.05, z1: -1.95 }); solids.push(...bunk.solids);"
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.any.cloth-drape",
+    "module.any.relief"
+  ],
+  "doc": {
+    "when": "Prison exteriors (wall, tower), cells, escape stories; the bulb and rope fit any underground or derelict set.",
+    "avoid": "An emissive room box for lit windows (reads as a flat orange block): the tower paints the room and the guard into the window texture.",
+    "gotchas": [
+      "Tilting a tower (lean) pivots on its base edge: an embedded base reads as FLOATING to the checker (its rays start inside the thin ground slab).",
+      "AI references often draw a tower plumb on screen while the camera is rolled: tip it to match the picture, not physics.",
+      "The bunk's mattresses are solids; blankets/heaps/pillows are noContact."
+    ],
+    "params": {
+      "guardTower o": "pos ry scale lean pivot windowGlow conc",
+      "prisonWall o": "x0 x1 z h t panel y",
+      "cellBars o": "x z0 z1 n",
+      "bunkBed o": "x0 x1 z0 z1",
+      "hangingBulb o": "i d color shadow"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "239-274",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "165-222, 308-325",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.prison-wall-dig-diorama",
+    "recipe.recon.cell-shaft-tunnel-section",
+    "solution.any.painted-window-decals",
+    "pitfall.recon.sunk-prop-reads-floating",
+    "pitfall.any.per-object-corrections"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

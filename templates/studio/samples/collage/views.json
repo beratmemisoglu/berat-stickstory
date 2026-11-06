@@ -1,0 +1,22 @@
+{
+ "narration": { "timeline": "timeline.json", "script": "script.txt" },
+ "views": {
+  "sample": { "scenes": ["sample"], "end": 20 },
+  "hero": { "scenes": ["hero"], "end": 6 },
+  "kit": { "scenes": ["kit"], "end": 22 },
+  "mustfail_overlap": { "scenes": ["mustfail_overlap"], "end": 3, "expect": "overlap" },
+  "mustfail_cut": { "scenes": ["mustfail_cut"], "end": 3, "expect": "cut" },
+  "mustfail_frame": { "scenes": ["mustfail_frame"], "end": 3, "expect": "frame" }
+ },
+ "copy": {
+  "assets/img/monk.webp": "collage/lab/assets/img/monk.webp",
+  "assets/img/quill.webp": "collage/lab/assets/img/quill.webp",
+  "assets/img/manuscript.webp": "collage/lab/assets/img/manuscript.webp",
+  "assets/img/gutenberg.webp": "collage/lab/assets/img/gutenberg.webp",
+  "assets/img/metaltype.webp": "collage/lab/assets/img/metaltype.webp",
+  "assets/img/inkball.webp": "collage/lab/assets/img/inkball.webp",
+  "assets/img/screwpress.webp": "collage/lab/assets/img/screwpress.webp",
+  "assets/img/europe.webp": "collage/lab/assets/img/europe.webp",
+  "assets/img/books.webp": "collage/lab/assets/img/books.webp"
+ }
+}

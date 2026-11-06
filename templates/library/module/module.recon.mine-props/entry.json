@@ -1,0 +1,134 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.mine-props",
+  "uid": "bddd98f4-a273-5321-ac3f-818578ff007e",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Mine and escape-tunnel props: cart, track, cage lamp, hose, cables, shovel",
+  "summary": "Tunnel/mine kit: mine cart on a checker-safe track (rails one mesh, 10 cm tall), caged lamp with light pools, ribbed air hose, sagging cables, dirt piles, planted shovel, floor lantern.",
+  "tags": [
+    "mine",
+    "tunnel",
+    "escape tunnel",
+    "gallery",
+    "mine cart",
+    "minecart",
+    "rails",
+    "track",
+    "sleepers",
+    "cage lamp",
+    "bulb",
+    "air hose",
+    "duct",
+    "cables",
+    "wires",
+    "dirt pile",
+    "spoil",
+    "shovel",
+    "digging",
+    "lantern",
+    "prison escape"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "def9ffdd7ee3f64d3d86a0f640019b00ffb60fdf",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 11049,
+      "sha1": "1bf58d466054aff3b7c7f7c75bfc9a94c5aacbc5"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 2044,
+      "sha1": "42af5a9be660baddaaf72a393d271104d3a68a4a"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "cageLamp",
+    "railTrack",
+    "mineCart",
+    "airHose",
+    "cables",
+    "dirtPile",
+    "shovel",
+    "plantShovel",
+    "floorLantern"
+  ],
+  "usage": {
+    "import": "import { railTrack, mineCart, cageLamp, dirtPile, shovel, plantShovel } from '../library/module.recon.mine-props/index.js';",
+    "example": "const zAt = x => -1.22 + .042 * x, T = railTrack(G, { x0: .27, x1: 15.6, y: floorY, zAt });\nconst C = mineCart(G, { x: 3.05, y: T.railTop, z: zAt(3.05), ry: -T.angle }); solids.push(...C.solids);\ncageLamp(S, G, [2.55, floorY + 1.9, -2.58], { floorY });\nconst sh = shovel(G); S.tick(() => { const h = plantShovel(sh, { x, z, ry, floorY, reach: .8, back: .6 }); f.handTo('R', h.lo); f.handTo('L', h.hi); });"
+  },
+  "requires": [
+    "module.recon.canvas-materials",
+    "module.any.frustum",
+    "module.any.metric-box"
+  ],
+  "doc": {
+    "when": "Escape tunnels, mines, excavations, bunkers, construction trenches.",
+    "avoid": "Thin flat rails (the contact check treats diagonal thin rails as decals: the cart floats) and separate rail meshes at one height (COPLANAR).",
+    "gotchas": [
+      "mineCart y = the rail top (railTrack().railTop): wheel centres sit .17 above the cart origin.",
+      "Lamp lights use decay 2 and a 3.5 m range on purpose: pools of light, not a flat orange wash.",
+      "The floor lantern's glass is an emissive STANDARD material: the contact check skips MeshBasicMaterial meshes, so a top resting on a basic glow reads as floating.",
+      "The shovel is noContact (held); call plantShovel every tick before handTo."
+    ],
+    "params": {
+      "railTrack o": "x0 x1 y zAt gauge steel wood",
+      "mineCart o": "x y z ry L W gauge load",
+      "cables o": "x0 x1 ref y z period sag colors r"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "173-237, 338-346, 189-192",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "criticOnScene": 7
+  },
+  "related": [
+    "recipe.recon.prison-wall-dig-diorama",
+    "pitfall.recon.coplanar-aabb-rotated",
+    "pitfall.recon.thin-diagonal-support",
+    "pitfall.recon.basic-material-not-support",
+    "solution.any.light-pools-not-flat-fill"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

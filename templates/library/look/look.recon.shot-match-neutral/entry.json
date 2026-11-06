@@ -1,0 +1,111 @@
+﻿{
+  "schema": 1,
+  "id": "look.recon.shot-match-neutral",
+  "uid": "3654c6e2-b78f-575e-a50c-99570eb0ff11",
+  "origin": "seed",
+  "kind": "look",
+  "title": "Shot-match neutral grade (Investigation without the theme grade)",
+  "summary": "Project settings for matching a reference frame in recon: Investigation room and lights, but highlight cap .97 (not .775), no chromatic aberration, light desaturation, no badge, no DOF.",
+  "tags": [
+    "look",
+    "grade",
+    "neutral",
+    "shot match",
+    "reference",
+    "highlight cap",
+    "chromatic aberration",
+    "settings.post",
+    "investigation",
+    "match a frame",
+    "glow"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "27201db5e5b5d298914e173e2d690cc987adbed4",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "settings.json",
+      "role": "entry",
+      "bytes": 354,
+      "sha1": "051219bfb6388dc646d213b761d59978bd198e99"
+    }
+  ],
+  "entry": "settings.json",
+  "exports": [],
+  "usage": {
+    "import": "merge v1/settings.json theme + post into project.json settings (graphicsSuggested is a hint for the user's Graphics panel, never written)",
+    "example": "project.json settings.post = { grain: .03, vignette: .38, ao: true, contrast: 1.12, desat: .08, cap: .97, ca: 0 }; scene: S.recon = false; S.post.dof = null"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any 'match this frame' / Style Studio shot-match run in recon, and any recon scene with saturated emissive colours (glowing people, neon, fire).",
+    "avoid": "Normal Investigation films where the milky capped highlights are the intended look.",
+    "gotchas": [
+      "The grade is project-wide (settings.post): a scene cannot override it, so it is part of the shot's recipe.",
+      "The Investigation default cap .775 clips red first while green keeps rising: hot orange goes pastel/peach.",
+      "The default ca .0035 puts red/blue fringes on silhouettes.",
+      "Theme warmth/saturation in the user's Graphics were .12-.15 / 1.05-1.08 during the matches; .05 / .95 is closer to neutral (the user's call)."
+    ],
+    "params": {
+      "post.cap": ".95-.97",
+      "post.ca": "0",
+      "post.contrast": "1.12 (1.25 for a sunlit section)",
+      "post.desat": ".08"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "project.json",
+      "lines": "settings.post",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "project.json",
+      "lines": "settings.post",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.grade-highlight-cap",
+    "pitfall.recon.grade-chromatic-aberration",
+    "pitfall.recon.recon-badge",
+    "module.recon.glow-person"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

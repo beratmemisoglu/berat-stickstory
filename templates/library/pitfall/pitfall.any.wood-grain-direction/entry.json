@@ -1,0 +1,85 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.wood-grain-direction",
+  "uid": "98eeafa5-86d4-520a-a7eb-be880311f3ea",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Wood grain must run along the member (posts read as plywood)",
+  "summary": "A canvas wood texture's grain is horizontal; on vertical posts it runs across them and they read as stacked plywood. Rotate the texture 90 deg on vertical members (rot: Math.PI / 2).",
+  "tags": [
+    "wood",
+    "grain",
+    "texture",
+    "rotation",
+    "posts",
+    "timber",
+    "beams",
+    "planks"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "perMetre(weatheredWood(), { color: 0x9a8a7a, rot: Math.PI / 2 })   // module.recon.canvas-materials"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every wooden post, leg, brace or vertical board.",
+    "avoid": "One wood material for horizontal and vertical members.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Vertical timbers look like stacked plywood or striped boxes.",
+    "cause": "The grain direction of the texture is fixed (u); vertical members need it along v.",
+    "fix": "A rotated copy of the material for vertical members.",
+    "detect": "Grain lines horizontal on posts.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#8",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.canvas-materials"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

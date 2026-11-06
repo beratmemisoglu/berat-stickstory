@@ -1,0 +1,108 @@
+﻿{
+  "schema": 1,
+  "id": "module.any.cloth-drape",
+  "uid": "e0f21890-54c8-52be-a152-c587c5724ed6",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Cloth drape and heap without simulation",
+  "summary": "A blanket laid on a mattress that falls over the front edge in accordion folds with a ragged hem, a crumpled cloth heap, lumpy mattresses and pillows: procedural, deterministic.",
+  "tags": [
+    "cloth",
+    "fabric",
+    "blanket",
+    "drape",
+    "folds",
+    "bedding",
+    "heap",
+    "crumpled",
+    "mattress",
+    "pillow",
+    "bed",
+    "sheet"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "86da80c9d29958f71d7a549cf025cca944f762f1",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 2741,
+      "sha1": "007c3d91a23f9d7c4c6d47605b3872b69fc4c5d2"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1497,
+      "sha1": "79691fd4c0dd9375e9e22fff8c2357d5d1b012d2"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "drape",
+    "heap",
+    "lumpyBox"
+  ],
+  "usage": {
+    "import": "import { drape, heap, lumpyBox } from '../library/module.any.cloth-drape/index.js';",
+    "example": "const b = new THREE.Mesh(drape(1.25, 1.35, .45, 3, .2, .4), clothDoubleSided); b.position.set(x, mattressTopY, z); b.userData.noContact = true;"
+  },
+  "requires": [
+    "module.any.relief"
+  ],
+  "doc": {
+    "when": "Beds, cots, bunks, sofas with throws, tables with cloths, laundry heaps.",
+    "avoid": "Listing drapes as S.collide solids (thin open surfaces).",
+    "gotchas": [
+      "Origin is the mattress top centre; hd = the mattress's half depth along z.",
+      "Use a DoubleSide material."
+    ],
+    "params": {
+      "drape(w, d, hd, seed, folds = .4, drop = .5)": "folds = heap height on top, drop = longest fall",
+      "heap(sx, sy, sz, seed)": "a flattened noisy blob"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "173-207",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.prison-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

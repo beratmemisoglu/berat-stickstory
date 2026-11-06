@@ -1,0 +1,6 @@
+{
+  "clip": "Walk_Loop", "variants": [{ "t": 0.75, "hinge": 0.85, "lean": 0.3, "head": 0, "reach": 0.8, "back": 0.6, "side": 0.1 }, { "t": 0.1, "hinge": 1.0, "lean": 0.35, "head": 0, "reach": 0.75, "back": 0.6, "side": -0.1 }],
+  "build": { "scale": 1.45, "turnSideOn": "ry so the bend reads side-on (e.g. 1.85 instead of 2.1)" },
+  "hands": { "R": "shovel low grip (plantShovel().lo)", "L": "shovel high grip (plantShovel().hi)", "curl": 0.8 },
+  "code": "S.tick(() => { f.act('Walk_Loop', { t: .75 }); hinge(f, .85); lean(f, .3, 0); const h = plantShovel(sh, { x, z, ry, floorY, reach: .8, back: .6, side: .1 }); f.handTo('R', h.lo, { weight: 1, curl: .8 }); f.handTo('L', h.hi, { weight: 1, curl: .8 }); });"
+}

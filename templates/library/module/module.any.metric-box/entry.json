@@ -1,0 +1,120 @@
+﻿{
+  "schema": 1,
+  "id": "module.any.metric-box",
+  "uid": "e277e2c9-3ae6-5505-a07c-077859e74da1",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Metric-UV box and one-mesh merge",
+  "summary": "metricBox(w, h, d): BoxGeometry with UVs in metres on every face (no stretched tiles); metricUV() for any geometry; merged() joins parts into ONE mesh (rails/planks the coplanar check flags).",
+  "tags": [
+    "uv",
+    "metric uv",
+    "box",
+    "geometry",
+    "texture stretch",
+    "tiling",
+    "merge",
+    "rails",
+    "coplanar",
+    "planks"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "56ed22d2786ca8565ebacd367bf47b5e36c51357",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 3425,
+      "sha1": "4b25577c6b9c2659715ee439e0278e478d06ad87"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1539,
+      "sha1": "42defb9ce73dffe656440b5b8b7d86fa26bb734a"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "proofRequires": [
+    "module.recon.canvas-materials"
+  ],
+  "exports": [
+    "metricBox",
+    "metricUV",
+    "merged"
+  ],
+  "usage": {
+    "import": "import { metricBox, metricUV, merged } from '../library/module.any.metric-box/index.js';",
+    "example": "const slab = new THREE.Mesh(metricBox(16, .58, 3), perMetre(boardConcrete()));   // 2 m tile on every face\nconst rails = new THREE.Mesh(merged([-1, 1].map(s => new THREE.BoxGeometry(14, .1, .12).translate(0, 0, s * .35))), steel);"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any textured box larger than its texture tile (walls, slabs, posts, decks); several parallel thin parts that touch nothing but sit at one height.",
+    "avoid": "Using a material repeat to fix stretching per face: it can only be right for one face size.",
+    "gotchas": [
+      "metricBox UV unit is 1 m by default: pair it with materials whose repeat = 1 / tile metres (perMetre in module.recon.canvas-materials).",
+      "merged() keeps position/normal/uv only."
+    ],
+    "params": {
+      "metricBox(w, h, d, unit = 1, seg = [1, 1, 1])": "UV = metres / unit",
+      "metricUV(g, unit)": "box projection by normal",
+      "merged(geometries)": "non-indexed concat"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "18-21",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "177-181",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.box-uv-stretch",
+    "pitfall.recon.coplanar-aabb-rotated",
+    "module.recon.canvas-materials"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

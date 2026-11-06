@@ -1,0 +1,87 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.onbeforecompile-program-cache",
+  "uid": "5afdf7c4-0414-59a5-a544-630177fcbc5a",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "onBeforeCompile materials share one program unless customProgramCacheKey differs",
+  "summary": "three.js caches programs by onBeforeCompile.toString(): materials whose patches differ only in a captured number share the first one's program. Set customProgramCacheKey.",
+  "tags": [
+    "three.js",
+    "shader",
+    "onBeforeCompile",
+    "customProgramCacheKey",
+    "program cache",
+    "halo",
+    "outline",
+    "material"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "mat.onBeforeCompile = sh => { ... + off + ... }; mat.customProgramCacheKey = () => 'halo' + off;"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every material with an onBeforeCompile patch built from parameters.",
+    "avoid": "Closures capturing per-instance numbers without a cache key.",
+    "gotchas": [
+      "Literal numbers baked into the shader string make different programs only if the key differs."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Several shells/outlines/glows with different parameters all look identical.",
+    "cause": "Program cache keyed by the onBeforeCompile function source, which is the same for every instance.",
+    "fix": "material.customProgramCacheKey = () => '<name>' + params.",
+    "detect": "Changing one instance's parameter changes all of them, or none.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#9",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.glow-person"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,105 @@
+﻿{
+  "schema": 1,
+  "id": "module.any.haze-beam",
+  "uid": "9464881b-0578-5f78-a226-b857cbd3d372",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Haze cone under a lamp (fake volumetric light)",
+  "summary": "An additive, depth-write-free cone that fades at its silhouette and toward its foot: the hazy light cone under a pendant or street lamp without volumetrics.",
+  "tags": [
+    "haze",
+    "light cone",
+    "volumetric",
+    "god rays",
+    "beam",
+    "pendant",
+    "lamp",
+    "atmosphere",
+    "fog",
+    "shader",
+    "additive"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "e25285e03beb9bd42cb8baf63c54795c82c7659d",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 2417,
+      "sha1": "ccf2832141e5de5280c5c58a582e73fd9c913f77"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1326,
+      "sha1": "dcc1381f536a134e0f2210ad32b01a8a34d9337d"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "exports": [
+    "hazeMaterial",
+    "hazeCone"
+  ],
+  "usage": {
+    "import": "import { hazeCone } from '../library/module.any.haze-beam/index.js';",
+    "example": "G.add(hazeCone([x, 2.2, z], .8, { r: .2, k: .15, color: 0xffc890 }));   // from the lamp mouth down to y .8"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Dark interiors with practical lamps (cafés, bars, interrogation rooms, mines) where a hint of haze sells the light.",
+    "avoid": "Bright or sunlit scenes (additive cones wash out); k above ~.25 (reads as a solid cone).",
+    "gotchas": [
+      "It is marked noContact/noPick: it is light, not an object.",
+      "Pair it with a real SpotLight; the cone only fakes the scattering."
+    ],
+    "params": {
+      "k": ".1-.2",
+      "spread": ".52 bottom radius per metre of height",
+      "r": "lamp mouth radius"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "133-138, 222-223",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.cafe-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

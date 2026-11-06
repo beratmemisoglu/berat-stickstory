@@ -1,0 +1,102 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.prone-crawler",
+  "uid": "b1ba2a62-d5d3-5b3f-ab3f-196504687173",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Lying prone in a tunnel, chest up, pushing a tray",
+  "summary": "Swim_Fwd_Loop t .3 (a flat prone body) lowered to the floor, feet planted by foot IK, the spine and neck turned up (.25 / .35 / .15 / .2), hands on a tray's rim. KK_Crawl_Loop floats the pelvis .6 m.",
+  "tags": [
+    "pose",
+    "prone",
+    "lying",
+    "crawling",
+    "tunnel",
+    "chest up",
+    "pushing",
+    "tray",
+    "belly",
+    "low"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "b7e1dede37b2a5859bff076a1a6ab1a7f880642e",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 1082,
+      "sha1": "488efd889e2a4e7b165fc57d17150980ac7180da"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { footTo, turn } from '../library/module.recon.rig-pose/index.js';",
+    "example": "see v1/pose.json code"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "Crawling through a tunnel/vent, lying in wait, pushing something along the ground.",
+    "avoid": "KK_Crawl_Loop at t 0 (its root lifts the pelvis .6 m above the floor, and bodies are exempt from the floating check).",
+    "gotchas": [
+      "Verify the pelvis height numerically (?bones=1) before trusting a clip."
+    ],
+    "params": {
+      "clip": "Swim_Fwd_Loop",
+      "t": 0.3,
+      "spine": [
+        0.25,
+        0.35,
+        0.15
+      ],
+      "neck": 0.2
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "355, 362-364",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.cell-shaft-tunnel-section",
+    "pitfall.any.clip-root-offsets",
+    "pose.recon.clip-facts"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,6068 @@
+﻿{
+ "version": 1,
+ "about": "Toon Studio sound-effect library (CC0 / public domain only). sound_design.py picks from it by category; search with: node tools/lib.mjs sfx <words>.",
+ "count": 322,
+ "entries": [
+  {
+   "id": "sfx.impact.01",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "punch"
+   ],
+   "file": "impact/sfx.impact.01.ogg",
+   "duration": 0.648,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_heavy_000.ogg",
+   "credit_text": "\"impactPunch_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "78bf9add159972b7"
+  },
+  {
+   "id": "sfx.impact.02",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "punch"
+   ],
+   "file": "impact/sfx.impact.02.ogg",
+   "duration": 0.536,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_heavy_001.ogg",
+   "credit_text": "\"impactPunch_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "60a6ab5feb2bf85b"
+  },
+  {
+   "id": "sfx.impact.03",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "punch"
+   ],
+   "file": "impact/sfx.impact.03.ogg",
+   "duration": 0.457,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_heavy_002.ogg",
+   "credit_text": "\"impactPunch_heavy_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "7172f05056ece5ae"
+  },
+  {
+   "id": "sfx.impact.04",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "punch"
+   ],
+   "file": "impact/sfx.impact.04.ogg",
+   "duration": 0.473,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_heavy_003.ogg",
+   "credit_text": "\"impactPunch_heavy_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "a2b62e11a09482b3"
+  },
+  {
+   "id": "sfx.impact.05",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "wood"
+   ],
+   "file": "impact/sfx.impact.05.ogg",
+   "duration": 0.313,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactWood_heavy_000.ogg",
+   "credit_text": "\"impactWood_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "2202bef548735680"
+  },
+  {
+   "id": "sfx.impact.06",
+   "kind": "sfx",
+   "category": "impact",
+   "tags": [
+    "impact",
+    "hit",
+    "wood"
+   ],
+   "file": "impact/sfx.impact.06.ogg",
+   "duration": 0.313,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactWood_heavy_001.ogg",
+   "credit_text": "\"impactWood_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "1e522d85298ff760"
+  },
+  {
+   "id": "sfx.thud.01",
+   "kind": "sfx",
+   "category": "thud",
+   "tags": [
+    "thud",
+    "soft",
+    "fall"
+   ],
+   "file": "thud/sfx.thud.01.ogg",
+   "duration": 0.53,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactSoft_heavy_000.ogg",
+   "credit_text": "\"impactSoft_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "53b44ac5747617d4"
+  },
+  {
+   "id": "sfx.thud.02",
+   "kind": "sfx",
+   "category": "thud",
+   "tags": [
+    "thud",
+    "soft",
+    "fall"
+   ],
+   "file": "thud/sfx.thud.02.ogg",
+   "duration": 0.572,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactSoft_heavy_001.ogg",
+   "credit_text": "\"impactSoft_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "67f94a255ef87595"
+  },
+  {
+   "id": "sfx.thud.03",
+   "kind": "sfx",
+   "category": "thud",
+   "tags": [
+    "thud",
+    "soft",
+    "fall"
+   ],
+   "file": "thud/sfx.thud.03.ogg",
+   "duration": 0.572,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactSoft_heavy_002.ogg",
+   "credit_text": "\"impactSoft_heavy_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "a25f6314fed36df5"
+  },
+  {
+   "id": "sfx.stamp.01",
+   "kind": "sfx",
+   "category": "stamp",
+   "tags": [
+    "stamp",
+    "wood",
+    "knock"
+   ],
+   "file": "stamp/sfx.stamp.01.ogg",
+   "duration": 0.779,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPlank_medium_000.ogg",
+   "credit_text": "\"impactPlank_medium_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "b0e8cca4ae4706c4"
+  },
+  {
+   "id": "sfx.stamp.02",
+   "kind": "sfx",
+   "category": "stamp",
+   "tags": [
+    "stamp",
+    "wood",
+    "knock"
+   ],
+   "file": "stamp/sfx.stamp.02.ogg",
+   "duration": 0.779,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPlank_medium_001.ogg",
+   "credit_text": "\"impactPlank_medium_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "f76bb21a29298445"
+  },
+  {
+   "id": "sfx.stamp.03",
+   "kind": "sfx",
+   "category": "stamp",
+   "tags": [
+    "stamp",
+    "wood",
+    "knock"
+   ],
+   "file": "stamp/sfx.stamp.03.ogg",
+   "duration": 0.779,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPlank_medium_002.ogg",
+   "credit_text": "\"impactPlank_medium_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "153d06ebd6ce83e8"
+  },
+  {
+   "id": "sfx.bell.01",
+   "kind": "sfx",
+   "category": "bell",
+   "tags": [
+    "bell",
+    "ding"
+   ],
+   "file": "bell/sfx.bell.01.ogg",
+   "duration": 1.48,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactBell_heavy_000.ogg",
+   "credit_text": "\"impactBell_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "3663a1a9fd1571c1"
+  },
+  {
+   "id": "sfx.bell.02",
+   "kind": "sfx",
+   "category": "bell",
+   "tags": [
+    "bell",
+    "ding"
+   ],
+   "file": "bell/sfx.bell.02.ogg",
+   "duration": 1.741,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactBell_heavy_001.ogg",
+   "credit_text": "\"impactBell_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "d09b1e3253de9dfb"
+  },
+  {
+   "id": "sfx.bell.03",
+   "kind": "sfx",
+   "category": "bell",
+   "tags": [
+    "bell",
+    "ding"
+   ],
+   "file": "bell/sfx.bell.03.ogg",
+   "duration": 0.697,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactBell_heavy_002.ogg",
+   "credit_text": "\"impactBell_heavy_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "453a1136a7a61604"
+  },
+  {
+   "id": "sfx.glass.01",
+   "kind": "sfx",
+   "category": "glass",
+   "tags": [
+    "glass",
+    "break",
+    "smash"
+   ],
+   "file": "glass/sfx.glass.01.ogg",
+   "duration": 0.241,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactGlass_heavy_000.ogg",
+   "credit_text": "\"impactGlass_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "ba4e8fcb9d246023"
+  },
+  {
+   "id": "sfx.glass.02",
+   "kind": "sfx",
+   "category": "glass",
+   "tags": [
+    "glass",
+    "break",
+    "smash"
+   ],
+   "file": "glass/sfx.glass.02.ogg",
+   "duration": 0.429,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactGlass_heavy_001.ogg",
+   "credit_text": "\"impactGlass_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "1702eed0eb1214bb"
+  },
+  {
+   "id": "sfx.glass.03",
+   "kind": "sfx",
+   "category": "glass",
+   "tags": [
+    "glass",
+    "break",
+    "smash"
+   ],
+   "file": "glass/sfx.glass.03.ogg",
+   "duration": 0.247,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactGlass_heavy_002.ogg",
+   "credit_text": "\"impactGlass_heavy_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "644cc72735022e2d"
+  },
+  {
+   "id": "sfx.metal.01",
+   "kind": "sfx",
+   "category": "metal",
+   "tags": [
+    "metal",
+    "clang",
+    "hit"
+   ],
+   "file": "metal/sfx.metal.01.ogg",
+   "duration": 0.168,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactMetal_heavy_000.ogg",
+   "credit_text": "\"impactMetal_heavy_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "94de7cb5a1c40d70"
+  },
+  {
+   "id": "sfx.metal.02",
+   "kind": "sfx",
+   "category": "metal",
+   "tags": [
+    "metal",
+    "clang",
+    "hit"
+   ],
+   "file": "metal/sfx.metal.02.ogg",
+   "duration": 0.359,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactMetal_heavy_001.ogg",
+   "credit_text": "\"impactMetal_heavy_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "5458097634960bff"
+  },
+  {
+   "id": "sfx.metal.03",
+   "kind": "sfx",
+   "category": "metal",
+   "tags": [
+    "metal",
+    "clang",
+    "hit"
+   ],
+   "file": "metal/sfx.metal.03.ogg",
+   "duration": 0.117,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactMetal_heavy_002.ogg",
+   "credit_text": "\"impactMetal_heavy_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "daa9ef8eeecfd80b"
+  },
+  {
+   "id": "sfx.footstep.01",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "wood"
+   ],
+   "file": "footstep/sfx.footstep.01.ogg",
+   "duration": 0.274,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_wood_000.ogg",
+   "credit_text": "\"footstep_wood_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "54c244f88acb8e1c"
+  },
+  {
+   "id": "sfx.footstep.02",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "wood"
+   ],
+   "file": "footstep/sfx.footstep.02.ogg",
+   "duration": 0.252,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_wood_001.ogg",
+   "credit_text": "\"footstep_wood_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "0b4549a246d7ac3d"
+  },
+  {
+   "id": "sfx.footstep.03",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "wood"
+   ],
+   "file": "footstep/sfx.footstep.03.ogg",
+   "duration": 0.251,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_wood_002.ogg",
+   "credit_text": "\"footstep_wood_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "0e724f257b1aa417"
+  },
+  {
+   "id": "sfx.footstep.04",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "grass"
+   ],
+   "file": "footstep/sfx.footstep.04.ogg",
+   "duration": 0.778,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_grass_000.ogg",
+   "credit_text": "\"footstep_grass_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "c2fc6724d5d3f049"
+  },
+  {
+   "id": "sfx.footstep.05",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "grass"
+   ],
+   "file": "footstep/sfx.footstep.05.ogg",
+   "duration": 0.674,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_grass_001.ogg",
+   "credit_text": "\"footstep_grass_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "c5a494f59b27c5b1"
+  },
+  {
+   "id": "sfx.footstep.06",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "grass"
+   ],
+   "file": "footstep/sfx.footstep.06.ogg",
+   "duration": 0.692,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_grass_002.ogg",
+   "credit_text": "\"footstep_grass_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "e89a069608777b3c"
+  },
+  {
+   "id": "sfx.footstep.07",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "concrete"
+   ],
+   "file": "footstep/sfx.footstep.07.ogg",
+   "duration": 0.106,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_concrete_000.ogg",
+   "credit_text": "\"footstep_concrete_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "fd1e5a2529c64bac"
+  },
+  {
+   "id": "sfx.footstep.08",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "concrete"
+   ],
+   "file": "footstep/sfx.footstep.08.ogg",
+   "duration": 0.108,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_concrete_001.ogg",
+   "credit_text": "\"footstep_concrete_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "d1638d040686c842"
+  },
+  {
+   "id": "sfx.footstep.09",
+   "kind": "sfx",
+   "category": "footstep",
+   "tags": [
+    "footstep",
+    "step",
+    "walk",
+    "concrete"
+   ],
+   "file": "footstep/sfx.footstep.09.ogg",
+   "duration": 0.113,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_concrete_002.ogg",
+   "credit_text": "\"footstep_concrete_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "094b8467d0c41dd5"
+  },
+  {
+   "id": "sfx.click.01",
+   "kind": "sfx",
+   "category": "click",
+   "tags": [
+    "click",
+    "button",
+    "ui"
+   ],
+   "file": "click/sfx.click.01.ogg",
+   "duration": 0.1,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "click_001.ogg",
+   "credit_text": "\"click_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "c67b0f16d0f26513"
+  },
+  {
+   "id": "sfx.click.02",
+   "kind": "sfx",
+   "category": "click",
+   "tags": [
+    "click",
+    "button",
+    "ui"
+   ],
+   "file": "click/sfx.click.02.ogg",
+   "duration": 0.025,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "click_004.ogg",
+   "credit_text": "\"click_004.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "ac59a906585b9637"
+  },
+  {
+   "id": "sfx.click.03",
+   "kind": "sfx",
+   "category": "click",
+   "tags": [
+    "click",
+    "button",
+    "ui"
+   ],
+   "file": "click/sfx.click.03.ogg",
+   "duration": 0.094,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/ui-audio",
+   "source_file": "click1.ogg",
+   "credit_text": "\"click1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/ui-audio)",
+   "hash": "a7bbd7ae712b3d6a"
+  },
+  {
+   "id": "sfx.click.04",
+   "kind": "sfx",
+   "category": "click",
+   "tags": [
+    "click",
+    "button",
+    "ui"
+   ],
+   "file": "click/sfx.click.04.ogg",
+   "duration": 0.056,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/ui-audio",
+   "source_file": "click2.ogg",
+   "credit_text": "\"click2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/ui-audio)",
+   "hash": "7205c2ad71d91a35"
+  },
+  {
+   "id": "sfx.click.05",
+   "kind": "sfx",
+   "category": "click",
+   "tags": [
+    "click",
+    "button",
+    "ui"
+   ],
+   "file": "click/sfx.click.05.ogg",
+   "duration": 0.084,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/ui-audio",
+   "source_file": "click3.ogg",
+   "credit_text": "\"click3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/ui-audio)",
+   "hash": "e9535db3c6860709"
+  },
+  {
+   "id": "sfx.pop.01",
+   "kind": "sfx",
+   "category": "pop",
+   "tags": [
+    "pop",
+    "spawn",
+    "appear"
+   ],
+   "file": "pop/sfx.pop.01.ogg",
+   "duration": 0.135,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "drop_001.ogg",
+   "credit_text": "\"drop_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "a2066f30d7633e11"
+  },
+  {
+   "id": "sfx.pop.02",
+   "kind": "sfx",
+   "category": "pop",
+   "tags": [
+    "pop",
+    "spawn",
+    "appear"
+   ],
+   "file": "pop/sfx.pop.02.ogg",
+   "duration": 0.191,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "drop_002.ogg",
+   "credit_text": "\"drop_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "09e807b2f20f94c4"
+  },
+  {
+   "id": "sfx.pop.03",
+   "kind": "sfx",
+   "category": "pop",
+   "tags": [
+    "pop",
+    "spawn",
+    "appear"
+   ],
+   "file": "pop/sfx.pop.03.ogg",
+   "duration": 0.191,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "drop_003.ogg",
+   "credit_text": "\"drop_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "e1eb908d3353b732"
+  },
+  {
+   "id": "sfx.pop.04",
+   "kind": "sfx",
+   "category": "pop",
+   "tags": [
+    "pop",
+    "spawn",
+    "appear"
+   ],
+   "file": "pop/sfx.pop.04.ogg",
+   "duration": 0.102,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "pluck_001.ogg",
+   "credit_text": "\"pluck_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "2709811d7bcf8070"
+  },
+  {
+   "id": "sfx.pop.05",
+   "kind": "sfx",
+   "category": "pop",
+   "tags": [
+    "pop",
+    "spawn",
+    "appear"
+   ],
+   "file": "pop/sfx.pop.05.ogg",
+   "duration": 0.165,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "pluck_002.ogg",
+   "credit_text": "\"pluck_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "4f7e0628da5d4569"
+  },
+  {
+   "id": "sfx.chime.01",
+   "kind": "sfx",
+   "category": "chime",
+   "tags": [
+    "chime",
+    "notification",
+    "success",
+    "ding"
+   ],
+   "file": "chime/sfx.chime.01.ogg",
+   "duration": 0.29,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "confirmation_001.ogg",
+   "credit_text": "\"confirmation_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "93139ca59fdae91f"
+  },
+  {
+   "id": "sfx.chime.02",
+   "kind": "sfx",
+   "category": "chime",
+   "tags": [
+    "chime",
+    "notification",
+    "success",
+    "ding"
+   ],
+   "file": "chime/sfx.chime.02.ogg",
+   "duration": 0.539,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "confirmation_002.ogg",
+   "credit_text": "\"confirmation_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "045fe6a123f0abb0"
+  },
+  {
+   "id": "sfx.chime.03",
+   "kind": "sfx",
+   "category": "chime",
+   "tags": [
+    "chime",
+    "notification",
+    "success",
+    "ding"
+   ],
+   "file": "chime/sfx.chime.03.ogg",
+   "duration": 0.322,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "confirmation_003.ogg",
+   "credit_text": "\"confirmation_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "346366d007c9f7cc"
+  },
+  {
+   "id": "sfx.chime.04",
+   "kind": "sfx",
+   "category": "chime",
+   "tags": [
+    "chime",
+    "notification",
+    "success",
+    "ding"
+   ],
+   "file": "chime/sfx.chime.04.ogg",
+   "duration": 0.489,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "confirmation_004.ogg",
+   "credit_text": "\"confirmation_004.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "b9d3e1a13393905b"
+  },
+  {
+   "id": "sfx.notification.01",
+   "kind": "sfx",
+   "category": "notification",
+   "tags": [
+    "notification",
+    "message",
+    "blip"
+   ],
+   "file": "notification/sfx.notification.01.ogg",
+   "duration": 0.489,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "question_001.ogg",
+   "credit_text": "\"question_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "66a64eb556a733e7"
+  },
+  {
+   "id": "sfx.notification.02",
+   "kind": "sfx",
+   "category": "notification",
+   "tags": [
+    "notification",
+    "message",
+    "blip"
+   ],
+   "file": "notification/sfx.notification.02.ogg",
+   "duration": 0.332,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "question_002.ogg",
+   "credit_text": "\"question_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "6dbc45d194024084"
+  },
+  {
+   "id": "sfx.notification.03",
+   "kind": "sfx",
+   "category": "notification",
+   "tags": [
+    "notification",
+    "message",
+    "blip"
+   ],
+   "file": "notification/sfx.notification.03.ogg",
+   "duration": 0.332,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "question_003.ogg",
+   "credit_text": "\"question_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "3582969eefcdde0e"
+  },
+  {
+   "id": "sfx.error.01",
+   "kind": "sfx",
+   "category": "error",
+   "tags": [
+    "error",
+    "wrong",
+    "buzz"
+   ],
+   "file": "error/sfx.error.01.ogg",
+   "duration": 0.165,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "error_001.ogg",
+   "credit_text": "\"error_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "2ad669972d7e9b06"
+  },
+  {
+   "id": "sfx.error.02",
+   "kind": "sfx",
+   "category": "error",
+   "tags": [
+    "error",
+    "wrong",
+    "buzz"
+   ],
+   "file": "error/sfx.error.02.ogg",
+   "duration": 0.168,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "error_002.ogg",
+   "credit_text": "\"error_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "8b09a15983718c81"
+  },
+  {
+   "id": "sfx.error.03",
+   "kind": "sfx",
+   "category": "error",
+   "tags": [
+    "error",
+    "wrong",
+    "buzz"
+   ],
+   "file": "error/sfx.error.03.ogg",
+   "duration": 0.522,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "error_003.ogg",
+   "credit_text": "\"error_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "c6faba0f0713d46c"
+  },
+  {
+   "id": "sfx.glitch.01",
+   "kind": "sfx",
+   "category": "glitch",
+   "tags": [
+    "glitch",
+    "digital"
+   ],
+   "file": "glitch/sfx.glitch.01.ogg",
+   "duration": 0.02,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "glitch_001.ogg",
+   "credit_text": "\"glitch_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "22bec8859163eeeb"
+  },
+  {
+   "id": "sfx.glitch.02",
+   "kind": "sfx",
+   "category": "glitch",
+   "tags": [
+    "glitch",
+    "digital"
+   ],
+   "file": "glitch/sfx.glitch.02.ogg",
+   "duration": 0.03,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "glitch_002.ogg",
+   "credit_text": "\"glitch_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "bf33b00eba0d169b"
+  },
+  {
+   "id": "sfx.glitch.03",
+   "kind": "sfx",
+   "category": "glitch",
+   "tags": [
+    "glitch",
+    "digital"
+   ],
+   "file": "glitch/sfx.glitch.03.ogg",
+   "duration": 0.023,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "glitch_004.ogg",
+   "credit_text": "\"glitch_004.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "745e00e6113e7897"
+  },
+  {
+   "id": "sfx.scratch.01",
+   "kind": "sfx",
+   "category": "scratch",
+   "tags": [
+    "scratch",
+    "record scratch"
+   ],
+   "file": "scratch/sfx.scratch.01.ogg",
+   "duration": 0.139,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "scratch_001.ogg",
+   "credit_text": "\"scratch_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "dc1dc44f520c756e"
+  },
+  {
+   "id": "sfx.scratch.02",
+   "kind": "sfx",
+   "category": "scratch",
+   "tags": [
+    "scratch",
+    "record scratch"
+   ],
+   "file": "scratch/sfx.scratch.02.ogg",
+   "duration": 0.139,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "scratch_002.ogg",
+   "credit_text": "\"scratch_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "9f2ce095273eb633"
+  },
+  {
+   "id": "sfx.blip.01",
+   "kind": "sfx",
+   "category": "blip",
+   "tags": [
+    "blip",
+    "tick",
+    "ui"
+   ],
+   "file": "blip/sfx.blip.01.ogg",
+   "duration": 0.048,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "tick_001.ogg",
+   "credit_text": "\"tick_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "b2ddbf8df597fc43"
+  },
+  {
+   "id": "sfx.blip.02",
+   "kind": "sfx",
+   "category": "blip",
+   "tags": [
+    "blip",
+    "tick",
+    "ui"
+   ],
+   "file": "blip/sfx.blip.02.ogg",
+   "duration": 0.023,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "tick_002.ogg",
+   "credit_text": "\"tick_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "fc4f73196b2e2adc"
+  },
+  {
+   "id": "sfx.blip.03",
+   "kind": "sfx",
+   "category": "blip",
+   "tags": [
+    "blip",
+    "tick",
+    "ui"
+   ],
+   "file": "blip/sfx.blip.03.ogg",
+   "duration": 0.058,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/interface-sounds",
+   "source_file": "tick_004.ogg",
+   "credit_text": "\"tick_004.ogg\" by Kenney, CC0 (https://kenney.nl/assets/interface-sounds)",
+   "hash": "797bdb6f517e4672"
+  },
+  {
+   "id": "sfx.win.01",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success",
+    "powerup",
+    "slot win"
+   ],
+   "file": "win/sfx.win.01.ogg",
+   "duration": 1.107,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "powerUp1.ogg",
+   "credit_text": "\"powerUp1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "d92d165e310a6fcd"
+  },
+  {
+   "id": "sfx.win.02",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success",
+    "powerup",
+    "slot win"
+   ],
+   "file": "win/sfx.win.02.ogg",
+   "duration": 0.493,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "powerUp10.ogg",
+   "credit_text": "\"powerUp10.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "83af9074969c16e0"
+  },
+  {
+   "id": "sfx.win.03",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success",
+    "powerup",
+    "slot win"
+   ],
+   "file": "win/sfx.win.03.ogg",
+   "duration": 0.57,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "powerUp11.ogg",
+   "credit_text": "\"powerUp11.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "510b5c94a084e725"
+  },
+  {
+   "id": "sfx.win.04",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success",
+    "powerup",
+    "slot win"
+   ],
+   "file": "win/sfx.win.04.ogg",
+   "duration": 0.746,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "powerUp12.ogg",
+   "credit_text": "\"powerUp12.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "4a6beab8cd589744"
+  },
+  {
+   "id": "sfx.win.05",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success"
+   ],
+   "file": "win/sfx.win.05.ogg",
+   "duration": 0.766,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "threeTone1.ogg",
+   "credit_text": "\"threeTone1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "7d7be90aa487a508"
+  },
+  {
+   "id": "sfx.win.06",
+   "kind": "sfx",
+   "category": "win",
+   "tags": [
+    "win",
+    "success"
+   ],
+   "file": "win/sfx.win.06.ogg",
+   "duration": 0.758,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "threeTone2.ogg",
+   "credit_text": "\"threeTone2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "d076a32ca567c435"
+  },
+  {
+   "id": "sfx.lose.01",
+   "kind": "sfx",
+   "category": "lose",
+   "tags": [
+    "lose",
+    "fail",
+    "down"
+   ],
+   "file": "lose/sfx.lose.01.ogg",
+   "duration": 0.649,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "lowDown.ogg",
+   "credit_text": "\"lowDown.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "9448c57707ac039e"
+  },
+  {
+   "id": "sfx.lose.02",
+   "kind": "sfx",
+   "category": "lose",
+   "tags": [
+    "lose",
+    "fail",
+    "down"
+   ],
+   "file": "lose/sfx.lose.02.ogg",
+   "duration": 0.354,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserDown1.ogg",
+   "credit_text": "\"phaserDown1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "b19ddb9bcb884365"
+  },
+  {
+   "id": "sfx.lose.03",
+   "kind": "sfx",
+   "category": "lose",
+   "tags": [
+    "lose",
+    "fail",
+    "down"
+   ],
+   "file": "lose/sfx.lose.03.ogg",
+   "duration": 0.256,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserDown2.ogg",
+   "credit_text": "\"phaserDown2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "d17cd2d4ebd64c9e"
+  },
+  {
+   "id": "sfx.beep.01",
+   "kind": "sfx",
+   "category": "beep",
+   "tags": [
+    "beep",
+    "tone"
+   ],
+   "file": "beep/sfx.beep.01.ogg",
+   "duration": 0.599,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "tone1.ogg",
+   "credit_text": "\"tone1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "6de60a87d3ce3aa7"
+  },
+  {
+   "id": "sfx.beep.02",
+   "kind": "sfx",
+   "category": "beep",
+   "tags": [
+    "beep",
+    "tone"
+   ],
+   "file": "beep/sfx.beep.02.ogg",
+   "duration": 0.612,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "twoTone1.ogg",
+   "credit_text": "\"twoTone1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "17605a5051f58d96"
+  },
+  {
+   "id": "sfx.beep.03",
+   "kind": "sfx",
+   "category": "beep",
+   "tags": [
+    "beep",
+    "tone"
+   ],
+   "file": "beep/sfx.beep.03.ogg",
+   "duration": 0.633,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "twoTone2.ogg",
+   "credit_text": "\"twoTone2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "15784584511192f3"
+  },
+  {
+   "id": "sfx.cards.01",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.01.ogg",
+   "duration": 0.493,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-slide-1.ogg",
+   "credit_text": "\"card-slide-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "2665c9f9c942a0a1"
+  },
+  {
+   "id": "sfx.cards.02",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.02.ogg",
+   "duration": 0.584,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-slide-2.ogg",
+   "credit_text": "\"card-slide-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "982fc330dcb395a0"
+  },
+  {
+   "id": "sfx.cards.03",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.03.ogg",
+   "duration": 0.598,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-slide-3.ogg",
+   "credit_text": "\"card-slide-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "86c7360920da1f1b"
+  },
+  {
+   "id": "sfx.cards.04",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.04.ogg",
+   "duration": 0.459,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-slide-4.ogg",
+   "credit_text": "\"card-slide-4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "37249d576de87370"
+  },
+  {
+   "id": "sfx.cards.05",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.05.ogg",
+   "duration": 0.603,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-place-1.ogg",
+   "credit_text": "\"card-place-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "fa75ee88b96e9cd7"
+  },
+  {
+   "id": "sfx.cards.06",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.06.ogg",
+   "duration": 0.416,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-place-2.ogg",
+   "credit_text": "\"card-place-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "9395a83638b2e8f8"
+  },
+  {
+   "id": "sfx.cards.07",
+   "kind": "sfx",
+   "category": "cards",
+   "tags": [
+    "cards",
+    "card flip",
+    "deal"
+   ],
+   "file": "cards/sfx.cards.07.ogg",
+   "duration": 0.687,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-place-3.ogg",
+   "credit_text": "\"card-place-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "379d9adf41168ce6"
+  },
+  {
+   "id": "sfx.shuffle.01",
+   "kind": "sfx",
+   "category": "shuffle",
+   "tags": [
+    "cards",
+    "shuffle"
+   ],
+   "file": "shuffle/sfx.shuffle.01.ogg",
+   "duration": 3.0,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-shuffle.ogg",
+   "credit_text": "\"card-shuffle.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "6bfd373edbc23286"
+  },
+  {
+   "id": "sfx.chips.01",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino",
+    "poker"
+   ],
+   "file": "chips/sfx.chips.01.ogg",
+   "duration": 0.205,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-stack-1.ogg",
+   "credit_text": "\"chips-stack-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "627e870b5bb1bcd8"
+  },
+  {
+   "id": "sfx.chips.02",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino",
+    "poker"
+   ],
+   "file": "chips/sfx.chips.02.ogg",
+   "duration": 0.16,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-stack-2.ogg",
+   "credit_text": "\"chips-stack-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "0aed16352a661dde"
+  },
+  {
+   "id": "sfx.chips.03",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino",
+    "poker"
+   ],
+   "file": "chips/sfx.chips.03.ogg",
+   "duration": 0.352,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-stack-3.ogg",
+   "credit_text": "\"chips-stack-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "2a5d52c229ab9e2c"
+  },
+  {
+   "id": "sfx.chips.04",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino",
+    "poker"
+   ],
+   "file": "chips/sfx.chips.04.ogg",
+   "duration": 0.188,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-stack-4.ogg",
+   "credit_text": "\"chips-stack-4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "14a1e85b18aaeae6"
+  },
+  {
+   "id": "sfx.chips.05",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino"
+   ],
+   "file": "chips/sfx.chips.05.ogg",
+   "duration": 0.177,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-collide-1.ogg",
+   "credit_text": "\"chips-collide-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "27f1b1de1411c627"
+  },
+  {
+   "id": "sfx.chips.06",
+   "kind": "sfx",
+   "category": "chips",
+   "tags": [
+    "chips",
+    "casino"
+   ],
+   "file": "chips/sfx.chips.06.ogg",
+   "duration": 0.199,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-collide-2.ogg",
+   "credit_text": "\"chips-collide-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "d338b914d0065d5c"
+  },
+  {
+   "id": "sfx.dice.01",
+   "kind": "sfx",
+   "category": "dice",
+   "tags": [
+    "dice",
+    "roll"
+   ],
+   "file": "dice/sfx.dice.01.ogg",
+   "duration": 0.599,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-throw-1.ogg",
+   "credit_text": "\"dice-throw-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "9e2d2329e10d64f2"
+  },
+  {
+   "id": "sfx.dice.02",
+   "kind": "sfx",
+   "category": "dice",
+   "tags": [
+    "dice",
+    "roll"
+   ],
+   "file": "dice/sfx.dice.02.ogg",
+   "duration": 0.386,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-throw-2.ogg",
+   "credit_text": "\"dice-throw-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "4aee85f700d80e04"
+  },
+  {
+   "id": "sfx.dice.03",
+   "kind": "sfx",
+   "category": "dice",
+   "tags": [
+    "dice",
+    "roll"
+   ],
+   "file": "dice/sfx.dice.03.ogg",
+   "duration": 0.575,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-throw-3.ogg",
+   "credit_text": "\"dice-throw-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "7592a8ed42e74460"
+  },
+  {
+   "id": "sfx.coin.01",
+   "kind": "sfx",
+   "category": "coin",
+   "tags": [
+    "coin",
+    "money",
+    "cash"
+   ],
+   "file": "coin/sfx.coin.01.ogg",
+   "duration": 0.791,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "handleCoins.ogg",
+   "credit_text": "\"handleCoins.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "93d5259deacda7b6"
+  },
+  {
+   "id": "sfx.coin.02",
+   "kind": "sfx",
+   "category": "coin",
+   "tags": [
+    "coin",
+    "money",
+    "cash"
+   ],
+   "file": "coin/sfx.coin.02.ogg",
+   "duration": 0.286,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "handleCoins2.ogg",
+   "credit_text": "\"handleCoins2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "539772abb419bc97"
+  },
+  {
+   "id": "sfx.door.01",
+   "kind": "sfx",
+   "category": "door",
+   "tags": [
+    "door",
+    "open"
+   ],
+   "file": "door/sfx.door.01.ogg",
+   "duration": 0.911,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "doorOpen_1.ogg",
+   "credit_text": "\"doorOpen_1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "f70edd05ef7dca34"
+  },
+  {
+   "id": "sfx.door.02",
+   "kind": "sfx",
+   "category": "door",
+   "tags": [
+    "door",
+    "open"
+   ],
+   "file": "door/sfx.door.02.ogg",
+   "duration": 1.398,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "doorOpen_2.ogg",
+   "credit_text": "\"doorOpen_2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "9d3503164bbd9757"
+  },
+  {
+   "id": "sfx.door.03",
+   "kind": "sfx",
+   "category": "door",
+   "tags": [
+    "door",
+    "close"
+   ],
+   "file": "door/sfx.door.03.ogg",
+   "duration": 0.672,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "doorClose_1.ogg",
+   "credit_text": "\"doorClose_1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "89945c4b019d8f4b"
+  },
+  {
+   "id": "sfx.door.04",
+   "kind": "sfx",
+   "category": "door",
+   "tags": [
+    "door",
+    "close"
+   ],
+   "file": "door/sfx.door.04.ogg",
+   "duration": 0.602,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "doorClose_2.ogg",
+   "credit_text": "\"doorClose_2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "d7173ddf1cd7242d"
+  },
+  {
+   "id": "sfx.paper.01",
+   "kind": "sfx",
+   "category": "paper",
+   "tags": [
+    "paper",
+    "page",
+    "book"
+   ],
+   "file": "paper/sfx.paper.01.ogg",
+   "duration": 0.694,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookFlip1.ogg",
+   "credit_text": "\"bookFlip1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "a183d2801e23175a"
+  },
+  {
+   "id": "sfx.paper.02",
+   "kind": "sfx",
+   "category": "paper",
+   "tags": [
+    "paper",
+    "page",
+    "book"
+   ],
+   "file": "paper/sfx.paper.02.ogg",
+   "duration": 0.43,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookFlip2.ogg",
+   "credit_text": "\"bookFlip2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "9024d4a16f95398e"
+  },
+  {
+   "id": "sfx.paper.03",
+   "kind": "sfx",
+   "category": "paper",
+   "tags": [
+    "paper",
+    "page",
+    "book"
+   ],
+   "file": "paper/sfx.paper.03.ogg",
+   "duration": 0.2,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookFlip3.ogg",
+   "credit_text": "\"bookFlip3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "fb93a0435acaac1f"
+  },
+  {
+   "id": "sfx.swish.01",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "swish",
+    "cloth",
+    "move"
+   ],
+   "file": "swish/sfx.swish.01.ogg",
+   "duration": 0.63,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "cloth1.ogg",
+   "credit_text": "\"cloth1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "99023eebe7eb1e50"
+  },
+  {
+   "id": "sfx.swish.02",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "swish",
+    "cloth",
+    "move"
+   ],
+   "file": "swish/sfx.swish.02.ogg",
+   "duration": 0.373,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "cloth2.ogg",
+   "credit_text": "\"cloth2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "154b85dc5da49187"
+  },
+  {
+   "id": "sfx.swish.03",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "swish",
+    "cloth",
+    "move"
+   ],
+   "file": "swish/sfx.swish.03.ogg",
+   "duration": 0.458,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "cloth3.ogg",
+   "credit_text": "\"cloth3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "ca831b96dcbeae00"
+  },
+  {
+   "id": "sfx.explosion.01",
+   "kind": "sfx",
+   "category": "explosion",
+   "tags": [
+    "explosion",
+    "boom"
+   ],
+   "file": "explosion/sfx.explosion.01.ogg",
+   "duration": 0.777,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "explosionCrunch_000.ogg",
+   "credit_text": "\"explosionCrunch_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "0aa6fcc2f9c69e84"
+  },
+  {
+   "id": "sfx.explosion.02",
+   "kind": "sfx",
+   "category": "explosion",
+   "tags": [
+    "explosion",
+    "boom"
+   ],
+   "file": "explosion/sfx.explosion.02.ogg",
+   "duration": 1.357,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "explosionCrunch_001.ogg",
+   "credit_text": "\"explosionCrunch_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "e95c7dcf7f5440fe"
+  },
+  {
+   "id": "sfx.explosion.03",
+   "kind": "sfx",
+   "category": "explosion",
+   "tags": [
+    "explosion",
+    "boom"
+   ],
+   "file": "explosion/sfx.explosion.03.ogg",
+   "duration": 1.256,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "explosionCrunch_002.ogg",
+   "credit_text": "\"explosionCrunch_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "e5fbd57299760ceb"
+  },
+  {
+   "id": "sfx.explosion.04",
+   "kind": "sfx",
+   "category": "explosion",
+   "tags": [
+    "explosion",
+    "boom",
+    "bass"
+   ],
+   "file": "explosion/sfx.explosion.04.ogg",
+   "duration": 1.993,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "lowFrequency_explosion_000.ogg",
+   "credit_text": "\"lowFrequency_explosion_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "7420b9604eac0346"
+  },
+  {
+   "id": "sfx.explosion.05",
+   "kind": "sfx",
+   "category": "explosion",
+   "tags": [
+    "explosion",
+    "boom",
+    "bass"
+   ],
+   "file": "explosion/sfx.explosion.05.ogg",
+   "duration": 0.993,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "lowFrequency_explosion_001.ogg",
+   "credit_text": "\"lowFrequency_explosion_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "fb784d0100e99a40"
+  },
+  {
+   "id": "sfx.applause.01",
+   "kind": "sfx",
+   "category": "applause",
+   "tags": [
+    "applause",
+    "cheer",
+    "crowd",
+    "clapping"
+   ],
+   "file": "applause/sfx.applause.01.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "Sandermotions",
+   "source_url": "https://commons.wikimedia.org/wiki/File:277021_sandermotions_applause-2.wav",
+   "source_file": "applause_0.wav",
+   "credit_text": "\"applause_0.wav\" by Sandermotions, CC0 (https://commons.wikimedia.org/wiki/File:277021_sandermotions_applause-2.wav)",
+   "hash": "0e6826b2b233d145"
+  },
+  {
+   "id": "sfx.applause.02",
+   "kind": "sfx",
+   "category": "applause",
+   "tags": [
+    "applause",
+    "clapping"
+   ],
+   "file": "applause/sfx.applause.02.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "mrrap4food",
+   "source_url": "https://commons.wikimedia.org/wiki/File:619016_mrrap4food_clapping-then-leaving.mp3",
+   "source_file": "applause_1.mp3",
+   "credit_text": "\"applause_1.mp3\" by mrrap4food, CC0 (https://commons.wikimedia.org/wiki/File:619016_mrrap4food_clapping-then-leaving.mp3)",
+   "hash": "9582737bd159f82b"
+  },
+  {
+   "id": "sfx.cheer.01",
+   "kind": "sfx",
+   "category": "cheer",
+   "tags": [
+    "cheer",
+    "hurray",
+    "crowd"
+   ],
+   "file": "cheer/sfx.cheer.01.ogg",
+   "duration": 4.0,
+   "licence": "Public domain",
+   "author": "Starlite",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Clapping_hurray_(cropped).oga",
+   "source_file": "applause_2.oga",
+   "credit_text": "\"applause_2.oga\" by Starlite, Public domain (https://commons.wikimedia.org/wiki/File:Clapping_hurray_(cropped).oga)",
+   "hash": "700959f75c580f9d"
+  },
+  {
+   "id": "sfx.thunder.01",
+   "kind": "sfx",
+   "category": "thunder",
+   "tags": [
+    "thunder",
+    "storm",
+    "rain"
+   ],
+   "file": "thunder/sfx.thunder.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "ezwa",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rain_and_thunder_(1).ogg",
+   "source_file": "thunder_0.ogg",
+   "credit_text": "\"thunder_0.ogg\" by ezwa, Public domain (https://commons.wikimedia.org/wiki/File:Rain_and_thunder_(1).ogg)",
+   "hash": "e0d45af3ba69bdb7"
+  },
+  {
+   "id": "sfx.rain.01",
+   "kind": "sfx",
+   "category": "rain",
+   "tags": [
+    "rain",
+    "weather",
+    "ambience"
+   ],
+   "file": "rain/sfx.rain.01.ogg",
+   "duration": 8.0,
+   "licence": "Public domain",
+   "author": "ezwa",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rain_(1).ogg",
+   "source_file": "rain_0.ogg",
+   "credit_text": "\"rain_0.ogg\" by ezwa, Public domain (https://commons.wikimedia.org/wiki/File:Rain_(1).ogg)",
+   "hash": "01947a0fe1938cc7"
+  },
+  {
+   "id": "sfx.rain.02",
+   "kind": "sfx",
+   "category": "rain",
+   "tags": [
+    "rain",
+    "window",
+    "ambience"
+   ],
+   "file": "rain/sfx.rain.02.ogg",
+   "duration": 8.0,
+   "licence": "Public domain",
+   "author": "cori",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rain_against_the_window.ogg",
+   "source_file": "rain_1.ogg",
+   "credit_text": "\"rain_1.ogg\" by cori, Public domain (https://commons.wikimedia.org/wiki/File:Rain_against_the_window.ogg)",
+   "hash": "f462522c38c63df1"
+  },
+  {
+   "id": "sfx.heartbeat.01",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "tension"
+   ],
+   "file": "heartbeat/sfx.heartbeat.01.ogg",
+   "duration": 5.0,
+   "licence": "Public domain",
+   "author": "ezwa",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Heartbeat_mitral_valve_150_bpm.ogg",
+   "source_file": "heartbeat_1.ogg",
+   "credit_text": "\"heartbeat_1.ogg\" by ezwa, Public domain (https://commons.wikimedia.org/wiki/File:Heartbeat_mitral_valve_150_bpm.ogg)",
+   "hash": "bba57ab65542ba77"
+  },
+  {
+   "id": "sfx.heartbeat.02",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "tension"
+   ],
+   "file": "heartbeat/sfx.heartbeat.02.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "Wilfredor",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Human_heart_rate.flac",
+   "source_file": "heartbeat_2.flac",
+   "credit_text": "\"heartbeat_2.flac\" by Wilfredor, CC0 (https://commons.wikimedia.org/wiki/File:Human_heart_rate.flac)",
+   "hash": "36f3c0e16684a314"
+  },
+  {
+   "id": "sfx.phone.01",
+   "kind": "sfx",
+   "category": "phone",
+   "tags": [
+    "phone",
+    "ring",
+    "telephone"
+   ],
+   "file": "phone/sfx.phone.01.ogg",
+   "duration": 4.0,
+   "licence": "Public domain",
+   "author": "Dsw4.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Telephone.ogg",
+   "source_file": "phone_ring_0.ogg",
+   "credit_text": "\"phone_ring_0.ogg\" by Dsw4., Public domain (https://commons.wikimedia.org/wiki/File:Telephone.ogg)",
+   "hash": "fffbb21414cc88ff"
+  },
+  {
+   "id": "sfx.camera.01",
+   "kind": "sfx",
+   "category": "camera",
+   "tags": [
+    "camera",
+    "shutter",
+    "photo"
+   ],
+   "file": "camera/sfx.camera.01.ogg",
+   "duration": 1.2,
+   "licence": "Public domain",
+   "author": "Doitashimashite at Dutch Wikipedia",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Holga_shuttersound.ogg",
+   "source_file": "shutter_0.ogg",
+   "credit_text": "\"shutter_0.ogg\" by Doitashimashite at Dutch Wikipedia, Public domain (https://commons.wikimedia.org/wiki/File:Holga_shuttersound.ogg)",
+   "hash": "6f4f03c1f3971275"
+  },
+  {
+   "id": "sfx.camera.02",
+   "kind": "sfx",
+   "category": "camera",
+   "tags": [
+    "camera",
+    "shutter",
+    "photo"
+   ],
+   "file": "camera/sfx.camera.02.ogg",
+   "duration": 1.2,
+   "licence": "CC0",
+   "author": "Smial (talk)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ausl%C3%B6seger%C3%A4usch_SLR_Serienaufnahme_mit_AF_Sch%C3%A4rfepriorit%C3%A4t.ogg",
+   "source_file": "shutter_1.ogg",
+   "credit_text": "\"shutter_1.ogg\" by Smial (talk), CC0 (https://commons.wikimedia.org/wiki/File:Ausl%C3%B6seger%C3%A4usch_SLR_Serienaufnahme_mit_AF_Sch%C3%A4rfepriorit%C3%A4t.ogg)",
+   "hash": "42a01ad94afca6e8"
+  },
+  {
+   "id": "sfx.typing.01",
+   "kind": "sfx",
+   "category": "typing",
+   "tags": [
+    "typing",
+    "keyboard"
+   ],
+   "file": "typing/sfx.typing.01.ogg",
+   "duration": 6.0,
+   "licence": "CC0",
+   "author": "Raymangold22",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Typing_-_Model_F_122_1984.ogg",
+   "source_file": "typing_1.ogg",
+   "credit_text": "\"typing_1.ogg\" by Raymangold22, CC0 (https://commons.wikimedia.org/wiki/File:Typing_-_Model_F_122_1984.ogg)",
+   "hash": "d5bbf3425d2c7f16"
+  },
+  {
+   "id": "sfx.typing.02",
+   "kind": "sfx",
+   "category": "typing",
+   "tags": [
+    "typing",
+    "keyboard"
+   ],
+   "file": "typing/sfx.typing.02.ogg",
+   "duration": 6.0,
+   "licence": "CC0",
+   "author": "Raymangold22",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Typing_-_Model_M13_1999.ogg",
+   "source_file": "typing_2.ogg",
+   "credit_text": "\"typing_2.ogg\" by Raymangold22, CC0 (https://commons.wikimedia.org/wiki/File:Typing_-_Model_M13_1999.ogg)",
+   "hash": "e3a20f7f450fdf46"
+  },
+  {
+   "id": "sfx.bell.04",
+   "kind": "sfx",
+   "category": "bell",
+   "tags": [
+    "typewriter",
+    "ding",
+    "bell"
+   ],
+   "file": "bell/sfx.bell.04.ogg",
+   "duration": 1.056,
+   "licence": "CC0",
+   "author": "_stubb",
+   "source_url": "https://commons.wikimedia.org/wiki/File:406243_stubb_typewriter-ding-near-mono.wav",
+   "source_file": "typewriter_0.wav",
+   "credit_text": "\"typewriter_0.wav\" by _stubb, CC0 (https://commons.wikimedia.org/wiki/File:406243_stubb_typewriter-ding-near-mono.wav)",
+   "hash": "1b8b692e994322bb"
+  },
+  {
+   "id": "sfx.alarm.01",
+   "kind": "sfx",
+   "category": "alarm",
+   "tags": [
+    "alarm",
+    "alarm clock",
+    "ring"
+   ],
+   "file": "alarm/sfx.alarm.01.ogg",
+   "duration": 4.0,
+   "licence": "CC0",
+   "author": "Yoo-toob-FX (https://directory.audio/authoritems/665-yoo-toob-fx, https://web.ar",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Alarm_Clock_(Directory.Audio).mp3",
+   "source_file": "alarm_0.mp3",
+   "credit_text": "\"alarm_0.mp3\" by Yoo-toob-FX (https://directory.audio/authoritems/665-yoo-toob-fx, https://web.ar, CC0 (https://commons.wikimedia.org/wiki/File:Alarm_Clock_(Directory.Audio).mp3)",
+   "hash": "903acf9f80890c0e"
+  },
+  {
+   "id": "sfx.tick.01",
+   "kind": "sfx",
+   "category": "tick",
+   "tags": [
+    "tick",
+    "clock",
+    "ticking",
+    "countdown"
+   ],
+   "file": "tick/sfx.tick.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "natalie",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg",
+   "source_file": "clock_tick_0.ogg",
+   "credit_text": "\"clock_tick_0.ogg\" by natalie, Public domain (https://commons.wikimedia.org/wiki/File:Clock_ticking.ogg)",
+   "hash": "109cf7a2e04985ab"
+  },
+  {
+   "id": "sfx.fire.01",
+   "kind": "sfx",
+   "category": "fire",
+   "tags": [
+    "fire",
+    "crackle"
+   ],
+   "file": "fire/sfx.fire.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "stephan",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bones_breaking_wood_fire_ice_crackling.ogg",
+   "source_file": "fire_0.ogg",
+   "credit_text": "\"fire_0.ogg\" by stephan, Public domain (https://commons.wikimedia.org/wiki/File:Bones_breaking_wood_fire_ice_crackling.ogg)",
+   "hash": "077165338cad8f08"
+  },
+  {
+   "id": "sfx.cash.01",
+   "kind": "sfx",
+   "category": "cash",
+   "tags": [
+    "cash",
+    "register",
+    "money",
+    "ka-ching"
+   ],
+   "file": "cash/sfx.cash.01.ogg",
+   "duration": 2.114,
+   "licence": "Public domain",
+   "author": "Me",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cash_register.ogg",
+   "source_file": "cash_register_0.ogg",
+   "credit_text": "\"cash_register_0.ogg\" by Me, Public domain (https://commons.wikimedia.org/wiki/File:Cash_register.ogg)",
+   "hash": "04c5120f7ad00a32"
+  },
+  {
+   "id": "sfx.whoosh.01",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.01.ogg",
+   "duration": 0.102,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-1.wav",
+   "credit_text": "\"swish-1.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "1c30c785b21bf6c8"
+  },
+  {
+   "id": "sfx.whoosh.02",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.02.ogg",
+   "duration": 0.074,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-2.wav",
+   "credit_text": "\"swish-2.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "4b41c423829ef51b"
+  },
+  {
+   "id": "sfx.swish.04",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "swish/sfx.swish.04.ogg",
+   "duration": 0.114,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-3.wav",
+   "credit_text": "\"swish-3.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "2cebaba379af4d92"
+  },
+  {
+   "id": "sfx.whoosh.03",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.03.ogg",
+   "duration": 0.119,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-4.wav",
+   "credit_text": "\"swish-4.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "52083b87edaba38c"
+  },
+  {
+   "id": "sfx.whoosh.04",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.04.ogg",
+   "duration": 0.109,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-5.wav",
+   "credit_text": "\"swish-5.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "e0b40bef8cee4943"
+  },
+  {
+   "id": "sfx.swish.05",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "swish/sfx.swish.05.ogg",
+   "duration": 0.119,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-6.wav",
+   "credit_text": "\"swish-6.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "329672bb702b8ea1"
+  },
+  {
+   "id": "sfx.whoosh.05",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.05.ogg",
+   "duration": 0.17,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-7.wav",
+   "credit_text": "\"swish-7.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "3de31a395b38735b"
+  },
+  {
+   "id": "sfx.whoosh.06",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.06.ogg",
+   "duration": 0.118,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-8.wav",
+   "credit_text": "\"swish-8.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "a9fabcc240849e50"
+  },
+  {
+   "id": "sfx.swish.06",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "swish/sfx.swish.06.ogg",
+   "duration": 0.163,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-9.wav",
+   "credit_text": "\"swish-9.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "7b67c2edfde4f7d5"
+  },
+  {
+   "id": "sfx.whoosh.07",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.07.ogg",
+   "duration": 0.114,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-10.wav",
+   "credit_text": "\"swish-10.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "3d9b36b65e199438"
+  },
+  {
+   "id": "sfx.whoosh.08",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.08.ogg",
+   "duration": 0.092,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-11.wav",
+   "credit_text": "\"swish-11.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "8f95f0741f2887e6"
+  },
+  {
+   "id": "sfx.swish.07",
+   "kind": "sfx",
+   "category": "swish",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "swish/sfx.swish.07.ogg",
+   "duration": 0.066,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-12.wav",
+   "credit_text": "\"swish-12.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "a9ec6d4a83d00448"
+  },
+  {
+   "id": "sfx.whoosh.09",
+   "kind": "sfx",
+   "category": "whoosh",
+   "tags": [
+    "whoosh",
+    "swish",
+    "swoosh",
+    "transition",
+    "swipe",
+    "camera move"
+   ],
+   "file": "whoosh/sfx.whoosh.09.ogg",
+   "duration": 0.061,
+   "licence": "CC0",
+   "author": "artisticdude (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/swishes-sound-pack",
+   "source_file": "swish-13.wav",
+   "credit_text": "\"swish-13.wav\" by artisticdude (OpenGameArt), CC0 (https://opengameart.org/content/swishes-sound-pack)",
+   "hash": "78e235885cd027f6"
+  },
+  {
+   "id": "sfx.riser.01",
+   "kind": "sfx",
+   "category": "riser",
+   "tags": [
+    "riser",
+    "reveal",
+    "sweep",
+    "up"
+   ],
+   "file": "riser/sfx.riser.01.ogg",
+   "duration": 0.426,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserUp1.ogg",
+   "credit_text": "\"phaserUp1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "d98a4c85c2ce6e05"
+  },
+  {
+   "id": "sfx.riser.02",
+   "kind": "sfx",
+   "category": "riser",
+   "tags": [
+    "riser",
+    "reveal",
+    "sweep",
+    "up"
+   ],
+   "file": "riser/sfx.riser.02.ogg",
+   "duration": 0.332,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserUp2.ogg",
+   "credit_text": "\"phaserUp2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "8a304fd4bbcce562"
+  },
+  {
+   "id": "sfx.riser.03",
+   "kind": "sfx",
+   "category": "riser",
+   "tags": [
+    "riser",
+    "reveal",
+    "sweep",
+    "up"
+   ],
+   "file": "riser/sfx.riser.03.ogg",
+   "duration": 0.463,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserUp3.ogg",
+   "credit_text": "\"phaserUp3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "d4d9e7b3d1ed5c13"
+  },
+  {
+   "id": "sfx.riser.04",
+   "kind": "sfx",
+   "category": "riser",
+   "tags": [
+    "riser",
+    "reveal",
+    "sweep",
+    "up"
+   ],
+   "file": "riser/sfx.riser.04.ogg",
+   "duration": 0.293,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/digital-audio",
+   "source_file": "phaserUp4.ogg",
+   "credit_text": "\"phaserUp4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/digital-audio)",
+   "hash": "1556bba29c985cb2"
+  },
+  {
+   "id": "sfx.roulette.01",
+   "kind": "sfx",
+   "category": "roulette",
+   "tags": [
+    "roulette",
+    "rattle",
+    "ball",
+    "casino"
+   ],
+   "file": "roulette/sfx.roulette.01.ogg",
+   "duration": 1.402,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-shake-1.ogg",
+   "credit_text": "\"dice-shake-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "ad3b29c85017dadc"
+  },
+  {
+   "id": "sfx.roulette.02",
+   "kind": "sfx",
+   "category": "roulette",
+   "tags": [
+    "roulette",
+    "rattle",
+    "ball",
+    "casino"
+   ],
+   "file": "roulette/sfx.roulette.02.ogg",
+   "duration": 1.288,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-shake-2.ogg",
+   "credit_text": "\"dice-shake-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "67e5cd42617a7897"
+  },
+  {
+   "id": "sfx.roulette.03",
+   "kind": "sfx",
+   "category": "roulette",
+   "tags": [
+    "roulette",
+    "rattle",
+    "ball",
+    "casino"
+   ],
+   "file": "roulette/sfx.roulette.03.ogg",
+   "duration": 1.508,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "dice-shake-3.ogg",
+   "credit_text": "\"dice-shake-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "1b4785192558039b"
+  },
+  {
+   "id": "sfx.slot.01",
+   "kind": "sfx",
+   "category": "slot",
+   "tags": [
+    "slot",
+    "slot machine",
+    "reels",
+    "casino"
+   ],
+   "file": "slot/sfx.slot.01.ogg",
+   "duration": 0.574,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-handle-1.ogg",
+   "credit_text": "\"chips-handle-1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "5821e55e2a599e08"
+  },
+  {
+   "id": "sfx.slot.02",
+   "kind": "sfx",
+   "category": "slot",
+   "tags": [
+    "slot",
+    "slot machine",
+    "reels",
+    "casino"
+   ],
+   "file": "slot/sfx.slot.02.ogg",
+   "duration": 0.495,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-handle-2.ogg",
+   "credit_text": "\"chips-handle-2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "7223d0b74010b58b"
+  },
+  {
+   "id": "sfx.slot.03",
+   "kind": "sfx",
+   "category": "slot",
+   "tags": [
+    "slot",
+    "slot machine",
+    "reels",
+    "casino"
+   ],
+   "file": "slot/sfx.slot.03.ogg",
+   "duration": 0.23,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-handle-3.ogg",
+   "credit_text": "\"chips-handle-3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "978ae9d452922060"
+  },
+  {
+   "id": "sfx.slot.04",
+   "kind": "sfx",
+   "category": "slot",
+   "tags": [
+    "slot",
+    "slot machine",
+    "reels",
+    "casino"
+   ],
+   "file": "slot/sfx.slot.04.ogg",
+   "duration": 0.359,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "chips-handle-4.ogg",
+   "credit_text": "\"chips-handle-4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "3bce7beaf9fc6ee6"
+  },
+  {
+   "id": "sfx.gasp.01",
+   "kind": "sfx",
+   "category": "gasp",
+   "tags": [
+    "gasp",
+    "shock",
+    "surprise"
+   ],
+   "file": "gasp/sfx.gasp.01.ogg",
+   "duration": 1.5,
+   "licence": "Public domain",
+   "author": "ezwa",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Heavy_breathing_3.ogg",
+   "source_file": "gasp_2.ogg",
+   "credit_text": "\"gasp_2.ogg\" by ezwa, Public domain (https://commons.wikimedia.org/wiki/File:Heavy_breathing_3.ogg)",
+   "hash": "d628ebc53464dbfe"
+  },
+  {
+   "id": "sfx.splash.01",
+   "kind": "sfx",
+   "category": "splash",
+   "tags": [
+    "splash",
+    "water"
+   ],
+   "file": "splash/sfx.splash.01.ogg",
+   "duration": 2.0,
+   "licence": "Public domain",
+   "author": "gradha",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bathtub_water_splashes.ogg",
+   "source_file": "splash_0.ogg",
+   "credit_text": "\"splash_0.ogg\" by gradha, Public domain (https://commons.wikimedia.org/wiki/File:Bathtub_water_splashes.ogg)",
+   "hash": "71ffdc9ac3e6be89"
+  },
+  {
+   "id": "sfx.pin.01",
+   "kind": "sfx",
+   "category": "pin",
+   "tags": [
+    "pin",
+    "thumbtack",
+    "pin drop",
+    "cork board",
+    "evidence board"
+   ],
+   "file": "pin/sfx.pin.01.ogg",
+   "duration": 0.914,
+   "licence": "Public domain",
+   "author": "stephan",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Tack_tack_tack.ogg",
+   "source_file": "Tack tack tack.ogg",
+   "credit_text": "\"Tack tack tack.ogg\" by stephan, Public domain (https://commons.wikimedia.org/wiki/File:Tack_tack_tack.ogg)",
+   "hash": "e3f01ef14a734b87"
+  },
+  {
+   "id": "sfx.pin.02",
+   "kind": "sfx",
+   "category": "pin",
+   "tags": [
+    "pin",
+    "thumbtack",
+    "tack",
+    "click",
+    "evidence board"
+   ],
+   "file": "pin/sfx.pin.02.ogg",
+   "duration": 0.261,
+   "licence": "Public domain",
+   "author": "stephan",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Mechanical_tack.ogg",
+   "source_file": "Mechanical tack.ogg",
+   "credit_text": "\"Mechanical tack.ogg\" by stephan, Public domain (https://commons.wikimedia.org/wiki/File:Mechanical_tack.ogg)",
+   "hash": "c38aa035f8267ce7"
+  },
+  {
+   "id": "sfx.pin.03",
+   "kind": "sfx",
+   "category": "pin",
+   "tags": [
+    "pin",
+    "paperclip",
+    "small metal",
+    "desk"
+   ],
+   "file": "pin/sfx.pin.03.ogg",
+   "duration": 0.334,
+   "licence": "Public domain",
+   "author": "hugh",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Paperclips_dropped_jangled.ogg",
+   "source_file": "Paperclips dropped jangled.ogg",
+   "credit_text": "\"Paperclips dropped jangled.ogg\" by hugh, Public domain (https://commons.wikimedia.org/wiki/File:Paperclips_dropped_jangled.ogg)",
+   "hash": "5cdd2411bd51a12f"
+  },
+  {
+   "id": "sfx.pin.04",
+   "kind": "sfx",
+   "category": "pin",
+   "tags": [
+    "pin",
+    "paperclip",
+    "small metal",
+    "desk"
+   ],
+   "file": "pin/sfx.pin.04.ogg",
+   "duration": 0.416,
+   "licence": "Public domain",
+   "author": "hugh",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Paperclips_dropped_jangled.ogg",
+   "source_file": "Paperclips dropped jangled.ogg",
+   "credit_text": "\"Paperclips dropped jangled.ogg\" by hugh, Public domain (https://commons.wikimedia.org/wiki/File:Paperclips_dropped_jangled.ogg)",
+   "hash": "1011cc2b6a7b493c"
+  },
+  {
+   "id": "sfx.marker.01",
+   "kind": "sfx",
+   "category": "marker",
+   "tags": [
+    "marker",
+    "felt pen",
+    "writing",
+    "circle",
+    "strike",
+    "evidence board"
+   ],
+   "file": "marker/sfx.marker.01.ogg",
+   "duration": 1.512,
+   "licence": "CC0",
+   "author": "TubbsMedia",
+   "source_url": "https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav",
+   "source_file": "377124 tubbsmedia marker-lines.wav",
+   "credit_text": "\"377124 tubbsmedia marker-lines.wav\" by TubbsMedia, CC0 (https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav)",
+   "hash": "9aa985b58a350a1a"
+  },
+  {
+   "id": "sfx.marker.02",
+   "kind": "sfx",
+   "category": "marker",
+   "tags": [
+    "marker",
+    "felt pen",
+    "writing",
+    "circle",
+    "strike",
+    "evidence board"
+   ],
+   "file": "marker/sfx.marker.02.ogg",
+   "duration": 2.137,
+   "licence": "CC0",
+   "author": "TubbsMedia",
+   "source_url": "https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav",
+   "source_file": "377124 tubbsmedia marker-lines.wav",
+   "credit_text": "\"377124 tubbsmedia marker-lines.wav\" by TubbsMedia, CC0 (https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav)",
+   "hash": "5223768d5c8aa498"
+  },
+  {
+   "id": "sfx.marker.03",
+   "kind": "sfx",
+   "category": "marker",
+   "tags": [
+    "marker",
+    "felt pen",
+    "writing",
+    "circle",
+    "strike",
+    "evidence board"
+   ],
+   "file": "marker/sfx.marker.03.ogg",
+   "duration": 1.507,
+   "licence": "CC0",
+   "author": "TubbsMedia",
+   "source_url": "https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav",
+   "source_file": "377124 tubbsmedia marker-lines.wav",
+   "credit_text": "\"377124 tubbsmedia marker-lines.wav\" by TubbsMedia, CC0 (https://commons.wikimedia.org/wiki/File:377124_tubbsmedia_marker-lines.wav)",
+   "hash": "03a210c5302dbf74"
+  },
+  {
+   "id": "sfx.marker.04",
+   "kind": "sfx",
+   "category": "marker",
+   "tags": [
+    "marker",
+    "felt pen",
+    "writing",
+    "scribble"
+   ],
+   "file": "marker/sfx.marker.04.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "stephan",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Writing_with_feltpen.ogg",
+   "source_file": "Writing with feltpen.ogg",
+   "credit_text": "\"Writing with feltpen.ogg\" by stephan, Public domain (https://commons.wikimedia.org/wiki/File:Writing_with_feltpen.ogg)",
+   "hash": "53878c82a7049558"
+  },
+  {
+   "id": "sfx.marker.05",
+   "kind": "sfx",
+   "category": "marker",
+   "tags": [
+    "pen",
+    "ink pen",
+    "writing",
+    "paper",
+    "note"
+   ],
+   "file": "marker/sfx.marker.05.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "stephan",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg",
+   "source_file": "Writing with inkpen.ogg",
+   "credit_text": "\"Writing with inkpen.ogg\" by stephan, Public domain (https://commons.wikimedia.org/wiki/File:Writing_with_inkpen.ogg)",
+   "hash": "3ecfeb3f1a3ff99a"
+  },
+  {
+   "id": "sfx.paper_slap.01",
+   "kind": "sfx",
+   "category": "paper_slap",
+   "tags": [
+    "paper slap",
+    "folder",
+    "file drop",
+    "desk",
+    "book drop"
+   ],
+   "file": "paper_slap/sfx.paper_slap.01.ogg",
+   "duration": 0.685,
+   "licence": "Public domain",
+   "author": "stilgar",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Softcover_books_dropped.ogg",
+   "source_file": "Softcover books dropped.ogg",
+   "credit_text": "\"Softcover books dropped.ogg\" by stilgar, Public domain (https://commons.wikimedia.org/wiki/File:Softcover_books_dropped.ogg)",
+   "hash": "209211babc362d91"
+  },
+  {
+   "id": "sfx.paper_slap.02",
+   "kind": "sfx",
+   "category": "paper_slap",
+   "tags": [
+    "paper slap",
+    "folder",
+    "file drop",
+    "desk",
+    "book drop"
+   ],
+   "file": "paper_slap/sfx.paper_slap.02.ogg",
+   "duration": 0.388,
+   "licence": "Public domain",
+   "author": "stilgar",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Softcover_books_dropped.ogg",
+   "source_file": "Softcover books dropped.ogg",
+   "credit_text": "\"Softcover books dropped.ogg\" by stilgar, Public domain (https://commons.wikimedia.org/wiki/File:Softcover_books_dropped.ogg)",
+   "hash": "e5abd01f3b1e5660"
+  },
+  {
+   "id": "sfx.paper_slap.03",
+   "kind": "sfx",
+   "category": "paper_slap",
+   "tags": [
+    "paper slap",
+    "folder",
+    "book",
+    "desk",
+    "slam"
+   ],
+   "file": "paper_slap/sfx.paper_slap.03.ogg",
+   "duration": 0.208,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookClose.ogg",
+   "credit_text": "\"bookClose.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "403d5ab3fabef4f0"
+  },
+  {
+   "id": "sfx.paper_slap.04",
+   "kind": "sfx",
+   "category": "paper_slap",
+   "tags": [
+    "paper slap",
+    "folder",
+    "book",
+    "put down",
+    "desk"
+   ],
+   "file": "paper_slap/sfx.paper_slap.04.ogg",
+   "duration": 0.277,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookPlace1.ogg",
+   "credit_text": "\"bookPlace1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "4bce7f2b53c2100b"
+  },
+  {
+   "id": "sfx.paper_slap.05",
+   "kind": "sfx",
+   "category": "paper_slap",
+   "tags": [
+    "paper slap",
+    "folder",
+    "book",
+    "put down",
+    "desk"
+   ],
+   "file": "paper_slap/sfx.paper_slap.05.ogg",
+   "duration": 0.354,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookPlace2.ogg",
+   "credit_text": "\"bookPlace2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "f957739862a5c7d7"
+  },
+  {
+   "id": "sfx.photo.01",
+   "kind": "sfx",
+   "category": "photo",
+   "tags": [
+    "photo",
+    "photo drop",
+    "polaroid",
+    "card",
+    "paper on table"
+   ],
+   "file": "photo/sfx.photo.01.ogg",
+   "duration": 0.601,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/casino-audio",
+   "source_file": "card-place-4.ogg",
+   "credit_text": "\"card-place-4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/casino-audio)",
+   "hash": "bfda9553c44e11d5"
+  },
+  {
+   "id": "sfx.photo.02",
+   "kind": "sfx",
+   "category": "photo",
+   "tags": [
+    "photo",
+    "camera",
+    "polaroid",
+    "snapshot"
+   ],
+   "file": "photo/sfx.photo.02.ogg",
+   "duration": 0.88,
+   "licence": "CC0",
+   "author": "themightyglider (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/camera",
+   "source_file": "photo.ogg",
+   "credit_text": "\"photo.ogg\" by themightyglider (OpenGameArt), CC0 (https://opengameart.org/content/camera)",
+   "hash": "161af17b66c655e2"
+  },
+  {
+   "id": "sfx.folder.01",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "page turn",
+    "paper",
+    "file",
+    "document"
+   ],
+   "file": "folder/sfx.folder.01.ogg",
+   "duration": 2.177,
+   "licence": "Public domain",
+   "author": "planish",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Turning_a_page.ogg",
+   "source_file": "Turning a page.ogg",
+   "credit_text": "\"Turning a page.ogg\" by planish, Public domain (https://commons.wikimedia.org/wiki/File:Turning_a_page.ogg)",
+   "hash": "3278e69608b62520"
+  },
+  {
+   "id": "sfx.folder.02",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "open",
+    "book",
+    "file",
+    "document"
+   ],
+   "file": "folder/sfx.folder.02.ogg",
+   "duration": 0.133,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "bookOpen.ogg",
+   "credit_text": "\"bookOpen.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "1ed9010be3e21a5d"
+  },
+  {
+   "id": "sfx.folder.03",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "page turn",
+    "paper",
+    "flip"
+   ],
+   "file": "folder/sfx.folder.03.ogg",
+   "duration": 1.115,
+   "licence": "CC0",
+   "author": "StarNinjas (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/10-book-page-flips",
+   "source_file": "book_flip.2.ogg",
+   "credit_text": "\"book_flip.2.ogg\" by StarNinjas (OpenGameArt), CC0 (https://opengameart.org/content/10-book-page-flips)",
+   "hash": "a2567a6ca5c0be26"
+  },
+  {
+   "id": "sfx.folder.04",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "page turn",
+    "paper",
+    "flip"
+   ],
+   "file": "folder/sfx.folder.04.ogg",
+   "duration": 0.958,
+   "licence": "CC0",
+   "author": "StarNinjas (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/10-book-page-flips",
+   "source_file": "book_flip.3.ogg",
+   "credit_text": "\"book_flip.3.ogg\" by StarNinjas (OpenGameArt), CC0 (https://opengameart.org/content/10-book-page-flips)",
+   "hash": "283aa26f9480e249"
+  },
+  {
+   "id": "sfx.folder.05",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "map",
+    "paper",
+    "unfold",
+    "open"
+   ],
+   "file": "folder/sfx.folder.05.ogg",
+   "duration": 1.495,
+   "licence": "CC0",
+   "author": "Spring Spring (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/opening-and-closing-a-map-sounds",
+   "source_file": "snd_use_map.wav",
+   "credit_text": "\"snd_use_map.wav\" by Spring Spring (OpenGameArt), CC0 (https://opengameart.org/content/opening-and-closing-a-map-sounds)",
+   "hash": "91a57ad5009cae10"
+  },
+  {
+   "id": "sfx.folder.06",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "paper",
+    "fanning pages",
+    "flip through",
+    "cards"
+   ],
+   "file": "folder/sfx.folder.06.ogg",
+   "duration": 2.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/fanning-thin-cover-stock-d.-d.-teoli-jr.",
+   "source_file": "Fanning thin cover stock D.D.Teoli Jr..mp3",
+   "credit_text": "\"Fanning thin cover stock D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/fanning-thin-cover-stock-d.-d.-teoli-jr.)",
+   "hash": "96175333fdf7161e"
+  },
+  {
+   "id": "sfx.folder.07",
+   "kind": "sfx",
+   "category": "folder",
+   "tags": [
+    "folder",
+    "paper",
+    "fanning pages",
+    "flip through",
+    "cards"
+   ],
+   "file": "folder/sfx.folder.07.ogg",
+   "duration": 0.463,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/fanning-thin-cover-stock-d.-d.-teoli-jr.",
+   "source_file": "Fanning thin cover stock D.D.Teoli Jr..mp3",
+   "credit_text": "\"Fanning thin cover stock D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/fanning-thin-cover-stock-d.-d.-teoli-jr.)",
+   "hash": "9b6202b2f9d383ee"
+  },
+  {
+   "id": "sfx.paper_rustle.01",
+   "kind": "sfx",
+   "category": "paper_rustle",
+   "tags": [
+    "paper rustle",
+    "paper",
+    "document",
+    "folder",
+    "handling"
+   ],
+   "file": "paper_rustle/sfx.paper_rustle.01.ogg",
+   "duration": 2.4,
+   "licence": "CC0",
+   "author": "scorcher24 (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/scorchers-foley-sounds",
+   "source_file": "paper_rustling.wav",
+   "credit_text": "\"paper_rustling.wav\" by scorcher24 (OpenGameArt), CC0 (https://opengameart.org/content/scorchers-foley-sounds)",
+   "hash": "374ef28f29fb8e41"
+  },
+  {
+   "id": "sfx.paper_rustle.02",
+   "kind": "sfx",
+   "category": "paper_rustle",
+   "tags": [
+    "paper rustle",
+    "paper",
+    "crumple",
+    "crush"
+   ],
+   "file": "paper_rustle/sfx.paper_rustle.02.ogg",
+   "duration": 1.149,
+   "licence": "CC0",
+   "author": "Luckius (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/various-paper-sound-effects",
+   "source_file": "paper_crushed_-_1.mp3",
+   "credit_text": "\"paper_crushed_-_1.mp3\" by Luckius (OpenGameArt), CC0 (https://opengameart.org/content/various-paper-sound-effects)",
+   "hash": "a5a3925ec9c2e616"
+  },
+  {
+   "id": "sfx.paper_rustle.03",
+   "kind": "sfx",
+   "category": "paper_rustle",
+   "tags": [
+    "paper rustle",
+    "paper",
+    "page",
+    "handling"
+   ],
+   "file": "paper_rustle/sfx.paper_rustle.03.ogg",
+   "duration": 0.488,
+   "licence": "CC0",
+   "author": "Luckius (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/various-paper-sound-effects",
+   "source_file": "paper_sound_-_1.mp3",
+   "credit_text": "\"paper_sound_-_1.mp3\" by Luckius (OpenGameArt), CC0 (https://opengameart.org/content/various-paper-sound-effects)",
+   "hash": "4e55afcd1b47c401"
+  },
+  {
+   "id": "sfx.paper_rustle.04",
+   "kind": "sfx",
+   "category": "paper_rustle",
+   "tags": [
+    "paper rustle",
+    "paper",
+    "page",
+    "handling"
+   ],
+   "file": "paper_rustle/sfx.paper_rustle.04.ogg",
+   "duration": 0.697,
+   "licence": "CC0",
+   "author": "Luckius (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/various-paper-sound-effects",
+   "source_file": "paper_sound_-_3.mp3",
+   "credit_text": "\"paper_sound_-_3.mp3\" by Luckius (OpenGameArt), CC0 (https://opengameart.org/content/various-paper-sound-effects)",
+   "hash": "b36c0b292d955204"
+  },
+  {
+   "id": "sfx.evidence_bag.01",
+   "kind": "sfx",
+   "category": "evidence_bag",
+   "tags": [
+    "evidence bag",
+    "plastic bag",
+    "rustle",
+    "plastic"
+   ],
+   "file": "evidence_bag/sfx.evidence_bag.01.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/RustlingOfPlasticD.D.TeoliJr.",
+   "source_file": "rustling of plastic D.D. Teoli Jr..mp3",
+   "credit_text": "\"rustling of plastic D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/RustlingOfPlasticD.D.TeoliJr.)",
+   "hash": "4f2937bd36c6958d"
+  },
+  {
+   "id": "sfx.evidence_bag.02",
+   "kind": "sfx",
+   "category": "evidence_bag",
+   "tags": [
+    "evidence bag",
+    "plastic bag",
+    "rustle",
+    "plastic"
+   ],
+   "file": "evidence_bag/sfx.evidence_bag.02.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/RustlingOfPlasticD.D.TeoliJr.",
+   "source_file": "rustling of plastic D.D. Teoli Jr..mp3",
+   "credit_text": "\"rustling of plastic D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/RustlingOfPlasticD.D.TeoliJr.)",
+   "hash": "ee71b8d6fe37246d"
+  },
+  {
+   "id": "sfx.evidence_bag.03",
+   "kind": "sfx",
+   "category": "evidence_bag",
+   "tags": [
+    "evidence bag",
+    "bag",
+    "crinkle",
+    "open"
+   ],
+   "file": "evidence_bag/sfx.evidence_bag.03.ogg",
+   "duration": 2.033,
+   "licence": "CC0",
+   "author": "JumboSizedFish (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/chips-bag-sounds",
+   "source_file": "opening_0.wav",
+   "credit_text": "\"opening_0.wav\" by JumboSizedFish (OpenGameArt), CC0 (https://opengameart.org/content/chips-bag-sounds)",
+   "hash": "f5fd7745bae72159"
+  },
+  {
+   "id": "sfx.evidence_bag.04",
+   "kind": "sfx",
+   "category": "evidence_bag",
+   "tags": [
+    "evidence bag",
+    "bag",
+    "crinkle",
+    "grab"
+   ],
+   "file": "evidence_bag/sfx.evidence_bag.04.ogg",
+   "duration": 1.244,
+   "licence": "CC0",
+   "author": "JumboSizedFish (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/chips-bag-sounds",
+   "source_file": "grabbing2_0.wav",
+   "credit_text": "\"grabbing2_0.wav\" by JumboSizedFish (OpenGameArt), CC0 (https://opengameart.org/content/chips-bag-sounds)",
+   "hash": "5dd5086eefe22d97"
+  },
+  {
+   "id": "sfx.typewriter.01",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "keys",
+    "typing",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.01.ogg",
+   "duration": 0.645,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter1.wav",
+   "credit_text": "\"typewriter1.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "313dd0f6190b4527"
+  },
+  {
+   "id": "sfx.typewriter.02",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "keys",
+    "typing",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.02.ogg",
+   "duration": 0.659,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter2.wav",
+   "credit_text": "\"typewriter2.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "9b016ed8da5640af"
+  },
+  {
+   "id": "sfx.typewriter.03",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "keys",
+    "typing",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.03.ogg",
+   "duration": 0.506,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter3.wav",
+   "credit_text": "\"typewriter3.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "043f152d4dd94b1c"
+  },
+  {
+   "id": "sfx.typewriter.04",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "keys",
+    "typing",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.04.ogg",
+   "duration": 0.501,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter4.wav",
+   "credit_text": "\"typewriter4.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "fc79ac60df8aa125"
+  },
+  {
+   "id": "sfx.typewriter.05",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "keys",
+    "typing",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.05.ogg",
+   "duration": 0.689,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter5.wav",
+   "credit_text": "\"typewriter5.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "cf65f069df6f16a1"
+  },
+  {
+   "id": "sfx.typewriter.06",
+   "kind": "sfx",
+   "category": "typewriter",
+   "tags": [
+    "typewriter",
+    "key",
+    "single key",
+    "clack"
+   ],
+   "file": "typewriter/sfx.typewriter.06.ogg",
+   "duration": 0.424,
+   "licence": "CC0",
+   "author": "Cassie-OrbitGames (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/typewriter-sounds",
+   "source_file": "typewriter8.wav",
+   "credit_text": "\"typewriter8.wav\" by Cassie-OrbitGames (OpenGameArt), CC0 (https://opengameart.org/content/typewriter-sounds)",
+   "hash": "c2d4a0def12d5de7"
+  },
+  {
+   "id": "sfx.file_cabinet.01",
+   "kind": "sfx",
+   "category": "file_cabinet",
+   "tags": [
+    "file cabinet",
+    "drawer",
+    "metal drawer",
+    "open",
+    "close"
+   ],
+   "file": "file_cabinet/sfx.file_cabinet.01.ogg",
+   "duration": 3.5,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/squeaky-metal-drawer-in-desk-d.-d.-teoli-jr-2",
+   "source_file": "Squeaky metal drawer in desk D.D.Teoli Jr (2).mp3",
+   "credit_text": "\"Squeaky metal drawer in desk D.D.Teoli Jr (2).mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/squeaky-metal-drawer-in-desk-d.-d.-teoli-jr-2)",
+   "hash": "9a43176cfe7a2b4a"
+  },
+  {
+   "id": "sfx.file_cabinet.02",
+   "kind": "sfx",
+   "category": "file_cabinet",
+   "tags": [
+    "file cabinet",
+    "drawer",
+    "desk drawer",
+    "open",
+    "close"
+   ],
+   "file": "file_cabinet/sfx.file_cabinet.02.ogg",
+   "duration": 2.438,
+   "licence": "Public domain",
+   "author": " D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/OpeningAndClosingDeskDrawerD.D.TeoliJr.",
+   "source_file": "Opening and closing desk drawer D.D. Teoli Jr..mp3",
+   "credit_text": "\"Opening and closing desk drawer D.D. Teoli Jr..mp3\" by  D. D. Teoli Jr., Public domain (https://archive.org/details/OpeningAndClosingDeskDrawerD.D.TeoliJr.)",
+   "hash": "fc3e1dd1e63c3dde"
+  },
+  {
+   "id": "sfx.file_cabinet.03",
+   "kind": "sfx",
+   "category": "file_cabinet",
+   "tags": [
+    "file cabinet",
+    "drawer",
+    "desk drawer",
+    "open",
+    "close"
+   ],
+   "file": "file_cabinet/sfx.file_cabinet.03.ogg",
+   "duration": 2.153,
+   "licence": "Public domain",
+   "author": " D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/OpeningAndClosingDeskDrawerD.D.TeoliJr.",
+   "source_file": "Opening and closing desk drawer D.D. Teoli Jr..mp3",
+   "credit_text": "\"Opening and closing desk drawer D.D. Teoli Jr..mp3\" by  D. D. Teoli Jr., Public domain (https://archive.org/details/OpeningAndClosingDeskDrawerD.D.TeoliJr.)",
+   "hash": "243da786f6439ccf"
+  },
+  {
+   "id": "sfx.file_cabinet.04",
+   "kind": "sfx",
+   "category": "file_cabinet",
+   "tags": [
+    "file cabinet",
+    "drawer",
+    "slide",
+    "open",
+    "close"
+   ],
+   "file": "file_cabinet/sfx.file_cabinet.04.ogg",
+   "duration": 0.477,
+   "licence": "Public domain",
+   "author": " D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/DrawerOpeningAndClosingD.D.TeoliJr.",
+   "source_file": "Drawer opening and closing D.D. Teoli Jr..mp3",
+   "credit_text": "\"Drawer opening and closing D.D. Teoli Jr..mp3\" by  D. D. Teoli Jr., Public domain (https://archive.org/details/DrawerOpeningAndClosingD.D.TeoliJr.)",
+   "hash": "70e6c49bd9e0f017"
+  },
+  {
+   "id": "sfx.file_cabinet.05",
+   "kind": "sfx",
+   "category": "file_cabinet",
+   "tags": [
+    "file cabinet",
+    "drawer",
+    "slide",
+    "open",
+    "close"
+   ],
+   "file": "file_cabinet/sfx.file_cabinet.05.ogg",
+   "duration": 0.377,
+   "licence": "Public domain",
+   "author": " D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/DrawerOpeningAndClosingD.D.TeoliJr.",
+   "source_file": "Drawer opening and closing D.D. Teoli Jr..mp3",
+   "credit_text": "\"Drawer opening and closing D.D. Teoli Jr..mp3\" by  D. D. Teoli Jr., Public domain (https://archive.org/details/DrawerOpeningAndClosingD.D.TeoliJr.)",
+   "hash": "3200c9a82f9db0bb"
+  },
+  {
+   "id": "sfx.fax.01",
+   "kind": "sfx",
+   "category": "fax",
+   "tags": [
+    "fax",
+    "fax machine",
+    "modem",
+    "handshake",
+    "dial-up"
+   ],
+   "file": "fax/sfx.fax.01.ogg",
+   "duration": 8.0,
+   "licence": "Public domain",
+   "author": "D.d.Teoli Jr.",
+   "source_url": "https://archive.org/details/fax-modem-no.-3-d.-d.-teoli-jr",
+   "source_file": "Fax modem No. 3 D.D.Teoli Jr.mp3",
+   "credit_text": "\"Fax modem No. 3 D.D.Teoli Jr.mp3\" by D.d.Teoli Jr., Public domain (https://archive.org/details/fax-modem-no.-3-d.-d.-teoli-jr)",
+   "hash": "34d5506b0e064676"
+  },
+  {
+   "id": "sfx.fax.02",
+   "kind": "sfx",
+   "category": "fax",
+   "tags": [
+    "fax",
+    "fax machine",
+    "tones",
+    "transmission"
+   ],
+   "file": "fax/sfx.fax.02.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D.d.Teoli Jr.",
+   "source_url": "https://archive.org/details/fax-modem-no.-3-d.-d.-teoli-jr",
+   "source_file": "Fax modem No. 3 D.D.Teoli Jr.mp3",
+   "credit_text": "\"Fax modem No. 3 D.D.Teoli Jr.mp3\" by D.d.Teoli Jr., Public domain (https://archive.org/details/fax-modem-no.-3-d.-d.-teoli-jr)",
+   "hash": "085d31f6af519aff"
+  },
+  {
+   "id": "sfx.paper_shred.01",
+   "kind": "sfx",
+   "category": "paper_shred",
+   "tags": [
+    "paper tear",
+    "rip",
+    "paper",
+    "shred"
+   ],
+   "file": "paper_shred/sfx.paper_shred.01.ogg",
+   "duration": 0.499,
+   "licence": "CC0",
+   "author": "Luckius (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/various-paper-sound-effects",
+   "source_file": "paper_ripped_-_1.mp3",
+   "credit_text": "\"paper_ripped_-_1.mp3\" by Luckius (OpenGameArt), CC0 (https://opengameart.org/content/various-paper-sound-effects)",
+   "hash": "11b19685d7b87762"
+  },
+  {
+   "id": "sfx.phone_rotary.01",
+   "kind": "sfx",
+   "category": "phone_rotary",
+   "tags": [
+    "phone ring",
+    "old telephone",
+    "rotary phone",
+    "bell ring"
+   ],
+   "file": "phone_rotary/sfx.phone_rotary.01.ogg",
+   "duration": 4.0,
+   "licence": "CC0",
+   "author": "cyberdyne (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/crank-movie-telephone-ringtone",
+   "source_file": "crank_ringtone.mp3",
+   "credit_text": "\"crank_ringtone.mp3\" by cyberdyne (OpenGameArt), CC0 (https://opengameart.org/content/crank-movie-telephone-ringtone)",
+   "hash": "3f378253b4b7e484"
+  },
+  {
+   "id": "sfx.phone_rotary.02",
+   "kind": "sfx",
+   "category": "phone_rotary",
+   "tags": [
+    "phone ring",
+    "old telephone",
+    "rotary phone",
+    "bell ring"
+   ],
+   "file": "phone_rotary/sfx.phone_rotary.02.ogg",
+   "duration": 3.155,
+   "licence": "CC0",
+   "author": "cyberdyne (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/crank-movie-telephone-ringtone",
+   "source_file": "crank_ringtone.mp3",
+   "credit_text": "\"crank_ringtone.mp3\" by cyberdyne (OpenGameArt), CC0 (https://opengameart.org/content/crank-movie-telephone-ringtone)",
+   "hash": "aea2a233766f3609"
+  },
+  {
+   "id": "sfx.busy_tone.01",
+   "kind": "sfx",
+   "category": "busy_tone",
+   "tags": [
+    "busy tone",
+    "busy signal",
+    "engaged",
+    "phone"
+   ],
+   "file": "busy_tone/sfx.busy_tone.01.ogg",
+   "duration": 5.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/phone-busy-signal-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Phone busy signal D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Phone busy signal D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/phone-busy-signal-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "bd9fd9aa09988d2b"
+  },
+  {
+   "id": "sfx.answering_machine.01",
+   "kind": "sfx",
+   "category": "answering_machine",
+   "tags": [
+    "answering machine",
+    "beep",
+    "voicemail",
+    "message"
+   ],
+   "file": "answering_machine/sfx.answering_machine.01.ogg",
+   "duration": 0.944,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/answering-machine-beep-d.-d.-teoli-jr",
+   "source_file": "Answering machine beep D.D.Teoli Jr.mp3",
+   "credit_text": "\"Answering machine beep D.D.Teoli Jr.mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/answering-machine-beep-d.-d.-teoli-jr)",
+   "hash": "8ecab907c24b9583"
+  },
+  {
+   "id": "sfx.answering_machine.02",
+   "kind": "sfx",
+   "category": "answering_machine",
+   "tags": [
+    "answering machine",
+    "beep",
+    "voicemail",
+    "message"
+   ],
+   "file": "answering_machine/sfx.answering_machine.02.ogg",
+   "duration": 0.982,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/answering-machine-beep-d.-d.-teoli-jr.",
+   "source_file": "Answering machine beep D.D.Teoli Jr..mp3",
+   "credit_text": "\"Answering machine beep D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/answering-machine-beep-d.-d.-teoli-jr.)",
+   "hash": "35b1eda244ae0fe9"
+  },
+  {
+   "id": "sfx.siren.01",
+   "kind": "sfx",
+   "category": "siren",
+   "tags": [
+    "siren",
+    "police siren",
+    "emergency",
+    "alarm"
+   ],
+   "file": "siren/sfx.siren.01.ogg",
+   "duration": 8.0,
+   "licence": "CC0",
+   "author": "aquinn (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/sirens-and-alarm-noise",
+   "source_file": "siren_0.mp3",
+   "credit_text": "\"siren_0.mp3\" by aquinn (OpenGameArt), CC0 (https://opengameart.org/content/sirens-and-alarm-noise)",
+   "hash": "085bc442f873142b"
+  },
+  {
+   "id": "sfx.police_radio.01",
+   "kind": "sfx",
+   "category": "police_radio",
+   "tags": [
+    "police radio",
+    "radio static",
+    "shortwave",
+    "noise",
+    "squelch"
+   ],
+   "file": "police_radio/sfx.police_radio.01.ogg",
+   "duration": 4.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/short-wave-radio-noise-d.-d.-teoli-jr.-a.-c.-4",
+   "source_file": "Short Wave Radio noise D.D.Teoli Jr. A.C. (4).mp3",
+   "credit_text": "\"Short Wave Radio noise D.D.Teoli Jr. A.C. (4).mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/short-wave-radio-noise-d.-d.-teoli-jr.-a.-c.-4)",
+   "hash": "f2ae788969393423"
+  },
+  {
+   "id": "sfx.police_radio.02",
+   "kind": "sfx",
+   "category": "police_radio",
+   "tags": [
+    "police radio",
+    "radio tuning",
+    "shortwave",
+    "static"
+   ],
+   "file": "police_radio/sfx.police_radio.02.ogg",
+   "duration": 4.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/short-wave-radio-tuning-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Short Wave Radio tuning D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Short Wave Radio tuning D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/short-wave-radio-tuning-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "d0089f57c9791c71"
+  },
+  {
+   "id": "sfx.police_radio.03",
+   "kind": "sfx",
+   "category": "police_radio",
+   "tags": [
+    "police radio",
+    "radio static",
+    "burst",
+    "squelch"
+   ],
+   "file": "police_radio/sfx.police_radio.03.ogg",
+   "duration": 1.2,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/short-wave-radio-noise-d.-d.-teoli-jr.-a.-c.-4",
+   "source_file": "Short Wave Radio noise D.D.Teoli Jr. A.C. (4).mp3",
+   "credit_text": "\"Short Wave Radio noise D.D.Teoli Jr. A.C. (4).mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/short-wave-radio-noise-d.-d.-teoli-jr.-a.-c.-4)",
+   "hash": "3a1b1b5c8a51fcac"
+  },
+  {
+   "id": "sfx.handcuffs.01",
+   "kind": "sfx",
+   "category": "handcuffs",
+   "tags": [
+    "handcuffs",
+    "metal latch",
+    "click",
+    "lock"
+   ],
+   "file": "handcuffs/sfx.handcuffs.01.ogg",
+   "duration": 0.248,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "metalLatch.ogg",
+   "credit_text": "\"metalLatch.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "b60823922ff1fb3c"
+  },
+  {
+   "id": "sfx.handcuffs.02",
+   "kind": "sfx",
+   "category": "handcuffs",
+   "tags": [
+    "handcuffs",
+    "metal click",
+    "ratchet"
+   ],
+   "file": "handcuffs/sfx.handcuffs.02.ogg",
+   "duration": 0.446,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "metalClick.ogg",
+   "credit_text": "\"metalClick.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "3291afe669972f5b"
+  },
+  {
+   "id": "sfx.handcuffs.03",
+   "kind": "sfx",
+   "category": "handcuffs",
+   "tags": [
+    "handcuffs",
+    "chain",
+    "rattle",
+    "metal"
+   ],
+   "file": "handcuffs/sfx.handcuffs.03.ogg",
+   "duration": 2.5,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/rattling-noise-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Rattling noise D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Rattling noise D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/rattling-noise-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "fd85fa3a9a785c70"
+  },
+  {
+   "id": "sfx.handcuffs.04",
+   "kind": "sfx",
+   "category": "handcuffs",
+   "tags": [
+    "handcuffs",
+    "chain",
+    "rattle",
+    "metal",
+    "keys"
+   ],
+   "file": "handcuffs/sfx.handcuffs.04.ogg",
+   "duration": 0.259,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "beltHandle1.ogg",
+   "credit_text": "\"beltHandle1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "1fde2ec2c2173739"
+  },
+  {
+   "id": "sfx.cell_door.01",
+   "kind": "sfx",
+   "category": "cell_door",
+   "tags": [
+    "cell door",
+    "metal door",
+    "slam",
+    "lock",
+    "prison"
+   ],
+   "file": "cell_door/sfx.cell_door.01.ogg",
+   "duration": 0.333,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.",
+   "source_file": "Closing metal door and locking D.D.Teoli Jr..mp3",
+   "credit_text": "\"Closing metal door and locking D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.)",
+   "hash": "bf953e9b211643a6"
+  },
+  {
+   "id": "sfx.cell_door.02",
+   "kind": "sfx",
+   "category": "cell_door",
+   "tags": [
+    "cell door",
+    "metal door",
+    "slam",
+    "lock",
+    "prison"
+   ],
+   "file": "cell_door/sfx.cell_door.02.ogg",
+   "duration": 0.482,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.",
+   "source_file": "Closing metal door and locking D.D.Teoli Jr..mp3",
+   "credit_text": "\"Closing metal door and locking D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.)",
+   "hash": "6f2da95691e8c034"
+  },
+  {
+   "id": "sfx.cell_door.03",
+   "kind": "sfx",
+   "category": "cell_door",
+   "tags": [
+    "cell door",
+    "metal door",
+    "slam",
+    "lock",
+    "prison"
+   ],
+   "file": "cell_door/sfx.cell_door.03.ogg",
+   "duration": 0.383,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.",
+   "source_file": "Closing metal door and locking D.D.Teoli Jr..mp3",
+   "credit_text": "\"Closing metal door and locking D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/closing-metal-door-and-locking-d.-d.-teoli-jr.)",
+   "hash": "7c3920f8a45dfc8f"
+  },
+  {
+   "id": "sfx.cell_door.04",
+   "kind": "sfx",
+   "category": "cell_door",
+   "tags": [
+    "cell door",
+    "iron door",
+    "metal gate",
+    "clang",
+    "prison"
+   ],
+   "file": "cell_door/sfx.cell_door.04.ogg",
+   "duration": 0.834,
+   "licence": "CC0",
+   "author": "themightyglider (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/iron-door",
+   "source_file": "iron_door_0.ogg",
+   "credit_text": "\"iron_door_0.ogg\" by themightyglider (OpenGameArt), CC0 (https://opengameart.org/content/iron-door)",
+   "hash": "07c0ec456c669406"
+  },
+  {
+   "id": "sfx.gavel.01",
+   "kind": "sfx",
+   "category": "gavel",
+   "tags": [
+    "gavel",
+    "wood knock",
+    "mallet",
+    "court"
+   ],
+   "file": "gavel/sfx.gavel.01.ogg",
+   "duration": 0.33,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactWood_medium_000.ogg",
+   "credit_text": "\"impactWood_medium_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "1949703981f621f4"
+  },
+  {
+   "id": "sfx.gavel.02",
+   "kind": "sfx",
+   "category": "gavel",
+   "tags": [
+    "gavel",
+    "wood knock",
+    "mallet",
+    "court"
+   ],
+   "file": "gavel/sfx.gavel.02.ogg",
+   "duration": 0.33,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactWood_medium_001.ogg",
+   "credit_text": "\"impactWood_medium_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "6fb853c8d58c69f3"
+  },
+  {
+   "id": "sfx.gavel.03",
+   "kind": "sfx",
+   "category": "gavel",
+   "tags": [
+    "gavel",
+    "wood knock",
+    "mallet",
+    "court"
+   ],
+   "file": "gavel/sfx.gavel.03.ogg",
+   "duration": 0.33,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactWood_medium_002.ogg",
+   "credit_text": "\"impactWood_medium_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "172933cbc5fe9965"
+  },
+  {
+   "id": "sfx.courtroom.01",
+   "kind": "sfx",
+   "category": "courtroom",
+   "tags": [
+    "courtroom",
+    "crowd murmur",
+    "people talking",
+    "room tone",
+    "walla"
+   ],
+   "file": "courtroom/sfx.courtroom.01.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/CrowdNo.4D.D.TeoliJr.",
+   "source_file": "Crowd No. 4 D.D. Teoli Jr..mp3",
+   "credit_text": "\"Crowd No. 4 D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/CrowdNo.4D.D.TeoliJr.)",
+   "hash": "b18688ed0f931e2d"
+  },
+  {
+   "id": "sfx.courtroom.02",
+   "kind": "sfx",
+   "category": "courtroom",
+   "tags": [
+    "courtroom",
+    "crowd murmur",
+    "people talking",
+    "room tone",
+    "walla"
+   ],
+   "file": "courtroom/sfx.courtroom.02.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/PeopleTalkingNo.4D.D.TeoliJr.",
+   "source_file": "People talking no. 4 D.D. Teoli Jr..mp3",
+   "credit_text": "\"People talking no. 4 D.D. Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/PeopleTalkingNo.4D.D.TeoliJr.)",
+   "hash": "639e0fb49a95214e"
+  },
+  {
+   "id": "sfx.courtroom.03",
+   "kind": "sfx",
+   "category": "courtroom",
+   "tags": [
+    "courtroom",
+    "crowd murmur",
+    "people talking",
+    "room tone",
+    "walla"
+   ],
+   "file": "courtroom/sfx.courtroom.03.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/PeopleTalkingIID.D.TeoliJr.",
+   "source_file": "People talking II D.D. Teoli Jr..mp3",
+   "credit_text": "\"People talking II D.D. Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/PeopleTalkingIID.D.TeoliJr.)",
+   "hash": "cf0599803f52a1c1"
+  },
+  {
+   "id": "sfx.camera_flash.01",
+   "kind": "sfx",
+   "category": "camera_flash",
+   "tags": [
+    "camera flash",
+    "shutter",
+    "photo",
+    "click"
+   ],
+   "file": "camera_flash/sfx.camera_flash.01.ogg",
+   "duration": 0.534,
+   "licence": "CC0",
+   "author": "FacadeGaikan (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/camerashudder",
+   "source_file": "camera_0.ogg",
+   "credit_text": "\"camera_0.ogg\" by FacadeGaikan (OpenGameArt), CC0 (https://opengameart.org/content/camerashudder)",
+   "hash": "fcb3b0eefe1e8c4b"
+  },
+  {
+   "id": "sfx.crt_hum.01",
+   "kind": "sfx",
+   "category": "crt_hum",
+   "tags": [
+    "crt hum",
+    "electrical hum",
+    "buzz",
+    "tv hum"
+   ],
+   "file": "crt_hum/sfx.crt_hum.01.ogg",
+   "duration": 8.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/FeedbackBuzzD.D.TeoliJr.",
+   "source_file": "Feedback Buzz D.D. Teoli Jr..mp3",
+   "credit_text": "\"Feedback Buzz D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/FeedbackBuzzD.D.TeoliJr.)",
+   "hash": "b163a4550e90da4f"
+  },
+  {
+   "id": "sfx.crt_hum.02",
+   "kind": "sfx",
+   "category": "crt_hum",
+   "tags": [
+    "crt hum",
+    "electronic device",
+    "buzz",
+    "hum"
+   ],
+   "file": "crt_hum/sfx.crt_hum.02.ogg",
+   "duration": 1.7,
+   "licence": "CC0",
+   "author": "qubodup (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/electronic-device-loop",
+   "source_file": "qubodup-edev.flac",
+   "credit_text": "\"qubodup-edev.flac\" by qubodup (OpenGameArt), CC0 (https://opengameart.org/content/electronic-device-loop)",
+   "hash": "162d2bb1d34657bf"
+  },
+  {
+   "id": "sfx.tv_static.01",
+   "kind": "sfx",
+   "category": "tv_static",
+   "tags": [
+    "tv static",
+    "white noise",
+    "static",
+    "noise"
+   ],
+   "file": "tv_static/sfx.tv_static.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/white-noise-sound-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "White Noise Sound D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"White Noise Sound D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/white-noise-sound-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "8cc6bd536c010b8a"
+  },
+  {
+   "id": "sfx.tv_static.02",
+   "kind": "sfx",
+   "category": "tv_static",
+   "tags": [
+    "tv static",
+    "static",
+    "radio noise"
+   ],
+   "file": "tv_static/sfx.tv_static.02.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/frequency-static-sound-effects",
+   "source_file": "static2.wav",
+   "credit_text": "\"static2.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/frequency-static-sound-effects)",
+   "hash": "bfb464f9a5c4c664"
+  },
+  {
+   "id": "sfx.tv_static.03",
+   "kind": "sfx",
+   "category": "tv_static",
+   "tags": [
+    "tv static",
+    "static",
+    "crackle",
+    "noise"
+   ],
+   "file": "tv_static/sfx.tv_static.03.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "xhunterko (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/static",
+   "source_file": "ScatterNoise1.mp3",
+   "credit_text": "\"ScatterNoise1.mp3\" by xhunterko (OpenGameArt), CC0 (https://opengameart.org/content/static)",
+   "hash": "7c27b5e4fd1430d5"
+  },
+  {
+   "id": "sfx.hard_drive.01",
+   "kind": "sfx",
+   "category": "hard_drive",
+   "tags": [
+    "hard drive",
+    "computer noise",
+    "data",
+    "disk",
+    "seek"
+   ],
+   "file": "hard_drive/sfx.hard_drive.01.ogg",
+   "duration": 2.5,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "computerNoise_000.ogg",
+   "credit_text": "\"computerNoise_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "54c00294b30bdabb"
+  },
+  {
+   "id": "sfx.hard_drive.02",
+   "kind": "sfx",
+   "category": "hard_drive",
+   "tags": [
+    "hard drive",
+    "computer noise",
+    "data",
+    "disk"
+   ],
+   "file": "hard_drive/sfx.hard_drive.02.ogg",
+   "duration": 2.5,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "computerNoise_001.ogg",
+   "credit_text": "\"computerNoise_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "a5f2e9339da99a60"
+  },
+  {
+   "id": "sfx.data_blip.01",
+   "kind": "sfx",
+   "category": "data_blip",
+   "tags": [
+    "data blip",
+    "computer",
+    "beep",
+    "retro computer",
+    "processing"
+   ],
+   "file": "data_blip/sfx.data_blip.01.ogg",
+   "duration": 3.0,
+   "licence": "CC0",
+   "author": "aquinn (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/retro-computer-noise",
+   "source_file": "computer-noise_0.mp3",
+   "credit_text": "\"computer-noise_0.mp3\" by aquinn (OpenGameArt), CC0 (https://opengameart.org/content/retro-computer-noise)",
+   "hash": "5c866b9f0f83720c"
+  },
+  {
+   "id": "sfx.data_blip.02",
+   "kind": "sfx",
+   "category": "data_blip",
+   "tags": [
+    "data blip",
+    "computer",
+    "beep",
+    "processing"
+   ],
+   "file": "data_blip/sfx.data_blip.02.ogg",
+   "duration": 2.0,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "computerNoise_002.ogg",
+   "credit_text": "\"computerNoise_002.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "ed0a62178db210ed"
+  },
+  {
+   "id": "sfx.data_blip.03",
+   "kind": "sfx",
+   "category": "data_blip",
+   "tags": [
+    "data blip",
+    "computer",
+    "beep",
+    "processing"
+   ],
+   "file": "data_blip/sfx.data_blip.03.ogg",
+   "duration": 2.0,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/sci-fi-sounds",
+   "source_file": "computerNoise_003.ogg",
+   "credit_text": "\"computerNoise_003.ogg\" by Kenney, CC0 (https://kenney.nl/assets/sci-fi-sounds)",
+   "hash": "e8bd116694905bbe"
+  },
+  {
+   "id": "sfx.mouse_click.01",
+   "kind": "sfx",
+   "category": "mouse_click",
+   "tags": [
+    "mouse click",
+    "click",
+    "switch",
+    "computer"
+   ],
+   "file": "mouse_click/sfx.mouse_click.01.ogg",
+   "duration": 0.117,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/ClickSwitchOnLampD.D.TeoliJr.",
+   "source_file": "Click switch on lamp D.D. Teoli Jr..mp3",
+   "credit_text": "\"Click switch on lamp D.D. Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/ClickSwitchOnLampD.D.TeoliJr.)",
+   "hash": "3724dd3c688be55d"
+  },
+  {
+   "id": "sfx.mouse_click.02",
+   "kind": "sfx",
+   "category": "mouse_click",
+   "tags": [
+    "mouse click",
+    "clicking",
+    "computer",
+    "typing room"
+   ],
+   "file": "mouse_click/sfx.mouse_click.02.ogg",
+   "duration": 4.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/general-household-sound-effects",
+   "source_file": "mouseclicking01.wav",
+   "credit_text": "\"mouseclicking01.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/general-household-sound-effects)",
+   "hash": "521b76cefcb2ec71"
+  },
+  {
+   "id": "sfx.server_room.01",
+   "kind": "sfx",
+   "category": "server_room",
+   "tags": [
+    "server room",
+    "computer fans",
+    "hum",
+    "data center",
+    "ambience"
+   ],
+   "file": "server_room/sfx.server_room.01.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/general-household-sound-effects",
+   "source_file": "computerfans02.wav",
+   "credit_text": "\"computerfans02.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/general-household-sound-effects)",
+   "hash": "bab2f7553044c02c"
+  },
+  {
+   "id": "sfx.server_room.02",
+   "kind": "sfx",
+   "category": "server_room",
+   "tags": [
+    "server room",
+    "computer fans",
+    "hum",
+    "ambience"
+   ],
+   "file": "server_room/sfx.server_room.02.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/general-household-sound-effects",
+   "source_file": "computerfans01.wav",
+   "credit_text": "\"computerfans01.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/general-household-sound-effects)",
+   "hash": "06922aa011ad1803"
+  },
+  {
+   "id": "sfx.server_room.03",
+   "kind": "sfx",
+   "category": "server_room",
+   "tags": [
+    "server room",
+    "vent",
+    "air conditioning",
+    "hum",
+    "ambience"
+   ],
+   "file": "server_room/sfx.server_room.03.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/RestaurantVentD.D.TeoliJr.",
+   "source_file": "Restaurant Vent D.D. Teoli Jr..mp3",
+   "credit_text": "\"Restaurant Vent D.D. Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/RestaurantVentD.D.TeoliJr.)",
+   "hash": "9f72da5bf831cbf5"
+  },
+  {
+   "id": "sfx.server_room.04",
+   "kind": "sfx",
+   "category": "server_room",
+   "tags": [
+    "server room",
+    "air conditioning",
+    "hum",
+    "ambience"
+   ],
+   "file": "server_room/sfx.server_room.04.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/general-household-sound-effects",
+   "source_file": "airconditioner01.wav",
+   "credit_text": "\"airconditioner01.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/general-household-sound-effects)",
+   "hash": "b7ceb1be547d4c6b"
+  },
+  {
+   "id": "sfx.cassette.01",
+   "kind": "sfx",
+   "category": "cassette",
+   "tags": [
+    "cassette",
+    "tape recorder",
+    "close",
+    "click"
+   ],
+   "file": "cassette/sfx.cassette.01.ogg",
+   "duration": 1.154,
+   "licence": "CC0",
+   "author": "Spring Spring (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/tape-recorder-opening-and-closing-sound-effects",
+   "source_file": "tape_recorder_closing.wav",
+   "credit_text": "\"tape_recorder_closing.wav\" by Spring Spring (OpenGameArt), CC0 (https://opengameart.org/content/tape-recorder-opening-and-closing-sound-effects)",
+   "hash": "955cabfde3b2c3f6"
+  },
+  {
+   "id": "sfx.cassette.02",
+   "kind": "sfx",
+   "category": "cassette",
+   "tags": [
+    "cassette",
+    "tape recorder",
+    "open",
+    "eject"
+   ],
+   "file": "cassette/sfx.cassette.02.ogg",
+   "duration": 0.943,
+   "licence": "CC0",
+   "author": "Spring Spring (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/tape-recorder-opening-and-closing-sound-effects",
+   "source_file": "tape_recorder_opening.wav",
+   "credit_text": "\"tape_recorder_opening.wav\" by Spring Spring (OpenGameArt), CC0 (https://opengameart.org/content/tape-recorder-opening-and-closing-sound-effects)",
+   "hash": "e26e2c4874dd2ece"
+  },
+  {
+   "id": "sfx.cassette.03",
+   "kind": "sfx",
+   "category": "cassette",
+   "tags": [
+    "cassette",
+    "tape",
+    "button click",
+    "play",
+    "stop"
+   ],
+   "file": "cassette/sfx.cassette.03.ogg",
+   "duration": 0.571,
+   "licence": "CC0",
+   "author": "LFA (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/equipment-clicks-ii",
+   "source_file": "equipmentclicks.wav",
+   "credit_text": "\"equipmentclicks.wav\" by LFA (OpenGameArt), CC0 (https://opengameart.org/content/equipment-clicks-ii)",
+   "hash": "cf1a6e82f40a902b"
+  },
+  {
+   "id": "sfx.cassette.04",
+   "kind": "sfx",
+   "category": "cassette",
+   "tags": [
+    "cassette",
+    "tape",
+    "button click",
+    "play",
+    "stop"
+   ],
+   "file": "cassette/sfx.cassette.04.ogg",
+   "duration": 0.35,
+   "licence": "CC0",
+   "author": "LFA (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/equipment-clicks-ii",
+   "source_file": "equipmentclicks.wav",
+   "credit_text": "\"equipmentclicks.wav\" by LFA (OpenGameArt), CC0 (https://opengameart.org/content/equipment-clicks-ii)",
+   "hash": "d99ef8258f96fa91"
+  },
+  {
+   "id": "sfx.vhs.01",
+   "kind": "sfx",
+   "category": "vhs",
+   "tags": [
+    "vhs",
+    "video tape",
+    "insert",
+    "eject",
+    "vcr"
+   ],
+   "file": "vhs/sfx.vhs.01.ogg",
+   "duration": 0.601,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/sony-beta-tape-insertion-ejection-d.-d.-teoli-jr.",
+   "source_file": "Sony Beta tape insertion & ejection D.D.Teoli Jr..mp3",
+   "credit_text": "\"Sony Beta tape insertion & ejection D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/sony-beta-tape-insertion-ejection-d.-d.-teoli-jr.)",
+   "hash": "88c009e8cfb13506"
+  },
+  {
+   "id": "sfx.vhs.02",
+   "kind": "sfx",
+   "category": "vhs",
+   "tags": [
+    "vhs",
+    "video tape",
+    "insert",
+    "eject",
+    "vcr"
+   ],
+   "file": "vhs/sfx.vhs.02.ogg",
+   "duration": 1.392,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/sony-beta-tape-insertion-ejection-d.-d.-teoli-jr.",
+   "source_file": "Sony Beta tape insertion & ejection D.D.Teoli Jr..mp3",
+   "credit_text": "\"Sony Beta tape insertion & ejection D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/sony-beta-tape-insertion-ejection-d.-d.-teoli-jr.)",
+   "hash": "e435d1d20f83d09b"
+  },
+  {
+   "id": "sfx.vhs.03",
+   "kind": "sfx",
+   "category": "vhs",
+   "tags": [
+    "vhs",
+    "rewind",
+    "video tape",
+    "vcr",
+    "whir"
+   ],
+   "file": "vhs/sfx.vhs.03.ogg",
+   "duration": 8.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/vhs-video-player-rewinding-d.-d.-teoli-jr.",
+   "source_file": "VHS video player rewinding D.D.Teoli Jr..mp3",
+   "credit_text": "\"VHS video player rewinding D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/vhs-video-player-rewinding-d.-d.-teoli-jr.)",
+   "hash": "1d658947e5ccd3da"
+  },
+  {
+   "id": "sfx.vhs.04",
+   "kind": "sfx",
+   "category": "vhs",
+   "tags": [
+    "vhs",
+    "vcr",
+    "video tape",
+    "mechanism",
+    "running"
+   ],
+   "file": "vhs/sfx.vhs.04.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/sony-betamax-operating-sounds-d.-d.-teoli-jr.",
+   "source_file": "Sony Betamax operating sounds D.D.Teoli Jr..mp3",
+   "credit_text": "\"Sony Betamax operating sounds D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/sony-betamax-operating-sounds-d.-d.-teoli-jr.)",
+   "hash": "b6e5915fc0e73737"
+  },
+  {
+   "id": "sfx.projector.01",
+   "kind": "sfx",
+   "category": "projector",
+   "tags": [
+    "projector",
+    "16mm",
+    "film projector",
+    "rattle",
+    "loop"
+   ],
+   "file": "projector/sfx.projector.01.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr",
+   "source_url": "https://archive.org/details/Antique8mmBHProjectorD.D.TeoliJr.",
+   "source_file": "Antique 8mm B&H projector D.D. Teoli Jr..mp3",
+   "credit_text": "\"Antique 8mm B&H projector D.D. Teoli Jr..mp3\" by D. D. Teoli Jr, Public domain (https://archive.org/details/Antique8mmBHProjectorD.D.TeoliJr.)",
+   "hash": "9b4d1c94ca497ebf"
+  },
+  {
+   "id": "sfx.projector.02",
+   "kind": "sfx",
+   "category": "projector",
+   "tags": [
+    "projector",
+    "8mm",
+    "film projector",
+    "rattle",
+    "loop"
+   ],
+   "file": "projector/sfx.projector.02.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/Kodak16mmProjectorD.D.TeoliJr.",
+   "source_file": "Kodak 16mm Projector D.D. Teoli Jr..mp3",
+   "credit_text": "\"Kodak 16mm Projector D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/Kodak16mmProjectorD.D.TeoliJr.)",
+   "hash": "87c98268bcc51570"
+  },
+  {
+   "id": "sfx.film_reel.01",
+   "kind": "sfx",
+   "category": "film_reel",
+   "tags": [
+    "film reel",
+    "16mm",
+    "reels falling",
+    "film can"
+   ],
+   "file": "film_reel/sfx.film_reel.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/16mm-film-reels-falling-on-floor-teoli-jr.",
+   "source_file": "16mm film reels falling on floor Teoli Jr..mp3",
+   "credit_text": "\"16mm film reels falling on floor Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/16mm-film-reels-falling-on-floor-teoli-jr.)",
+   "hash": "c6d76eb9b9faac19"
+  },
+  {
+   "id": "sfx.door_creak.01",
+   "kind": "sfx",
+   "category": "door_creak",
+   "tags": [
+    "door creak",
+    "creak",
+    "hinge",
+    "squeak"
+   ],
+   "file": "door_creak/sfx.door_creak.01.ogg",
+   "duration": 0.596,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "creak1.ogg",
+   "credit_text": "\"creak1.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "b02bba9d170799fe"
+  },
+  {
+   "id": "sfx.door_creak.02",
+   "kind": "sfx",
+   "category": "door_creak",
+   "tags": [
+    "door creak",
+    "creak",
+    "hinge",
+    "squeak"
+   ],
+   "file": "door_creak/sfx.door_creak.02.ogg",
+   "duration": 0.819,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "creak2.ogg",
+   "credit_text": "\"creak2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "d325fb8cbca3c8b9"
+  },
+  {
+   "id": "sfx.door_creak.03",
+   "kind": "sfx",
+   "category": "door_creak",
+   "tags": [
+    "door creak",
+    "creak",
+    "hinge",
+    "squeak"
+   ],
+   "file": "door_creak/sfx.door_creak.03.ogg",
+   "duration": 0.315,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "creak3.ogg",
+   "credit_text": "\"creak3.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "6fd0fe9e4b803deb"
+  },
+  {
+   "id": "sfx.door_creak.04",
+   "kind": "sfx",
+   "category": "door_creak",
+   "tags": [
+    "door creak",
+    "creaky hinge",
+    "spooky",
+    "door"
+   ],
+   "file": "door_creak/sfx.door_creak.04.ogg",
+   "duration": 4.261,
+   "licence": "CC0",
+   "author": "w.forster.1@gmail.com (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/creaky-door-hinge-spooky",
+   "source_file": "creaky_door_hinge.wav",
+   "credit_text": "\"creaky_door_hinge.wav\" by w.forster.1@gmail.com (OpenGameArt), CC0 (https://opengameart.org/content/creaky-door-hinge-spooky)",
+   "hash": "81049ba7729a1485"
+  },
+  {
+   "id": "sfx.door_creak.05",
+   "kind": "sfx",
+   "category": "door_creak",
+   "tags": [
+    "door creak",
+    "cabinet door",
+    "squeak"
+   ],
+   "file": "door_creak/sfx.door_creak.05.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/SqueakyCabinetDoorD.D.TeoliJr.",
+   "source_file": "Squeaky cabinet door D.D. Teoli Jr..mp3",
+   "credit_text": "\"Squeaky cabinet door D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/SqueakyCabinetDoorD.D.TeoliJr.)",
+   "hash": "d14e6633e0c7468c"
+  },
+  {
+   "id": "sfx.door_lock.01",
+   "kind": "sfx",
+   "category": "door_lock",
+   "tags": [
+    "door lock",
+    "lock",
+    "unlock",
+    "key",
+    "click"
+   ],
+   "file": "door_lock/sfx.door_lock.01.ogg",
+   "duration": 0.517,
+   "licence": "CC0",
+   "author": "Cough-E (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/door-lock-sounds",
+   "source_file": "UnlockDoor.wav",
+   "credit_text": "\"UnlockDoor.wav\" by Cough-E (OpenGameArt), CC0 (https://opengameart.org/content/door-lock-sounds)",
+   "hash": "39a120f36a693351"
+  },
+  {
+   "id": "sfx.door_lock.02",
+   "kind": "sfx",
+   "category": "door_lock",
+   "tags": [
+    "door lock",
+    "lock",
+    "click",
+    "deadbolt"
+   ],
+   "file": "door_lock/sfx.door_lock.02.ogg",
+   "duration": 0.239,
+   "licence": "CC0",
+   "author": "Cough-E (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/door-lock-sounds",
+   "source_file": "DoorLock.wav",
+   "credit_text": "\"DoorLock.wav\" by Cough-E (OpenGameArt), CC0 (https://opengameart.org/content/door-lock-sounds)",
+   "hash": "b96b89d6808a1836"
+  },
+  {
+   "id": "sfx.door_lock.03",
+   "kind": "sfx",
+   "category": "door_lock",
+   "tags": [
+    "door lock",
+    "locked door",
+    "handle jiggle",
+    "rattle"
+   ],
+   "file": "door_lock/sfx.door_lock.03.ogg",
+   "duration": 0.854,
+   "licence": "CC0",
+   "author": "Cough-E (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/door-lock-sounds",
+   "source_file": "LockedDoorHandleJiggle.wav",
+   "credit_text": "\"LockedDoorHandleJiggle.wav\" by Cough-E (OpenGameArt), CC0 (https://opengameart.org/content/door-lock-sounds)",
+   "hash": "130b9b0f901aeedd"
+  },
+  {
+   "id": "sfx.door_lock.04",
+   "kind": "sfx",
+   "category": "door_lock",
+   "tags": [
+    "door lock",
+    "door open",
+    "latch"
+   ],
+   "file": "door_lock/sfx.door_lock.04.ogg",
+   "duration": 0.42,
+   "licence": "CC0",
+   "author": "Cough-E (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/door-lock-sounds",
+   "source_file": "DoorOpen.wav",
+   "credit_text": "\"DoorOpen.wav\" by Cough-E (OpenGameArt), CC0 (https://opengameart.org/content/door-lock-sounds)",
+   "hash": "a82a8dcc6d502eef"
+  },
+  {
+   "id": "sfx.door_lock.05",
+   "kind": "sfx",
+   "category": "door_lock",
+   "tags": [
+    "door lock",
+    "door",
+    "open",
+    "close",
+    "latch"
+   ],
+   "file": "door_lock/sfx.door_lock.05.ogg",
+   "duration": 4.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/OpeningAndClosingDoorD.D.TeoliJr.",
+   "source_file": "Opening and closing door D.D. Teoli Jr..mp3",
+   "credit_text": "\"Opening and closing door D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/OpeningAndClosingDoorD.D.TeoliJr.)",
+   "hash": "b00246d1976658c9"
+  },
+  {
+   "id": "sfx.keys.01",
+   "kind": "sfx",
+   "category": "keys",
+   "tags": [
+    "keys",
+    "key jingle",
+    "keychain",
+    "door keys"
+   ],
+   "file": "keys/sfx.keys.01.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/OpeningDoorWKeysD.D.TeoliJr.",
+   "source_file": "Opening door w keys D.D. Teoli Jr..mp3",
+   "credit_text": "\"Opening door w keys D.D. Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/OpeningDoorWKeysD.D.TeoliJr.)",
+   "hash": "79bd5208b2e59ec7"
+  },
+  {
+   "id": "sfx.keys.02",
+   "kind": "sfx",
+   "category": "keys",
+   "tags": [
+    "keys",
+    "jingle",
+    "pocket",
+    "metal"
+   ],
+   "file": "keys/sfx.keys.02.ogg",
+   "duration": 3.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/WalkingMetalMakingNoiseInPocket.D.D.TeoliJr.",
+   "source_file": "Walking - metal making noise in pocket. D.D. Teoli Jr..mp3",
+   "credit_text": "\"Walking - metal making noise in pocket. D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/WalkingMetalMakingNoiseInPocket.D.D.TeoliJr.)",
+   "hash": "d6433a695607f90a"
+  },
+  {
+   "id": "sfx.car_door.01",
+   "kind": "sfx",
+   "category": "car_door",
+   "tags": [
+    "car door",
+    "close",
+    "slam",
+    "vehicle"
+   ],
+   "file": "car_door/sfx.car_door.01.ogg",
+   "duration": 0.706,
+   "licence": "CC0",
+   "author": "looneybits (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/cardoorsfx",
+   "source_file": "door_closing.wav",
+   "credit_text": "\"door_closing.wav\" by looneybits (OpenGameArt), CC0 (https://opengameart.org/content/cardoorsfx)",
+   "hash": "82cfba2767bb536b"
+  },
+  {
+   "id": "sfx.car_door.02",
+   "kind": "sfx",
+   "category": "car_door",
+   "tags": [
+    "car door",
+    "open",
+    "vehicle"
+   ],
+   "file": "car_door/sfx.car_door.02.ogg",
+   "duration": 0.98,
+   "licence": "CC0",
+   "author": "looneybits (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/cardoorsfx",
+   "source_file": "door_opening.wav",
+   "credit_text": "\"door_opening.wav\" by looneybits (OpenGameArt), CC0 (https://opengameart.org/content/cardoorsfx)",
+   "hash": "1c22776e33e3ec5e"
+  },
+  {
+   "id": "sfx.car_engine.01",
+   "kind": "sfx",
+   "category": "car_engine",
+   "tags": [
+    "car engine",
+    "engine start",
+    "ignition"
+   ],
+   "file": "car_engine/sfx.car_engine.01.ogg",
+   "duration": 1.797,
+   "licence": "CC0",
+   "author": "looneybits (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/car-engine-start-up-02",
+   "source_file": "engine_start_up_01.wav",
+   "credit_text": "\"engine_start_up_01.wav\" by looneybits (OpenGameArt), CC0 (https://opengameart.org/content/car-engine-start-up-02)",
+   "hash": "d43e3918596d9396"
+  },
+  {
+   "id": "sfx.car_engine.02",
+   "kind": "sfx",
+   "category": "car_engine",
+   "tags": [
+    "car engine",
+    "engine start",
+    "ignition"
+   ],
+   "file": "car_engine/sfx.car_engine.02.ogg",
+   "duration": 1.6,
+   "licence": "CC0",
+   "author": "looneybits (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/car-engine-start-01",
+   "source_file": "generic_car_startengine.wav",
+   "credit_text": "\"generic_car_startengine.wav\" by looneybits (OpenGameArt), CC0 (https://opengameart.org/content/car-engine-start-01)",
+   "hash": "93aeaa6e032e2e7e"
+  },
+  {
+   "id": "sfx.car_engine.03",
+   "kind": "sfx",
+   "category": "car_engine",
+   "tags": [
+    "car engine",
+    "idle",
+    "running",
+    "car"
+   ],
+   "file": "car_engine/sfx.car_engine.03.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/car-running-sound-w-wind-noise-d.-d.-teoli-jr.",
+   "source_file": "Car running sound w wind noise D.D.Teoli Jr..mp3",
+   "credit_text": "\"Car running sound w wind noise D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/car-running-sound-w-wind-noise-d.-d.-teoli-jr.)",
+   "hash": "63b1d97b3fc602c3"
+  },
+  {
+   "id": "sfx.car_engine.04",
+   "kind": "sfx",
+   "category": "car_engine",
+   "tags": [
+    "car engine",
+    "driving",
+    "parking lot",
+    "car"
+   ],
+   "file": "car_engine/sfx.car_engine.04.ogg",
+   "duration": 10.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/ParkingLotSoundsD.D.TeoliJr.",
+   "source_file": "Parking lot sounds D.D. Teoli Jr..mp3",
+   "credit_text": "\"Parking lot sounds D.D. Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/ParkingLotSoundsD.D.TeoliJr.)",
+   "hash": "5921bed219a064ac"
+  },
+  {
+   "id": "sfx.footstep_gravel.01",
+   "kind": "sfx",
+   "category": "footstep_gravel",
+   "tags": [
+    "footsteps",
+    "gravel",
+    "crunch",
+    "walk"
+   ],
+   "file": "footstep_gravel/sfx.footstep_gravel.01.ogg",
+   "duration": 0.704,
+   "licence": "CC0",
+   "author": "TinyWorlds (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+   "source_file": "gravel.ogg",
+   "credit_text": "\"gravel.ogg\" by TinyWorlds (OpenGameArt), CC0 (https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud)",
+   "hash": "a9051dc02691cc9d"
+  },
+  {
+   "id": "sfx.footstep_gravel.02",
+   "kind": "sfx",
+   "category": "footstep_gravel",
+   "tags": [
+    "footsteps",
+    "snow",
+    "gravel",
+    "crunch",
+    "walk"
+   ],
+   "file": "footstep_gravel/sfx.footstep_gravel.02.ogg",
+   "duration": 0.74,
+   "licence": "CC0",
+   "author": "IgnasD (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/walking-on-snow-sound",
+   "source_file": "SnowWalk.ogg",
+   "credit_text": "\"SnowWalk.ogg\" by IgnasD (OpenGameArt), CC0 (https://opengameart.org/content/walking-on-snow-sound)",
+   "hash": "48a2ab5db6438da1"
+  },
+  {
+   "id": "sfx.footstep_gravel.03",
+   "kind": "sfx",
+   "category": "footstep_gravel",
+   "tags": [
+    "footsteps",
+    "snow",
+    "gravel",
+    "crunch",
+    "walk"
+   ],
+   "file": "footstep_gravel/sfx.footstep_gravel.03.ogg",
+   "duration": 0.636,
+   "licence": "CC0",
+   "author": "IgnasD (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/walking-on-snow-sound",
+   "source_file": "SnowWalk2.ogg",
+   "credit_text": "\"SnowWalk2.ogg\" by IgnasD (OpenGameArt), CC0 (https://opengameart.org/content/walking-on-snow-sound)",
+   "hash": "b7338a5c4279c814"
+  },
+  {
+   "id": "sfx.footstep_gravel.04",
+   "kind": "sfx",
+   "category": "footstep_gravel",
+   "tags": [
+    "footsteps",
+    "snow",
+    "crunch",
+    "walk"
+   ],
+   "file": "footstep_gravel/sfx.footstep_gravel.04.ogg",
+   "duration": 0.371,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_snow_000.ogg",
+   "credit_text": "\"footstep_snow_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "508259da8d039fe8"
+  },
+  {
+   "id": "sfx.footstep_gravel.05",
+   "kind": "sfx",
+   "category": "footstep_gravel",
+   "tags": [
+    "footsteps",
+    "snow",
+    "crunch",
+    "walk"
+   ],
+   "file": "footstep_gravel/sfx.footstep_gravel.05.ogg",
+   "duration": 0.371,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "footstep_snow_001.ogg",
+   "credit_text": "\"footstep_snow_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "ec136d003cce5125"
+  },
+  {
+   "id": "sfx.footstep_wet.01",
+   "kind": "sfx",
+   "category": "footstep_wet",
+   "tags": [
+    "footsteps",
+    "mud",
+    "wet",
+    "squelch",
+    "walk"
+   ],
+   "file": "footstep_wet/sfx.footstep_wet.01.ogg",
+   "duration": 0.26,
+   "licence": "CC0",
+   "author": "TinyWorlds (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+   "source_file": "mud02.ogg",
+   "credit_text": "\"mud02.ogg\" by TinyWorlds (OpenGameArt), CC0 (https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud)",
+   "hash": "025c3468c9801cb1"
+  },
+  {
+   "id": "sfx.footstep_wet.02",
+   "kind": "sfx",
+   "category": "footstep_wet",
+   "tags": [
+    "footsteps",
+    "leaves",
+    "wet ground",
+    "walk"
+   ],
+   "file": "footstep_wet/sfx.footstep_wet.02.ogg",
+   "duration": 0.391,
+   "licence": "CC0",
+   "author": "TinyWorlds (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud",
+   "source_file": "leaves01.ogg",
+   "credit_text": "\"leaves01.ogg\" by TinyWorlds (OpenGameArt), CC0 (https://opengameart.org/content/different-steps-on-wood-stone-leaves-gravel-and-mud)",
+   "hash": "2b905aca5568f836"
+  },
+  {
+   "id": "sfx.dog_bark.01",
+   "kind": "sfx",
+   "category": "dog_bark",
+   "tags": [
+    "dog bark",
+    "dog",
+    "barking",
+    "distant",
+    "night"
+   ],
+   "file": "dog_bark/sfx.dog_bark.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/2-dogs-barking-at-distance-d.-d.-teoli-jr.",
+   "source_file": "2 dogs barking at distance D.D.Teoli Jr..mp3",
+   "credit_text": "\"2 dogs barking at distance D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/2-dogs-barking-at-distance-d.-d.-teoli-jr.)",
+   "hash": "99dc821d591b26b4"
+  },
+  {
+   "id": "sfx.dog_bark.02",
+   "kind": "sfx",
+   "category": "dog_bark",
+   "tags": [
+    "dog bark",
+    "dog",
+    "barking",
+    "two dogs"
+   ],
+   "file": "dog_bark/sfx.dog_bark.02.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/dog-barking-d.-d.-teoli-jr.",
+   "source_file": "Dog Barking D.D.Teoli Jr..mp3",
+   "credit_text": "\"Dog Barking D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/dog-barking-d.-d.-teoli-jr.)",
+   "hash": "bfc17be019be0061"
+  },
+  {
+   "id": "sfx.dog_bark.03",
+   "kind": "sfx",
+   "category": "dog_bark",
+   "tags": [
+    "dog bark",
+    "dog",
+    "barking"
+   ],
+   "file": "dog_bark/sfx.dog_bark.03.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/dog-barking-no.-1-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Dog Barking No.1 D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Dog Barking No.1 D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/dog-barking-no.-1-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "2f5474a850d1a33a"
+  },
+  {
+   "id": "sfx.dog_bark.04",
+   "kind": "sfx",
+   "category": "dog_bark",
+   "tags": [
+    "dog bark",
+    "dog",
+    "barking"
+   ],
+   "file": "dog_bark/sfx.dog_bark.04.ogg",
+   "duration": 2.0,
+   "licence": "CC0",
+   "author": "unknown (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/dog-barking-mono",
+   "source_file": "dog_barking_mono.wav",
+   "credit_text": "\"dog_barking_mono.wav\" by unknown (OpenGameArt), CC0 (https://opengameart.org/content/dog-barking-mono)",
+   "hash": "2507c0b53cd89513"
+  },
+  {
+   "id": "sfx.crickets.01",
+   "kind": "sfx",
+   "category": "crickets",
+   "tags": [
+    "crickets",
+    "night",
+    "insects",
+    "ambience"
+   ],
+   "file": "crickets/sfx.crickets.01.ogg",
+   "duration": 11.0,
+   "licence": "CC0",
+   "author": "Wolfgang_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/crickets-ambient-noise-loopable",
+   "source_file": "crickets_1.mp3",
+   "credit_text": "\"crickets_1.mp3\" by Wolfgang_ (OpenGameArt), CC0 (https://opengameart.org/content/crickets-ambient-noise-loopable)",
+   "hash": "9cc2f0ce34b27a8a"
+  },
+  {
+   "id": "sfx.crickets.02",
+   "kind": "sfx",
+   "category": "crickets",
+   "tags": [
+    "crickets",
+    "cricket chirp",
+    "night"
+   ],
+   "file": "crickets/sfx.crickets.02.ogg",
+   "duration": 3.3,
+   "licence": "CC0",
+   "author": "Aj_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/birdcricketfrog-and-mosquito-sounds",
+   "source_file": "cricket2.wav",
+   "credit_text": "\"cricket2.wav\" by Aj_ (OpenGameArt), CC0 (https://opengameart.org/content/birdcricketfrog-and-mosquito-sounds)",
+   "hash": "98c16381e7b356fe"
+  },
+  {
+   "id": "sfx.night_ambience.01",
+   "kind": "sfx",
+   "category": "night_ambience",
+   "tags": [
+    "night ambience",
+    "night",
+    "woods",
+    "crickets",
+    "insects"
+   ],
+   "file": "night_ambience/sfx.night_ambience.01.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/night-sounds-in-woods-8.5.22-d.-d.-teoli-jr.",
+   "source_file": "Night sounds  in woods 8.5.22 D.D.Teoli Jr..mp3",
+   "credit_text": "\"Night sounds  in woods 8.5.22 D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/night-sounds-in-woods-8.5.22-d.-d.-teoli-jr.)",
+   "hash": "54bd0261c99ed7ca"
+  },
+  {
+   "id": "sfx.night_ambience.02",
+   "kind": "sfx",
+   "category": "night_ambience",
+   "tags": [
+    "night ambience",
+    "night",
+    "forest",
+    "crickets",
+    "insects"
+   ],
+   "file": "night_ambience/sfx.night_ambience.02.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr. A. C.",
+   "source_url": "https://archive.org/details/night-sounds-in-forest-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Night sounds in forest D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Night sounds in forest D.D.Teoli Jr. A.C..mp3\" by D. D. Teoli Jr. A. C., Public domain (https://archive.org/details/night-sounds-in-forest-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "7d14270ca9a81710"
+  },
+  {
+   "id": "sfx.night_ambience.03",
+   "kind": "sfx",
+   "category": "night_ambience",
+   "tags": [
+    "night ambience",
+    "night",
+    "outside",
+    "quiet"
+   ],
+   "file": "night_ambience/sfx.night_ambience.03.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D.D. Teoli Jr.",
+   "source_url": "https://archive.org/details/WorkerSprayingLubeUnderTruckWithNightSoundsD.D.TeoliJr.",
+   "source_file": "worker spraying lube under truck with night sounds D.D. Teoli Jr..mp3",
+   "credit_text": "\"worker spraying lube under truck with night sounds D.D. Teoli Jr..mp3\" by D.D. Teoli Jr., Public domain (https://archive.org/details/WorkerSprayingLubeUnderTruckWithNightSoundsD.D.TeoliJr.)",
+   "hash": "1e6054a960fbbd81"
+  },
+  {
+   "id": "sfx.wind.01",
+   "kind": "sfx",
+   "category": "wind",
+   "tags": [
+    "wind",
+    "howling",
+    "gusts",
+    "storm",
+    "outside"
+   ],
+   "file": "wind/sfx.wind.01.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "Bashar3A (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/mild-wind-background-noise",
+   "source_file": "wind background noise 2.wav",
+   "credit_text": "\"wind background noise 2.wav\" by Bashar3A (OpenGameArt), CC0 (https://opengameart.org/content/mild-wind-background-noise)",
+   "hash": "4ba84c989baf26dc"
+  },
+  {
+   "id": "sfx.wind.02",
+   "kind": "sfx",
+   "category": "wind",
+   "tags": [
+    "wind",
+    "soft wind",
+    "outside",
+    "ambience"
+   ],
+   "file": "wind/sfx.wind.02.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "Luke.RUSTLTD (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/wind1",
+   "source_file": "wind1.wav",
+   "credit_text": "\"wind1.wav\" by Luke.RUSTLTD (OpenGameArt), CC0 (https://opengameart.org/content/wind1)",
+   "hash": "5727c7bedceb696d"
+  },
+  {
+   "id": "sfx.wind.03",
+   "kind": "sfx",
+   "category": "wind",
+   "tags": [
+    "wind",
+    "soft wind",
+    "outside",
+    "ambience"
+   ],
+   "file": "wind/sfx.wind.03.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "Luke.RUSTLTD (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/wind1",
+   "source_file": "wind3.wav",
+   "credit_text": "\"wind3.wav\" by Luke.RUSTLTD (OpenGameArt), CC0 (https://opengameart.org/content/wind1)",
+   "hash": "8a6652743a7192a4"
+  },
+  {
+   "id": "sfx.rain_window.01",
+   "kind": "sfx",
+   "category": "rain_window",
+   "tags": [
+    "rain",
+    "rain on window",
+    "storm",
+    "night",
+    "ambience"
+   ],
+   "file": "rain_window/sfx.rain_window.01.ogg",
+   "duration": 10.8,
+   "licence": "CC0",
+   "author": "alxl (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/rain-on-window-loop",
+   "source_file": "rain_on_window_loop.wav",
+   "credit_text": "\"rain_on_window_loop.wav\" by alxl (OpenGameArt), CC0 (https://opengameart.org/content/rain-on-window-loop)",
+   "hash": "72713dbd7f0ece0c"
+  },
+  {
+   "id": "sfx.rain_window.02",
+   "kind": "sfx",
+   "category": "rain_window",
+   "tags": [
+    "rain",
+    "car in rain",
+    "windshield",
+    "ambience"
+   ],
+   "file": "rain_window/sfx.rain_window.02.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D. D. Teoli Jr.",
+   "source_url": "https://archive.org/details/car-driving-with-rain-sounds-d.-d.-teoli-jr.",
+   "source_file": "Car driving with rain sounds D.D.Teoli Jr..mp3",
+   "credit_text": "\"Car driving with rain sounds D.D.Teoli Jr..mp3\" by D. D. Teoli Jr., Public domain (https://archive.org/details/car-driving-with-rain-sounds-d.-d.-teoli-jr.)",
+   "hash": "dbe40fe5516fd5a3"
+  },
+  {
+   "id": "sfx.rain_window.03",
+   "kind": "sfx",
+   "category": "rain_window",
+   "tags": [
+    "rain",
+    "thunder",
+    "storm",
+    "ambience"
+   ],
+   "file": "rain_window/sfx.rain_window.03.ogg",
+   "duration": 12.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/thunder-and-rain-sounds-18-d.-d.-teoli-jr.-a.-c.",
+   "source_file": "Thunder and Rain sounds 18 D.D.Teoli Jr. A.C..mp3",
+   "credit_text": "\"Thunder and Rain sounds 18 D.D.Teoli Jr. A.C..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/thunder-and-rain-sounds-18-d.-d.-teoli-jr.-a.-c.)",
+   "hash": "4f0bb5e393d596de"
+  },
+  {
+   "id": "sfx.gunshot_distant.01",
+   "kind": "sfx",
+   "category": "gunshot_distant",
+   "tags": [
+    "gunshot",
+    "distant gunshot",
+    "muffled",
+    "shot",
+    "through wall"
+   ],
+   "file": "gunshot_distant/sfx.gunshot_distant.01.ogg",
+   "duration": 1.927,
+   "licence": "CC0",
+   "author": "kurt (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/gunshots",
+   "source_file": "22 Magnum.wav",
+   "credit_text": "\"22 Magnum.wav\" by kurt (OpenGameArt), CC0 (https://opengameart.org/content/gunshots)",
+   "hash": "4e38de475f56672c"
+  },
+  {
+   "id": "sfx.gunshot_distant.02",
+   "kind": "sfx",
+   "category": "gunshot_distant",
+   "tags": [
+    "gunshot",
+    "distant gunshot",
+    "muffled",
+    "shot",
+    "through wall"
+   ],
+   "file": "gunshot_distant/sfx.gunshot_distant.02.ogg",
+   "duration": 1.987,
+   "licence": "CC0",
+   "author": "kurt (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/gunshots",
+   "source_file": "22 Pistol.wav",
+   "credit_text": "\"22 Pistol.wav\" by kurt (OpenGameArt), CC0 (https://opengameart.org/content/gunshots)",
+   "hash": "c0e8d67c2bd0ca83"
+  },
+  {
+   "id": "sfx.gunshot_distant.03",
+   "kind": "sfx",
+   "category": "gunshot_distant",
+   "tags": [
+    "gunshot",
+    "gunshots",
+    "distant",
+    "muffled"
+   ],
+   "file": "gunshot_distant/sfx.gunshot_distant.03.ogg",
+   "duration": 3.876,
+   "licence": "CC0",
+   "author": "kurt (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/gunshots",
+   "source_file": "Black Powder.wav",
+   "credit_text": "\"Black Powder.wav\" by kurt (OpenGameArt), CC0 (https://opengameart.org/content/gunshots)",
+   "hash": "8eaf5aed7821c349"
+  },
+  {
+   "id": "sfx.gunshot_distant.04",
+   "kind": "sfx",
+   "category": "gunshot_distant",
+   "tags": [
+    "gunshot",
+    "silencer",
+    "suppressed",
+    "muffled"
+   ],
+   "file": "gunshot_distant/sfx.gunshot_distant.04.ogg",
+   "duration": 1.7,
+   "licence": "CC0",
+   "author": "bart (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/hollywood-style-pistol-silencer-sound-effect",
+   "source_file": "silencer.wav",
+   "credit_text": "\"silencer.wav\" by bart (OpenGameArt), CC0 (https://opengameart.org/content/hollywood-style-pistol-silencer-sound-effect)",
+   "hash": "c0bf5bf09622413b"
+  },
+  {
+   "id": "sfx.gunshot_distant.05",
+   "kind": "sfx",
+   "category": "gunshot_distant",
+   "tags": [
+    "gunshot",
+    "distant",
+    "explosion",
+    "muffled",
+    "boom"
+   ],
+   "file": "gunshot_distant/sfx.gunshot_distant.05.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "NenadSimic (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/muffled-distant-explosion",
+   "source_file": "NenadSimic - Muffled Distant Explosion.wav",
+   "credit_text": "\"NenadSimic - Muffled Distant Explosion.wav\" by NenadSimic (OpenGameArt), CC0 (https://opengameart.org/content/muffled-distant-explosion)",
+   "hash": "3a674b80541f1a0d"
+  },
+  {
+   "id": "sfx.body_fall.01",
+   "kind": "sfx",
+   "category": "body_fall",
+   "tags": [
+    "body fall",
+    "fall",
+    "thud",
+    "heavy drop"
+   ],
+   "file": "body_fall/sfx.body_fall.01.ogg",
+   "duration": 1.069,
+   "licence": "CC0",
+   "author": "rubberduck (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx",
+   "source_file": "bfh1_falling_01.ogg",
+   "credit_text": "\"bfh1_falling_01.ogg\" by rubberduck (OpenGameArt), CC0 (https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx)",
+   "hash": "fa93e4de6d3069ed"
+  },
+  {
+   "id": "sfx.body_fall.02",
+   "kind": "sfx",
+   "category": "body_fall",
+   "tags": [
+    "body fall",
+    "fall",
+    "thud",
+    "heavy drop"
+   ],
+   "file": "body_fall/sfx.body_fall.02.ogg",
+   "duration": 1.032,
+   "licence": "CC0",
+   "author": "rubberduck (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx",
+   "source_file": "bfh1_falling_02.ogg",
+   "credit_text": "\"bfh1_falling_02.ogg\" by rubberduck (OpenGameArt), CC0 (https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx)",
+   "hash": "6a352de10c87987f"
+  },
+  {
+   "id": "sfx.body_fall.03",
+   "kind": "sfx",
+   "category": "body_fall",
+   "tags": [
+    "body fall",
+    "thud",
+    "soft",
+    "drop"
+   ],
+   "file": "body_fall/sfx.body_fall.03.ogg",
+   "duration": 0.115,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactSoft_medium_000.ogg",
+   "credit_text": "\"impactSoft_medium_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "34f874c0985647ed"
+  },
+  {
+   "id": "sfx.body_fall.04",
+   "kind": "sfx",
+   "category": "body_fall",
+   "tags": [
+    "body fall",
+    "thud",
+    "leather drop",
+    "soft"
+   ],
+   "file": "body_fall/sfx.body_fall.04.ogg",
+   "duration": 0.414,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "dropLeather.ogg",
+   "credit_text": "\"dropLeather.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "d8cc78b957ddafb4"
+  },
+  {
+   "id": "sfx.struggle.01",
+   "kind": "sfx",
+   "category": "struggle",
+   "tags": [
+    "struggle",
+    "cloth",
+    "scuffle",
+    "movement",
+    "grab"
+   ],
+   "file": "struggle/sfx.struggle.01.ogg",
+   "duration": 0.384,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "cloth4.ogg",
+   "credit_text": "\"cloth4.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "edd104de2df54d12"
+  },
+  {
+   "id": "sfx.struggle.02",
+   "kind": "sfx",
+   "category": "struggle",
+   "tags": [
+    "struggle",
+    "cloth",
+    "belt",
+    "scuffle"
+   ],
+   "file": "struggle/sfx.struggle.02.ogg",
+   "duration": 0.72,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "clothBelt.ogg",
+   "credit_text": "\"clothBelt.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "87ff02944883d0ae"
+  },
+  {
+   "id": "sfx.struggle.03",
+   "kind": "sfx",
+   "category": "struggle",
+   "tags": [
+    "struggle",
+    "cloth",
+    "belt",
+    "scuffle"
+   ],
+   "file": "struggle/sfx.struggle.03.ogg",
+   "duration": 0.747,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/rpg-audio",
+   "source_file": "clothBelt2.ogg",
+   "credit_text": "\"clothBelt2.ogg\" by Kenney, CC0 (https://kenney.nl/assets/rpg-audio)",
+   "hash": "814d1fa063744b6c"
+  },
+  {
+   "id": "sfx.struggle.04",
+   "kind": "sfx",
+   "category": "struggle",
+   "tags": [
+    "struggle",
+    "punch",
+    "hit",
+    "fight"
+   ],
+   "file": "struggle/sfx.struggle.04.ogg",
+   "duration": 0.43,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_medium_000.ogg",
+   "credit_text": "\"impactPunch_medium_000.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "ba8cb910894a242c"
+  },
+  {
+   "id": "sfx.struggle.05",
+   "kind": "sfx",
+   "category": "struggle",
+   "tags": [
+    "struggle",
+    "punch",
+    "hit",
+    "fight"
+   ],
+   "file": "struggle/sfx.struggle.05.ogg",
+   "duration": 0.401,
+   "licence": "CC0",
+   "author": "Kenney",
+   "source_url": "https://kenney.nl/assets/impact-sounds",
+   "source_file": "impactPunch_medium_001.ogg",
+   "credit_text": "\"impactPunch_medium_001.ogg\" by Kenney, CC0 (https://kenney.nl/assets/impact-sounds)",
+   "hash": "449cc69f400d325f"
+  },
+  {
+   "id": "sfx.boom.01",
+   "kind": "sfx",
+   "category": "boom",
+   "tags": [
+    "boom",
+    "cinematic hit",
+    "horror hit",
+    "impact",
+    "braam"
+   ],
+   "file": "boom/sfx.boom.01.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Bassy 1.wav",
+   "credit_text": "\"Bassy 1.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "5fa34382d05d9c36"
+  },
+  {
+   "id": "sfx.boom.02",
+   "kind": "sfx",
+   "category": "boom",
+   "tags": [
+    "boom",
+    "cinematic hit",
+    "horror hit",
+    "impact",
+    "braam"
+   ],
+   "file": "boom/sfx.boom.02.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Bassy 2.wav",
+   "credit_text": "\"Bassy 2.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "f964321d1d98f35f"
+  },
+  {
+   "id": "sfx.boom.03",
+   "kind": "sfx",
+   "category": "boom",
+   "tags": [
+    "boom",
+    "cinematic hit",
+    "horror hit",
+    "impact"
+   ],
+   "file": "boom/sfx.boom.03.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Mid 1.wav",
+   "credit_text": "\"Mid 1.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "09b4678939cb31ce"
+  },
+  {
+   "id": "sfx.boom.04",
+   "kind": "sfx",
+   "category": "boom",
+   "tags": [
+    "boom",
+    "dark hit",
+    "cinematic",
+    "impact"
+   ],
+   "file": "boom/sfx.boom.04.ogg",
+   "duration": 4.478,
+   "licence": "CC0",
+   "author": "Ogrebane (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/dark-ambiences",
+   "source_file": "ambience-1.wav",
+   "credit_text": "\"ambience-1.wav\" by Ogrebane (OpenGameArt), CC0 (https://opengameart.org/content/dark-ambiences)",
+   "hash": "4dbbf6bb4b7b8d03"
+  },
+  {
+   "id": "sfx.sub_drop.01",
+   "kind": "sfx",
+   "category": "sub_drop",
+   "tags": [
+    "sub drop",
+    "sub hit",
+    "bass drop",
+    "low boom"
+   ],
+   "file": "sub_drop/sfx.sub_drop.01.ogg",
+   "duration": 4.73,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Very Bassy 1.wav",
+   "credit_text": "\"Very Bassy 1.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "ef90926f45c27ccd"
+  },
+  {
+   "id": "sfx.sub_drop.02",
+   "kind": "sfx",
+   "category": "sub_drop",
+   "tags": [
+    "sub drop",
+    "sub hit",
+    "bass drop",
+    "low boom"
+   ],
+   "file": "sub_drop/sfx.sub_drop.02.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Very Bassy 2.wav",
+   "credit_text": "\"Very Bassy 2.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "2027221080e425bb"
+  },
+  {
+   "id": "sfx.sub_drop.03",
+   "kind": "sfx",
+   "category": "sub_drop",
+   "tags": [
+    "sub drop",
+    "sub hit",
+    "bass drop",
+    "low boom"
+   ],
+   "file": "sub_drop/sfx.sub_drop.03.ogg",
+   "duration": 5.0,
+   "licence": "CC0",
+   "author": "psychhead_ (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-hit-soundpack-1",
+   "source_file": "Very Bassy 3.wav",
+   "credit_text": "\"Very Bassy 3.wav\" by psychhead_ (OpenGameArt), CC0 (https://opengameart.org/content/horror-hit-soundpack-1)",
+   "hash": "40d59f03131a93cb"
+  },
+  {
+   "id": "sfx.reverse_swell.01",
+   "kind": "sfx",
+   "category": "reverse_swell",
+   "tags": [
+    "reverse swell",
+    "reverse",
+    "rise",
+    "transition"
+   ],
+   "file": "reverse_swell/sfx.reverse_swell.01.ogg",
+   "duration": 6.0,
+   "licence": "CC0",
+   "author": "isaiah658 (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/reversing-time-stuck-in-time",
+   "source_file": "Reverse-Time-Loop-isaiah658.wav",
+   "credit_text": "\"Reverse-Time-Loop-isaiah658.wav\" by isaiah658 (OpenGameArt), CC0 (https://opengameart.org/content/reversing-time-stuck-in-time)",
+   "hash": "631b5df1b07d5b05"
+  },
+  {
+   "id": "sfx.reverse_swell.02",
+   "kind": "sfx",
+   "category": "reverse_swell",
+   "tags": [
+    "reverse swell",
+    "reverse",
+    "suck",
+    "transition"
+   ],
+   "file": "reverse_swell/sfx.reverse_swell.02.ogg",
+   "duration": 0.837,
+   "licence": "CC0",
+   "author": "fvcalderan (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/gravity-inverter",
+   "source_file": "gravity_inverter.ogg",
+   "credit_text": "\"gravity_inverter.ogg\" by fvcalderan (OpenGameArt), CC0 (https://opengameart.org/content/gravity-inverter)",
+   "hash": "fcf66c047835c31a"
+  },
+  {
+   "id": "sfx.tension_drone.01",
+   "kind": "sfx",
+   "category": "tension_drone",
+   "tags": [
+    "tension drone",
+    "drone",
+    "dark ambience",
+    "horror",
+    "loop"
+   ],
+   "file": "tension_drone/sfx.tension_drone.01.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "techiew (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/ambient-horror",
+   "source_file": "ambient_horror.wav",
+   "credit_text": "\"ambient_horror.wav\" by techiew (OpenGameArt), CC0 (https://opengameart.org/content/ambient-horror)",
+   "hash": "a382d1b511ed054a"
+  },
+  {
+   "id": "sfx.tension_drone.02",
+   "kind": "sfx",
+   "category": "tension_drone",
+   "tags": [
+    "tension drone",
+    "drone",
+    "low",
+    "loop"
+   ],
+   "file": "tension_drone/sfx.tension_drone.02.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/droning-sound-effects",
+   "source_file": "drone53.wav",
+   "credit_text": "\"drone53.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/droning-sound-effects)",
+   "hash": "ee1c20f356585180"
+  },
+  {
+   "id": "sfx.tension_drone.03",
+   "kind": "sfx",
+   "category": "tension_drone",
+   "tags": [
+    "tension drone",
+    "drone",
+    "low",
+    "loop"
+   ],
+   "file": "tension_drone/sfx.tension_drone.03.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/droning-sound-effects",
+   "source_file": "drone57.wav",
+   "credit_text": "\"drone57.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/droning-sound-effects)",
+   "hash": "b3c92c5e5904c5f5"
+  },
+  {
+   "id": "sfx.tension_drone.04",
+   "kind": "sfx",
+   "category": "tension_drone",
+   "tags": [
+    "tension drone",
+    "drone",
+    "low",
+    "loop"
+   ],
+   "file": "tension_drone/sfx.tension_drone.04.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/droning-sound-effects",
+   "source_file": "drone61.wav",
+   "credit_text": "\"drone61.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/droning-sound-effects)",
+   "hash": "45d099a0fc46ded4"
+  },
+  {
+   "id": "sfx.tension_drone.05",
+   "kind": "sfx",
+   "category": "tension_drone",
+   "tags": [
+    "tension drone",
+    "rumble",
+    "low",
+    "loop"
+   ],
+   "file": "tension_drone/sfx.tension_drone.05.ogg",
+   "duration": 12.0,
+   "licence": "CC0",
+   "author": "bretbernhoft (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/rumbling-sound-effects",
+   "source_file": "rumbling21.wav",
+   "credit_text": "\"rumbling21.wav\" by bretbernhoft (OpenGameArt), CC0 (https://opengameart.org/content/rumbling-sound-effects)",
+   "hash": "77f5a3ec510f9fc6"
+  },
+  {
+   "id": "sfx.heartbeat.03",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "heart",
+    "fast",
+    "tension"
+   ],
+   "file": "heartbeat/sfx.heartbeat.03.ogg",
+   "duration": 1.124,
+   "licence": "CC0",
+   "author": "bart (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/heartbeat-sounds",
+   "source_file": "heartbeat_fast_0.wav",
+   "credit_text": "\"heartbeat_fast_0.wav\" by bart (OpenGameArt), CC0 (https://opengameart.org/content/heartbeat-sounds)",
+   "hash": "29f27dd006ff7b57"
+  },
+  {
+   "id": "sfx.heartbeat.04",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "heart",
+    "slow",
+    "tension"
+   ],
+   "file": "heartbeat/sfx.heartbeat.04.ogg",
+   "duration": 1.799,
+   "licence": "CC0",
+   "author": "bart (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/heartbeat-sounds",
+   "source_file": "heartbeat_slow_0.wav",
+   "credit_text": "\"heartbeat_slow_0.wav\" by bart (OpenGameArt), CC0 (https://opengameart.org/content/heartbeat-sounds)",
+   "hash": "21e0690b7f67cda0"
+  },
+  {
+   "id": "sfx.heartbeat.05",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "heart",
+    "slow",
+    "reverb",
+    "tension"
+   ],
+   "file": "heartbeat/sfx.heartbeat.05.ogg",
+   "duration": 1.799,
+   "licence": "CC0",
+   "author": "bart (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/heartbeat-sounds",
+   "source_file": "heartbeat_slow_reverb.wav",
+   "credit_text": "\"heartbeat_slow_reverb.wav\" by bart (OpenGameArt), CC0 (https://opengameart.org/content/heartbeat-sounds)",
+   "hash": "faaa828c6cca6ea6"
+  },
+  {
+   "id": "sfx.heartbeat.06",
+   "kind": "sfx",
+   "category": "heartbeat",
+   "tags": [
+    "heartbeat",
+    "heart",
+    "single beat"
+   ],
+   "file": "heartbeat/sfx.heartbeat.06.ogg",
+   "duration": 2.0,
+   "licence": "CC0",
+   "author": "Independent.nu (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/heartbeat-single-sound",
+   "source_file": "heartbeat.mp3_.flac",
+   "credit_text": "\"heartbeat.mp3_.flac\" by Independent.nu (OpenGameArt), CC0 (https://opengameart.org/content/heartbeat-single-sound)",
+   "hash": "1df613d77dedefdd"
+  },
+  {
+   "id": "sfx.tick.02",
+   "kind": "sfx",
+   "category": "tick",
+   "tags": [
+    "tick",
+    "clock",
+    "ticking",
+    "clock tick",
+    "countdown"
+   ],
+   "file": "tick/sfx.tick.02.ogg",
+   "duration": 7.983,
+   "licence": "CC0",
+   "author": "bart (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/ticking-clock",
+   "source_file": "ticking_clock.wav",
+   "credit_text": "\"ticking_clock.wav\" by bart (OpenGameArt), CC0 (https://opengameart.org/content/ticking-clock)",
+   "hash": "91acf9a7bc09b35e"
+  },
+  {
+   "id": "sfx.tick.03",
+   "kind": "sfx",
+   "category": "tick",
+   "tags": [
+    "tick",
+    "clock",
+    "tick tock"
+   ],
+   "file": "tick/sfx.tick.03.ogg",
+   "duration": 0.189,
+   "licence": "CC0",
+   "author": "cemkalyoncu (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/tick-and-tock",
+   "source_file": "tick.wav",
+   "credit_text": "\"tick.wav\" by cemkalyoncu (OpenGameArt), CC0 (https://opengameart.org/content/tick-and-tock)",
+   "hash": "54323404fc272303"
+  },
+  {
+   "id": "sfx.tick.04",
+   "kind": "sfx",
+   "category": "tick",
+   "tags": [
+    "tick",
+    "clock",
+    "tick tock"
+   ],
+   "file": "tick/sfx.tick.04.ogg",
+   "duration": 0.123,
+   "licence": "CC0",
+   "author": "cemkalyoncu (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/tick-and-tock",
+   "source_file": "tick2.wav",
+   "credit_text": "\"tick2.wav\" by cemkalyoncu (OpenGameArt), CC0 (https://opengameart.org/content/tick-and-tock)",
+   "hash": "152c7741316151a6"
+  },
+  {
+   "id": "sfx.breath.01",
+   "kind": "sfx",
+   "category": "breath",
+   "tags": [
+    "breath",
+    "breathing",
+    "heavy breathing",
+    "tension"
+   ],
+   "file": "breath/sfx.breath.01.ogg",
+   "duration": 6.0,
+   "licence": "Public domain",
+   "author": "D.D.Teoli Jr.",
+   "source_url": "https://archive.org/details/walking-up-hill-breathing-heavy-d.-d.-teoli-jr.",
+   "source_file": "Walking up hill breathing heavy D.D.Teoli Jr..mp3",
+   "credit_text": "\"Walking up hill breathing heavy D.D.Teoli Jr..mp3\" by D.D.Teoli Jr., Public domain (https://archive.org/details/walking-up-hill-breathing-heavy-d.-d.-teoli-jr.)",
+   "hash": "cb2ec6f8bdf0c170"
+  },
+  {
+   "id": "sfx.breath.02",
+   "kind": "sfx",
+   "category": "breath",
+   "tags": [
+    "breath",
+    "breathing",
+    "horror",
+    "heavy breathing"
+   ],
+   "file": "breath/sfx.breath.02.ogg",
+   "duration": 6.0,
+   "licence": "CC0",
+   "author": "primbal (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/horror-breathing",
+   "source_file": "horrorbreathing.wav",
+   "credit_text": "\"horrorbreathing.wav\" by primbal (OpenGameArt), CC0 (https://opengameart.org/content/horror-breathing)",
+   "hash": "755cef4a4e72567c"
+  },
+  {
+   "id": "sfx.breath.03",
+   "kind": "sfx",
+   "category": "breath",
+   "tags": [
+    "breath",
+    "ghost breath",
+    "whisper",
+    "exhale"
+   ],
+   "file": "breath/sfx.breath.03.ogg",
+   "duration": 3.273,
+   "licence": "CC0",
+   "author": "qubodup (OpenGameArt)",
+   "source_url": "https://opengameart.org/content/ghost-breath",
+   "source_file": "ghostbreath.flac",
+   "credit_text": "\"ghostbreath.flac\" by qubodup (OpenGameArt), CC0 (https://opengameart.org/content/ghost-breath)",
+   "hash": "c0af5c952a5c8039"
+  }
+ ]
+}

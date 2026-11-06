@@ -1,0 +1,103 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.cart-pusher",
+  "uid": "bf90c9fe-e2ed-5b4b-acdf-4f37f656411e",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Pushing a heavy cart (straight heel-to-head diagonal)",
+  "summary": "Walk_Loop at its widest stride (t 0) + whole-body tilt .45 about the rear foot + hip hinge .22 + lean .12, hands IK'd to the cart's rear rim. Push_Loop is crouched with the arms overhead: don't.",
+  "tags": [
+    "pose",
+    "push",
+    "pushing",
+    "cart",
+    "wheelbarrow",
+    "shove",
+    "heavy",
+    "lean",
+    "diagonal",
+    "walk loop"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "08edfe7c34d569a04e80fa8b85eed6163ec99f11",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 580,
+      "sha1": "272617d256253465579134aedee052afcd89dc88"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { tilt, hinge, lean } from '../library/module.recon.rig-pose/index.js';",
+    "example": "tilt(f, .45); S.tick(() => { f.act('Walk_Loop', { t: 0 }); hinge(f, .22); lean(f, .12, -.2); f.handTo('R', rimR, { weight: 1, curl: .7 }); f.handTo('L', rimL, { weight: 1, curl: .7 }); });"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "Anyone pushing a cart, a trolley, a car, a door, a crate.",
+    "avoid": "Push_Loop (crouched, arms overhead) and spine lean alone (looks upright).",
+    "gotchas": [
+      "tilt() once in build after placing; hinge/lean every tick after the clip.",
+      "Scale 1.5 was fitted to an AI reference that draws people big."
+    ],
+    "params": {
+      "clip": "Walk_Loop",
+      "t": 0,
+      "tilt": 0.45,
+      "hinge": 0.22,
+      "lean": 0.12,
+      "head": -0.2
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "29, 331, 337, 350-353",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "passesToPose": 5
+  },
+  "related": [
+    "module.recon.rig-pose",
+    "solution.any.whole-body-tilt",
+    "recipe.recon.prison-wall-dig-diorama"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,87 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.body-choice-by-reference",
+  "uid": "949db870-4236-5892-aff1-1208f714b6df",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "Choose the body by the reference's figure type (mannequin vs bare human)",
+  "summary": "A segmented mannequin read as a wooden doll beside smooth AI figures; the kit's bare human (outfit 'none') matched. Same skeleton, clips and IK: make the body a switch.",
+  "tags": [
+    "figure",
+    "body",
+    "mannequin",
+    "bare human",
+    "glow",
+    "reference",
+    "anatomy",
+    "character choice"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { glowPerson, glow, rebindMannequin } from '../library/module.recon.glow-person/index.js';",
+    "example": "const f = MANNEQUIN ? glow(rebindMannequin(figure(spec, o), MODELS.man)) : glowPerson(name, o);   // the recipes' MANNEQUIN switch"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Glowing/stylised people matched to a reference.",
+    "avoid": "One body for every reference.",
+    "gotchas": [
+      "The owner liked the mannequin in the café and dig shots; the tunnel reference needed the smooth body."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Figures read as wooden dolls (or as too slim/smooth) next to the reference.",
+    "cause": "The body type doesn't match the reference's figure style.",
+    "fix": "Switch between the mannequin and the bare human (same rig).",
+    "detect": "Critic comments on 'dolls' / joint seams.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#19",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.glow-person"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

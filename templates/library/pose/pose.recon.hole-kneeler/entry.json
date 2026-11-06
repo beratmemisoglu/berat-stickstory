@@ -1,0 +1,99 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.hole-kneeler",
+  "uid": "dda46a21-945f-5f93-ada7-c46059d50669",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Kneeling on all fours over a hole, palms on the floor",
+  "summary": "Fixing_Kneeling t 1 + world-axis spine turns (.2, .2) and neck -.15 toward the hole, both palms flat on the floor by handTo (palmNormal down).",
+  "tags": [
+    "pose",
+    "kneeling",
+    "all fours",
+    "crouch",
+    "looking down",
+    "hole",
+    "floor",
+    "hands on floor",
+    "peering"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "ee575dc95c7dd8f2263da516dd65bde818538b01",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 833,
+      "sha1": "7473e3d672ade592e795cfe8d185aaf231838582"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { turn } from '../library/module.recon.rig-pose/index.js';",
+    "example": "see v1/pose.json code"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "Someone kneeling and peering into a hole, a hatch, a manhole, a grave, under a car.",
+    "avoid": "Leaving the clip's hands in the air: palms on the floor sell the weight.",
+    "gotchas": [
+      "turn() axes are WORLD axes: Z = (0, 0, 1) bends toward -x for a figure facing -x."
+    ],
+    "params": {
+      "clip": "Fixing_Kneeling",
+      "t": 1,
+      "spine": [
+        0.2,
+        0.2
+      ],
+      "neck": -0.15
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "353, 358",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.cell-shaft-tunnel-section",
+    "module.recon.rig-pose"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

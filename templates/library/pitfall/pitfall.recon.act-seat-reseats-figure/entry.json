@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.act-seat-reseats-figure",
+  "uid": "da9a39a9-8841-5b79-a3bf-eee83d832a00",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "act({ seat }) re-seats the figure every tick: group y offsets are ignored",
+  "summary": "act({ seat }) re-seats a seated figure every tick, so group y offsets do nothing. Change the seat value (and x/z) instead; scaled figures need it adjusted.",
+  "tags": [
+    "figure",
+    "sit",
+    "seat",
+    "act",
+    "seated",
+    "chair",
+    "booth",
+    "scale",
+    "position"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "f.act('Sitting_Talking_Loop', { t: 1.3, seat: .47 })   // seat = the seat top y in the figure's parent space"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any seated figure, especially scaled ones or ones inside a scaled group.",
+    "avoid": "Moving a seated figure's group in y.",
+    "gotchas": [
+      "At 1.2x scale the sit clip puts the hips ~.4 m behind the figure origin: adjust the placement."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A seated figure floats above or sinks into the seat regardless of y offsets.",
+    "cause": "act() with seat re-seats the figure each tick.",
+    "fix": "Change the seat value (and x/z placement), not the group y.",
+    "detect": "Editing group y has no effect on a seated figure.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "rig and pose",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pose.recon.booth-sitters"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

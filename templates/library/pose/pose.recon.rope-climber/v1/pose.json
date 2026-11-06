@@ -1,0 +1,7 @@
+{
+  "clip": "Idle_Loop", "t": 0, "groupY": -2.78,
+  "feet": { "R": { "target": [0.56, -2.16, -0.42], "pole": [0.6, -1.2, -0.3], "note": "knee up, foot on the shaft wall" }, "L": { "target": [0.1, -2.74, -0.5], "pole": [0.5, -2.3, -0.4], "note": "hanging, toe toward the rope" } },
+  "hands": { "R": { "target": [0.11, -1.0, -0.41], "curl": 0.85 }, "L": { "target": [0.09, -1.45, -0.41], "curl": 0.85 } },
+  "placement": "figure at (-.06, -2.78, -.45), ry PI/2 + .45; the rope runs through both hand targets",
+  "code": "S.tick(() => { f.group.position.y = -2.78; f.play('Idle_Loop', 0).apply(); footTo(f, 'R', V(.56, -2.16, -.42), V(.6, -1.2, -.3)); footTo(f, 'L', V(.1, -2.74, -.5), V(.5, -2.3, -.4)); f.handTo('R', V(.11, -1, -.41), { weight: 1, curl: .85 }); f.handTo('L', V(.09, -1.45, -.41), { weight: 1, curl: .85 }); });"
+}

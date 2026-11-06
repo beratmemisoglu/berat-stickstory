@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style Kit player</title>
+<style>
+  :root { --bg: #121417; --panel: #1b1e23; --line: #2b3038; --text: #e8eaed; --dim: #9aa3ad; --accent: #4fb3ff; --bad: #ff6b6b; --warn: #ffc857; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  body { display: flex; flex-direction: column; }
+  header { display: flex; gap: 12px; align-items: center; padding: 10px 16px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+  header b { font-size: 15px; }
+  header .sp { flex: 1; }
+  select, button { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; font: inherit; cursor: pointer; }
+  button:hover, select:hover { border-color: var(--accent); }
+  main { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; padding: 12px; }
+  #stage { position: relative; background: #000; box-shadow: 0 2px 20px #0008; }
+  #stage iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  footer { padding: 8px 16px 12px; border-top: 1px solid var(--line); }
+  .bar { display: flex; gap: 10px; align-items: center; }
+  #scrub { flex: 1; accent-color: var(--accent); }
+  #time { font-variant-numeric: tabular-nums; color: var(--dim); min-width: 110px; text-align: right; }
+  #log { max-height: 96px; overflow: auto; margin-top: 8px; font: 12px/1.35 ui-monospace, Consolas, monospace; color: var(--dim); }
+  #log .error { color: var(--bad); } #log .warn { color: var(--warn); }
+  #shots { display: flex; gap: 2px; height: 6px; margin: 6px 0 2px; }
+  #shots div { background: var(--line); border-radius: 2px; cursor: pointer; } #shots div.on { background: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <b id="title">Style Kit player</b>
+  <label>View <select id="view"></select></label>
+  <label>Frame <select id="aspect"></select></label>
+  <button id="reload" title="Load the files again after a change">Reload</button>
+  <span class="sp"></span>
+  <span id="status" style="color: var(--dim)">loading ...</span>
+</header>
+<main><div id="stage"><iframe id="host" title="preview"></iframe></div></main>
+<footer>
+  <div class="bar">
+    <button id="play" disabled>Play</button>
+    <input id="scrub" type="range" min="0" max="1" step="0.0333" value="0" disabled>
+    <span id="time">0.00 / 0.00 s</span>
+  </div>
+  <div id="shots"></div>
+  <div id="log"></div>
+</footer>
+<audio id="audio" preload="auto"></audio>
+<script>
+  // Drives the real host page (templates/host/host.js, preview mode) over postMessage, like the app's editor does:
+  // { target: 'cz-host', type: 'seek' | 'playing' | 'info' } in, { source: 'cz-host', type: 'ready' | 'log' | 'boot-error' | ... } out.
+  const qs = new URLSearchParams(location.search), name = qs.get('style');
+  const $ = id => document.getElementById(id), host = $('host'), audio = $('audio');
+  let S = null, info = null, end = 0, t = 0, playing = false, last = 0, aspect = null;
+  const post = m => host.contentWindow && host.contentWindow.postMessage({ target: 'cz-host', ...m }, '*');
+  const log = (level, text) => { const d = document.createElement('div'); d.className = level; d.textContent = `${level}: ${text}`; $('log').prepend(d); while ($('log').childNodes.length > 200) $('log').lastChild.remove(); };
+  function fit() {
+    const [w, h] = aspect === '9:16' ? [1080, 1920] : [1920, 1080], m = document.querySelector('main').getBoundingClientRect();
+    const k = Math.min((m.width - 24) / w, (m.height - 24) / h); $('stage').style.width = `${Math.floor(w * k)}px`; $('stage').style.height = `${Math.floor(h * k)}px`;
+  }
+  function show() { $('time').textContent = `${t.toFixed(2)} / ${end.toFixed(2)} s`; $('scrub').value = t;
+    [...$('shots').children].forEach((d, i) => { const s = info?.shots?.[i]; d.classList.toggle('on', !!s && t >= s.t0 && t < (s.t1 ?? end)); }); }
+  function seek(x) { t = Math.max(0, Math.min(end, x)); post({ type: 'seek', t }); show(); }
+  function setPlaying(on) {
+    if (on === playing) return; playing = on; $('play').textContent = on ? 'Pause' : 'Play'; post({ type: 'playing', on });
+    if (on) { if (t >= end - .05) t = 0; if (S.audio) { audio.currentTime = t; audio.play().catch(() => {}); } last = performance.now(); requestAnimationFrame(tick); }
+    else audio.pause();
+  }
+  function tick(now) {
+    if (!playing) return;
+    if (S.audio && !audio.paused) t = audio.currentTime; else t += (now - last) / 1000;
+    last = now;
+    if (t >= end) { t = end; seek(t); return setPlaying(false); }
+    seek(t); requestAnimationFrame(tick);
+  }
+  function load() {
+    setPlaying(false); info = null; $('play').disabled = $('scrub').disabled = true; $('status').textContent = 'loading ...';
+    const settings = encodeURIComponent(JSON.stringify(S.settings[aspect] || {}));
+    host.src = `/p/${encodeURIComponent(name)}/__suite/host.html?mode=preview&settings=${settings}&t=${t.toFixed(3)}&r=${Date.now()}`;
+    fit();
+  }
+  window.addEventListener('message', e => {
+    const m = e.data; if (!m || m.source !== 'cz-host' || e.source !== host.contentWindow) return;
+    if (m.type === 'ready') {
+      info = m.info; end = +info.end || 0; $('scrub').max = end; $('play').disabled = $('scrub').disabled = !end;
+      $('status').textContent = `${info.shots.length} shots, ${end.toFixed(1)} s, ${info.kind} engine${info.graphics?.version != null ? ` v${info.graphics.version}` : ''}`;
+      $('shots').innerHTML = ''; for (const s of info.shots) { const d = document.createElement('div'); d.style.flex = String(Math.max(.05, (s.t1 ?? end) - s.t0)); d.title = `${s.name} (${s.t0.toFixed(2)} s)`; d.onclick = () => seek(s.t0 + .01); $('shots').append(d); }
+      for (const se of m.sceneErrors || []) log('error', se);
+      for (const er of info.errors || []) log(er.level, er.text);
+      seek(Math.min(t, end));
+    } else if (m.type === 'log') log(m.level, m.text);
+    else if (m.type === 'boot-error') { $('status').textContent = 'the preview did not load'; log('error', m.message); }
+    else if (m.type === 'context-lost') { log('warn', 'the graphics context was lost: reloading'); load(); }
+  });
+  $('play').onclick = () => setPlaying(!playing);
+  $('scrub').oninput = e => { setPlaying(false); seek(+e.target.value); };
+  $('reload').onclick = () => load();
+  $('aspect').onchange = e => { aspect = e.target.value; load(); };
+  $('view').onchange = async e => { await fetch(`/__kit/view/${encodeURIComponent(name)}/${encodeURIComponent(e.target.value)}`, { method: 'POST' }); t = 0; load(); };
+  window.addEventListener('resize', fit);
+  window.addEventListener('keydown', e => {
+    if (e.target.tagName === 'SELECT') return;
+    if (e.code === 'Space') { e.preventDefault(); if (!$('play').disabled) setPlaying(!playing); }
+    else if (e.code === 'ArrowRight') { setPlaying(false); seek(t + (e.shiftKey ? 1 : 1 / 30)); }
+    else if (e.code === 'ArrowLeft') { setPlaying(false); seek(t - (e.shiftKey ? 1 : 1 / 30)); }
+  });
+  (async () => {
+    if (!name) { $('status').textContent = 'no style given (?style=<name>)'; return; }
+    const r = await fetch(`/__kit/style/${encodeURIComponent(name)}`); if (!r.ok) { $('status').textContent = `no style "${name}"`; return; }
+    S = await r.json(); document.title = `${name} - Style Kit player`; $('title').textContent = name;
+    for (const v of Object.keys(S.views)) $('view').append(new Option(v + (S.views[v].expect ? ` (must fail: ${S.views[v].expect})` : ''), v));
+    $('view').value = S.view && S.views[S.view] ? S.view : Object.keys(S.views)[0] || '';
+    for (const a of S.aspects) $('aspect').append(new Option(a, a));
+    aspect = S.aspects[0];
+    if (S.audio) audio.src = `/p/${encodeURIComponent(name)}/${S.audio}`;
+    load();
+  })();
+</script>
+</body>
+</html>

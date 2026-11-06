@@ -1,0 +1,109 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.windows-toolchain-traps",
+  "uid": "cc172a1a-0ace-5ab2-a6c3-234ca45995e6",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Windows tool-chain traps: PowerShell 5.1 BOM and quoting, ffmpeg drawtext, ERR_ABORTED",
+  "summary": "PS 5.1 writes UTF-8 with a BOM, strips inner quotes of native args and breaks ${} in replaces; ffmpeg drawtext fails (fontconfig); headless REQFAIL ERR_ABORTED is harmless.",
+  "tags": [
+    "windows",
+    "powershell",
+    "bom",
+    "utf-8",
+    "quoting",
+    "ffmpeg",
+    "drawtext",
+    "puppeteer",
+    "reqfail",
+    "err_aborted",
+    "tool chain"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "[IO.File]::WriteAllText(path, text, (New-Object Text.UTF8Encoding $false))   # no BOM; pass a camera as 'p|l|fov' not JSON"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Scripting renders, patches and project files on Windows.",
+    "avoid": "Set-Content -Encoding utf8 for JSON; patching code with PowerShell string replace when it contains backticks or ${.",
+    "gotchas": [
+      "Use the Edit tool for code edits.",
+      "Print failure().errorText and ignore ERR_ABORTED (duplicate in-flight glb requests)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "JSON with a BOM, mangled command-line args, broken patches, failing drawtext, scary REQFAIL lines.",
+    "cause": "PowerShell 5.1 defaults and quoting rules; no fontconfig for ffmpeg drawtext here; Chromium aborting duplicate requests.",
+    "fix": "BOM-less writes, '|'-separated args, the Edit tool, no drawtext (draw labels in the page), ignore ERR_ABORTED.",
+    "detect": "First bytes EF BB BF; args missing quotes; REQFAIL with net::ERR_ABORTED.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#24, #25",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#11",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "tool chain",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

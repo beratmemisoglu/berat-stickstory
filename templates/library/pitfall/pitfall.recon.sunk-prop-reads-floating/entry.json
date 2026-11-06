@@ -1,0 +1,100 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.sunk-prop-reads-floating",
+  "uid": "cc6b4d45-f361-5e76-aca8-7582835bcdf1",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "A prop sunk a few mm into a slab reads as 'floating 56-125 cm'",
+  "summary": "The contact ray starts inside a slab and hits its underside: a chip sunk 7 mm (or a tilted tower base) reads 'floating' by the slab's thickness. Rest props on the surface + 1 mm.",
+  "tags": [
+    "checker",
+    "floating",
+    "contact",
+    "sunk",
+    "embedded",
+    "slab",
+    "ground",
+    "ray",
+    "placement"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "c.updateMatrixWorld(true); c.position.y = surfaceY + .001 - new THREE.Box3().setFromObject(c).min.y;"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Rocks, chips, debris, tilted objects on slabs or thin ground boxes.",
+    "avoid": "Embedding props 'a bit' to hide gaps; tilting about the centre (one edge sinks).",
+    "gotchas": [
+      "Pivot a tilt on the edge that stays on the surface.",
+      "Engine fix wanted: rays from the top of the box, or treat inside as touching."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "FLOATING 56 cm (chip) or 92-125 cm (tower) for something visibly sitting on the ground.",
+    "cause": "The ray starts inside the slab and the hit is the slab's underside; the distance is the slab thickness.",
+    "fix": "Place the prop's lowest point 1 mm above the surface; pivot tilts on a ground edge.",
+    "detect": "The reported float equals a slab's thickness.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#13",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#29",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.any.per-object-corrections",
+    "module.recon.prison-props"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

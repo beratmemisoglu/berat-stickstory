@@ -1,0 +1,100 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.bars-reacher",
+  "uid": "6b36b9a8-55df-5ee2-a5e6-49b83d56d58e",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Standing at the cell bars, one hand on a bar",
+  "summary": "Idle_Loop t 0 with both feet planted by footTo and the left palm on a cell bar (handTo, palmNormal -x), right hand relaxed at the hip; scaled 1.07 and set deeper so size and reach both match.",
+  "tags": [
+    "pose",
+    "standing",
+    "bars",
+    "cell",
+    "prison",
+    "reach",
+    "hand on",
+    "lookout",
+    "idle"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "6b346f92a0c43a5e961a3e8010bedbdd89084a68",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 820,
+      "sha1": "18cf6e8f20ec1b74f4dd6d09b25315e98bfa1dcf"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "import { footTo } from '../library/module.recon.rig-pose/index.js';",
+    "example": "see v1/pose.json code"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "A prisoner at the bars, someone leaning on a door/wall/railing with one hand.",
+    "avoid": "Placing him where the reference's perspective says: AI images draw the reach and the size inconsistently.",
+    "gotchas": [
+      "Fit him to his own pixels: move deeper + scale until both the height and the hand on the bar land."
+    ],
+    "params": {
+      "clip": "Idle_Loop",
+      "t": 0,
+      "scale": 1.07,
+      "palmNormal": [
+        -1,
+        0,
+        0
+      ]
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "352, 357",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "recipe.recon.cell-shaft-tunnel-section",
+    "pitfall.any.ai-reference-inconsistent-scale"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

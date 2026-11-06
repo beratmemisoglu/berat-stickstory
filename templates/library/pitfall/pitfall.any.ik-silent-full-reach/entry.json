@@ -1,0 +1,89 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.ik-silent-full-reach",
+  "uid": "aacb6160-5b5d-50cf-a8af-aa5cef4fee8f",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "IK silently straightens the limb when the target is out of reach",
+  "summary": "Two-bone IK straightens a limb into a 'dancer kick' when the target is out of reach, with no warning. Check the returned miss (footTo returns it): over 3 cm, move the target or body.",
+  "tags": [
+    "ik",
+    "foot ik",
+    "handTo",
+    "footTo",
+    "reach",
+    "miss",
+    "pose",
+    "leg",
+    "arm"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "const miss = footTo(f, 'L', target, pole); if (miss > .03) console.warn('foot misses by', miss);"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every IK call on a static pose.",
+    "avoid": "Assuming a placed hand/foot touches its target.",
+    "gotchas": [
+      "The kit's handTo has a contactReport(); footTo returns its miss."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A leg or arm shoots out straight toward a point it can't reach.",
+    "cause": "IK clamps the reach and gives no error.",
+    "fix": "Check the miss; move the target within reach or the body closer.",
+    "detect": "miss > .03 m.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#18",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.recon.rig-pose",
+    "solution.any.foot-ik-for-static-poses"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

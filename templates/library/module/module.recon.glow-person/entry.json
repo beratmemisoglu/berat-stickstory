@@ -1,0 +1,166 @@
+﻿{
+  "schema": 1,
+  "id": "module.recon.glow-person",
+  "uid": "5b3e00a5-504e-55ce-aa2d-b5959836335f",
+  "origin": "seed",
+  "kind": "module",
+  "title": "Glowing person (emissive body, fresnel rim, outline, halo shells)",
+  "summary": "Makes any recon figure glow orange like the shot-match references: emissive body with a brighter yellow fresnel rim, skinned outline, additive halo shells for sunlit scenes. 3 tuned looks.",
+  "tags": [
+    "glow",
+    "glowing person",
+    "figure",
+    "emissive",
+    "fresnel",
+    "rim light",
+    "outline",
+    "inverted hull",
+    "halo",
+    "silhouette",
+    "orange",
+    "x-ray",
+    "ghost",
+    "mannequin",
+    "bare human",
+    "shader"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "ec8f60dd9dd164ef9d35bd27ad60315fe1ce7fc3",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "index.js",
+      "role": "entry",
+      "bytes": 9409,
+      "sha1": "650b28753567f6d69e21a9ba08cb0794d937ae78"
+    },
+    {
+      "path": "proof.js",
+      "role": "doc",
+      "bytes": 1360,
+      "sha1": "f99ae82ee315da4267a8d157bcda47c43290dedb"
+    }
+  ],
+  "entry": "index.js",
+  "proof": "proof.js",
+  "proofRequires": [
+    "module.recon.rig-pose"
+  ],
+  "exports": [
+    "LOOKS",
+    "glowMaterial",
+    "hullMaterial",
+    "glow",
+    "bareFigure",
+    "glowPerson",
+    "rebindMannequin",
+    "glowLight",
+    "glowCap"
+  ],
+  "usage": {
+    "import": "import { glowPerson, glow, glowLight, glowCap } from '../library/module.recon.glow-person/index.js';",
+    "example": "const a = glowPerson('digger', { parent: G, x: 1, z: -2, ry: .5 }, 'night');   // bare human + night look\nS.tick(() => a.act('Walk_Loop', { t: .75 }));\nglowLight(S, a, { i: 2.2, d: 2.8 });   // its glow on what is near\n// an existing figure: glow(figure('suspect', o), 'cafe'); a user's mannequin: glow(rebindMannequin(f, MODELS.man), 'cafe')"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Stylised 'glowing people' (heat-map / x-ray / ghost figures) in any recon shot: night interiors (cafe), moonlit exteriors (night), daylight (sunlit: halo shells, because bloom cannot isolate figures when the lit ground is brighter).",
+    "avoid": "Normal dressed characters (use figure() roles). Don't use bloom alone for glow in sunlit scenes.",
+    "gotchas": [
+      "Set project settings.post.cap >= .95 (and ca 0): the Investigation grade caps highlights at .775 and turns hot orange pastel/peach.",
+      "Colours in LOOKS are LINEAR. Convert reference samples (sRGB) with fromRef() from module.recon.canvas-materials.",
+      "Every patched material sets customProgramCacheKey: three.js caches onBeforeCompile programs by function source, so shells that differ only in a number would share one program.",
+      "glow() on a bare figure hides every mesh except the largest skinned one (layer 31): face layers, hair, eyes.",
+      "glowCap must be added AFTER the tick that poses the figure (it follows the posed head).",
+      "In sunlit scenes keep roughness 1 and envMapIntensity 0 (the sun's white specular washed the figures peach)."
+    ],
+    "params": {
+      "looks": "cafe | night | sunlit, or { body, outline, halos, haloColor }",
+      "body.mode": "add (emissive + fresnel rim) | mix (core->rim ramp)",
+      "outline.offset": "m along the normal (.006-.018)",
+      "halos": "[[offset, opacity], ...] additive back-face shells"
+    }
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "scenes/cafe_v3.js",
+      "lines": "151-181",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "90-103",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "97-126",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "cafe-shot-match",
+      "projectId": null,
+      "file": "world.js",
+      "lines": "44-61",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {
+    "passesToTune": "3-5 per look",
+    "criticOnScenes": {
+      "cafe": 7,
+      "night": 7,
+      "sunlit": 5
+    }
+  },
+  "related": [
+    "solution.any.glow-person-sunlit-halo",
+    "pitfall.recon.grade-highlight-cap",
+    "pitfall.any.srgb-vs-linear-colours",
+    "pitfall.any.onbeforecompile-program-cache",
+    "solution.any.body-choice-by-reference"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,110 @@
+﻿{
+  "schema": 1,
+  "id": "solution.any.overlay-pack-per-pass",
+  "uid": "3d1c9ea5-df95-531a-aaf9-3d8a83b65372",
+  "origin": "seed",
+  "kind": "solution",
+  "title": "One pass = one command: render + check + side/blend/edges/crops + region means",
+  "summary": "Each pass: render with CHECK, then side-by-side, 50/50 blend, reference edges over the render, stacked same-region crops and mean sRGB of 12 regions. The numbers catch grade errors first.",
+  "tags": [
+    "process",
+    "overlay",
+    "compare",
+    "edges",
+    "crops",
+    "region means",
+    "metrics",
+    "grade",
+    "shot match",
+    "loop"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "docs/style-studio-critic-loop: still.mjs (CHECK=1), overlay.ps1, tunnel/pass.ps1, crop.ps1, regions.ps1"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every pass of a reference-matching loop.",
+    "avoid": "Judging side-by-sides by eye only.",
+    "gotchas": [
+      "Read a stacked crop as top = ref, bottom = render at y + h (an agent once 'saw' the tunnel 350 px too low).",
+      "Region means found earth nearly black-orange (24,13,4 vs 46,36,29) and figures yellow (G/R .7 vs .46) when the eye said 'a bit dark'."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Grade and colour errors survive several passes; misread crops.",
+    "cause": "Eyeballing one composite image.",
+    "fix": "A fixed overlay pack per pass with machine-readable numbers next to the images.",
+    "detect": "No region numbers in the pass log.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "loop 5",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#23, rec 2",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/dig/LESSONS.md",
+      "lines": "#26, rec 6",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.critic-protocol"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

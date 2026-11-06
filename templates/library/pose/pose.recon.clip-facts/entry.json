@@ -1,0 +1,106 @@
+﻿{
+  "schema": 1,
+  "id": "pose.recon.clip-facts",
+  "uid": "06c7c250-c229-5f13-a5fa-7f55170c482d",
+  "origin": "seed",
+  "kind": "pose",
+  "title": "Probed clip facts: what the human rig's clips really look like",
+  "summary": "Contact-sheet findings: KK_Digging_Loop barely bends, Push_Loop has arms overhead, KK_Crawl_Loop floats the pelvis .6 m, ClimbUp_1m is 25% short, Swim_Fwd_Loop = flat prone; which clip to use instead.",
+  "tags": [
+    "pose",
+    "clips",
+    "animation",
+    "mocap",
+    "probe",
+    "contact sheet",
+    "digging",
+    "push",
+    "crawl",
+    "climb",
+    "swim",
+    "kneel",
+    "sit"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "2444837bb5c7ecef4d4ee950751e5cb0e4d86143",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [
+    {
+      "path": "pose.json",
+      "role": "entry",
+      "bytes": 1709,
+      "sha1": "5af2cd29d952dbf4aad7866ca12d5c8ee8a06900"
+    }
+  ],
+  "entry": "pose.json",
+  "exports": [],
+  "usage": {
+    "import": "(data) read v1/pose.json; probe more with module.recon.rig-pose proof: ?probe=ClipA,ClipB&pry=1.57&pstep=.3",
+    "example": "KK_Crawl_Loop -> use Swim_Fwd_Loop + footTo + spine turns"
+  },
+  "requires": [
+    "module.recon.rig-pose"
+  ],
+  "doc": {
+    "when": "Before choosing a clip for any static or reference pose.",
+    "avoid": "Trusting a clip by its name.",
+    "gotchas": [
+      "Facts are for the kit's human rig clip packs as of recon engine 9."
+    ],
+    "params": {}
+  },
+  "preview": "preview.jpg",
+  "provenance": [
+    {
+      "project": "recon-dig-escape",
+      "projectId": null,
+      "file": "scenes/dig.js",
+      "lines": "296-305, 327-329",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    },
+    {
+      "project": "recon-prison-tunnel",
+      "projectId": null,
+      "file": "scenes/tunnel.js",
+      "lines": "349-365",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "solution.any.pose-probe-contact-sheet",
+    "pitfall.any.clip-root-offsets",
+    "module.recon.rig-pose"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

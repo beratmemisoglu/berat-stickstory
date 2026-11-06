@@ -1,0 +1,87 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.clip-root-offsets",
+  "uid": "b2e13114-7b66-5dfb-a5a4-532d7406df21",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Clip roots carry offsets (a crawl floats the pelvis .6 m)",
+  "summary": "KK_Crawl_Loop at t 0 floats the pelvis .6 m; ClimbUp_1m makes a climber 25% short. Bodies skip the floating check: measure bone heights before trusting a clip.",
+  "tags": [
+    "pose",
+    "clips",
+    "root motion",
+    "offset",
+    "pelvis",
+    "floating",
+    "crawl",
+    "climb",
+    "bones"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "?bones=1 + boneLog(S, figs) (module.recon.rig-pose): pelvis y vs floor y"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Before trusting any clip for a low or unusual pose.",
+    "avoid": "Judging a lying figure by eye from the shot's camera.",
+    "gotchas": [],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "A prone or crawling man hovers above the floor; a climber is too short.",
+    "cause": "The clip's root/hips carry vertical offsets or a crouch.",
+    "fix": "Measure bone positions; switch clips (Swim_Fwd_Loop for prone) or lower the group.",
+    "detect": "pelvis y - floor y > ~.25 for a prone figure.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#17",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pose.recon.clip-facts",
+    "pitfall.recon.bodies-not-checked-against-ground"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

@@ -1,0 +1,10 @@
+{
+ "narration": { "timeline": "timeline.json", "script": "script.txt" },
+ "views": {
+  "sample": { "scenes": ["sample"], "end": 20 },
+  "hero": { "scenes": ["hero"], "end": 6 },
+  "kit": { "scenes": ["kit"], "end": 16 },
+  "mustfail_blank": { "scenes": ["mustfail_blank"], "end": 3, "expect": "BLANK" },
+  "mustfail_dark": { "scenes": ["mustfail_dark"], "end": 3, "expect": "DARK" }
+ }
+}

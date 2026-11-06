@@ -1,0 +1,88 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.recon.collide-must-be-declared",
+  "uid": "32880423-33d2-5732-a955-60cd0543a8d4",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "Without S.collide, body clipping is never checked ('0 issues' while clipping)",
+  "summary": "Café V1 said 0 issues while the men clipped through the booth: OVERLAP runs only in shots that declare S.collide = { bodies, solids }. Declare it in every shot with people.",
+  "tags": [
+    "S.collide",
+    "checker",
+    "overlap",
+    "clipping",
+    "bodies",
+    "solids",
+    "people",
+    "furniture"
+  ],
+  "engines": [
+    {
+      "base": "recon",
+      "min": 9,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "base:recon",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": "import { bodyOf } from '../library/module.recon.rig-pose/index.js';",
+    "example": "S.collide = { bodies: () => [bodyOf(a), bodyOf(b)], solids: [...booth.solids, ...table.solids] };"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Every shot with people.",
+    "avoid": "Trusting ISSUES 0 from a shot without S.collide.",
+    "gotchas": [
+      "Solids must be closed meshes; leave out the chair a person sits on if the seat overlaps by design."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Bodies visibly intersect furniture but the check is clean.",
+    "cause": "No S.collide declaration: OVERLAP never runs for that shot.",
+    "fix": "Declare bodies and solids.",
+    "detect": "grep the scene for S.collide.",
+    "scopeLetter": "R"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/SHOT_MATCH_LOOP.md",
+      "lines": "results (café V1), loop 4",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "pitfall.recon.bodies-not-checked-against-ground",
+    "pitfall.any.furniture-fit-check"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}

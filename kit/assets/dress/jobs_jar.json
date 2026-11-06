@@ -1,0 +1,5 @@
+[
+  {"out": "assets/dress/jar_screen.png", "aspect": "16:9", "prompt": "A wide painted palace folding screen in a flat bold cartoon style: a golden dragon coiling through stylized swirling clouds over blue-green mountains and a red sun, gold leaf background, bold dark outlines, saturated colours, six panel seams visible, no text, no people"},
+  {"out": "assets/dress/jar_scroll1.png", "aspect": "9:16", "prompt": "A tall hanging scroll painting in a flat bold cartoon style: a crane standing among pine branches and a pale moon, cream paper with a red wooden roller top and bottom, bold dark outlines, no text"},
+  {"out": "assets/dress/jar_map.png", "aspect": "1:1", "prompt": "A stylized flat cartoon map of an ancient empire drawn on old parchment, seen straight from above: mountains, rivers, a walled capital city in the middle, small towns, a compass rose, bold dark outlines, warm muted colours, no readable text"}
+]

@@ -1,0 +1,90 @@
+﻿{
+  "schema": 1,
+  "id": "pitfall.any.box-uv-stretch",
+  "uid": "5edd253e-654d-5b1a-a451-f749480d1a6b",
+  "origin": "seed",
+  "kind": "pitfall",
+  "title": "BoxGeometry stretches one texture tile over every face (streaks, 'planks')",
+  "summary": "BoxGeometry maps 0..1 onto every face, so a 16 m slab stretches one tile into vertical streaks a critic reads as planks. Use metric UVs (module.any.metric-box) or a per-face repeat in metres.",
+  "tags": [
+    "uv",
+    "texture",
+    "stretch",
+    "streaks",
+    "box",
+    "tiling",
+    "metric uv",
+    "planks",
+    "concrete",
+    "slab"
+  ],
+  "engines": [
+    {
+      "base": "any",
+      "min": null,
+      "max": null
+    }
+  ],
+  "three": "r170",
+  "scope": "global",
+  "status": "accepted",
+  "version": 1,
+  "versions": [
+    {
+      "v": 1,
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "at": "2026-10-14",
+      "note": "seed harvest of the shot-match scenes (L3)"
+    }
+  ],
+  "delivery": "copy",
+  "files": [],
+  "entry": null,
+  "exports": [],
+  "usage": {
+    "import": null,
+    "example": "part(metricBox(16, .58, 3), perMetre(boardConcrete()), ...)"
+  },
+  "requires": [],
+  "doc": {
+    "when": "Any textured box bigger than its texture tile.",
+    "avoid": "A single material repeat for all faces of a long thin box.",
+    "gotchas": [
+      "The kit's box()/part() should default to metric UVs (engine request)."
+    ],
+    "params": {}
+  },
+  "problem": {
+    "symptom": "Long streaks or 'plank' stripes on slabs and walls.",
+    "cause": "One 0..1 UV tile per face regardless of the face's size.",
+    "fix": "Metric UVs (1 UV per metre) + materials with repeat = 1 / tile metres.",
+    "detect": "Texture features stretched along the long axis of big faces.",
+    "scopeLetter": "G"
+  },
+  "preview": null,
+  "provenance": [
+    {
+      "project": "toon-studio (repo)",
+      "projectId": null,
+      "file": "docs/style-studio-critic-loop/tunnel/LESSONS.md",
+      "lines": "#7",
+      "edit": null,
+      "session": null,
+      "at": "2026-10-14",
+      "by": "seed"
+    }
+  ],
+  "licence": {
+    "id": "own",
+    "author": "Toon Studio",
+    "source_url": null,
+    "credit_text": null
+  },
+  "metrics": {},
+  "related": [
+    "module.any.metric-box",
+    "module.recon.canvas-materials"
+  ],
+  "created": "2026-10-14",
+  "updated": "2026-10-14"
+}
