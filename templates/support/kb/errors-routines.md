@@ -3,9 +3,7 @@ keywords: routine failed, routines, node failed, routine stopped, no project yet
 platforms: both
 
 ## Routines are Premium
-> Routines is a Premium feature. Upgrade to Premium on Skool to unlock it.
 
-Fix: upgrade to Premium on Skool.
 
 ## A node is in the wrong place
 > There is no project yet: put a Create project before this node.

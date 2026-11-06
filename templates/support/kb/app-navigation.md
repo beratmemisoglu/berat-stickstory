@@ -1,5 +1,4 @@
-# The sidebar and the pages
-keywords: sidebar, menu, pages, where is, navigation, find page, missing button, collapsed sidebar, sidebar gone, only icons, editor greyed out, editor disabled, open a project first, lock icon, where is settings, where is help, left menu, page missing, home, projects, videos, styles, library, memory, routines, renders, layouts, analytics, claude connected, exports left
+﻿# The sidebar and the pages
 platforms: both
 
 The sidebar on the left lists every page. Its pages depend on the workspace you are in (Faceless Brand or Personal Brand, named under the logo).
@@ -21,7 +20,6 @@ The sidebar on the left lists every page. Its pages depend on the workspace you 
 - **New project** (Personal Brand: **New video**), Ctrl/⌘ + N.
 - **Help**: ask a question, or report a problem.
 - **Settings**.
-- Your plan: **Standard** (with the exports left this month) or **Premium**.
 - **Exporting** with a percentage while an export runs. Click it to see that export.
 - **Update ... ready**: click to restart and install. On a Mac it can say **Update ... available**: click to download, then drag the app into Applications.
 - **Restart for software graphics** (or **card graphics**): click to restart the app in that graphics mode.
@@ -29,7 +27,6 @@ The sidebar on the left lists every page. Its pages depend on the workspace you 
 
 ## Small signs
 
-- A lock on **Routines** or **YouTube**: a Premium feature ("... is a Premium feature. Upgrade to Premium on Skool to unlock it.").
 - **new** next to **Memory** or **Library**: Claude's suggestions are waiting for you.
 - A dot next to **Editor**: Claude is working.
 

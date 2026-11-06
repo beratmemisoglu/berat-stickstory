@@ -1,13 +1,10 @@
 ﻿# Getting started with berat studio
-keywords: start, first video, beginner, how to use, new, new member, tutorial, where do i begin, where to start, overview, getting started, first time, first run, just installed, setup, set up, onboarding, what now, what do i do, log in with skool, skool login, welcome, checklist, how does it work, step by step, first project
 platforms: both
 
 berat studio makes videos with your own Claude Code. You watch the video live, click what you want changed, say it in words, and Claude edits it. Every edit can be undone.
 
 ## When the app opens
 
-1. The app checks your Skool membership. If it asks, click **Log in with Skool** and log in with your Skool account.
-2. "No internet connection" or "Can't reach Skool": connect (or allow the app in your antivirus, firewall or VPN), then click **Try again**. More in "Logging in with Skool (membership)".
 3. **Home** opens with a **Getting started** list. Work through it:
    - **Connect Claude**: click **Sign in** (see "Claude not installed or not signed in").
    - **Check your tools**: git, ffmpeg and Python. **Review** opens Settings if one is missing.

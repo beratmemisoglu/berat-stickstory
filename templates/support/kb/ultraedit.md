@@ -1,5 +1,4 @@
-# Ultraedit: upgrade shots
-keywords: ultraedit, ultra edit, ultraedit+, ultraedit plus, upgrade shots, improve shots, better shots, more detail, polish, make it look better, shots look bad, ugly shots, fix visuals, premium, locked, premium feature, stop ultraedit, cancel ultraedit, undo ultraedit, how long, purple shots, pulsing shots, ultraedited
+﻿# Ultraedit: upgrade shots
 platforms: both
 
 Ultraedit (Premium) goes through the shots you pick, one by one: Claude (Opus 5.5, or the model and effort picked for the project) looks at stills of each shot, adds detail and depth, fixes visual inconsistencies and checks the result. Timing and narration stay.
@@ -29,6 +28,5 @@ In the Build dialog, the top levels of the **Quality** slider add Ultraedit (and
 
 ## Locked?
 
-On Standard the button shows **Premium**: "Ultraedit is a Premium feature. Upgrade to Premium on Skool to unlock it." See "Plans: Standard and Premium".
 
 Ultraedit always runs on Claude, even when the project is set to a ChatGPT model.

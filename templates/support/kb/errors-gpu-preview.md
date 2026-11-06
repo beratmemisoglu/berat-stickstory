@@ -8,10 +8,10 @@ What it means: on some graphics cards the app runs but its window never shows on
 Fix:
 1. Wait a minute: the **berat studio Launcher** watches every start. On Windows, when the window looks dark it asks in its own small window, **Is berat studio's window dark or empty?**: click **It's dark: fix it** and it restarts berat studio in **Safe display**. If it's still dark it tries software graphics next.
 2. The app also checks this itself after every update. On Windows a Windows message may ask **Is the berat studio window dark or empty?**: click **It's dark or empty - fix it**. The app restarts in **Safe display** (3D still runs on your graphics card, full speed). Opening the app again while the dark window is open also brings up that question.
-3. Still dark, or no launcher yet? Open **berat studio Launcher** yourself (Windows: Start menu; Mac: Applications) and click **Open**, or run the rescue command. It closes berat studio, updates it and starts it in a mode that shows. Projects, settings and the Skool login are not touched.
-   - Windows (PowerShell): `irm https://raw.githubusercontent.com/therussellchris/berat studio/main/rescue.ps1 | iex`
-   - Mac (Terminal): `curl -fsSL https://raw.githubusercontent.com/therussellchris/berat studio/main/rescue.sh | bash`
-4. Still dark on Windows: close it and run `$env:CZ_RESCUE='software'; irm https://raw.githubusercontent.com/therussellchris/berat studio/main/rescue.ps1 | iex` (software graphics: slower, always shows).
+3. Still dark, or no launcher yet? Open **berat studio Launcher** yourself (Windows: Start menu; Mac: Applications) and click **Open**, or run the rescue command. It closes berat studio, updates it and starts it in a mode that shows. Projects and settings are not touched.
+   - Windows (PowerShell): `irm https://raw.githubusercontent.com/beratmemisoglu/berat-stickstory/master/rescue.ps1 | iex`
+   - Mac (Terminal): `curl -fsSL https://raw.githubusercontent.com/beratmemisoglu/berat-stickstory/master/rescue.sh | bash`
+4. Still dark on Windows: close it and run `irm https://raw.githubusercontent.com/beratmemisoglu/berat-stickstory/master/rescue.ps1 | iex` (software graphics: slower, always shows).
 5. After a graphics driver update you can go back to full speed: **Settings > System > Graphics > Try the graphics card again**.
 
 ## Stuck on software graphics (slow previews and exports)

@@ -1,4 +1,4 @@
-# Video language: English or several languages
+﻿# Video language: English or several languages
 keywords: language, languages, video language, narration language, multilingual, several languages, english only, spanish, french, german, polish, russian, cyrillic, italian, portuguese, other language, foreign language, non english, translate, video in spanish, new videos start in, change language, arabic, right to left, hebrew, other languages premium, transcribe language
 platforms: both
 
@@ -23,7 +23,6 @@ The progress also shows in **Settings > System > System check**.
 
 ## Good to know
 
-- Other languages are a Premium feature. On Standard you see "Other languages is a Premium feature. Upgrade to Premium on Skool to unlock it."
 - Each style writes only the languages its fonts have letters for; New project says which. Russian works in every style: a font without Cyrillic letters gets them from a close look-alike.
 - The free local voice doesn't speak Russian: use ElevenLabs or Fish Audio for a Russian voiceover.
 - Arabic and other right-to-left languages are not offered yet.

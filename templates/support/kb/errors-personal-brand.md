@@ -1,4 +1,4 @@
-# Personal Brand errors
+﻿# Personal Brand errors
 keywords: personal brand, talking head, facecam, screen recording, footage, timeline empty, clip missing, file missing, already rendering, render failed, render cancelled, not a video or audio file, no length, cut not delivered, intro not rendered, edit the intro
 platforms: both
 
@@ -42,10 +42,3 @@ Fix: ask Claude to finish the render and the sound pass, or start **Edit the int
 > ffmpeg failed: ...
 
 Fix: install ffmpeg from **Settings > System > System check** (Windows PowerShell: `winget install --id Gyan.FFmpeg -e`; Mac Terminal: `brew install ffmpeg`), restart the app and render again. If ffmpeg failed, check free disk space; still failing? Click **Help > Report a problem** so it gets fixed.
-
-## Monthly exports used up
-> You've used this month's 12 exports on Standard...
-
-What it means: a finished Personal Brand render counts as one of Standard's 12 monthly exports.
-
-Fix: wait until the 1st, or upgrade to Premium on Skool.
